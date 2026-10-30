@@ -1,0 +1,47 @@
+# OS freeze check 2026-10-30T21:16:25Z on 150-136-44-126
+Synchronizing state of unattended-upgrades.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable unattended-upgrades
+## verify
+apt-daily.timer: disabled / inactive
+apt-daily-upgrade.timer: disabled / inactive
+unattended-upgrades.service: disabled / inactive
+apt-daily.service: masked / inactive
+apt-daily-upgrade.service: masked / inactive
+apt timers listed: 0
+held packages (24):
+libnvidia-cfg1-580-server
+libnvidia-common-580-server
+libnvidia-compute-580-server
+libnvidia-decode-580-server
+libnvidia-egl-wayland1
+libnvidia-encode-580-server
+libnvidia-extra-580-server
+libnvidia-fbc1-580-server
+libnvidia-gl-580-server
+nvidia-compute-utils-580-server
+nvidia-dkms-580-server
+nvidia-driver-550-server
+nvidia-driver-570-server
+nvidia-driver-580-server
+nvidia-fabricmanager-550
+nvidia-fabricmanager-570
+nvidia-fabricmanager-580
+nvidia-firmware-580-server-580.178.04
+nvidia-kernel-common-580-server
+nvidia-kernel-source-580-server
+nvidia-utils-550-server
+nvidia-utils-570-server
+nvidia-utils-580-server
+xserver-xorg-video-nvidia-580-server
+CUDA system packages (torch ships its own CUDA): 0
+needrestart: $nrconf{restart} = 'l'; $nrconf{restart} = 'l'; 
+0, NVIDIA A100-SXM4-40GB, 580.178.04
+1, NVIDIA A100-SXM4-40GB, 580.178.04
+2, NVIDIA A100-SXM4-40GB, 580.178.04
+3, NVIDIA A100-SXM4-40GB, 580.178.04
+4, NVIDIA A100-SXM4-40GB, 580.178.04
+5, NVIDIA A100-SXM4-40GB, 580.178.04
+6, NVIDIA A100-SXM4-40GB, 580.178.04
+7, NVIDIA A100-SXM4-40GB, 580.178.04
+        GPU Fabric GUID                                : N/A
+active
