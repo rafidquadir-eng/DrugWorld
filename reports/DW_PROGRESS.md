@@ -18,3 +18,13 @@
 - **Repository:** private `rafidquadir-eng/DrugWorld`, branch `drugworld` (no `main` push).
   Plan copied unchanged (`docs/DRUGWORLD_PLAN.md`, SHA-256 `bb95b7b2…41ed`, from GeneWorld
   `dad0c40`). Shared code from GeneWorld `stage1` commit `ed4d43f` (`docs/SHARED_CODE.md`).
+
+## Step 1, D0 (in progress)
+
+- **D0.0 data search** (`reports/D0_DATA_SEARCH.md`): 21 candidates recorded across IDR, the
+  BioImage Archive, Zenodo, figshare, LINCS and the Cell Painting Gallery; none meets all four
+  criteria, none is unclear. Proceeding with idr0119 and idr0064 as designed.
+- **Annotation audit** (`reports/D0_DATA_AUDIT.md`, `results/d0/audit.json`).
+- **Access and throughput** (`reports/D0_THROUGHPUT.md`): idr0119 is only on EBI FTP (HTTPS,
+  per-client connection limit, about 29–38 MB/s, 3.13 TB, 23–30 h for all channels); idr0064
+  on the BIA S3 bucket (OME-Zarr, 39–102 MB/s, 57 GB, 10–25 min).

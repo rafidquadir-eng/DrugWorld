@@ -1,0 +1,400 @@
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 511 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 555 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 555 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 554 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 598 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 598 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 597 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 78 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 84 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 85 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 75 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 83 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 84 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 83 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 84 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 78 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 78 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 78 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 79 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 84 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 77 ms: Couldn't connect to server
+000 0 Failed to connect to ftp.ebi.ac.uk port 443 after 76 ms: Couldn't connect to server
+200 764550 
+200 844902 
+200 957696 
+200 1078440 
+200 1191139 
+200 1274974 
+200 958607 
+200 1146917 
+200 1004720 
+200 1493460 
+200 1490559 
+200 1500462 
+200 803916 
+200 1477068 
+200 1678398 
+200 1795735 
+200 969488 
+200 1631147 
+200 903933 
+200 1333167 
+200 1055198 
+200 992548 
+200 1728951 
+200 2928896 
+200 1149858 
+200 2928896 
+200 1676436 
+200 1173384 
+200 2928896 
+200 964835 
+200 1624990 
+200 2928896 
+200 1778264 
+200 2928896 
+200 2928896 
+200 1107967 
+200 851900 
+200 1044198 
+200 1464508 
+200 2928896 
+200 894035 
+200 1022809 
+200 1028736 
+200 2928896 
+200 1311778 
+200 2928896 
+200 1120623 
+200 870430 
+200 2928896 
+200 2928896 
+200 2928896 
+200 935315 
+200 2928896 
+200 1101624 
+200 874896 
+200 1530972 
+200 1038090 
+200 944285 
+200 2928896 
+200 2928896 
+200 911819 
+200 1814337 
+200 2928896 
+200 2928896 
+200 1059692 
+200 2928896 
+200 1479978 
+200 2928896 
+200 965222 
+200 1289567 
+200 884057 
+200 1666693 
+200 1052502 
+200 1730195 
+200 1207293 
+200 2928896 
+200 977774 
+200 1624467 
+200 2928896 
+200 1640070 
+200 1614304 
+200 1588627 
+200 1599031 
+200 1588355 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 1715436 
+200 1233755 
+200 2928896 
+200 786392 
+200 836166 
+200 2928896 
+200 1518678 
+200 1468444 
+200 901726 
+200 1296573 
+200 860466 
+200 2928896 
+200 1143655 
+200 1336922 
+200 1490899 
+200 935827 
+200 1567593 
+200 878474 
+200 1458090 
+200 1121679 
+200 1625494 
+200 1005236 
+200 1341033 
+200 2928896 
+200 2928896 
+200 1044138 
+200 2928896 
+200 1544649 
+200 829810 
+200 2928896 
+200 1002461 
+200 2928896 
+200 2928896 
+200 2008170 
+200 2928896 
+200 1293565 
+200 1078965 
+200 2928896 
+200 1849056 
+200 875141 
+200 1792594 
+200 1005986 
+200 1552013 
+200 2928896 
+200 1260361 
+200 1593937 
+200 1828985 
+200 933289 
+200 2928896 
+200 1376965 
+200 2928896 
+200 2928896 
+200 1616914 
+200 2928896 
+200 855174 
+200 1507676 
+200 2928896 
+200 2928896 
+200 1060429 
+200 1315214 
+200 1642009 
+200 1625148 
+200 2928896 
+200 1010257 
+200 2928896 
+200 1334753 
+200 2928896 
+200 1874675 
+200 2928896 
+200 1072967 
+200 931285 
+200 1419965 
+200 1322788 
+200 1927264 
+200 1297226 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 1439250 
+200 1012731 
+200 923236 
+200 2928896 
+200 1123720 
+200 1197394 
+200 955631 
+200 2928896 
+200 1414149 
+200 2928896 
+200 1592991 
+200 839722 
+200 2928896 
+200 1076441 
+200 2928896 
+200 1977001 
+200 1014704 
+200 2928896 
+200 819280 
+200 1715870 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 837189 
+200 2928896 
+200 925326 
+200 1047228 
+200 1572434 
+200 2928896 
+200 991100 
+200 1811718 
+200 881846 
+200 2928896 
+200 2928896 
+200 891790 
+200 2928896 
+200 1158248 
+200 2235615 
+200 806930 
+200 972336 
+200 2928896 
+200 1766816 
+200 969902 
+200 2928896 
+200 909092 
+200 979099 
+200 1527288 
+200 2928896 
+200 912960 
+200 1462122 
+200 2928896 
+200 2928896 
+200 790989 
+200 965910 
+200 1915988 
+200 785200 
+200 1195184 
+200 2928896 
+200 946453 
+200 974995 
+200 2018370 
+200 1255599 
+200 1502936 
+200 1492432 
+200 1079534 
+200 1015036 
+200 2928896 
+200 2928896 
+200 1153738 
+200 2928896 
+200 1041788 
+200 1384831 
+200 2928896 
+200 1562196 
+200 985598 
+200 933514 
+200 2928896 
+200 1095875 
+200 1153851 
+200 1654884 
+200 1045940 
+200 1099386 
+200 2928896 
+200 852224 
+200 2928896 
+200 2928896 
+200 875874 
+200 1470142 
+200 2928896 
+200 2928896 
+200 1036537 
+200 1446083 
+200 1181193 
+200 1757190 
+200 1732439 
+200 1066197 
+200 2928896 
+200 1636598 
+200 1739638 
+200 2928896 
+200 2928896 
+200 811534 
+200 1077899 
+200 2928896 
+200 1486432 
+200 2928896 
+200 2928896 
+200 1331411 
+200 951401 
+200 863504 
+200 1626614 
+200 864580 
+200 2928896 
+200 2304228 
+200 2928896 
+200 2928896 
+200 1064804 
+200 1522337 
+200 1329469 
+200 2928896 
+200 1588464 
+200 900105 
+200 1553007 
+200 2928896 
+200 1484290 
+200 801243 
+200 2928896 
+200 788550 
+200 1438559 
+200 810418 
+200 897768 
+200 1045227 
+200 1354767 
+200 1600018 
+200 828954 
+200 2928896 
+200 2928896 
+200 2928896 
+200 1485449 
+200 1708750 
+200 2928896 
+200 2928896 
+200 1512920 
+200 1479949 
+200 1571622 
+200 1895388 
+200 1067709 
+200 1654478 
+200 1068874 
+200 1018692 
+200 2928896 
+200 925708 
+200 2928896 
+200 878423 
+200 2928896 
+200 1182640 
+200 2928896 
+200 816708 
+200 1379430 
+200 2928896 
+200 1140076 
+200 846776 
+200 949682 
+200 923032 
+200 1618751 
+200 2928896 
+200 1606417 
+200 943216 
+200 1081123 
+200 2928896 
+200 1516113 
+200 1661490 
+200 1364547 
+200 2928896 
+200 2928896 
+200 1471334 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 2928896 
+200 1225647 
+200 2928896 
+200 2928896 
+200 2928896 
+200 1513238 
+200 2928896 
+200 2928896 

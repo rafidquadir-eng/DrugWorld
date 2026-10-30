@@ -1,0 +1,150 @@
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6418 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6457 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6465 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6467 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6465 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6467 ms: Couldn't connect to server
+000 0 Recv failure: Connection reset by peer
+000 0 Recv failure: Connection reset by peer
+000 0 Recv failure: Connection reset by peer
+000 0 Recv failure: Connection reset by peer
+226 960199 
+000 0 Recv failure: Connection reset by peer
+226 860095 
+226 1194324 
+226 1096710 
+226 1327911 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1375 ms: Couldn't connect to server
+226 1428807 
+226 1543990 
+226 1564486 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1392 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1089 ms: Couldn't connect to server
+000 0 Recv failure: Connection reset by peer
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1089 ms: Couldn't connect to server
+000 0 Recv failure: Connection reset by peer
+000 0 Recv failure: Connection reset by peer
+226 2928896 
+226 1218566 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1134 ms: Couldn't connect to server
+000 0 Recv failure: Connection reset by peer
+226 1362824 
+226 1385165 
+226 1624924 
+226 1524731 
+226 1307239 
+226 1207071 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1597 ms: Couldn't connect to server
+226 1706372 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1467 ms: Couldn't connect to server
+226 2928896 
+226 958642 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 7463 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 7061 ms: Couldn't connect to server
+226 2928896 
+226 1099117 
+226 862223 
+226 1855110 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 7754 ms: Couldn't connect to server
+226 1040457 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1112 ms: Couldn't connect to server
+226 1049966 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1376 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1144 ms: Couldn't connect to server
+226 1112847 
+226 1319696 
+000 0 Recv failure: Connection reset by peer
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1491 ms: Couldn't connect to server
+226 893605 
+226 1436984 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1417 ms: Couldn't connect to server
+226 2928896 
+226 942822 
+226 1088738 
+226 2928896 
+226 2928896 
+226 1677362 
+226 1080686 
+226 900775 
+226 2928896 
+226 1556559 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6640 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6878 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 7041 ms: Couldn't connect to server
+000 0 Recv failure: Connection reset by peer
+226 1006048 
+000 0 Recv failure: Connection reset by peer
+226 1062660 
+226 1151735 
+226 996037 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1285 ms: Couldn't connect to server
+226 926213 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1737 ms: Couldn't connect to server
+226 2928896 
+226 2928896 
+226 1409040 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1694 ms: Couldn't connect to server
+226 2928896 
+226 932992 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1314 ms: Couldn't connect to server
+226 2928896 
+226 947340 
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1106 ms: Couldn't connect to server
+226 1028159 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6222 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 7217 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 4518 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6876 ms: Couldn't connect to server
+226 1026881 
+000 0 Recv failure: Connection reset by peer
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 7808 ms: Couldn't connect to server
+226 2928896 
+226 854771 
+000 0 Failed to connect to ftp.ebi.ac.uk port 21 after 234 ms: Couldn't connect to server
+226 1025053 
+226 1092247 
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1034 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1035 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1041 ms: Couldn't connect to server
+226 2928896 
+226 2928896 
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 990 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 992 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 4323 ms: Couldn't connect to server
+226 1405625 
+226 919542 
+226 2928896 
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6386 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 5001 ms: Couldn't connect to server
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 6380 ms: Couldn't connect to server
+226 944720 
+226 2928896 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1156 ms: Couldn't connect to server
+226 1009155 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 957 ms: Couldn't connect to server
+226 1807074 
+226 964278 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1454 ms: Couldn't connect to server
+226 1091221 
+227 0 Failed to connect to ftp.ebi.ac.uk port 21 after 1136 ms: Couldn't connect to server
+226 852282 
+226 2928896 
+226 2928896 
+226 881693 
+226 2928896 
+226 2928896 
+226 917433 
+226 1542859 
+226 2928896 
+226 758762 
+226 1010103 
+226 1145406 
+226 2928896 
+226 2928896 
+226 2928896 
