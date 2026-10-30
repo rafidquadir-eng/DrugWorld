@@ -1,0 +1,9 @@
+OpenBLAS warning: precompiled NUM_THREADS exceeded, adding auxiliary array for thread metadata.
+To avoid this warning, please rebuild your copy of OpenBLAS with a larger NUM_THREADS setting
+or set the environment variable OPENBLAS_NUM_THREADS to 64 or lower
+phase_L0 0.887 0.514
+phase_L1 0.9 0.67
+rgb_L0 0.933 0.681
+rgb_L1 0.924 0.797
+idr0064 erk 0.479
+{"idr0119": {"count_r2": 0.9241797084835954, "g1_r2": 0.7965246326802153, "pass": true}, "idr0064": {"erk_cn_r2": 0.4788960095228869, "pass": false}} chosen rgb_L1

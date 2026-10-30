@@ -1,0 +1,12 @@
+worker 0: 11 fields, 11 to do
+2101001 A1: fetch 321s, cells 10s, embed 74s; filled 2, errors 2
+2101401 A1: fetch 365s, cells 10s, embed 74s; filled 0, errors 0
+2101601 A5: fetch 316s, cells 12s, embed 66s; filled 0, errors 0
+AU00601 A3: fetch 369s, cells 11s, embed 73s; filled 3, errors 0
+AU00801 A1: fetch 375s, cells 11s, embed 71s; filled 3, errors 0
+AU01001 A1: fetch 383s, cells 10s, embed 76s; filled 0, errors 0
+HC00801 A3: fetch 365s, cells 10s, embed 43s; filled 0, errors 0
+HC01301 A1: fetch 294s, cells 10s, embed 42s; filled 0, errors 0
+MD00201 A5: fetch 364s, cells 10s, embed 42s; filled 0, errors 0
+MD00501 A3: fetch 302s, cells 10s, embed 41s; filled 0, errors 0
+MD00801 A1: fetch 288s, cells 10s, embed 40s; filled 0, errors 0

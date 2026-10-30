@@ -1,0 +1,91 @@
+{
+ "rule": "(fixed before any probe result is computed, committed with this script):\n  * targets per (field, clip, tile): idr0119 log(1 + mean cells per frame in the tile) and the\n    G1 fraction (cells over the clip's 16 frames whose log HDHB nuclear/ring ratio exceeds the\n    threshold T); idr0064 the mean Erk C/N ratio over the clip's cells in the tile;\n  * T is the density valley of a two-component Gaussian mixture of all pilot cells' log ratios\n    (seed 0, 200,000 cells sampled with seed 0) and is recorded;\n  * probe = ridge regression on the standardised tile-mean latent (alpha by inner 5-fold CV over\n    10^-1 .. 10^5), evaluated by 5-fold GroupKFold over plates; R^2 of the pooled held-out\n    predictions; tiles without a cell are dropped for the G1 and Erk targets;\n  * the idr0119 configuration (mapping x level) with the highest mean of the two R^2 values is\n    chosen; ties go to the cheaper transfer (phase only), then to level 1;\n  * provisional F-Decode (plan section 3.4) for the chosen configuration on these vehicle wells:\n    count R^2 >= 0.8 and G1 R^2 >= 0.5 (idr0119), Erk C/N R^2 >= 0.5 (idr0064).",
+ "idr0119": {
+  "fields": 83,
+  "plates": 34,
+  "g1_log_ratio_threshold": 0.5745881199836731,
+  "cells": 5818737,
+  "configs": {
+   "phase_L0": {
+    "log_count": {
+     "r2": 0.8872864650767839,
+     "n": 51460,
+     "n_plates": 34,
+     "target_sd": 0.9524791069346504
+    },
+    "g1_fraction": {
+     "r2": 0.5135416484172403,
+     "n": 50083,
+     "n_plates": 34,
+     "target_sd": 0.19902168395514327
+    },
+    "mean_r2": 0.7004140567470121
+   },
+   "phase_L1": {
+    "log_count": {
+     "r2": 0.9001028852129702,
+     "n": 10292,
+     "n_plates": 34,
+     "target_sd": 0.8966158914540289
+    },
+    "g1_fraction": {
+     "r2": 0.6699296458524929,
+     "n": 10276,
+     "n_plates": 34,
+     "target_sd": 0.16597851165119096
+    },
+    "mean_r2": 0.7850162655327315
+   },
+   "rgb_L0": {
+    "log_count": {
+     "r2": 0.9328262680705705,
+     "n": 51460,
+     "n_plates": 34,
+     "target_sd": 0.9524791069346504
+    },
+    "g1_fraction": {
+     "r2": 0.6813458678929287,
+     "n": 50083,
+     "n_plates": 34,
+     "target_sd": 0.19902168395514327
+    },
+    "mean_r2": 0.8070860679817495
+   },
+   "rgb_L1": {
+    "log_count": {
+     "r2": 0.9241797084835954,
+     "n": 10292,
+     "n_plates": 34,
+     "target_sd": 0.8966158914540289
+    },
+    "g1_fraction": {
+     "r2": 0.7965246326802153,
+     "n": 10276,
+     "n_plates": 34,
+     "target_sd": 0.16597851165119096
+    },
+    "mean_r2": 0.8603521705819054
+   }
+  },
+  "chosen": "rgb_L1",
+  "f_decode_provisional": {
+   "count_r2": 0.9241797084835954,
+   "g1_r2": 0.7965246326802153,
+   "pass": true
+  }
+ },
+ "idr0064": {
+  "fields": 18,
+  "plates": 9,
+  "erk_cn": {
+   "r2": 0.4788960095228869,
+   "n": 2016,
+   "n_plates": 9,
+   "target_sd": 0.061244432150560565
+  },
+  "f_decode_provisional": {
+   "erk_cn_r2": 0.4788960095228869,
+   "pass": false
+  }
+ }
+}
