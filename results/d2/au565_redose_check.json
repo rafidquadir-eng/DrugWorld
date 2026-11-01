@@ -1,0 +1,164 @@
+{
+ "rule": "Rule, fixed before computing: confirmed (covariate 0 for the mixed plates) if no mixed plate shows the signature and at least 4 of the 6 single-drug-only plates do (the check has power); otherwise ambiguous (stop and ask).",
+ "reference_99th_percentile": {
+  "count": 4.406005912805186,
+  "ch0": 5.525585984339349,
+  "ch1": 4.9046679813853995,
+  "ch2": 5.132507496610136
+ },
+ "reference_fields": {
+  "count": 247,
+  "ch0": 247,
+  "ch1": 247,
+  "ch2": 247
+ },
+ "plates": {
+  "AU00601": {
+   "kind": "single-drug only",
+   "n_vehicle_fields": 12,
+   "median_ratio": {
+    "count": 0.0,
+    "ch0": 0.0,
+    "ch1": 0.0,
+    "ch2": 0.0
+   },
+   "gap_ge_60_min": true,
+   "signature": true
+  },
+  "AU00602": {
+   "kind": "single-drug only",
+   "n_vehicle_fields": 8,
+   "median_ratio": {
+    "count": 0.9362262472119176,
+    "ch0": 0.11877024686180059,
+    "ch1": 0.14610320026030668,
+    "ch2": 0.5983178630383794
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU00701": {
+   "kind": "single-drug only",
+   "n_vehicle_fields": 8,
+   "median_ratio": {
+    "count": 1.6090123510690326,
+    "ch0": 1.915595536443564,
+    "ch1": 2.0320296887322344,
+    "ch2": 0.9274412809516026
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU00702": {
+   "kind": "single-drug only",
+   "n_vehicle_fields": 8,
+   "median_ratio": {
+    "count": 1.023862396310569,
+    "ch0": 38.73961057455291,
+    "ch1": 116.71920474216071,
+    "ch2": 1.055657979005931
+   },
+   "gap_ge_60_min": false,
+   "signature": true
+  },
+  "AU00801": {
+   "kind": "single-drug only",
+   "n_vehicle_fields": 12,
+   "median_ratio": {
+    "count": 0.0,
+    "ch0": 0.0,
+    "ch1": 0.0,
+    "ch2": 0.0
+   },
+   "gap_ge_60_min": true,
+   "signature": true
+  },
+  "AU00802": {
+   "kind": "single-drug only",
+   "n_vehicle_fields": 12,
+   "median_ratio": {
+    "count": 136.74568835776734,
+    "ch0": 25.30391189586038,
+    "ch1": 143.77818203701827,
+    "ch2": 127.30840878072443
+   },
+   "gap_ge_60_min": false,
+   "signature": true
+  },
+  "AU00901": {
+   "kind": "mixed",
+   "n_vehicle_fields": 4,
+   "median_ratio": {
+    "count": 0.6346530530260943,
+    "ch0": 1.7005632914860476,
+    "ch1": 2.726550537755596,
+    "ch2": 0.9606302280109362
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU00902": {
+   "kind": "combination only",
+   "n_vehicle_fields": 4,
+   "median_ratio": {
+    "count": 1.0070747974452605,
+    "ch0": 2.2020859376927295,
+    "ch1": 2.734584572333285,
+    "ch2": 1.0256129533525333
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU01001": {
+   "kind": "mixed",
+   "n_vehicle_fields": 4,
+   "median_ratio": {
+    "count": 0.9760616316189926,
+    "ch0": 0.8305914772123123,
+    "ch1": 1.375992581409305,
+    "ch2": 1.9768580690102944
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU01002": {
+   "kind": "combination only",
+   "n_vehicle_fields": 4,
+   "median_ratio": {
+    "count": 0.2739842816369954,
+    "ch0": 1.762504925011922,
+    "ch1": 1.1921926435178674,
+    "ch2": 0.7912303246913025
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU01101": {
+   "kind": "mixed",
+   "n_vehicle_fields": 4,
+   "median_ratio": {
+    "count": 1.929280697660551,
+    "ch0": 1.2509150325382026,
+    "ch1": 0.5394039385314771,
+    "ch2": 1.4248645552641148
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  },
+  "AU01102": {
+   "kind": "combination only",
+   "n_vehicle_fields": 4,
+   "median_ratio": {
+    "count": 1.0785697510608852,
+    "ch0": 1.742773166142927,
+    "ch1": 1.5682084073198874,
+    "ch2": 0.8208541660388995
+   },
+   "gap_ge_60_min": false,
+   "signature": false
+  }
+ },
+ "single_only_plates_with_signature": 4,
+ "mixed_plates_with_signature": [],
+ "outcome": "confirmed"
+}

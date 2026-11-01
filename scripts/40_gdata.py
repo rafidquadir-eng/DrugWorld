@@ -59,6 +59,7 @@ def main() -> int:
               f"{int((f.n_filled > 0).sum())}, shared frame-0 hashes {int(dup_wells)}")
     out["pass"] = all(v["pass"] for v in out["sets"].values())
     path = REPO / "results" / "d1" / "g_data.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, indent=1, default=str))
     backup.backup(path)
     print("G-Data", "PASS" if out["pass"] else "FAIL")
