@@ -1,0 +1,147 @@
+{
+ "study_text": "For single drug treatments of AU565 cells only, at 48H the media was replaced in all wells including the control wells, and fresh media and drug were added.",
+ "plates": {
+  "AU00601": {
+   "vehicle_step_ratio_slot96": {
+    "AU00601_A1_f1": 0.0,
+    "AU00601_A3_f1": 0.0,
+    "AU00601_A5_f1": 0.0
+   },
+   "kind": "single-drug only",
+   "wells_combination": 0,
+   "wells_single": 21,
+   "wells_vehicle": 3,
+   "slot96_present": false,
+   "max_frame_gap_min_slots_90_102": 60.0
+  },
+  "AU00602": {
+   "vehicle_step_ratio_slot96": {
+    "AU00602_A3_f1": 1.1698827240305965,
+    "AU00602_A5_f1": 0.5655864279819633
+   },
+   "kind": "single-drug only",
+   "wells_combination": 0,
+   "wells_single": 14,
+   "wells_vehicle": 2,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU00701": {
+   "vehicle_step_ratio_slot96": {
+    "AU00701_A3_f1": 1.5448162950278916,
+    "AU00701_A5_f1": 0.1942072775203688
+   },
+   "kind": "single-drug only",
+   "wells_combination": 0,
+   "wells_single": 14,
+   "wells_vehicle": 2,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU00702": {
+   "vehicle_step_ratio_slot96": {
+    "AU00702_A1_f1": 2.131287333713645,
+    "AU00702_A3_f1": 2.9084768278482547
+   },
+   "kind": "single-drug only",
+   "wells_combination": 0,
+   "wells_single": 14,
+   "wells_vehicle": 2,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU00801": {
+   "vehicle_step_ratio_slot96": {
+    "AU00801_A1_f1": 0.0,
+    "AU00801_A3_f1": 0.0,
+    "AU00801_A5_f1": 0.0
+   },
+   "kind": "single-drug only",
+   "wells_combination": 0,
+   "wells_single": 21,
+   "wells_vehicle": 3,
+   "slot96_present": false,
+   "max_frame_gap_min_slots_90_102": 60.0
+  },
+  "AU00802": {
+   "vehicle_step_ratio_slot96": {
+    "AU00802_A1_f1": 168.56341159800752,
+    "AU00802_A3_f1": 190.8658006462944,
+    "AU00802_A5_f1": 119.43363404922493
+   },
+   "kind": "single-drug only",
+   "wells_combination": 0,
+   "wells_single": 21,
+   "wells_vehicle": 3,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU00901": {
+   "vehicle_step_ratio_slot96": {
+    "AU00901_A1_f1": 1.6293578058863643
+   },
+   "kind": "mixed",
+   "wells_combination": 9,
+   "wells_single": 14,
+   "wells_vehicle": 1,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU00902": {
+   "vehicle_step_ratio_slot96": {
+    "AU00902_A1_f1": 0.5616424704562148
+   },
+   "kind": "combination only",
+   "wells_combination": 23,
+   "wells_single": 0,
+   "wells_vehicle": 1,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU01001": {
+   "vehicle_step_ratio_slot96": {
+    "AU01001_A1_f1": 1.0
+   },
+   "kind": "mixed",
+   "wells_combination": 9,
+   "wells_single": 14,
+   "wells_vehicle": 1,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU01002": {
+   "vehicle_step_ratio_slot96": {
+    "AU01002_A1_f1": 0.8608750183752479
+   },
+   "kind": "combination only",
+   "wells_combination": 23,
+   "wells_single": 0,
+   "wells_vehicle": 1,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU01101": {
+   "vehicle_step_ratio_slot96": {
+    "AU01101_A1_f1": 1.3998350011535228
+   },
+   "kind": "mixed",
+   "wells_combination": 9,
+   "wells_single": 14,
+   "wells_vehicle": 1,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  },
+  "AU01102": {
+   "vehicle_step_ratio_slot96": {
+    "AU01102_A1_f1": 0.9893876410655114
+   },
+   "kind": "combination only",
+   "wells_combination": 23,
+   "wells_single": 0,
+   "wells_vehicle": 1,
+   "slot96_present": true,
+   "max_frame_gap_min_slots_90_102": 30.0
+  }
+ },
+ "vehicle_step_ratio_slot96_other_lines_median": 1.1831289694855696
+}

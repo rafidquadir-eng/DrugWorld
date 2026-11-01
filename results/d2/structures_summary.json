@@ -1,0 +1,74 @@
+{
+ "idr0119": {
+  "compounds": 7,
+  "scaffolds": 7,
+  "parent_inchikey_duplicates": [],
+  "ecfp4_bits_mean_on": 61.285714285714285,
+  "pubchem_agrees_full_inchikey": {
+   "BEZ235": true,
+   "Doxorubicin": false,
+   "Gemcitabine": true,
+   "Lapatinib": true,
+   "Paclitaxel": false,
+   "Palbociclib": true,
+   "Trametinib": true
+  },
+  "pubchem_agrees_connectivity": {
+   "BEZ235": true,
+   "Doxorubicin": true,
+   "Gemcitabine": true,
+   "Lapatinib": true,
+   "Paclitaxel": true,
+   "Palbociclib": true,
+   "Trametinib": true
+  }
+ },
+ "idr0064": {
+  "compounds": 429,
+  "scaffolds": 376,
+  "parent_inchikey_duplicates": [
+   "CHIR-99021",
+   "CHIR-99021 HCl",
+   "Cabozantinib",
+   "Cabozantinib malate",
+   "Dovitinib",
+   "Dovitinib Dilactic Acid",
+   "Flavopiridol",
+   "Flavopiridol HCl",
+   "Lapatinib",
+   "Lapatinib Ditosylate",
+   "PF-00562271",
+   "PF-562271",
+   "Pazopanib",
+   "Pazopanib HCl",
+   "R406 [841290-80-0]",
+   "R406 [841290-81-1]",
+   "Sorafenib",
+   "Sorafenib Tosylate",
+   "Tofacitinib",
+   "Tofacitinib Citrate"
+  ],
+  "ecfp4_bits_mean_on": 54.08391608391609,
+  "target_classes": {
+   "PI3K/Akt/mTOR": 95,
+   "Protein Tyrosine Kinase": 87,
+   "Others": 45,
+   "MAPK": 45,
+   "Cell Cycle": 44,
+   "Angiogenesis": 44,
+   "JAK/STAT": 25,
+   "Neuronal Signaling": 7,
+   "NF-\u03baB": 7,
+   "DNA Damage": 6,
+   "TGF-beta/Smad": 4,
+   "GPCR & G Protein": 4,
+   "Cytoskeletal Signaling": 4,
+   "Autophagy": 4,
+   "Epigenetics": 3,
+   "Metabolism": 2,
+   "Transmembrane Transporters": 1,
+   "Microbiology": 1,
+   "Endocrinology & Hormones": 1
+  }
+ }
+}

@@ -1,0 +1,12 @@
+AU00601 single-drug only False 60.0 {'AU00601_A1_f1': 0.0, 'AU00601_A3_f1': 0.0, 'AU00601_A5_f1': 0.0}
+AU00602 single-drug only True 30.0 {'AU00602_A3_f1': 1.2, 'AU00602_A5_f1': 0.6}
+AU00701 single-drug only True 30.0 {'AU00701_A3_f1': 1.5, 'AU00701_A5_f1': 0.2}
+AU00702 single-drug only True 30.0 {'AU00702_A1_f1': 2.1, 'AU00702_A3_f1': 2.9}
+AU00801 single-drug only False 60.0 {'AU00801_A1_f1': 0.0, 'AU00801_A3_f1': 0.0, 'AU00801_A5_f1': 0.0}
+AU00802 single-drug only True 30.0 {'AU00802_A1_f1': 168.6, 'AU00802_A3_f1': 190.9, 'AU00802_A5_f1': 119.4}
+AU00901 mixed True 30.0 {'AU00901_A1_f1': 1.6}
+AU00902 combination only True 30.0 {'AU00902_A1_f1': 0.6}
+AU01001 mixed True 30.0 {'AU01001_A1_f1': 1.0}
+AU01002 combination only True 30.0 {'AU01002_A1_f1': 0.9}
+AU01101 mixed True 30.0 {'AU01101_A1_f1': 1.4}
+AU01102 combination only True 30.0 {'AU01102_A1_f1': 1.0}
