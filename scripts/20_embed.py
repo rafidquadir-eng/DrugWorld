@@ -15,8 +15,12 @@ SHA-1 of frame 0, per-frame mean intensity, filled slots and fetch errors. Per-c
 to data/readouts/<set>/<plate>.npz (frame, centroid y/x, value; value = log HDHB nuclear/ring
 ratio for idr0119, Erk C/N for idr0064).
 
-One shard per plate (data/latents/<set>/<plate>.npz), written once, listed with SHA-256 in
-manifests/latent_shards.tsv and backed up. Failures (fetch, or a channel missing > 10% of its
+Work split: idr0064 one shard per plate, plates dealt to workers (`[worker::nworkers]`).
+idr0119 (EBI-bound, 34 plates over 8 workers would leave two workers a fifth plate): the sorted
+field list is dealt to workers (`[worker::nworkers]`), so every worker visits every plate; one
+shard per plate and worker (data/latents/idr0119/<plate>.w<k>of<n>.npz). Loaders read all shards
+of a plate. Shards are written once, listed with SHA-256 in manifests/latent_shards.tsv and
+backed up. Failures (fetch, or a channel missing > 10% of its
 slots) are listed by cause in results/d1/embed_failures_<set>.json. Re-running skips plates
 whose shard exists.
 
@@ -97,12 +101,18 @@ def main() -> int:
     tiles = TILES[f"{which}_L{k.bit_length() - 1}"]
     starts = STARTS[which]
     F_all = fields(which)
-    plates = sorted(F_all.plate.unique())[args.worker::args.nworkers]
+    if which == "idr0119":
+        F_all = F_all.iloc[args.worker::args.nworkers]
+        suffix = f".w{args.worker}of{args.nworkers}"
+    else:
+        F_all = F_all[F_all.plate.isin(sorted(F_all.plate.unique())[args.worker::args.nworkers])]
+        suffix = ""
+    plates = sorted(F_all.plate.unique())
     lat_dir = REPO / "data" / "latents" / which
     ro_dir = REPO / "data" / "readouts" / which
     lat_dir.mkdir(parents=True, exist_ok=True)
     ro_dir.mkdir(parents=True, exist_ok=True)
-    todo = [p for p in plates if not (lat_dir / f"{p}.npz").exists()]
+    todo = [p for p in plates if not (lat_dir / f"{p}{suffix}.npz").exists()]
     print(f"worker {args.worker}: {which} {mapping} level {k.bit_length() - 1}, "
           f"{len(tiles)} tiles, {len(starts)} clips; plates {plates}, to do {todo}")
     fm = pd.read_parquet(REPO / "data" / "annotations" / "idr0119_files.parquet") \
@@ -132,14 +142,14 @@ def main() -> int:
     def flush(p):
         s = store.pop(p, None)
         if s and s["keys"]:
-            path = lat_dir / f"{p}.npz"
+            path = lat_dir / f"{p}{suffix}.npz"
             arr = {kk: np.stack(s[kk]) for kk in ("mean", "grid", "static_mean", "static_grid",
                                                   "fingerprint", "frame_mean")}
             np.savez(path, keys=np.array(s["keys"]), starts=np.array(starts),
                      tiles=np.array(tiles), mapping=mapping, level=k.bit_length() - 1,
                      frame0_sha1=np.array(s["sha1"]), filled=np.array(s["filled"], dtype=object),
                      errors=np.array(s["errors"], dtype=object), **arr)
-            rpath = ro_dir / f"{p}.npz"
+            rpath = ro_dir / f"{p}{suffix}.npz"
             np.savez(rpath, keys=np.array(s["keys"]),
                      cells=np.array(s["cells"], dtype=object))
             for q_ in (path, rpath):
