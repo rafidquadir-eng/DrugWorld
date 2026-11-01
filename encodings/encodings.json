@@ -1,0 +1,47 @@
+{
+ "idr0119": {
+  "drug": "ECFP4 (1024 bits, as is) and MoLFormer-XL (768, as is); A1 C4",
+  "dose": "log10(dose / max dose of that drug over all lines), plus a vehicle indicator",
+  "dose_max_nM": {
+   "Paclitaxel": 15.0,
+   "Palbociclib": 5000.0,
+   "Trametinib": 5000.0,
+   "BEZ235": 500.0,
+   "Doxorubicin": 500.0,
+   "Gemcitabine": 5000.0,
+   "Lapatinib": 500.0
+  }
+ },
+ "idr0064": {
+  "sources": [
+   "ecfp4_pca128",
+   "molformer_pca128",
+   "target_class_onehot"
+  ],
+  "pca": "fitted on the training compounds only (n = 300), random_state 0",
+  "ecfp4_pca_variance_explained": 0.8562171459197998,
+  "molformer_pca_variance_explained": 0.9585766792297363,
+  "target_classes": [
+   "Angiogenesis",
+   "Autophagy",
+   "Cell Cycle",
+   "Cytoskeletal Signaling",
+   "DNA Damage",
+   "Endocrinology & Hormones",
+   "Epigenetics",
+   "GPCR & G Protein",
+   "JAK/STAT",
+   "MAPK",
+   "Metabolism",
+   "Microbiology",
+   "NF-\u03baB",
+   "Neuronal Signaling",
+   "Others",
+   "PI3K/Akt/mTOR",
+   "Protein Tyrosine Kinase",
+   "TGF-beta/Smad",
+   "Transmembrane Transporters"
+  ],
+  "dose": "single dose (2.5 uM): dose term 0, plus a vehicle indicator"
+ }
+}

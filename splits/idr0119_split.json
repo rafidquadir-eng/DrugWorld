@@ -1,0 +1,1037 @@
+{
+ "seed": 20261030,
+ "selection_seed": 20261031,
+ "val_line": "MDAMB157",
+ "test_lines": [
+  "21MT1",
+  "AU565",
+  "HCC1143"
+ ],
+ "test_pairs": [
+  "Paclitaxel + Palbociclib",
+  "Doxorubicin + Paclitaxel",
+  "Gemcitabine + Paclitaxel",
+  "Lapatinib + Palbociclib"
+ ],
+ "val_pair": "Gemcitabine + Lapatinib",
+ "pair_conditions": {
+  "Doxorubicin + Gemcitabine": 4,
+  "Doxorubicin + Lapatinib": 1,
+  "Doxorubicin + Paclitaxel": 1,
+  "Doxorubicin + Palbociclib": 1,
+  "Gemcitabine + Lapatinib": 7,
+  "Gemcitabine + Paclitaxel": 1,
+  "Gemcitabine + Palbociclib": 7,
+  "Lapatinib + Paclitaxel": 2,
+  "Lapatinib + Palbociclib": 7,
+  "Paclitaxel + Palbociclib": 1
+ },
+ "selection_plates": [
+  "2101401",
+  "2101701",
+  "AU01002",
+  "AU01101",
+  "HC00701",
+  "HC00801",
+  "MD00301",
+  "MD00801"
+ ],
+ "single": [
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 2.5,
+   "role": "val"
+  },
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 5.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 25.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 50.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 250.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "BEZ235",
+   "dose_nM": 500.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 5.0,
+   "role": "val"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 10.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 15.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 20.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 25.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Doxorubicin",
+   "dose_nM": 250.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.25,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.5,
+   "role": "val"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.75,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 1.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 1.5,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 2.5,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Gemcitabine",
+   "dose_nM": 5.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 0.25,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 0.5,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 0.75,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.0,
+   "role": "val"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.5,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 2.5,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Paclitaxel",
+   "dose_nM": 5.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 50.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 100.0,
+   "role": "val"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 250.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 500.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 1000.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 2500.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Palbociclib",
+   "dose_nM": 5000.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 2.5,
+   "role": "val"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 5.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 25.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 50.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 125.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 250.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 500.0,
+   "role": "test"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 1000.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 2500.0,
+   "role": "train"
+  },
+  {
+   "line": "21MT1",
+   "drug": "Trametinib",
+   "dose_nM": 5000.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 1.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 10.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 20.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 50.0,
+   "role": "val"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 125.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 250.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Doxorubicin",
+   "dose_nM": 500.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.25,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 1.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 2.5,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 5.0,
+   "role": "val"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 10.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 17.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 30.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Gemcitabine",
+   "dose_nM": 100.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 5.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 10.0,
+   "role": "val"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 25.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 50.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 100.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 250.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Lapatinib",
+   "dose_nM": 500.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 0.1,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.0,
+   "role": "val"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 2.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 3.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 5.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 7.5,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Paclitaxel",
+   "dose_nM": 15.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 5.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 10.0,
+   "role": "val"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 25.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 50.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 100.0,
+   "role": "train"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 250.0,
+   "role": "test"
+  },
+  {
+   "line": "AU565",
+   "drug": "Palbociclib",
+   "dose_nM": 500.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 1.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 2.5,
+   "role": "val"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 5.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 10.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 20.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 30.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "BEZ235",
+   "dose_nM": 50.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 1.0,
+   "role": "val"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 10.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 25.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 50.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 125.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Doxorubicin",
+   "dose_nM": 250.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.25,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.5,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 1.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 1.5,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 2.0,
+   "role": "val"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 2.5,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Gemcitabine",
+   "dose_nM": 3.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.0,
+   "role": "val"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.5,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 2.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 2.5,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 3.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Paclitaxel",
+   "dose_nM": 4.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 50.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 100.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 250.0,
+   "role": "val"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 500.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 1000.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 2500.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Palbociclib",
+   "dose_nM": 5000.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 1.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 5.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 25.0,
+   "role": "test"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 50.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 100.0,
+   "role": "val"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 250.0,
+   "role": "train"
+  },
+  {
+   "line": "HCC1143",
+   "drug": "Trametinib",
+   "dose_nM": 500.0,
+   "role": "test_extrap"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 5.0,
+   "role": "val"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 10.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 20.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 30.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 40.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "BEZ235",
+   "dose_nM": 50.0,
+   "role": "val_extrap"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 5.0,
+   "role": "val"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 50.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 125.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 250.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 375.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Doxorubicin",
+   "dose_nM": 500.0,
+   "role": "val_extrap"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 5.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 50.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 250.0,
+   "role": "val"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 500.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 2500.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Gemcitabine",
+   "dose_nM": 5000.0,
+   "role": "val_extrap"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 1.75,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 2.5,
+   "role": "val"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 3.25,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 4.25,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Paclitaxel",
+   "dose_nM": 5.0,
+   "role": "val_extrap"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 5.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 50.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 250.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 500.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 2500.0,
+   "role": "val"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Palbociclib",
+   "dose_nM": 5000.0,
+   "role": "val_extrap"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 0.5,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 5.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 50.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 250.0,
+   "role": "test"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 500.0,
+   "role": "train"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 2500.0,
+   "role": "val"
+  },
+  {
+   "line": "MDAMB157",
+   "drug": "Trametinib",
+   "dose_nM": 5000.0,
+   "role": "val_extrap"
+  }
+ ]
+}

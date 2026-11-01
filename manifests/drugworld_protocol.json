@@ -1,0 +1,489 @@
+{
+ "design_commit": "eefeeb0",
+ "code_commit": "b712edb925fe3d738db217cc026ee525c9ee8c07",
+ "utc": "2026-11-01T18:07:51Z",
+ "sets": {
+  "idr0119": {
+   "clips": {
+    "starts": [
+     0,
+     6,
+     12,
+     18,
+     24,
+     30,
+     36,
+     42,
+     48,
+     54,
+     60,
+     66,
+     72,
+     78,
+     84,
+     90,
+     96,
+     102,
+     108,
+     114,
+     120,
+     126,
+     132,
+     138,
+     144,
+     150,
+     156,
+     162,
+     168,
+     174,
+     177
+    ],
+    "frames_per_clip": 16,
+    "frame_h": 0.5,
+    "horizons": {
+     "24h": {
+      "start": 30,
+      "clip_index": 5,
+      "window_h": [
+       15.0,
+       22.5
+      ]
+     },
+     "48h": {
+      "start": 78,
+      "clip_index": 13,
+      "window_h": [
+       39.0,
+       46.5
+      ]
+     },
+     "72h": {
+      "start": 126,
+      "clip_index": 21,
+      "window_h": [
+       63.0,
+       70.5
+      ]
+     },
+     "96h": {
+      "start": 177,
+      "clip_index": 30,
+      "window_h": [
+       88.5,
+       96.0
+      ]
+     }
+    }
+   },
+   "embedding": {
+    "starts": [
+     0,
+     6,
+     12,
+     18,
+     24,
+     30,
+     36,
+     42,
+     48,
+     54,
+     60,
+     66,
+     72,
+     78,
+     84,
+     90,
+     96,
+     102,
+     108,
+     114,
+     120,
+     126,
+     132,
+     138,
+     144,
+     150,
+     156,
+     162,
+     168,
+     174,
+     177
+    ],
+    "tiles": [
+     [
+      4,
+      96
+     ],
+     [
+      4,
+      352
+     ],
+     [
+      260,
+      96
+     ],
+     [
+      260,
+      352
+     ]
+    ],
+    "mapping": "rgb",
+    "level": 1
+   },
+   "normalisation": {
+    "lines": [
+     "21MT1",
+     "AU565",
+     "HCC1143",
+     "MDAMB157"
+    ],
+    "vehicle_fields": {
+     "21MT1": 92,
+     "AU565": 84,
+     "HCC1143": 71,
+     "MDAMB157": 84
+    }
+   },
+   "start_state": {
+    "plates": 34,
+    "fallback": {}
+   },
+   "decoders": {
+    "log_count": {
+     "alpha": 100000.0,
+     "n": 154628
+    },
+    "g1_fraction": {
+     "alpha": 100000.0,
+     "n": 154165
+    },
+    "sg2m_fraction": {
+     "alpha": 100000.0,
+     "n": 154165
+    }
+   },
+   "decoder_params": {
+    "g1_threshold": 0.5745881199836731
+   },
+   "sensitivity_normalisations": {
+    "plate_vehicle_mean": "per plate and clip, tiles pooled",
+    "global": "per dimension over training fields",
+    "plates_without_vehicle": []
+   },
+   "decoder_training_fields": 1247
+  },
+  "idr0064": {
+   "clips": {
+    "starts": [
+     0,
+     4,
+     8,
+     12,
+     16,
+     20,
+     24,
+     28,
+     32,
+     36,
+     40,
+     44,
+     48,
+     52,
+     56,
+     60,
+     64,
+     68,
+     72,
+     76,
+     80,
+     84,
+     88,
+     92,
+     96,
+     100,
+     104,
+     105
+    ],
+    "frames_per_clip": 16,
+    "frame_h": 0.05,
+    "horizons": {
+     "1h": {
+      "start": 4,
+      "clip_index": 1,
+      "window_h": [
+       0.2,
+       0.95
+      ]
+     },
+     "2h": {
+      "start": 24,
+      "clip_index": 6,
+      "window_h": [
+       1.2,
+       1.95
+      ]
+     },
+     "3h": {
+      "start": 44,
+      "clip_index": 11,
+      "window_h": [
+       2.2,
+       2.95
+      ]
+     },
+     "4h": {
+      "start": 64,
+      "clip_index": 16,
+      "window_h": [
+       3.2,
+       3.95
+      ]
+     }
+    }
+   },
+   "embedding": {
+    "starts": [
+     0,
+     4,
+     8,
+     12,
+     16,
+     20,
+     24,
+     28,
+     32,
+     36,
+     40,
+     44,
+     48,
+     52,
+     56,
+     60,
+     64,
+     68,
+     72,
+     76,
+     80,
+     84,
+     88,
+     92,
+     96,
+     100,
+     104,
+     105
+    ],
+    "tiles": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      256
+     ],
+     [
+      256,
+      0
+     ],
+     [
+      256,
+      256
+     ]
+    ],
+    "mapping": "erk",
+    "level": 0
+   },
+   "normalisation": {
+    "plates": [
+     "1.1",
+     "1.2",
+     "1.3",
+     "2.1",
+     "2.2",
+     "2.3",
+     "3.1",
+     "3.2",
+     "3.3"
+    ],
+    "compound_wells_per_plate": {
+     "1.1": 48,
+     "1.2": 48,
+     "1.3": 48,
+     "2.1": 48,
+     "2.2": 48,
+     "2.3": 48,
+     "3.1": 48,
+     "3.2": 48,
+     "3.3": 45
+    }
+   },
+   "start_state": {
+    "plates": 9,
+    "fallback": {}
+   },
+   "decoders": {
+    "erk_cn": {
+     "alpha": 0.1,
+     "n": 33548
+    },
+    "pulse_rate": {
+     "alpha": 1000.0,
+     "n": 33540
+    }
+   },
+   "decoder_params": {
+    "pulse_prominence": 0.042725443840026855
+   },
+   "sensitivity_normalisations": {
+    "plate_vehicle_mean": "per plate and clip, tiles pooled",
+    "global": "per dimension over training fields",
+    "plates_without_vehicle": []
+   },
+   "decoder_training_fields": 300
+  }
+ },
+ "rules": {
+  "start_state": "A1 C1: every forecast starts from the plate-matched vehicle state (mean first-clip latent of the plate's vehicle wells per tile position, normalised space; idr0064 vehicle = DMSO wells not kept for checks). Fallback when a plate has no usable vehicle well: the same line's vehicle wells on plates of the same imaging batch (listed). Secondary: the well's own first clip, reported beside.",
+  "horizons": "Horizon h = the stored clip whose last frame is the latest at or before h after drug addition (idr0119) or after the first frame (idr0064); windows in sets.<set>.clips.horizons. H1 primary: mean of 48 h and 72 h; 24 h and 96 h secondary. H2a primary (A1 C2): mean of 24 h and 48 h (both clips end before the 48 h re-dose); 72 h secondary. H2b primary: mean of 2, 3 and 4 h; 1 h secondary. H1c and H3 use the H1 horizons. The clip grid was fixed in D1 (starts every 6 frames), so A1's 16-24 h and 40-48 h windows are realised as 15-22.5 h and 39-46.5 h (frame times).",
+  "redose_covariate": "A1 C2: a per-plate 0/1 covariate 'medium change and re-dose at 48 h' given to every model (action-agnostic included); 1 for the six AU565 single-drug-only plates (study text), 0 for all other plates, including the three mixed AU565 plates holding both single-drug and combination wells (no 48 h signature in their vehicle wells, results/d2/au565_redose.json).",
+  "h2a_baseline_singles": "Author decision on status report 2: H2a baselines (additive composition, HSA, Bliss) and the ODE fit inputs use, for each component (drug, dose), the fit-role AU565 single-drug wells on plates without the 48 h re-dose (redose_48h 0) when any exist, otherwise those on re-dosed plates; each single's effect is taken against the AU565 fit vehicle wells of the same re-dose class (all AU565 fit vehicle wells if that class has none; the ODE vehicle condition follows the same preference). The source used per component is recorded (results/d4 gates baseline_single_sources; results/d3/ode_fit.json sources). Only the secondary 72 h H2a horizon can be affected: primary H2a horizons end at or before 48 h.",
+  "normalisation": "A1 C3. idr0119: per line and clip, mean and SD over the line's vehicle fields (tiles pooled), SD floored at the line's 5th percentile over clips x dimensions; sensitivity: per-plate vehicle centring. idr0064: per plate and clip, centred on the median over all compound wells of the plate; scaled by the per-dimension SD of training compound wells; sensitivity: DMSO-centred. Global standardisation (per-dimension mean and SD over training wells) is the plan's second sensitivity analysis.",
+  "error": "Primary error of a forecast = mean squared error over the 1,024 dimensions, averaged over tiles and fields of the well, over the primary horizon clips, then over replicate wells of the condition, then over 3 seeds.",
+  "units": "A1 C6: H1 drug x line x dose (test: interior test doses and test-line extrapolation doses); H2a combination condition (also reported without Lapatinib+Palbociclib); H2b compound; H1c drug x dose in the held-out line for drugs measured in all four lines (Doxorubicin, Gemcitabine, Paclitaxel, Palbociclib), all doses of that line, models trained on the other lines' H1 training wells; conditions outside every training line's measured dose range are excluded and counted (A1 C5).",
+  "model_sets": "H1 models: wells with h1_role train (selection: train_sel; validation: val and val_extrap). H2a models (A1 O4): AU565 wells with h2a_role train, selection train_sel, validation val. H1 models are never evaluated on H2a sets nor H2a models on H1 sets. H1c: dw_line_k per line k. H2b: idr0064 train / val / test compounds; DMSO vehicle wells are training; dmso_check wells are never fitted.",
+  "decoders": "Ridge (standardised inputs, alpha from 10^-1..10^5 by 5-fold GroupKFold over plates) from the normalised tile-mean latent of one clip to each readout target (src/drugworld/targets.py) of that clip and tile, fitted on fields that are training in every model set: idr0119 vehicle and H1 training wells outside H2a held-out sets, plus H2a training-pair combinations; idr0064 training compounds. G1 threshold = the D0 pilot GMM valley; pulse prominence = 3 x the median absolute frame-to-frame C/N change of DMSO tracks.",
+  "f_decode": "A1 O1: on training-split wells (the decoder training fields), ridge on the standardised raw tile-mean latent, alpha by inner CV over 10^-1..10^5, R^2 of pooled held-out predictions from 5-fold GroupKFold over plates (as in the D0 pilot); idr0119 log count >= 0.8 and G1 fraction >= 0.5; idr0064 Erk C/N >= 0.5. The provisional vehicle value is reported beside. A failure drops that set's decoded readouts (and for idr0119 the ODE comparisons) only.",
+  "f_dose": "Per drug x line, over its training-split doses (lowest and training interior doses; wells train and train_sel): displacement = Euclidean norm of the condition's mean normalised latent (fields, tiles and replicate wells averaged) at the 48 h clip minus the line's vehicle mean at that clip; Spearman rho of displacement vs dose. Pass if rho >= 0.6 for >= 50% of drug x line pairs. Vehicle is not a point (its displacement from itself is not a dose response); the variant with vehicle as dose 0 is reported beside.",
+  "f_power": "From the frozen split: H1 test held-out-dose conditions >= 20 (interior test plus test extrapolation), H2a test combination conditions >= 6, H2b test compounds >= 60. A shortfall drops that hypothesis before training.",
+  "baselines": "Plan section 7 unchanged; H1c other-lines baseline per A1 C5 (each training line's response interpolated in log dose at the held-out dose, inside its measured range). The H2a additive and HSA baselines use the same single-drug wells as the H2a models (A1 O4).",
+  "statistics": "Plan section 8 unchanged: one-sided Monte Carlo sign flip over held-out conditions, 100,000 draws, per-drug results; Holm across G-Dose, G-Combo, G-Compound, G-Plan on test; G-Compound Holm across structure sources (ECFP4, MoLFormer-XL, target class).",
+  "grid": "Plan section 6 unchanged: width {512, 768} x dropout {0.1, 0.3} x weight decay {0.05, 0.2}, lr 3e-4, batch 256, <= 12,000 steps, early stopping on the validation primary error every 250 steps, patience 3,000; 3 seeds (0, 1, 2) per family; dw_doseshuf / dw_structshuf permutation seed = 10,000 + model seed."
+ },
+ "splits": {
+  "idr0119": {
+   "seed": 20261030,
+   "selection_seed": 20261031,
+   "val_line": "MDAMB157",
+   "test_lines": [
+    "21MT1",
+    "AU565",
+    "HCC1143"
+   ],
+   "test_pairs": [
+    "Paclitaxel + Palbociclib",
+    "Doxorubicin + Paclitaxel",
+    "Gemcitabine + Paclitaxel",
+    "Lapatinib + Palbociclib"
+   ],
+   "val_pair": "Gemcitabine + Lapatinib",
+   "selection_plates": [
+    "2101401",
+    "2101701",
+    "AU01002",
+    "AU01101",
+    "HC00701",
+    "HC00801",
+    "MD00301",
+    "MD00801"
+   ]
+  },
+  "idr0064": {
+   "seed": 20261094,
+   "stratification": "target class",
+   "o2_fallback_applied": true,
+   "counts": {
+    "train": 300,
+    "test": 88,
+    "val": 41,
+    "vehicle": 14,
+    "dmso_check": 4,
+    "excluded": 3
+   },
+   "dmso_check": [
+    [
+     "1.1",
+     "C10"
+    ],
+    [
+     "1.2",
+     "C10"
+    ],
+    [
+     "1.3",
+     "C10"
+    ],
+    [
+     "2.2",
+     "C10"
+    ]
+   ]
+  }
+ },
+ "encodings": {
+  "idr0119": {
+   "drug": "ECFP4 (1024 bits, as is) and MoLFormer-XL (768, as is); A1 C4",
+   "dose": "log10(dose / max dose of that drug over all lines), plus a vehicle indicator",
+   "dose_max_nM": {
+    "Paclitaxel": 15.0,
+    "Palbociclib": 5000.0,
+    "Trametinib": 5000.0,
+    "BEZ235": 500.0,
+    "Doxorubicin": 500.0,
+    "Gemcitabine": 5000.0,
+    "Lapatinib": 500.0
+   }
+  },
+  "idr0064": {
+   "sources": [
+    "ecfp4_pca128",
+    "molformer_pca128",
+    "target_class_onehot"
+   ],
+   "pca": "fitted on the training compounds only (n = 300), random_state 0",
+   "ecfp4_pca_variance_explained": 0.8562171459197998,
+   "molformer_pca_variance_explained": 0.9585766792297363,
+   "target_classes": [
+    "Angiogenesis",
+    "Autophagy",
+    "Cell Cycle",
+    "Cytoskeletal Signaling",
+    "DNA Damage",
+    "Endocrinology & Hormones",
+    "Epigenetics",
+    "GPCR & G Protein",
+    "JAK/STAT",
+    "MAPK",
+    "Metabolism",
+    "Microbiology",
+    "NF-\u03baB",
+    "Neuronal Signaling",
+    "Others",
+    "PI3K/Akt/mTOR",
+    "Protein Tyrosine Kinase",
+    "TGF-beta/Smad",
+    "Transmembrane Transporters"
+   ],
+   "dose": "single dose (2.5 uM): dose term 0, plus a vehicle indicator"
+  }
+ },
+ "files_sha256": {
+  "splits/idr0119_wells.csv": "b8ea816c02a24e392102e043e6c44c32cb915666be0ca915630d7fe497db8ee4",
+  "splits/idr0119_split.json": "0d81b011a6ce74ef12661e57c14f5f950e31ff3162968dba46e37e4ce3e8a142",
+  "splits/idr0064_wells.csv": "b1e62c3c028e919d886371150c4336a66b1edccaa36c4874abf24db1d68b6275",
+  "splits/idr0064_split.json": "df12d65fc0761ca0c6b034a20469635501f4612f5dcbb31efb61dea19eb08c51",
+  "encodings/idr0119.npz": "ea2a01f824e8dd37179b53e811bd936d4073573796d515fbffd02e3a010c63e2",
+  "encodings/idr0064.npz": "611a52d9a8387dc5eee41a02d0c38290fcabd1ebb98f743aa2ff3872ed09e5a5",
+  "encodings/encodings.json": "3d1c58038121b3583cf15f97ca5f21f8eec8ede1baad55b7759d4251e49ec1a7",
+  "norm/idr0119_line_vehicle.npz": "1337094a5c4d21156efdf7404f5cf0a3b3c798a6d636318189ff6044729ee530",
+  "norm/idr0119_start_state.npz": "30219028c98eb55ed798f00c6f3ec9737e768dc8df43a10d1a072d7ebc47704f",
+  "norm/idr0119_sensitivity.npz": "21df49197f15357a054bc308d04726ebe8d31f94c0fddec1726544a31f13c3e3",
+  "decoders/idr0119_log_count.npz": "796b9ae59c60fc16ce5d84b81246428b473a5b498a865e651b42949877dc304b",
+  "decoders/idr0119_g1_fraction.npz": "7f0f80c08604f505d59a92605f99d33c7ad09691358f9d72dec05882eece86d5",
+  "decoders/idr0119_sg2m_fraction.npz": "3670b59a4da89b239f2fbff44ca457b65613cad1e3c23413a9249ce79c32c6b4",
+  "norm/idr0064_plate_median.npz": "641a57d1b681de7075ee9ad96f2608d56fe6d90aa387f9975b68f57f2d43f0ba",
+  "norm/idr0064_start_state.npz": "1e0813fc916c5f801d91565ca5227d12a997708a87d5376763e05f1d634494e8",
+  "norm/idr0064_sensitivity.npz": "54ca8461f4e75978c2a53b200b47c7c8b1289bf2bc910ebacd2c3088eff5743e",
+  "decoders/idr0064_erk_cn.npz": "bca947283d6d21f1bca006cebd4f7910a842e0689f1eec601082fe7cb1f558a4",
+  "decoders/idr0064_pulse_rate.npz": "2990c2fcb62dc682b342194815537e7e031d2922339cf3d246c151398e9dd6e8"
+ }
+}

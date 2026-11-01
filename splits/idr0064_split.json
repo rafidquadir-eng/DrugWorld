@@ -1,0 +1,31 @@
+{
+ "seed": 20261094,
+ "stratification": "target class",
+ "o2_fallback_applied": true,
+ "counts": {
+  "train": 300,
+  "test": 88,
+  "val": 41,
+  "vehicle": 14,
+  "dmso_check": 4,
+  "excluded": 3
+ },
+ "dmso_check": [
+  [
+   "1.1",
+   "C10"
+  ],
+  [
+   "1.2",
+   "C10"
+  ],
+  [
+   "1.3",
+   "C10"
+  ],
+  [
+   "2.2",
+   "C10"
+  ]
+ ]
+}

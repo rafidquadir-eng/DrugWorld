@@ -1,0 +1,451 @@
+plate,well,compound,cas,pubchem_url,dose_uM,target_class,control,compound_key,role,scaffold,inchikey_parent
+1.1,C10,DMSO,,,2.5,,vehicle control,,dmso_check,,
+1.1,C11,MLN8054,869363-13-3,https://pubchem.ncbi.nlm.nih.gov/compound/11712649,2.5,Others,,MLN8054,train,c1ccc(Nc2ncc3c(n2)-c2ccccc2C(c2ccccc2)=NC3)cc1,HHFBDROWDBDFBR-UHFFFAOYSA-N
+1.1,C12,PF-04217903,956905-27-4,https://pubchem.ncbi.nlm.nih.gov/compound/17754438,2.5,Others,,PF-04217903,test,c1cnc2ccc(Cn3nnc4ncc(-c5cn[nH]c5)nc43)cc2c1,PDMUGYOXRHVNMO-UHFFFAOYSA-N
+1.1,C13,GSK1904529A,1089283-49-7,https://pubchem.ncbi.nlm.nih.gov/compound/25124816,2.5,Others,,GSK1904529A,val,O=C(Nc1ccccc1)c1cccc(-c2nc3ccccn3c2-c2ccnc(Nc3ccc(N4CCC(N5CCNCC5)CC4)cc3)n2)c1,MOSKATHMXWSZTQ-UHFFFAOYSA-N
+1.1,C14,KU-55933,587871-26-9,https://pubchem.ncbi.nlm.nih.gov/compound/5278396,2.5,Others,,KU-55933,train,O=c1cc(-c2cccc3c2Sc2ccccc2S3)oc(N2CCOCC2)c1,XRKYMMUGXMWDAO-UHFFFAOYSA-N
+1.1,C15,Linsitinib,867160-71-2,https://pubchem.ncbi.nlm.nih.gov/compound/11640390,2.5,Others,,Linsitinib,val,c1ccc(-c2ccc3ccc(-c4nc(C5CCC5)n5ccncc45)cc3n2)cc1,PKCDDUHJAFVJJB-UHFFFAOYSA-N
+1.1,C16,Refametinib,923032-37-5,https://pubchem.ncbi.nlm.nih.gov/compound/44182295,2.5,Others,,Refametinib,train,O=S(=O)(Nc1ccccc1Nc1ccccc1)C1CC1,RDSACQWTXKSHJT-NSHDSACASA-N
+1.1,C17,Brivanib,649735-46-6,https://pubchem.ncbi.nlm.nih.gov/compound/11234052,2.5,GPCR & G Protein,,Brivanib,train,c1cc2c(Oc3ccc4[nH]ccc4c3)ncnn2c1,WCWUXEGQKLTGDX-LLVKDONJSA-N
+1.1,C8,Linifanib,796967-16-3,https://pubchem.ncbi.nlm.nih.gov/compound/11485656,2.5,Protein Tyrosine Kinase,,Linifanib,train,O=C(Nc1ccccc1)Nc1ccc(-c2cccc3[nH]ncc23)cc1,MPVGZUGXCQEXTM-UHFFFAOYSA-N
+1.1,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+1.1,D10,Dovitinib,405169-16-6,https://pubchem.ncbi.nlm.nih.gov/compound/135398510,2.5,Angiogenesis,,Dovitinib,train,O=c1[nH]c2ccccc2cc1-c1nc2ccc(N3CCNCC3)cc2[nH]1,PIQCTGMSNWUMAF-UHFFFAOYSA-N
+1.1,D11,Motesanib Diphosphate,857876-30-3,https://pubchem.ncbi.nlm.nih.gov/compound/16097729,2.5,Protein Tyrosine Kinase,,Motesanib Diphosphate,train,O=C(Nc1ccc2c(c1)NCC2)c1cccnc1NCc1ccncc1,RAHBGWKEPAQNFF-UHFFFAOYSA-N
+1.1,D12,Nilotinib,641571-10-0,https://pubchem.ncbi.nlm.nih.gov/compound/644241,2.5,Angiogenesis,,Nilotinib,train,O=C(Nc1cccc(-n2ccnc2)c1)c1cccc(Nc2nccc(-c3cccnc3)n2)c1,HHZIURLSWUIHRB-UHFFFAOYSA-N
+1.1,D13,Sunitinib Malate,341031-54-7,https://pubchem.ncbi.nlm.nih.gov/compound/6456015,2.5,Microbiology,,Sunitinib Malate,train,O=C1Nc2ccccc2C1=Cc1ccc[nH]1,WINHZLLDWRZWRT-ATVHPVEESA-N
+1.1,D14,Temsirolimus,162635-04-3,https://pubchem.ncbi.nlm.nih.gov/compound/6918289,2.5,Neuronal Signaling,,Temsirolimus,train,O=C1CCC=CCC(=O)CC(CCC2CCCCC2)OC(=O)C2CCCCN2C(=O)C(=O)C2CCCC(CCC=CC=CC=CCCC1)O2,CBPNZQVSJQDFBE-FUXHJELOSA-N
+1.1,D15,SL-327,305350-87-2,https://pubchem.ncbi.nlm.nih.gov/compound/9549284,2.5,Others,,SL-327,test,C(=Cc1ccccc1)Sc1ccccc1,JLOXTZFYJNCPIS-FYWRMAATSA-N
+1.1,D16,Crizotinib,"877399-52-5, 877399-53-6 (acetate)",https://pubchem.ncbi.nlm.nih.gov/compound/11626560,2.5,Others,,Crizotinib,val,c1ccc(COc2cncc(-c3cnn(C4CCNCC4)c3)c2)cc1,KTEIFNKAUNYNJU-GFCCVEGCSA-N
+1.1,D17,SU11274,658084-23-2,https://pubchem.ncbi.nlm.nih.gov/compound/9549297,2.5,Neuronal Signaling,,SU11274,test,O=C1Nc2ccc(S(=O)(=O)Nc3ccccc3)cc2C1=Cc1cc(C(=O)N2CCNCC2)c[nH]1,FPYJSJDOHRDAMT-KQWNVCNZSA-N
+1.1,D8,Axitinib,319460-85-0,https://pubchem.ncbi.nlm.nih.gov/compound/6450551,2.5,Protein Tyrosine Kinase,,Axitinib,test,C(=Cc1n[nH]c2cc(Sc3ccccc3)ccc12)c1ccccn1,RITAVMQDGBJQJZ-FMIVXFBMSA-N
+1.1,D9,Cediranib,288383-20-0,https://pubchem.ncbi.nlm.nih.gov/compound/9933475,2.5,Protein Tyrosine Kinase,,Cediranib,test,c1nc(Oc2ccc3[nH]ccc3c2)c2ccc(OCCCN3CCCC3)cc2n1,XXJWYDDUDKYVKI-UHFFFAOYSA-N
+1.1,E10,PD184352,212631-79-3,https://pubchem.ncbi.nlm.nih.gov/compound/6918454,2.5,MAPK,,PD184352,train,O=C(NOCC1CC1)c1ccccc1Nc1ccccc1,GFMMXOIFOQCCGU-UHFFFAOYSA-N
+1.1,E11,Lapatinib Ditosylate,388082-77-7,https://pubchem.ncbi.nlm.nih.gov/compound/9941095,2.5,Protein Tyrosine Kinase,,Lapatinib Ditosylate,train,c1ccc(COc2ccc(Nc3ncnc4ccc(-c5ccco5)cc34)cc2)cc1,BCFGMOOMADDAQU-UHFFFAOYSA-N
+1.1,E12,NVP-AEW541,475489-16-8,https://pubchem.ncbi.nlm.nih.gov/compound/11476171,2.5,Protein Tyrosine Kinase,,NVP-AEW541,test,c1ccc(COc2cccc(-c3cn(C4CC(CN5CCC5)C4)c4ncncc34)c2)cc1,AECDBHGVIIRMOI-UHFFFAOYSA-N
+1.1,E13,Sorafenib Tosylate,475207-59-1,https://pubchem.ncbi.nlm.nih.gov/compound/406563,2.5,Neuronal Signaling,,Sorafenib Tosylate,train,O=C(Nc1ccccc1)Nc1ccc(Oc2ccncc2)cc1,MLDQJTXFUGDVEO-UHFFFAOYSA-N
+1.1,E14,Tozasertib,639089-54-6,https://pubchem.ncbi.nlm.nih.gov/compound/5494449,2.5,Endocrinology & Hormones,,Tozasertib,train,O=C(Nc1ccc(Sc2nc(Nc3cc[nH]n3)cc(N3CCNCC3)n2)cc1)C1CC1,GCIKSSRWRFVXBI-UHFFFAOYSA-N
+1.1,E15,Pictilisib,957054-30-7,https://pubchem.ncbi.nlm.nih.gov/compound/17755052,2.5,Metabolism,,Pictilisib,train,c1cc(-c2nc(N3CCOCC3)c3sc(CN4CCNCC4)cc3n2)c2cn[nH]c2c1,LHNIIDJUOCFXAP-UHFFFAOYSA-N
+1.1,E16,PHA-665752,477575-56-7,https://pubchem.ncbi.nlm.nih.gov/compound/10461815,2.5,Others,,PHA-665752,train,O=C1Nc2ccc(S(=O)(=O)Cc3ccccc3)cc2C1=Cc1cc(C(=O)N2CCCC2CN2CCCC2)c[nH]1,OYONTEXKYJZFHA-SSHUPFPWSA-N
+1.1,E17,MK-2206 2HCl,1032350-13-2,https://pubchem.ncbi.nlm.nih.gov/compound/46930998,2.5,Others,,MK-2206 2HCl,train,O=c1[nH]nc2c3cc(-c4ccccc4)c(-c4ccc(C5CCC5)cc4)nc3ccn12,ULDXWLCXEDXJGE-UHFFFAOYSA-N
+1.1,E8,Saracatinib,379231-04-6,https://pubchem.ncbi.nlm.nih.gov/compound/10302451,2.5,Angiogenesis,,Saracatinib,test,c1cc(Nc2ncnc3cc(OCCN4CCNCC4)cc(OC4CCOCC4)c23)c2c(c1)OCO2,OUKYUETWWIPKQR-UHFFFAOYSA-N
+1.1,E9,Bosutinib,380843-75-4,https://pubchem.ncbi.nlm.nih.gov/compound/5328940,2.5,Angiogenesis,,Bosutinib,train,c1ccc(Nc2ccnc3cc(OCCCN4CCNCC4)ccc23)cc1,UBPYILGKFZZVDX-UHFFFAOYSA-N
+1.1,F10,Dasatinib,302962-49-8,https://pubchem.ncbi.nlm.nih.gov/compound/3062316,2.5,Angiogenesis,,Dasatinib,val,O=C(Nc1ccccc1)c1cnc(Nc2cc(N3CCNCC3)ncn2)s1,ZBNZXTGUTAYRHI-UHFFFAOYSA-N
+1.1,F11,Imatinib Mesylate,220127-57-1,https://pubchem.ncbi.nlm.nih.gov/compound/123596,2.5,Protein Tyrosine Kinase,,Imatinib Mesylate,train,O=C(Nc1cccc(Nc2nccc(-c3cccnc3)n2)c1)c1ccc(CN2CCNCC2)cc1,KTUFNOKKBVMGRW-UHFFFAOYSA-N
+1.1,F12,Pazopanib HCl,635702-64-6,https://pubchem.ncbi.nlm.nih.gov/compound/11525740,2.5,Protein Tyrosine Kinase,,Pazopanib HCl,train,c1ccc(Nc2nccc(Nc3ccc4c[nH]nc4c3)n2)cc1,CUIHSIWYWATEQL-UHFFFAOYSA-N
+1.1,F13,Rapamycin,53123-88-9,https://pubchem.ncbi.nlm.nih.gov/compound/5284616,2.5,DNA Damage,,Rapamycin,train,O=C1CCC=CCC(=O)CC(CCC2CCCCC2)OC(=O)C2CCCCN2C(=O)C(=O)C2CCCC(CCC=CC=CC=CCCC1)O2,QFJCIRLUMZQUOT-HPLJOQBZSA-N
+1.1,F14,Y-27632 2HCl,129830-38-2,https://pubchem.ncbi.nlm.nih.gov/compound/9901617,2.5,Others,,Y-27632 2HCl,train,O=C(Nc1ccncc1)C1CCCCC1,IYOZTVGMEWJPKR-VOMCLLRMSA-N
+1.1,F15,Masitinib,790299-79-5,https://pubchem.ncbi.nlm.nih.gov/compound/10074640,2.5,Others,,Masitinib,val,O=C(Nc1cccc(Nc2nc(-c3cccnc3)cs2)c1)c1ccc(CN2CCNCC2)cc1,WJEOLQLKVOPQFV-UHFFFAOYSA-N
+1.1,F16,ZSTK474,475110-96-4,https://pubchem.ncbi.nlm.nih.gov/compound/11647372,2.5,Neuronal Signaling,,ZSTK474,train,c1ccc2c(c1)ncn2-c1nc(N2CCOCC2)nc(N2CCOCC2)n1,HGVNLRPZOWWDKD-UHFFFAOYSA-N
+1.1,F17,SB202190,152121-30-7,https://pubchem.ncbi.nlm.nih.gov/compound/5169,2.5,PI3K/Akt/mTOR,,SB202190,train,c1ccc(-c2nc(-c3ccccc3)c(-c3ccncc3)[nH]2)cc1,QHKYPYXTTXKZST-UHFFFAOYSA-N
+1.1,F8,Selumetinib,606143-52-6,https://pubchem.ncbi.nlm.nih.gov/compound/10127622,2.5,MAPK,,Selumetinib,train,c1ccc(Nc2ccc3[nH]cnc3c2)cc1,CYOHGALHFOKKQC-UHFFFAOYSA-N
+1.1,F9,BMS-536924,468740-43-4,https://pubchem.ncbi.nlm.nih.gov/compound/135440466,2.5,Protein Tyrosine Kinase,,BMS-536924,train,O=c1[nH]ccc(NCCc2ccccc2)c1-c1nc2ccc(N3CCOCC3)cc2[nH]1,ZWVZORIKUNOTCS-OAQYLSRUSA-N
+1.1,G10,Ridaforolimus,572924-54-0,https://pubchem.ncbi.nlm.nih.gov/compound/11520894,2.5,PI3K/Akt/mTOR,,Ridaforolimus,train,O=C1CCC=CCC(=O)CC(CCC2CCCCC2)OC(=O)C2CCCCN2C(=O)C(=O)C2CCCC(CCC=CC=CC=CCCC1)O2,BUROJSBIWGDYCN-GAUTUEMISA-N
+1.1,G11,Gefitinib,184475-35-2,https://pubchem.ncbi.nlm.nih.gov/compound/123631,2.5,Protein Tyrosine Kinase,,Gefitinib,val,c1ccc(Nc2ncnc3ccc(OCCCN4CCOCC4)cc23)cc1,XGALLCVXEZPNRQ-UHFFFAOYSA-N
+1.1,G12,PD0325901,391210-10-9,https://pubchem.ncbi.nlm.nih.gov/compound/9826528,2.5,DNA Damage,,PD0325901,train,c1ccc(Nc2ccccc2)cc1,SUDAHWBOROXANE-SECBINFHSA-N
+1.1,G13,PI-103,371935-74-9,https://pubchem.ncbi.nlm.nih.gov/compound/9884685,2.5,Neuronal Signaling,,PI-103,train,c1ccc(-c2nc(N3CCOCC3)c3oc4ncccc4c3n2)cc1,TUVCWJQQGGETHL-UHFFFAOYSA-N
+1.1,G14,Enzastaurin,170364-57-5,https://pubchem.ncbi.nlm.nih.gov/compound/176167,2.5,Neuronal Signaling,,Enzastaurin,train,O=C1NC(=O)C(c2cn(C3CCN(Cc4ccccn4)CC3)c3ccccc23)=C1c1c[nH]c2ccccc12,AXRCEOKUDYDWLF-UHFFFAOYSA-N
+1.1,G15,AC480,714971-09-2,https://pubchem.ncbi.nlm.nih.gov/compound/10437018,2.5,Neuronal Signaling,,AC480,train,O=C(Nc1cc2c(Nc3ccc4c(cnn4Cc4ccccc4)c3)ncnn2c1)OCC1COCCN1,LUJZZYWHBDHDQX-QFIPXVFZSA-N
+1.1,G16,SB216763,280744-09-4,https://pubchem.ncbi.nlm.nih.gov/compound/176158,2.5,Others,,SB216763,train,O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1ccccc1,JCSGFHVFHSKIJH-UHFFFAOYSA-N
+1.1,G17,SB203580,152121-47-6,https://pubchem.ncbi.nlm.nih.gov/compound/176155,2.5,Transmembrane Transporters,,SB203580,train,c1ccc(-c2nc(-c3ccccc3)c(-c3ccncc3)[nH]2)cc1,CDMGBJANTYXAIV-UHFFFAOYSA-N
+1.1,G8,Nintedanib,656247-17-5,https://pubchem.ncbi.nlm.nih.gov/compound/135423438,2.5,Protein Tyrosine Kinase,,Nintedanib,train,O=C(CN1CCNCC1)Nc1ccc(N=C(c2ccccc2)c2c[nH]c3ccccc23)cc1,CPMDPSXJELVGJG-UHFFFAOYSA-N
+1.1,G9,Afatinib,439081-18-2,https://pubchem.ncbi.nlm.nih.gov/compound/10184653,2.5,Protein Tyrosine Kinase,,Afatinib,test,c1ccc(Nc2ncnc3cc(OC4CCOC4)ccc23)cc1,ULXXDDBFHOBEHA-CWDCEQMOSA-N
+1.2,C10,DMSO,,,2.5,,vehicle control,,dmso_check,,
+1.2,C11,BX-795,702675-74-9,https://pubchem.ncbi.nlm.nih.gov/compound/10077147,2.5,PI3K/Akt/mTOR,,BX-795,train,O=C(NCCCNc1ccnc(Nc2cccc(NC(=O)N3CCCC3)c2)n1)c1cccs1,VAVXGGRQQJZYBL-UHFFFAOYSA-N
+1.2,C12,Vemurafenib,918504-65-1,https://pubchem.ncbi.nlm.nih.gov/compound/42611257,2.5,MAPK,,Vemurafenib,train,O=C(c1ccccc1)c1c[nH]c2ncc(-c3ccccc3)cc12,GPXBXXGIAQBQNI-UHFFFAOYSA-N
+1.2,C13,WYE-354,1062169-56-5,https://pubchem.ncbi.nlm.nih.gov/compound/44219749,2.5,PI3K/Akt/mTOR,,WYE-354,train,c1ccc(-c2nc(N3CCOCC3)c3cnn(C4CCNCC4)c3n2)cc1,IMXHGCRIEAKIBU-UHFFFAOYSA-N
+1.2,C14,PD173074,219580-11-7,https://pubchem.ncbi.nlm.nih.gov/compound/1401,2.5,Angiogenesis,,PD173074,test,c1ccc(-c2cnc3ncncc3c2)cc1,DXCUKNQANPLTEJ-UHFFFAOYSA-N
+1.2,C15,CHIR-99021,252917-06-9,https://pubchem.ncbi.nlm.nih.gov/compound/9956119,2.5,PI3K/Akt/mTOR,,CHIR-99021,train,c1ccc(-c2nc(NCCNc3ccccn3)ncc2-c2ncc[nH]2)cc1,AQGNHMOJWBZFQQ-UHFFFAOYSA-N
+1.2,C16,JNJ-7706621,443797-96-4,https://pubchem.ncbi.nlm.nih.gov/compound/5330790,2.5,Cell Cycle,,JNJ-7706621,train,O=C(c1ccccc1)n1cnc(Nc2ccccc2)n1,KDKUVYLMPJIGKA-UHFFFAOYSA-N
+1.2,C17,Amuvatinib,850879-09-3,https://pubchem.ncbi.nlm.nih.gov/compound/11282283,2.5,Protein Tyrosine Kinase,,Amuvatinib,train,S=C(NCc1ccc2c(c1)OCO2)N1CCN(c2ncnc3c2oc2ccccc23)CC1,FOFDIMHVKGYHRU-UHFFFAOYSA-N
+1.2,C8,Vatalanib 2HCl,212141-51-0,https://pubchem.ncbi.nlm.nih.gov/compound/22386467,2.5,Others,,Vatalanib 2HCl,test,c1ccc(Nc2nnc(Cc3ccncc3)c3ccccc23)cc1,YCOYDOIWSSHVCK-UHFFFAOYSA-N
+1.2,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+1.2,D10,GSK690693,937174-76-0,https://pubchem.ncbi.nlm.nih.gov/compound/16725726,2.5,Others,,GSK690693,train,c1nonc1-c1nc2cncc(OCC3CCCNC3)c2[nH]1,KGPGFQWBCSZGEL-ZDUSSCGKSA-N
+1.2,D11,AT9283,896466-04-9,https://pubchem.ncbi.nlm.nih.gov/compound/135398495,2.5,Others,,AT9283,test,O=C(Nc1cn[nH]c1-c1nc2ccc(CN3CCOCC3)cc2[nH]1)NC1CC1,LOLPPWBBNUVNQZ-UHFFFAOYSA-N
+1.2,D12,Brivanib Alaninate,649735-63-7,https://pubchem.ncbi.nlm.nih.gov/compound/11154925,2.5,Others,,Brivanib Alaninate,train,c1cc2c(Oc3ccc4[nH]ccc4c3)ncnn2c1,LTEJRLHKIYCEOX-OCCSQVGLSA-N
+1.2,D13,Lenvatinib,417716-92-8,https://pubchem.ncbi.nlm.nih.gov/compound/9823820,2.5,Protein Tyrosine Kinase,,Lenvatinib,train,O=C(Nc1ccc(Oc2ccnc3ccccc23)cc1)NC1CC1,WOSKHXYHFSIKNG-UHFFFAOYSA-N
+1.2,D14,CP-724714,537705-08-1,https://pubchem.ncbi.nlm.nih.gov/compound/57345837,2.5,Protein Tyrosine Kinase,,CP-724714,train,c1cncc(Oc2ccc(Nc3ncnc4ccccc34)cc2)c1,IKJUNQVKTBWLGN-AATRIKPKSA-N
+1.2,D15,WZ8040,1214265-57-2,https://pubchem.ncbi.nlm.nih.gov/compound/44607531,2.5,Protein Tyrosine Kinase,,WZ8040,test,c1ccc(Sc2ccnc(Nc3ccc(N4CCNCC4)cc3)n2)cc1,KIISCIGBPUVZBF-UHFFFAOYSA-N
+1.2,D16,ENMD-2076,934353-76-1,https://pubchem.ncbi.nlm.nih.gov/compound/16041424,2.5,Angiogenesis,,ENMD-2076,val,C(=Cc1nc(Nc2cc[nH]n2)cc(N2CCNCC2)n1)c1ccccc1,BLQYVHBZHAISJM-CMDGGOBGSA-N
+1.2,D17,AG-1024,65678-07-1,https://pubchem.ncbi.nlm.nih.gov/compound/2044,2.5,Protein Tyrosine Kinase,,AG-1024,train,c1ccccc1,ABBADGFSRBWENF-UHFFFAOYSA-N
+1.2,D8,U0126-EtOH,1173097-76-1,https://pubchem.ncbi.nlm.nih.gov/compound/16220066,2.5,Others,,U0126-EtOH,train,C(C=CSc1ccccc1)=CSc1ccccc1,DVEXZJFMOKTQEZ-JYFOCSDGSA-N
+1.2,D9,Foretinib,849217-64-7,https://pubchem.ncbi.nlm.nih.gov/compound/42642645,2.5,Others,,Foretinib,test,O=C(Nc1ccccc1)C1(C(=O)Nc2ccc(Oc3ccnc4cc(OCCCN5CCOCC5)ccc34)cc2)CC1,CXQHYVUVSFXTMY-UHFFFAOYSA-N
+1.2,E10,JNJ-38877605,943540-75-8,https://pubchem.ncbi.nlm.nih.gov/compound/46911863,2.5,Others,,JNJ-38877605,test,c1cnc2ccc(Cc3nnc4ccc(-c5cn[nH]c5)nn34)cc2c1,JRWCBEOAFGHNNU-UHFFFAOYSA-N
+1.2,E11,Alisertib,1028486-01-2,https://pubchem.ncbi.nlm.nih.gov/compound/24771867,2.5,Others,,Alisertib,train,c1ccc(Nc2ncc3c(n2)-c2ccccc2C(c2ccccc2)=NC3)cc1,ZLHFILGSQDJULK-UHFFFAOYSA-N
+1.2,E12,Tyrphostin B42,133550-30-8,https://pubchem.ncbi.nlm.nih.gov/compound/5328779,2.5,Others,,Tyrphostin B42,train,O=C(C=Cc1ccccc1)NCc1ccccc1,TUCIOBMMDDOEMM-RIYZIHGNSA-N
+1.2,E13,SNS-314 Mesylate,1146618-41-8,https://pubchem.ncbi.nlm.nih.gov/compound/24995523,2.5,Others,,SNS-314 Mesylate,train,O=C(Nc1ccccc1)Nc1ncc(CCNc2ncnc3ccsc23)s1,FAYAUAZLLLJJGH-UHFFFAOYSA-N
+1.2,E14,TGX-221,663619-89-4,https://pubchem.ncbi.nlm.nih.gov/compound/9907093,2.5,PI3K/Akt/mTOR,,TGX-221,train,O=c1cc(N2CCOCC2)nc2c(CNc3ccccc3)cccn12,CPRAGQJXBLMUEL-UHFFFAOYSA-N
+1.2,E15,Regorafenib,755037-03-7,https://pubchem.ncbi.nlm.nih.gov/compound/11167602,2.5,Protein Tyrosine Kinase,,Regorafenib,train,O=C(Nc1ccccc1)Nc1ccc(Oc2ccncc2)cc1,FNHKPVJBJVTLMP-UHFFFAOYSA-N
+1.2,E16,CUDC-101,1012054-59-9,https://pubchem.ncbi.nlm.nih.gov/compound/24756910,2.5,Epigenetics,,CUDC-101,train,c1ccc(Nc2ncnc3ccccc23)cc1,PLIVFNIUGLLCEK-UHFFFAOYSA-N
+1.2,E17,Flavopiridol,146426-40-6,https://pubchem.ncbi.nlm.nih.gov/compound/5287969,2.5,Cell Cycle,,Flavopiridol,train,O=c1cc(-c2ccccc2)oc2c(C3CCNCC3)cccc12,BIIVYFLTOXDAOV-YVEFUNNKSA-N
+1.2,E8,ZM 447439,331771-20-1,https://pubchem.ncbi.nlm.nih.gov/compound/9914412,2.5,Others,,ZM 447439,train,O=C(Nc1ccc(Nc2ncnc3cc(OCCCN4CCOCC4)ccc23)cc1)c1ccccc1,OGNYUTNQZVRGMN-UHFFFAOYSA-N
+1.2,E9,BI 2536,755038-02-9,https://pubchem.ncbi.nlm.nih.gov/compound/11364421,2.5,Others,,BI 2536,train,O=C1CN(C2CCCC2)c2nc(Nc3ccc(C(=O)NC4CCNCC4)cc3)ncc2N1,XQVVPGYIWAGRNI-JOCHJYFZSA-N
+1.2,F10,Triciribine,35943-35-2,https://pubchem.ncbi.nlm.nih.gov/compound/65399,2.5,Others,,Triciribine,train,C1=NNc2ncnc3c2c1cn3C1CCCO1,HOGVTUZUJGHKPL-HTVVRFAVSA-N
+1.2,F11,BMS-754807,1001350-96-4,https://pubchem.ncbi.nlm.nih.gov/compound/24785538,2.5,Others,,BMS-754807,train,O=C(Nc1cccnc1)C1CCCN1c1nc(Nc2cc(C3CC3)[nH]n2)c2cccn2n1,LQVXSNNAFNGRAH-QHCPKHFHSA-N
+1.2,F12,SNS-032,345627-80-7,https://pubchem.ncbi.nlm.nih.gov/compound/3025986,2.5,Others,,SNS-032,test,O=C(Nc1ncc(SCc2ncco2)s1)C1CCNCC1,OUSFTKFNBAZUKL-UHFFFAOYSA-N
+1.2,F13,Roscovitine,186692-46-6,https://pubchem.ncbi.nlm.nih.gov/compound/160355,2.5,Others,,Roscovitine,train,c1ccc(CNc2ncnc3[nH]cnc23)cc1,BTIHMVBBUGXLCJ-OAHLLOKOSA-N
+1.2,F14,WZ3146,1214265-56-1,https://pubchem.ncbi.nlm.nih.gov/compound/44607360,2.5,Protein Tyrosine Kinase,,WZ3146,train,c1ccc(Oc2ccnc(Nc3ccc(N4CCNCC4)cc3)n2)cc1,APHGZZPEOCCYNO-UHFFFAOYSA-N
+1.2,F15,PD98059,167869-21-8,https://pubchem.ncbi.nlm.nih.gov/compound/4713,2.5,MAPK,,PD98059,train,O=c1cc(-c2ccccc2)oc2ccccc12,QFWCYNPOPKQOKV-UHFFFAOYSA-N
+1.2,F16,Tivozanib,475108-18-0,https://pubchem.ncbi.nlm.nih.gov/compound/9911830,2.5,Protein Tyrosine Kinase,,Tivozanib,train,O=C(Nc1ccc(Oc2ccnc3ccccc23)cc1)Nc1ccon1,SPMVMDHWKHCIDT-UHFFFAOYSA-N
+1.2,F17,KU-0063794,938440-64-3,https://pubchem.ncbi.nlm.nih.gov/compound/16736978,2.5,PI3K/Akt/mTOR,,KU-0063794,train,c1ccc(-c2ccc3c(N4CCOCC4)nc(N4CCOCC4)nc3n2)cc1,RFSMUFRPPYDYRD-CALCHBBNSA-N
+1.2,F8,GDC-0879,905281-76-7,https://pubchem.ncbi.nlm.nih.gov/compound/11717001,2.5,Others,,GDC-0879,train,N=C1CCc2cc(-c3c[nH]nc3-c3ccncc3)ccc21,DEZZLWQELQORIU-RELWKKBWSA-N
+1.2,F9,Danusertib,827318-97-8,https://pubchem.ncbi.nlm.nih.gov/compound/11442891,2.5,Others,,Danusertib,train,O=C(Nc1n[nH]c2c1CN(C(=O)Cc1ccccc1)C2)c1ccc(N2CCNCC2)cc1,XKFTZKGMDDZMJI-HSZRJFAPSA-N
+1.2,G10,Cabozantinib,849217-68-1,https://pubchem.ncbi.nlm.nih.gov/compound/25102847,2.5,Others,,Cabozantinib,train,O=C(Nc1ccccc1)C1(C(=O)Nc2ccc(Oc3ccnc4ccccc34)cc2)CC1,ONIQOQHATWINJY-UHFFFAOYSA-N
+1.2,G11,Everolimus,159351-69-6,https://pubchem.ncbi.nlm.nih.gov/compound/6442177,2.5,Others,,Everolimus,train,O=C1CCC=CCC(=O)CC(CCC2CCCCC2)OC(=O)C2CCCCN2C(=O)C(=O)C2CCCC(CCC=CC=CC=CCCC1)O2,HKVAMNSJSFKALM-GKUWKFKPSA-N
+1.2,G12,Barasertib,722544-51-6,https://pubchem.ncbi.nlm.nih.gov/compound/16007391,2.5,Others,,Barasertib,train,O=C(Cc1cc(Nc2ncnc3ccccc23)n[nH]1)Nc1ccccc1,QYZOGCMHVIGURT-UHFFFAOYSA-N
+1.2,G13,PLX-4720,918505-84-7,https://pubchem.ncbi.nlm.nih.gov/compound/24180719,2.5,Others,,PLX-4720,train,O=C(c1ccccc1)c1c[nH]c2ncccc12,YZDJQTHVDDOVHR-UHFFFAOYSA-N
+1.2,G14,CYC116,693228-63-6,https://pubchem.ncbi.nlm.nih.gov/compound/6420138,2.5,Cell Cycle,,CYC116,train,c1cc(-c2cncs2)nc(Nc2ccc(N3CCOCC3)cc2)n1,GPSZYOIFQZPWEJ-UHFFFAOYSA-N
+1.2,G15,WZ4002,1213269-23-8,https://pubchem.ncbi.nlm.nih.gov/compound/44607530,2.5,Protein Tyrosine Kinase,,WZ4002,train,c1ccc(Oc2ccnc(Nc3ccc(N4CCNCC4)cc3)n2)cc1,ITTRLTNMFYIYPA-UHFFFAOYSA-N
+1.2,G16,YM201636,371942-69-7,https://pubchem.ncbi.nlm.nih.gov/compound/9956222,2.5,PI3K/Akt/mTOR,,YM201636,train,O=C(Nc1cccc(-c2nc(N3CCOCC3)c3oc4ncccc4c3n2)c1)c1cccnc1,YBPIBGNBHHGLEB-UHFFFAOYSA-N
+1.2,G17,OSI-930,728033-96-3,https://pubchem.ncbi.nlm.nih.gov/compound/9868037,2.5,Protein Tyrosine Kinase,,OSI-930,train,O=C(Nc1ccccc1)c1sccc1NCc1ccnc2ccccc12,FGTCROZDHDSNIO-UHFFFAOYSA-N
+1.2,G8,LY294002,154447-36-6,https://pubchem.ncbi.nlm.nih.gov/compound/3973,2.5,Others,,LY294002,train,O=c1cc(N2CCOCC2)oc2c(-c3ccccc3)cccc12,CZQHHVNHHHRRDU-UHFFFAOYSA-N
+1.2,G9,OSU-03012,742112-33-0,https://pubchem.ncbi.nlm.nih.gov/compound/10027278,2.5,Others,,OSU-03012,test,c1ccc(-n2nccc2-c2ccc3c(ccc4ccccc43)c2)cc1,YULUCECVQOCQFQ-UHFFFAOYSA-N
+1.3,C10,DMSO,,,2.5,,vehicle control,,dmso_check,,
+1.3,C11,Lapatinib,231277-92-2,https://pubchem.ncbi.nlm.nih.gov/compound/208908,2.5,Protein Tyrosine Kinase,,Lapatinib,train,c1ccc(COc2ccc(Nc3ncnc4ccc(-c5ccco5)cc34)cc2)cc1,BCFGMOOMADDAQU-UHFFFAOYSA-N
+1.3,C12,BMS-265246,582315-72-8,https://pubchem.ncbi.nlm.nih.gov/compound/135402864,2.5,Cell Cycle,,BMS-265246,train,O=C(c1ccccc1)c1cnc2n[nH]cc2c1,SCFMWQIQBVZOQR-UHFFFAOYSA-N
+1.3,C13,PF-573228,869288-64-2,https://pubchem.ncbi.nlm.nih.gov/compound/11612883,2.5,Angiogenesis,,PF-573228,test,O=C1CCc2cc(Nc3nccc(NCc4ccccc4)n3)ccc2N1,HESLKTSGTIBHJU-UHFFFAOYSA-N
+1.3,C14,Acadesine,2627-69-2,https://pubchem.ncbi.nlm.nih.gov/compound/17513,2.5,PI3K/Akt/mTOR,,Acadesine,train,c1cn(C2CCCO2)cn1,RTRQQBHATOEIAF-UUOKFMHZSA-N
+1.3,C15,TWS119,601514-19-6,https://pubchem.ncbi.nlm.nih.gov/compound/9549289,2.5,PI3K/Akt/mTOR,,TWS119,train,c1ccc(Oc2ncnc3[nH]c(-c4ccccc4)cc23)cc1,VPVLEBIVXZSOMQ-UHFFFAOYSA-N
+1.3,C16,H 89 2HCl,130964-39-5,https://pubchem.ncbi.nlm.nih.gov/compound/5702541,2.5,PI3K/Akt/mTOR,,H 89 2HCl,val,O=S(=O)(NCCNCC=Cc1ccccc1)c1cccc2cnccc12,ZKZXNDJNWUTGDK-NSCUHMNNSA-N
+1.3,C17,Tie2 kinase inhibitor,948557-43-5,https://pubchem.ncbi.nlm.nih.gov/compound/23625762,2.5,Protein Tyrosine Kinase,,Tie2 kinase inhibitor,train,c1ccc(-c2nc(-c3ccc4ccccc4c3)c(-c3ccncc3)[nH]2)cc1,SINQIEAULQKUPD-UHFFFAOYSA-N
+1.3,C8,BX-912,702674-56-4,https://pubchem.ncbi.nlm.nih.gov/compound/11754511,2.5,PI3K/Akt/mTOR,,BX-912,train,O=C(Nc1cccc(Nc2nccc(NCCc3cnc[nH]3)n2)c1)N1CCCC1,DMMILYKXNCVKOJ-UHFFFAOYSA-N
+1.3,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+1.3,D10,PHA-680632,398493-79-3,https://pubchem.ncbi.nlm.nih.gov/compound/11249084,2.5,Cell Cycle,,PHA-680632,train,O=C(Nc1n[nH]c2c1CN(C(=O)Nc1ccccc1)C2)c1ccc(N2CCNCC2)cc1,OBWNXGOQPLDDPS-UHFFFAOYSA-N
+1.3,D11,Pimasertib,1236699-92-5,https://pubchem.ncbi.nlm.nih.gov/compound/44187362,2.5,MAPK,,Pimasertib,test,c1ccc(Nc2cccnc2)cc1,VIUAUNHCRHHYNE-JTQLQIEISA-N
+1.3,D12,HMN-214,173529-46-9,https://pubchem.ncbi.nlm.nih.gov/compound/9888590,2.5,Cell Cycle,,HMN-214,train,O=S(=O)(Nc1ccccc1C=Cc1cc[nH+]cc1)c1ccccc1,OCKHRKSTDPOHEN-BQYQJAHWSA-N
+1.3,D13,Quizartinib,950769-58-1,https://pubchem.ncbi.nlm.nih.gov/compound/24889392,2.5,Angiogenesis,,Quizartinib,test,O=C(Nc1ccc(-c2cn3c(n2)sc2cc(OCCN4CCOCC4)ccc23)cc1)Nc1ccon1,CVWXJKQAOSCOAB-UHFFFAOYSA-N
+1.3,D14,Hesperadin,422513-13-1,https://pubchem.ncbi.nlm.nih.gov/compound/135421442,2.5,Cell Cycle,,Hesperadin,val,c1ccc(C(=Nc2ccc(CN3CCCCC3)cc2)c2c[nH]c3ccccc23)cc1,HYHIYZMIFPJROG-UHFFFAOYSA-N
+1.3,D15,PHT-427,1191951-57-1,https://pubchem.ncbi.nlm.nih.gov/compound/44240850,2.5,PI3K/Akt/mTOR,,PHT-427,train,O=S(=O)(Nc1nncs1)c1ccccc1,BYWWNRBKPCPJMG-UHFFFAOYSA-N
+1.3,D16,KRN 633,286370-15-8,https://pubchem.ncbi.nlm.nih.gov/compound/9549295,2.5,Protein Tyrosine Kinase,,KRN 633,train,c1ccc(Oc2ncnc3ccccc23)cc1,VPBYZLCHOKSGRX-UHFFFAOYSA-N
+1.3,D17,Doramapimod,285983-48-4,https://pubchem.ncbi.nlm.nih.gov/compound/156422,2.5,MAPK,,Doramapimod,train,O=C(Nc1ccc(OCCN2CCOCC2)c2ccccc12)Nc1ccnn1-c1ccccc1,MVCOAUNKQVWQHZ-UHFFFAOYSA-N
+1.3,D8,Genistein,446-72-0,https://pubchem.ncbi.nlm.nih.gov/compound/5280961,2.5,Protein Tyrosine Kinase,,Genistein,train,O=c1c(-c2ccccc2)coc2ccccc12,TZBJGXHYKVUXJN-UHFFFAOYSA-N
+1.3,D9,Aurora A Inhibitor I,1158838-45-9,https://pubchem.ncbi.nlm.nih.gov/compound/44139710,2.5,Cell Cycle,,Aurora A Inhibitor I,val,O=C(Nc1ccccc1)c1ccc(Nc2ccnc(Nc3ccc(CC(=O)N4CCNCC4)cc3)n2)cc1,AKSIZPIFQAYJGF-UHFFFAOYSA-N
+1.3,E10,VX-745,209410-46-8,https://pubchem.ncbi.nlm.nih.gov/compound/3038525,2.5,MAPK,,VX-745,train,O=c1ncn2nc(Sc3ccccc3)ccc2c1-c1ccccc1,VEPKQEUBKLEPRA-UHFFFAOYSA-N
+1.3,E11,GSK429286A,864082-47-3,https://pubchem.ncbi.nlm.nih.gov/compound/11373846,2.5,Cell Cycle,,GSK429286A,val,O=C1CC(c2ccccc2)C(C(=O)Nc2ccc3[nH]ncc3c2)=CN1,OLIIUAHHAZEXEX-UHFFFAOYSA-N
+1.3,E12,AEE788,497839-62-0,https://pubchem.ncbi.nlm.nih.gov/compound/10297043,2.5,Protein Tyrosine Kinase,,AEE788,train,c1ccc(CNc2ncnc3[nH]c(-c4ccc(CN5CCNCC5)cc4)cc23)cc1,OONFNUWBHFSNBT-HXUWFJFHSA-N
+1.3,E13,AT7519,844442-38-2,https://pubchem.ncbi.nlm.nih.gov/compound/11338033,2.5,Cell Cycle,,AT7519,train,O=C(Nc1cn[nH]c1C(=O)NC1CCNCC1)c1ccccc1,OVPNQJVDAFNBDN-UHFFFAOYSA-N
+1.3,E14,BIX 02188,1094614-84-2,https://pubchem.ncbi.nlm.nih.gov/compound/135398492,2.5,MAPK,,BIX 02188,train,c1ccc(N=C(c2ccccc2)c2c[nH]c3ccccc23)cc1,WGPXKFOFEXJMBD-UHFFFAOYSA-N
+1.3,E15,AZD8055,1009298-09-2,https://pubchem.ncbi.nlm.nih.gov/compound/25262965,2.5,PI3K/Akt/mTOR,,AZD8055,train,c1ccc(-c2ccc3c(N4CCOCC4)nc(N4CCOCC4)nc3n2)cc1,KVLFRAWTRWDEDF-IRXDYDNUSA-N
+1.3,E16,AT7867,857531-00-1,https://pubchem.ncbi.nlm.nih.gov/compound/11175137,2.5,PI3K/Akt/mTOR,,AT7867,test,c1ccc(C2(c3ccc(-c4cn[nH]c4)cc3)CCNCC2)cc1,LZMOSYUFVYJEPY-UHFFFAOYSA-N
+1.3,E17,Fasudil HCl,105628-07-7,https://pubchem.ncbi.nlm.nih.gov/compound/163751,2.5,Cell Cycle,,Fasudil HCl,test,O=S(=O)(c1cccc2cnccc12)N1CCCNCC1,NGOGFTYYXHNFQH-UHFFFAOYSA-N
+1.3,E8,TG100-115,677297-51-7,https://pubchem.ncbi.nlm.nih.gov/compound/10427712,2.5,PI3K/Akt/mTOR,,TG100-115,train,c1ccc(-c2nc3cncnc3nc2-c2ccccc2)cc1,UJIAQDJKSXQLIT-UHFFFAOYSA-N
+1.3,E9,Pelitinib,257933-82-7,https://pubchem.ncbi.nlm.nih.gov/compound/6445562,2.5,Protein Tyrosine Kinase,,Pelitinib,val,c1ccc(Nc2ccnc3ccccc23)cc1,WVUNYSQLFKLYNI-AATRIKPKSA-N
+1.3,F10,Thiazovivin,1226056-71-8,https://pubchem.ncbi.nlm.nih.gov/compound/46209426,2.5,Cell Cycle,,Thiazovivin,test,O=C(NCc1ccccc1)c1csc(Nc2ccncn2)n1,DOBKQCZBPPCLEG-UHFFFAOYSA-N
+1.3,F11,Orantinib,252916-29-3,https://pubchem.ncbi.nlm.nih.gov/compound/5329099,2.5,Protein Tyrosine Kinase,,Orantinib,train,O=C1Nc2ccccc2C1=Cc1ccc[nH]1,NHFDRBXTEDBWCZ-ZROIWOOFSA-N
+1.3,F12,PHA-793887,718630-59-2,https://pubchem.ncbi.nlm.nih.gov/compound/46191454,2.5,Cell Cycle,,PHA-793887,train,O=C(C1CCNCC1)N1Cc2cn[nH]c2C1,HUXYBQXJVXOMKX-UHFFFAOYSA-N
+1.3,F13,Voxtalisib Analogue,1349796-36-6,https://pubchem.ncbi.nlm.nih.gov/compound/49867926,2.5,PI3K/Akt/mTOR,,Voxtalisib Analogue,train,O=C(Nc1ccc(S(=O)(=O)Nc2nc3ccccc3nc2Nc2ccccc2)cc1)c1ccccc1,HJSSPYJVWLTYHG-UHFFFAOYSA-N
+1.3,F14,BIX 02189,1094614-85-3,https://pubchem.ncbi.nlm.nih.gov/compound/135659062,2.5,MAPK,,BIX 02189,train,c1ccc(N=C(c2ccccc2)c2c[nH]c3ccccc23)cc1,ZGXOBLVQIVXKEB-UHFFFAOYSA-N
+1.3,F15,CP-673451,343787-29-1,https://pubchem.ncbi.nlm.nih.gov/compound/10158940,2.5,Protein Tyrosine Kinase,,CP-673451,train,c1cc(N2CCCCC2)c2nc(-n3cnc4ccccc43)ccc2c1,DEEOXSOLTLIWMG-UHFFFAOYSA-N
+1.3,F16,BMS-777607,1025720-94-8,https://pubchem.ncbi.nlm.nih.gov/compound/24794418,2.5,Protein Tyrosine Kinase,,BMS-777607,train,O=C(Nc1ccc(Oc2ccncc2)cc1)c1cccn(-c2ccccc2)c1=O,VNBRGSXVFBYQNN-UHFFFAOYSA-N
+1.3,F17,BS-181 HCl,1397219-81-6,https://pubchem.ncbi.nlm.nih.gov/compound/49867928,2.5,Cell Cycle,,BS-181 HCl,train,c1ccc(CNc2ccnc3ccnn23)cc1,DNYBIOICMDTDAP-UHFFFAOYSA-N
+1.3,F8,MGCD-265,875337-44-3,https://pubchem.ncbi.nlm.nih.gov/compound/24901704,2.5,Protein Tyrosine Kinase,,MGCD-265,train,O=C(Cc1ccccc1)NC(=S)Nc1ccc(Oc2ccnc3cc(-c4c[nH]cn4)sc23)cc1,UFICVEHDQUKCEA-UHFFFAOYSA-N
+1.3,F9,Ruxolitinib,941678-49-5,https://pubchem.ncbi.nlm.nih.gov/compound/25126798,2.5,JAK/STAT,,Ruxolitinib,train,c1nc(-c2cnn(CC3CCCC3)c2)c2cc[nH]c2n1,HFNKQEVNSGCOJV-OAHLLOKOSA-N
+1.3,G10,SP600125,129-56-6,https://pubchem.ncbi.nlm.nih.gov/compound/8515,2.5,MAPK,,SP600125,train,O=C1c2ccccc2-c2n[nH]c3cccc1c23,ACPOUJIDANTYHO-UHFFFAOYSA-N
+1.3,G11,AZD6482,1173900-33-8,https://pubchem.ncbi.nlm.nih.gov/compound/44137675,2.5,PI3K/Akt/mTOR,,AZD6482,train,O=c1cc(N2CCOCC2)nc2c(CNc3ccccc3)cccn12,IRTDIKMSKMREGO-OAHLLOKOSA-N
+1.3,G12,PIK-93,593960-11-3,https://pubchem.ncbi.nlm.nih.gov/compound/6852167,2.5,PI3K/Akt/mTOR,,PIK-93,train,c1ccc(-c2cncs2)cc1,JFVNFXCESCXMBC-UHFFFAOYSA-N
+1.3,G13,Ponatinib,943319-70-8,https://pubchem.ncbi.nlm.nih.gov/compound/24826799,2.5,Angiogenesis,,Ponatinib,train,O=C(Nc1ccc(CN2CCNCC2)cc1)c1cccc(C#Cc2cnc3cccnn23)c1,PHXJVRSECIGDHY-UHFFFAOYSA-N
+1.3,G14,AZD7762,860352-01-8,https://pubchem.ncbi.nlm.nih.gov/compound/11152667,2.5,Cell Cycle,,AZD7762,test,O=C(NC1CCCNC1)c1ccc(-c2ccccc2)s1,IAYGCINLNONXHY-LBPRGKRZSA-N
+1.3,G15,R406,841290-80-0,https://pubchem.ncbi.nlm.nih.gov/compound/11213558,2.5,Angiogenesis,,R406 [841290-80-0],train,O=C1COc2ccc(Nc3ccnc(Nc4ccccc4)n3)nc2N1,NHHQJBCNYHBUSI-UHFFFAOYSA-N
+1.3,G16,PD318088,391210-00-7,https://pubchem.ncbi.nlm.nih.gov/compound/10231331,2.5,MAPK,,PD318088,train,c1ccc(Nc2ccccc2)cc1,XXSSGBYXSKOLAM-UHFFFAOYSA-N
+1.3,G17,KU-60019,925701-49-1,https://pubchem.ncbi.nlm.nih.gov/compound/15953870,2.5,DNA Damage,,KU-60019,train,O=C(CN1CCOCC1)Nc1ccc2c(c1)Cc1cccc(-c3cc(=O)cc(N4CCOCC4)o3)c1S2,SCELLOWTHJGVIC-BGYRXZFFSA-N
+1.3,G8,Rigosertib,1225497-78-8,https://pubchem.ncbi.nlm.nih.gov/compound/23696523,2.5,Cell Cycle,,Rigosertib,train,O=S(=O)(C=Cc1ccccc1)Cc1ccccc1,OWBFCJROIKNMGD-BQYQJAHWSA-M
+1.3,G9,Ki8751,228559-41-9,https://pubchem.ncbi.nlm.nih.gov/compound/11317348,2.5,Protein Tyrosine Kinase,,Ki8751,train,O=C(Nc1ccccc1)Nc1ccc(Oc2ccnc3ccccc23)cc1,LFKQSJNCVRGFCC-UHFFFAOYSA-N
+2.1,C10,DMSO,,,2.5,,vehicle control,,vehicle,,
+2.1,C11,AS-252424,900515-16-4,https://pubchem.ncbi.nlm.nih.gov/compound/11630874,2.5,PI3K/Akt/mTOR,,AS-252424,train,O=C1NC(=O)C(=Cc2ccc(-c3ccccc3)o2)S1,OYYVWNDMOQPMGE-SDQBBNPISA-N
+2.1,C12,A-674563,552325-73-2,https://pubchem.ncbi.nlm.nih.gov/compound/11314340,2.5,PI3K/Akt/mTOR,,A-674563,test,c1ccc(CCCOc2cncc(-c3ccc4n[nH]cc4c3)c2)cc1,BPNUQXPIQBZCMR-IBGZPJMESA-N
+2.1,C13,WYE-125132,1144068-46-1,https://pubchem.ncbi.nlm.nih.gov/compound/25260757,2.5,PI3K/Akt/mTOR,,WYE-125132,val,c1ccc(-c2nc(N3CC4CCC(C3)O4)c3cnn(C4CCC5(CC4)OCCO5)c3n2)cc1,QLHHRYZMBGPBJG-UHFFFAOYSA-N
+2.1,C14,Omipalisib,1086062-66-9,https://pubchem.ncbi.nlm.nih.gov/compound/25167777,2.5,PI3K/Akt/mTOR,,Omipalisib,test,O=S(=O)(Nc1cncc(-c2ccc3nccc(-c4ccnnc4)c3c2)c1)c1ccccc1,CGBJSGAELGCMKE-UHFFFAOYSA-N
+2.1,C15,A66,1166227-08-2,https://pubchem.ncbi.nlm.nih.gov/compound/42636535,2.5,PI3K/Akt/mTOR,,A66,train,O=C(Nc1ncc(-c2cscn2)s1)N1CCCC1,HBPXWEPKNBHKAX-NSHDSACASA-N
+2.1,C16,CCT128930,885499-61-6,https://pubchem.ncbi.nlm.nih.gov/compound/17751819,2.5,PI3K/Akt/mTOR,,CCT128930,train,c1ccc(CC2CCN(c3ncnc4[nH]ccc34)CC2)cc1,RZIDZIGAXXNODG-UHFFFAOYSA-N
+2.1,C17,Rebastinib,1020172-07-9,https://pubchem.ncbi.nlm.nih.gov/compound/25066467,2.5,Angiogenesis,,Rebastinib,train,O=C(Nc1ccc(Oc2ccncc2)cc1)Nc1ccnn1-c1ccc2ncccc2c1,WVXNSAVVKYZVOE-UHFFFAOYSA-N
+2.1,C8,AZD8330,869357-68-6,https://pubchem.ncbi.nlm.nih.gov/compound/16666708,2.5,MAPK,,AZD8330,test,O=c1cccc(Nc2ccccc2)[nH]1,RWEVIPRMPFNTLO-UHFFFAOYSA-N
+2.1,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+2.1,D10,R406,841290-81-1,https://pubchem.ncbi.nlm.nih.gov/compound/11984591,2.5,Angiogenesis,,R406 [841290-81-1],train,O=C1COc2ccc(Nc3ccnc(Nc4ccccc4)n3)nc2N1,NHHQJBCNYHBUSI-UHFFFAOYSA-N
+2.1,D11,Mubritinib,366017-09-6,https://pubchem.ncbi.nlm.nih.gov/compound/6444692,2.5,Protein Tyrosine Kinase,,Mubritinib,train,C(=Cc1nc(COc2ccc(CCCCn3ccnn3)cc2)co1)c1ccccc1,ZTFBIUXIQYRUNT-MDWZMJQESA-N
+2.1,D12,Torkinib,1092351-67-1,https://pubchem.ncbi.nlm.nih.gov/compound/135565635,2.5,PI3K/Akt/mTOR,,Torkinib,train,c1ccc2[nH]c(-c3n[nH]c4ncncc34)cc2c1,MFAQYJIYDMLAIM-UHFFFAOYSA-N
+2.1,D13,Volasertib,755038-65-4,https://pubchem.ncbi.nlm.nih.gov/compound/10461508,2.5,Cell Cycle,,Volasertib,test,O=C1CNc2nc(Nc3ccc(C(=O)NC4CCC(N5CCN(CC6CC6)CC5)CC4)cc3)ncc2N1,SXNJFOWDRLKDSF-XKHVUIRMSA-N
+2.1,D14,Palomid 529,914913-88-5,https://pubchem.ncbi.nlm.nih.gov/compound/11998575,2.5,PI3K/Akt/mTOR,,Palomid 529,test,O=c1oc2cc(OCc3ccccc3)ccc2c2ccccc12,YEAHTLOYHVWAKW-UHFFFAOYSA-N
+2.1,D15,Chrysophanic Acid,481-74-3,https://pubchem.ncbi.nlm.nih.gov/compound/10208,2.5,Protein Tyrosine Kinase,,Chrysophanic Acid,test,O=C1c2ccccc2C(=O)c2ccccc21,LQGUBLBATBMXHT-UHFFFAOYSA-N
+2.1,D16,Phenformin HCl,834-28-6,https://pubchem.ncbi.nlm.nih.gov/compound/13266,2.5,PI3K/Akt/mTOR,,Phenformin HCl,train,c1ccccc1,ICFJFFQQTFMIBG-UHFFFAOYSA-N
+2.1,D17,LY2603618,911222-45-2,https://pubchem.ncbi.nlm.nih.gov/compound/11955855,2.5,Cell Cycle,,LY2603618,test,O=C(Nc1cnccn1)Nc1ccccc1OCC1CNCCO1,SYYBDNPGDKKJDU-ZDUSSCGKSA-N
+2.1,D8,KW-2449,1000669-72-6,https://pubchem.ncbi.nlm.nih.gov/compound/11427553,2.5,Angiogenesis,,KW-2449,test,O=C(c1ccc(C=Cc2n[nH]c3ccccc23)cc1)N1CCNCC1,YYLKKYCXAOBSRM-JXMROGBWSA-N
+2.1,D9,GSK461364,929095-18-1,https://pubchem.ncbi.nlm.nih.gov/compound/15983966,2.5,Cell Cycle,,GSK461364,train,c1ccc(COc2csc(-n3cnc4ccc(CN5CCNCC5)cc43)c2)cc1,ZHJGWYRLJUCMRT-QGZVFWFLSA-N
+2.1,E10,SGI-1776,1025065-69-3,https://pubchem.ncbi.nlm.nih.gov/compound/24795070,2.5,JAK/STAT,,SGI-1776,train,c1ccc(-c2cnc3ccc(NCC4CCNCC4)nn23)cc1,MHXGEROHKGDZGO-UHFFFAOYSA-N
+2.1,E11,AZ 960,905586-69-8,https://pubchem.ncbi.nlm.nih.gov/compound/25099184,2.5,JAK/STAT,,AZ 960,train,c1ccc(CNc2cccc(Nc3cc[nH]n3)n2)cc1,SUNXHXDJOIXABJ-NSHDSACASA-N
+2.1,E12,Momelotinib,1056634-68-4,https://pubchem.ncbi.nlm.nih.gov/compound/25062766,2.5,JAK/STAT,,Momelotinib,train,c1ccc(-c2ccnc(Nc3ccc(N4CCOCC4)cc3)n2)cc1,ZVHNDZWQTBEVRY-UHFFFAOYSA-N
+2.1,E13,Telatinib,332012-40-5,https://pubchem.ncbi.nlm.nih.gov/compound/9808844,2.5,Protein Tyrosine Kinase,,Telatinib,train,c1ccc(Nc2nnc(OCc3ccncc3)c3occc23)cc1,QFCXANHHBCGMAS-UHFFFAOYSA-N
+2.1,E14,Degrasyn,856243-80-6,https://pubchem.ncbi.nlm.nih.gov/compound/11222830,2.5,Angiogenesis,,Degrasyn,train,O=C(C=Cc1ccccn1)NCc1ccccc1,LIDOPKHSVQTSJY-VMEIHUARSA-N
+2.1,E15,Quercetin,117-39-5,https://pubchem.ncbi.nlm.nih.gov/compound/5280343,2.5,Epigenetics,,Quercetin,train,O=c1cc(-c2ccccc2)oc2ccccc12,REFJWTPEDVJJIY-UHFFFAOYSA-N
+2.1,E16,Daphnetin,486-35-1,https://pubchem.ncbi.nlm.nih.gov/compound/5280569,2.5,DNA Damage,,Daphnetin,train,O=c1ccc2ccccc2o1,ATEFPOUAMCWAQS-UHFFFAOYSA-N
+2.1,E17,Fostamatinib,901119-35-5,https://pubchem.ncbi.nlm.nih.gov/compound/11671467,2.5,Angiogenesis,,Fostamatinib,train,O=C1COc2ccc(Nc3ccnc(Nc4ccccc4)n3)nc2N1,GKDRMWXFWHEQQT-UHFFFAOYSA-N
+2.1,E8,RAF265,927880-90-8,https://pubchem.ncbi.nlm.nih.gov/compound/11656518,2.5,MAPK,,RAF265,train,c1ccc(Nc2nc3cc(Oc4ccnc(-c5ncc[nH]5)c4)ccc3[nH]2)cc1,YABJJWZLRMPFSI-UHFFFAOYSA-N
+2.1,E9,Sapitinib,848942-61-0,https://pubchem.ncbi.nlm.nih.gov/compound/11488320,2.5,Protein Tyrosine Kinase,,Sapitinib,train,c1ccc(Nc2ncnc3ccc(OC4CCNCC4)cc23)cc1,DFJSJLGUIXFDJP-UHFFFAOYSA-N
+2.1,F10,BMS-794833,1174046-72-0,https://pubchem.ncbi.nlm.nih.gov/compound/44155856,2.5,Protein Tyrosine Kinase,,BMS-794833,train,O=C(Nc1ccc(Oc2ccncc2)cc1)c1c[nH]cc(-c2ccccc2)c1=O,PDYXPCKITKHFOZ-UHFFFAOYSA-N
+2.1,F11,PIK-293,900185-01-5,https://pubchem.ncbi.nlm.nih.gov/compound/53245636,2.5,PI3K/Akt/mTOR,,PIK-293,val,O=c1c2ccccc2nc(Cn2ncc3cncnc32)n1-c1ccccc1,KQDBVHKNIYROHU-UHFFFAOYSA-N
+2.1,F12,SB590885,405554-55-4,https://pubchem.ncbi.nlm.nih.gov/compound/135421339,2.5,MAPK,,SB590885,test,N=C1CCc2cc(-c3nc(-c4ccccc4)[nH]c3-c3ccncc3)ccc21,MLSAQOINCGAULQ-QFMPWRQOSA-N
+2.1,F13,PIK-294,900185-02-6,https://pubchem.ncbi.nlm.nih.gov/compound/24905149,2.5,PI3K/Akt/mTOR,,PIK-294,test,O=c1c2ccccc2nc(Cn2nc(-c3ccccc3)c3cncnc32)n1-c1ccccc1,WFSLJOPRIJSOJR-UHFFFAOYSA-N
+2.1,F14,Buparlisib,944396-07-0,https://pubchem.ncbi.nlm.nih.gov/compound/16654980,2.5,PI3K/Akt/mTOR,,Buparlisib,train,c1cncc(-c2cc(N3CCOCC3)nc(N3CCOCC3)n2)c1,CWHUFRVAEUJCEF-UHFFFAOYSA-N
+2.1,F15,Indirubin,479-41-4,https://pubchem.ncbi.nlm.nih.gov/compound/10177,2.5,PI3K/Akt/mTOR,,Indirubin,test,O=C1C(c2c[nH]c3ccccc23)=Nc2ccccc21,JNLNPCNGMHKCKO-UHFFFAOYSA-N
+2.1,F16,TAK-733,1035555-63-5,https://pubchem.ncbi.nlm.nih.gov/compound/24963252,2.5,MAPK,,TAK-733,train,O=c1cc(Nc2ccccc2)c2c(=O)[nH]cnc2[nH]1,RCLQNICOARASSR-SECBINFHSA-N
+2.1,F17,OSI-027,936890-98-1,https://pubchem.ncbi.nlm.nih.gov/compound/135398516,2.5,PI3K/Akt/mTOR,,OSI-027,test,c1ccc2[nH]c(-c3nc(C4CCCCC4)n4ncncc34)cc2c1,JROFGZPOBKIAEW-UHFFFAOYSA-N
+2.1,F8,AZD1480,"935666-88-9, 1260222-79-4 (TFA)",https://pubchem.ncbi.nlm.nih.gov/compound/16659841,2.5,JAK/STAT,,AZD1480,test,c1cnc(CNc2nccc(Nc3cc[nH]n3)n2)nc1,PDOQBOJDRPLBQU-QMMMGPOBSA-N
+2.1,F9,AST-1306,1050500-29-2,https://pubchem.ncbi.nlm.nih.gov/compound/25027665,2.5,Protein Tyrosine Kinase,,AST-1306,test,c1ccc(COc2ccc(Nc3ncnc4ccccc34)cc2)cc1,MVZGYPSXNDCANY-UHFFFAOYSA-N
+2.1,G10,NVP-BHG712,940310-85-0,https://pubchem.ncbi.nlm.nih.gov/compound/16747388,2.5,Protein Tyrosine Kinase,,NVP-BHG712,test,O=C(Nc1ccccc1)c1cccc(Nc2nc(-c3cccnc3)nc3[nH]ncc23)c1,ZCCPLJOKGAACRT-UHFFFAOYSA-N
+2.1,G11,OSI-420,183320-51-6,https://pubchem.ncbi.nlm.nih.gov/compound/18924996,2.5,Protein Tyrosine Kinase,,OSI-420,train,c1ccc(Nc2ncnc3ccccc23)cc1,KOQIAZNBAWFSQM-UHFFFAOYSA-N
+2.1,G12,Apatinib,811803-05-1,https://pubchem.ncbi.nlm.nih.gov/compound/11315474,2.5,Protein Tyrosine Kinase,,Apatinib,val,O=C(Nc1ccc(C2CCCC2)cc1)c1cccnc1NCc1ccncc1,WPEWQEMJFLWMLV-UHFFFAOYSA-N
+2.1,G13,Idelalisib,870281-82-6,https://pubchem.ncbi.nlm.nih.gov/compound/11625818,2.5,PI3K/Akt/mTOR,,Idelalisib,test,O=c1c2ccccc2nc(CNc2ncnc3nc[nH]c23)n1-c1ccccc1,IFSDAJWBUCMOAH-HNNXBMFYSA-N
+2.1,G14,Asiatic Acid,464-92-6,https://pubchem.ncbi.nlm.nih.gov/compound/119034,2.5,MAPK,,Asiatic Acid,train,C1=C2C3CCCCC3CCC2C2CCC3CCCCC3C2C1,JXSVIVRDWWRQRT-UYDOISQJSA-N
+2.1,G15,Honokiol,35354-74-6,https://pubchem.ncbi.nlm.nih.gov/compound/72303,2.5,PI3K/Akt/mTOR,,Honokiol,val,c1ccc(-c2ccccc2)cc1,FVYXIJYOAGAUQK-UHFFFAOYSA-N
+2.1,G16,AZD5438,602306-29-6,https://pubchem.ncbi.nlm.nih.gov/compound/16747683,2.5,Cell Cycle,,AZD5438,train,c1ccc(Nc2nccc(-c3cnc[nH]3)n2)cc1,WJRRGYBTGDJBFX-UHFFFAOYSA-N
+2.1,G17,PP121,1092788-83-4,https://pubchem.ncbi.nlm.nih.gov/compound/24905142,2.5,Protein Tyrosine Kinase,,PP121,train,c1ncc2c(-c3cnc4[nH]ccc4c3)nn(C3CCCC3)c2n1,NVRXTLZYXZNATH-UHFFFAOYSA-N
+2.1,G8,PF-4708671,1255517-76-0,https://pubchem.ncbi.nlm.nih.gov/compound/51371303,2.5,PI3K/Akt/mTOR,,PF-4708671,train,c1ccc2[nH]c(CN3CCN(c4ccncn4)CC3)nc2c1,FBLPQCAQRNSVHB-UHFFFAOYSA-N
+2.1,G9,Gandotinib,1229236-86-5,https://pubchem.ncbi.nlm.nih.gov/compound/46213929,2.5,JAK/STAT,,Gandotinib,train,c1ccc(Cc2cnc3c(CN4CCOCC4)cc(Nc4cc[nH]n4)nn23)cc1,SQSZANZGUXWJEA-UHFFFAOYSA-N
+2.2,C10,DMSO,,,2.5,,vehicle control,,dmso_check,,
+2.2,C11,CEP-33779,1257704-57-6,https://pubchem.ncbi.nlm.nih.gov/compound/57336812,2.5,JAK/STAT,,CEP-33779,train,c1ccc(-c2cccn3nc(Nc4cccc(N5CCNCC5)c4)nc23)cc1,RFZKSQIFOZZIAQ-UHFFFAOYSA-N
+2.2,C12,AZD4547,1035270-39-3,https://pubchem.ncbi.nlm.nih.gov/compound/51039095,2.5,Angiogenesis,,AZD4547,train,O=C(Nc1cc(CCc2ccccc2)[nH]n1)c1ccc(N2CCNCC2)cc1,VRQMAABPASPXMW-HDICACEKSA-N
+2.2,C13,WP1066,857064-38-1,https://pubchem.ncbi.nlm.nih.gov/compound/11210478,2.5,JAK/STAT,,WP1066,train,O=C(C=Cc1ccccn1)NCc1ccccc1,VFUAJMPDXIRPKO-LQELWAHVSA-N
+2.2,C14,Sotrastaurin,425637-18-9,https://pubchem.ncbi.nlm.nih.gov/compound/10296883,2.5,TGF-beta/Smad,,Sotrastaurin,test,O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1nc(N2CCNCC2)nc2ccccc12,OAVGBZOFDPFGPJ-UHFFFAOYSA-N
+2.2,C15,Tofacitinib,477600-75-2,https://pubchem.ncbi.nlm.nih.gov/compound/9926791,2.5,JAK/STAT,,Tofacitinib,train,c1nc(NC2CCCNC2)c2cc[nH]c2n1,UJLAWZDWDVHWOW-YPMHNXCESA-N
+2.2,C16,TAK-285,871026-44-7,https://pubchem.ncbi.nlm.nih.gov/compound/11620908,2.5,Protein Tyrosine Kinase,,TAK-285,test,c1ccc(Oc2ccc(Nc3ncnc4cc[nH]c34)cc2)cc1,ZYQXEVJIFYIBHZ-UHFFFAOYSA-N
+2.2,C17,Vistusertib,1009298-59-2,https://pubchem.ncbi.nlm.nih.gov/compound/25262792,2.5,PI3K/Akt/mTOR,,Vistusertib,train,c1ccc(-c2ccc3c(N4CCOCC4)nc(N4CCOCC4)nc3n2)cc1,JUSFANSTBFGBAF-IRXDYDNUSA-N
+2.2,C8,PF-00562271,939791-38-5,https://pubchem.ncbi.nlm.nih.gov/compound/16118986,2.5,Angiogenesis,,PF-00562271,train,O=C1Cc2cc(Nc3nccc(NCc4cccnc4)n3)ccc2N1,MZDKLVOWGIOKTN-UHFFFAOYSA-N
+2.2,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+2.2,D10,WAY-600,1062159-35-6,https://pubchem.ncbi.nlm.nih.gov/compound/25229526,2.5,PI3K/Akt/mTOR,,WAY-600,train,c1cncc(CN2CCC(n3ncc4c(N5CCOCC5)nc(-c5ccc6[nH]ccc6c5)nc43)CC2)c1,FPEIJQLXFHKLJV-UHFFFAOYSA-N
+2.2,D11,TAK-901,934541-31-8,https://pubchem.ncbi.nlm.nih.gov/compound/16124208,2.5,Cell Cycle,,TAK-901,train,O=C(NC1CCNCC1)c1cc(-c2ccccc2)c2c(c1)[nH]c1ncccc12,WKDACQVEJIVHMZ-UHFFFAOYSA-N
+2.2,D12,AMG-900,945595-80-2,https://pubchem.ncbi.nlm.nih.gov/compound/24856041,2.5,Cell Cycle,,AMG-900,test,c1csc(-c2nnc(Nc3ccc(Oc4ncccc4-c4ccncn4)cc3)c3ccccc23)c1,IVUGFMLRJOCGAS-UHFFFAOYSA-N
+2.2,D13,Fedratinib,936091-26-8,https://pubchem.ncbi.nlm.nih.gov/compound/16722836,2.5,JAK/STAT,,Fedratinib,val,c1ccc(Nc2ccnc(Nc3ccc(OCCN4CCCC4)cc3)n2)cc1,JOOXLOJCABQBSG-UHFFFAOYSA-N
+2.2,D14,PHA-767491,942425-68-5,https://pubchem.ncbi.nlm.nih.gov/compound/11715766,2.5,Cell Cycle,,PHA-767491,test,O=C1NCCc2[nH]c(-c3ccncc3)cc21,DKXHSOUZPMHNIZ-UHFFFAOYSA-N
+2.2,D15,Tivantinib,905854-02-6,https://pubchem.ncbi.nlm.nih.gov/compound/11494412,2.5,Protein Tyrosine Kinase,,Tivantinib,test,O=C1NC(=O)C(c2cn3c4c(cccc24)CCC3)C1c1c[nH]c2ccccc12,UCEQXRCJXIVODC-PMACEKPBSA-N
+2.2,D16,Varlitinib,845272-21-1,https://pubchem.ncbi.nlm.nih.gov/compound/42642648,2.5,Protein Tyrosine Kinase,,Varlitinib,train,c1csc(COc2ccc(Nc3ncnc4ccc(NC5=NCCO5)cc34)cc2)n1,UWXSAYUXVSFDBQ-CYBMUJFWSA-N
+2.2,D17,MK-2461,917879-39-1,https://pubchem.ncbi.nlm.nih.gov/compound/44137946,2.5,Protein Tyrosine Kinase,,MK-2461,train,O=c1c2cc(NS(=O)(=O)NCC3COCCO3)ccc2ccc2ncc(-c3cn[nH]c3)cc12,JGEBLDKNWBUGRZ-HXUWFJFHSA-N
+2.2,D8,Trametinib,871700-17-3,https://pubchem.ncbi.nlm.nih.gov/compound/11707110,2.5,MAPK,,Trametinib,train,O=c1cc2c(c(Nc3ccccc3)[nH]1)c(=O)n(C1CC1)c(=O)n2-c1ccccc1,LIRYPHYGHXZJBZ-UHFFFAOYSA-N
+2.2,D9,R547,741713-40-6,https://pubchem.ncbi.nlm.nih.gov/compound/6918852,2.5,Cell Cycle,,R547,train,O=C(c1ccccc1)c1cnc(NC2CCNCC2)nc1,JRNJNYBQQYBCLE-UHFFFAOYSA-N
+2.2,E10,TG101209,936091-14-4,https://pubchem.ncbi.nlm.nih.gov/compound/16722832,2.5,JAK/STAT,,TG101209,train,c1ccc(Nc2ccnc(Nc3ccc(N4CCNCC4)cc3)n2)cc1,JVDOKQYTTYUYDV-UHFFFAOYSA-N
+2.2,E11,GSK1838705A,1116235-97-2,https://pubchem.ncbi.nlm.nih.gov/compound/25182616,2.5,Protein Tyrosine Kinase,,GSK1838705A,val,c1ccc(Nc2nc(Nc3ccc4c(c3)NCC4)nc3[nH]ccc23)cc1,HZTYDQRUAWIZRE-UHFFFAOYSA-N
+2.2,E12,ZM 336372,208260-29-1,https://pubchem.ncbi.nlm.nih.gov/compound/5730,2.5,MAPK,,ZM 336372,train,O=C(Nc1cccc(NC(=O)c2ccccc2)c1)c1ccccc1,PYEFPDQFAZNXLI-UHFFFAOYSA-N
+2.2,E13,Crenolanib,670220-88-9,https://pubchem.ncbi.nlm.nih.gov/compound/10366136,2.5,Protein Tyrosine Kinase,,Crenolanib,train,c1cc(N2CCCCC2)c2nc(-n3cnc4cc(OCC5COC5)ccc43)ccc2c1,DYNHJHQFHQTFTP-UHFFFAOYSA-N
+2.2,E14,PF-04691502,1013101-36-4,https://pubchem.ncbi.nlm.nih.gov/compound/25033539,2.5,PI3K/Akt/mTOR,,PF-04691502,train,O=c1c(-c2cccnc2)cc2cncnc2n1C1CCCCC1,XDLYKKIQACFMJG-UHFFFAOYSA-N
+2.2,E15,Milciclib,802539-81-7,https://pubchem.ncbi.nlm.nih.gov/compound/16718576,2.5,Cell Cycle,,Milciclib,train,c1cc(N2CCNCC2)ccc1Nc1ncc2c(n1)-c1[nH]ncc1CC2,RXZMYLDMFYNEIM-UHFFFAOYSA-N
+2.2,E16,CUDC-907,1339928-25-4,https://pubchem.ncbi.nlm.nih.gov/compound/54575456,2.5,Cytoskeletal Signaling,,CUDC-907,test,c1cnc(NCc2cc3nc(-c4cccnc4)nc(N4CCOCC4)c3s2)nc1,JOWXJLIFIIOYMS-UHFFFAOYSA-N
+2.2,E17,MK-5108,1010085-13-8,https://pubchem.ncbi.nlm.nih.gov/compound/24748204,2.5,Cell Cycle,,MK-5108,train,c1ccc(OC2CCC(Cc3cccc(Nc4nccs4)n3)CC2)cc1,LCVIRAZGMYMNNT-UHFFFAOYSA-N
+2.2,E8,Flavopiridol HCl,131740-09-5,https://pubchem.ncbi.nlm.nih.gov/compound/9910986,2.5,Cell Cycle,,Flavopiridol HCl,train,O=c1cc(-c2ccccc2)oc2c(C3CCNCC3)cccc12,BIIVYFLTOXDAOV-YVEFUNNKSA-N
+2.2,E9,NVP-BSK805 2HCl,1092499-93-8 (free base),https://pubchem.ncbi.nlm.nih.gov/compound/57339395,2.5,JAK/STAT,,NVP-BSK805 2HCl,train,c1cc(-c2ccc(CN3CCOCC3)cc2)c2nc(-c3cnn(C4CCNCC4)c3)cnc2c1,IBPVXAOOVUAOKJ-UHFFFAOYSA-N
+2.2,F10,Apitolisib,1032754-93-0,https://pubchem.ncbi.nlm.nih.gov/compound/25254071,2.5,PI3K/Akt/mTOR,,Apitolisib,test,c1ncc(-c2nc(N3CCOCC3)c3sc(CN4CCNCC4)cc3n2)cn1,YOVVNQKCSKSHKT-HNNXBMFYSA-N
+2.2,F11,KX2-391,897016-82-9,https://pubchem.ncbi.nlm.nih.gov/compound/23635314,2.5,Angiogenesis,,KX2-391,train,O=C(Cc1ccc(-c2ccc(OCCN3CCOCC3)cc2)cn1)NCc1ccccc1,HUNGUWOZPQBXGX-UHFFFAOYSA-N
+2.2,F12,PH-797804,586379-66-0,https://pubchem.ncbi.nlm.nih.gov/compound/22049997,2.5,MAPK,,PH-797804,val,O=c1cc(OCc2ccccc2)ccn1-c1ccccc1,KCAJXIDMCNPGHZ-UHFFFAOYSA-N
+2.2,F13,SB415286,264218-23-7,https://pubchem.ncbi.nlm.nih.gov/compound/4210951,2.5,PI3K/Akt/mTOR,,SB415286,train,O=C1NC(=O)C(c2ccccc2)=C1Nc1ccccc1,PQCXVIPXISBFPN-UHFFFAOYSA-N
+2.2,F14,CHIR-98014,252935-94-7,https://pubchem.ncbi.nlm.nih.gov/compound/53396311,2.5,PI3K/Akt/mTOR,,CHIR-98014,train,c1ccc(-c2nc(NCCNc3ccccn3)ncc2-n2ccnc2)cc1,MDZCSIDIPDZWKL-UHFFFAOYSA-N
+2.2,F15,BGT226,1245537-68-1,https://pubchem.ncbi.nlm.nih.gov/compound/57336745,2.5,PI3K/Akt/mTOR,,BGT226,val,O=c1[nH]c2cnc3ccc(-c4cccnc4)cc3c2n1-c1ccc(N2CCNCC2)cc1,BMMXYEBLEBULND-UHFFFAOYSA-N
+2.2,F16,NVP-BVU972,1185763-69-2,https://pubchem.ncbi.nlm.nih.gov/compound/44206063,2.5,Protein Tyrosine Kinase,,NVP-BVU972,train,c1cnc2ccc(Cc3cnc4ccc(-c5cn[nH]c5)nn34)cc2c1,RNCNPRCUHHDYPC-UHFFFAOYSA-N
+2.2,F17,Dovitinib Dilactic Acid,852433-84-2,https://pubchem.ncbi.nlm.nih.gov/compound/135985126,2.5,Angiogenesis,,Dovitinib Dilactic Acid,train,O=c1[nH]c2ccccc2cc1-c1nc2ccc(N3CCNCC3)cc2[nH]1,PIQCTGMSNWUMAF-UHFFFAOYSA-N
+2.2,F8,Ibrutinib,936563-96-1,https://pubchem.ncbi.nlm.nih.gov/compound/24821094,2.5,Angiogenesis,,Ibrutinib,train,c1ccc(Oc2ccc(-c3nn(C4CCCNC4)c4ncncc34)cc2)cc1,XYFPWWZEPKGCCK-GOSISDBHSA-N
+2.2,F9,CHIR-124,405168-58-3,https://pubchem.ncbi.nlm.nih.gov/compound/135399748,2.5,Cell Cycle,,CHIR-124,train,O=c1[nH]c2ccccc2c(NC2CN3CCC2CC3)c1-c1nc2ccccc2[nH]1,MOVBBVMDHIRCTG-LJQANCHMSA-N
+2.2,G10,A-769662,844499-71-4,https://pubchem.ncbi.nlm.nih.gov/compound/54708532,2.5,PI3K/Akt/mTOR,,A-769662,train,O=c1ccc2c(-c3ccc(-c4ccccc4)cc3)csc2[nH]1,CTESJDQKVOEUOY-UHFFFAOYSA-N
+2.2,G11,CH5132799,1007207-67-1,https://pubchem.ncbi.nlm.nih.gov/compound/49784945,2.5,PI3K/Akt/mTOR,,CH5132799,train,c1ncc(-c2nc(N3CCOCC3)nc3c2CCN3)cn1,JEGHXKRHKHPBJD-UHFFFAOYSA-N
+2.2,G12,Dacomitinib,1110813-31-4,https://pubchem.ncbi.nlm.nih.gov/compound/11511120,2.5,Protein Tyrosine Kinase,,Dacomitinib,train,O=C(C=CCN1CCCCC1)Nc1ccc2ncnc(Nc3ccccc3)c2c1,LVXJQMNHJWSHET-AATRIKPKSA-N
+2.2,G13,AG-1478,153436-53-4,https://pubchem.ncbi.nlm.nih.gov/compound/2051,2.5,Protein Tyrosine Kinase,,AG-1478,train,c1ccc(Nc2ncnc3ccccc23)cc1,GFNNBHLJANVSQV-UHFFFAOYSA-N
+2.2,G14,AZ 628,878739-06-1,https://pubchem.ncbi.nlm.nih.gov/compound/11676786,2.5,MAPK,,AZ 628,train,O=C(Nc1cccc(Nc2ccc3nc[nH]c(=O)c3c2)c1)c1ccccc1,ZGBGPEDJXCYQPH-UHFFFAOYSA-N
+2.2,G15,AMG-458,913376-83-7,https://pubchem.ncbi.nlm.nih.gov/compound/24764449,2.5,Protein Tyrosine Kinase,,AMG-458,val,O=C(Nc1ccc(Oc2ccnc3ccccc23)cn1)c1c[nH]n(-c2ccccc2)c1=O,GLBZSOQDAOLMGC-UHFFFAOYSA-N
+2.2,G16,3-Methyladenine,5142-23-4,https://pubchem.ncbi.nlm.nih.gov/compound/135398661,2.5,PI3K/Akt/mTOR,,3-Methyladenine,train,N=c1nc[nH]c2nc[nH]c12,ZPBYVFQJHWLTFB-UHFFFAOYSA-N
+2.2,G17,Dinaciclib,779353-01-4,https://pubchem.ncbi.nlm.nih.gov/compound/46926350,2.5,Cell Cycle,,Dinaciclib,train,c1c[nH+]cc(CNc2cc(N3CCCCC3)nc3ccnn23)c1,PIMQWRZWLQKKBJ-SFHVURJKSA-N
+2.2,G8,AS-604850,648449-76-7,https://pubchem.ncbi.nlm.nih.gov/compound/5287855,2.5,PI3K/Akt/mTOR,,AS-604850,test,O=C1NC(=O)C(=Cc2ccc3c(c2)OCO3)S1,SRLVNYDXMUGOFI-YWEYNIOJSA-N
+2.2,G9,CAY10505,1218777-13-9 ,https://pubchem.ncbi.nlm.nih.gov/compound/1204893,2.5,PI3K/Akt/mTOR,,CAY10505,train,O=C1NC(=O)C(=Cc2ccc(-c3ccccc3)o2)S1,UFBTYTGRUBUUIL-KPKJPENVSA-N
+2.3,C10,DMSO,,,2.5,,vehicle control,,vehicle,,
+2.3,C11,XL019,945755-56-6,https://pubchem.ncbi.nlm.nih.gov/compound/57990869,2.5,JAK/STAT,,XL019,val,O=C(Nc1ccc(-c2ccnc(Nc3ccc(N4CCOCC4)cc3)n2)cc1)C1CCCN1,ISOCDPQFIXDIMS-QHCPKHFHSA-N
+2.3,C12,Duvelisib,1201438-56-3,https://pubchem.ncbi.nlm.nih.gov/compound/50905713,2.5,Angiogenesis,,Duvelisib,train,O=c1c2ccccc2cc(CNc2ncnc3nc[nH]c23)n1-c1ccccc1,SJVQHLPISAIATJ-ZDUSSCGKSA-N
+2.3,C13,CZC24832,1159824-67-5,https://pubchem.ncbi.nlm.nih.gov/compound/42623951,2.5,PI3K/Akt/mTOR,,CZC24832,val,c1cncc(-c2ccc3ncnn3c2)c1,RXRZPHQBTHQXSV-UHFFFAOYSA-N
+2.3,C14,VS-5584,1246560-33-7,https://pubchem.ncbi.nlm.nih.gov/compound/46912230,2.5,PI3K/Akt/mTOR,,VS-5584,train,c1ncc(-c2nc(N3CCOCC3)nc3[nH]cnc23)cn1,QYBGBLQCOOISAR-UHFFFAOYSA-N
+2.3,C15,PP2,172889-27-9,https://pubchem.ncbi.nlm.nih.gov/compound/4878,2.5,Angiogenesis,,PP2,train,c1ccc(-c2n[nH]c3ncncc23)cc1,PBBRWFOVCUAONR-UHFFFAOYSA-N
+2.3,C16,Binimetinib,606143-89-9,https://pubchem.ncbi.nlm.nih.gov/compound/10288191,2.5,MAPK,,Binimetinib,train,c1ccc(Nc2ccc3[nH]cnc3c2)cc1,ACWZRVQXLIRSDF-UHFFFAOYSA-N
+2.3,C17,AZD2932,883986-34-3,https://pubchem.ncbi.nlm.nih.gov/compound/11517980,2.5,Protein Tyrosine Kinase,,AZD2932,test,O=C(Cc1ccc(Oc2ncnc3ccccc23)cc1)Nc1cn[nH]c1,TWYCZJMOEMMCGC-UHFFFAOYSA-N
+2.3,C8,Dabrafenib,1195765-45-7,https://pubchem.ncbi.nlm.nih.gov/compound/44462760,2.5,MAPK,,Dabrafenib,train,O=S(=O)(Nc1cccc(-c2ncsc2-c2ccncn2)c1)c1ccccc1,BFSMGDJOXZAERB-UHFFFAOYSA-N
+2.3,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+2.3,D10,SAR131675,1433953-83-3,https://pubchem.ncbi.nlm.nih.gov/compound/71295845,2.5,Protein Tyrosine Kinase,,SAR131675,val,O=c1cc[nH]c2ncccc12,PFMPOBVAYMTUOX-GOSISDBHSA-N
+2.3,D11,IKK Inhibitor VII,873225-46-8,https://pubchem.ncbi.nlm.nih.gov/compound/9549298,2.5,NF-κB,,IKK Inhibitor VII,train,O=C(c1ccc(Nc2nccc(-c3cc4ccccc4s3)n2)cc1)N1CCC(N2CCCC2)CC1,BWZJBXAPRCVCKQ-UHFFFAOYSA-N
+2.3,D12,PF-562271,717907-75-0,https://pubchem.ncbi.nlm.nih.gov/compound/11713159,2.5,Angiogenesis,,PF-562271,train,O=C1Cc2cc(Nc3nccc(NCc4cccnc4)n3)ccc2N1,MZDKLVOWGIOKTN-UHFFFAOYSA-N
+2.3,D13,PF-477736,952021-60-2,https://pubchem.ncbi.nlm.nih.gov/compound/135565545,2.5,Cell Cycle,,PF-477736,train,O=C(CC1CCCCC1)Nc1cc2c3c(c(-c4cn[nH]c4)[nH]c3c1)C=NNC2=O,NDEXUOWTGYUVGA-LJQANCHMSA-N
+2.3,D14,Go 6983,133053-19-7,https://pubchem.ncbi.nlm.nih.gov/compound/3499,2.5,TGF-beta/Smad,,Go 6983,train,O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1c[nH]c2ccccc12,LLJJDLHGZUOMQP-UHFFFAOYSA-N
+2.3,D15,Piceatannol,10083-24-6,https://pubchem.ncbi.nlm.nih.gov/compound/667639,2.5,Angiogenesis,,Piceatannol,test,C(=Cc1ccccc1)c1ccccc1,CDRPUGZCRXZLFL-OWOJBTEDSA-N
+2.3,D16,Schisandrin B,61281-37-6,https://pubchem.ncbi.nlm.nih.gov/compound/108130,2.5,PI3K/Akt/mTOR,,Schisandrin B,train,c1ccc2c(c1)CCCCc1cc3c(cc1-2)OCO3,RTZKSTLPRTWFEV-UHFFFAOYSA-N
+2.3,D17,ALK-IN-1,1197958-12-5,https://pubchem.ncbi.nlm.nih.gov/compound/57390074,2.5,Protein Tyrosine Kinase,,ALK-IN-1,test,c1ccc(Nc2ccnc(Nc3ccc(N4CCCCC4)cc3)n2)cc1,OVDSPTSBIQCAIN-UHFFFAOYSA-N
+2.3,D8,Ipatasertib,1001264-89-6,https://pubchem.ncbi.nlm.nih.gov/compound/24788740,2.5,PI3K/Akt/mTOR,,Ipatasertib,test,O=C(Cc1ccccc1)N1CCN(c2ncnc3c2CCC3)CC1,GRZXWCHAXNAUHY-NSISKUIASA-N
+2.3,D9,TPCA-1,507475-17-4,https://pubchem.ncbi.nlm.nih.gov/compound/9903786,2.5,NF-κB,,TPCA-1,train,c1ccc(-c2cccs2)cc1,SAYGKHKXGCPTLX-UHFFFAOYSA-N
+2.3,E10,BI-D1870,501437-28-1,https://pubchem.ncbi.nlm.nih.gov/compound/25023738,2.5,PI3K/Akt/mTOR,,BI-D1870,val,O=C1CNc2nc(Nc3ccccc3)ncc2N1,DTEKTGDVSARYDS-UHFFFAOYSA-N
+2.3,E11,GW5074,220904-83-6,https://pubchem.ncbi.nlm.nih.gov/compound/5924208,2.5,MAPK,,GW5074,test,O=C1Nc2ccccc2C1=Cc1ccccc1,LMXYVLFTZRPNRV-KMKOMSMNSA-N
+2.3,E12,GW441756,504433-23-2,https://pubchem.ncbi.nlm.nih.gov/compound/9943465,2.5,Protein Tyrosine Kinase,,GW441756,val,O=C1Nc2cccnc2C1=Cc1c[nH]c2ccccc12,NXNQLECPAXXYTR-LCYFTJDESA-N
+2.3,E13,S-Ruxolitinib,941685-37-6,https://pubchem.ncbi.nlm.nih.gov/compound/50878566,2.5,JAK/STAT,,S-Ruxolitinib,train,c1nc(-c2cnn(CC3CCCC3)c2)c2cc[nH]c2n1,HFNKQEVNSGCOJV-HNNXBMFYSA-N
+2.3,E14,BAY 11-7082,19542-67-7,https://pubchem.ncbi.nlm.nih.gov/compound/5353431,2.5,NF-κB,,BAY 11-7082,train,c1ccccc1,DOEWDSDBFRHVAP-KRXBUXKQSA-N
+2.3,E15,Pazopanib,444731-52-6,https://pubchem.ncbi.nlm.nih.gov/compound/10113978,2.5,Protein Tyrosine Kinase,,Pazopanib,train,c1ccc(Nc2nccc(Nc3ccc4c[nH]nc4c3)n2)cc1,CUIHSIWYWATEQL-UHFFFAOYSA-N
+2.3,E16,Cabozantinib malate,1140909-48-3,https://pubchem.ncbi.nlm.nih.gov/compound/25102846,2.5,Protein Tyrosine Kinase,,Cabozantinib malate,train,O=C(Nc1ccccc1)C1(C(=O)Nc2ccc(Oc3ccnc4ccccc34)cc2)CC1,ONIQOQHATWINJY-UHFFFAOYSA-N
+2.3,E17,VX-702,745833-23-2,https://pubchem.ncbi.nlm.nih.gov/compound/10341154,2.5,MAPK,,VX-702,test,c1ccc(Nc2cccc(-c3ccccc3)n2)cc1,FYSRKRZDBHOFAY-UHFFFAOYSA-N
+2.3,E8,INK 128,1224844-38-5,https://pubchem.ncbi.nlm.nih.gov/compound/45375953,2.5,PI3K/Akt/mTOR,,INK 128,train,c1ncc2c(-c3ccc4ocnc4c3)n[nH]c2n1,GYLDXIAOMVERTK-UHFFFAOYSA-N
+2.3,E9,Tideglusib,865854-05-3 ,https://pubchem.ncbi.nlm.nih.gov/compound/11313622,2.5,PI3K/Akt/mTOR,,Tideglusib,train,O=c1sn(-c2cccc3ccccc23)c(=O)n1Cc1ccccc1,PMJIHLSCWIDGMD-UHFFFAOYSA-N
+2.3,F10,Semaxanib,194413-58-6,https://pubchem.ncbi.nlm.nih.gov/compound/5329098,2.5,Protein Tyrosine Kinase,,Semaxanib,train,O=C1Nc2ccccc2C1=Cc1ccc[nH]1,WUWDLXZGHZSWQZ-WQLSENKSSA-N
+2.3,F11,WHI-P154,211555-04-3,https://pubchem.ncbi.nlm.nih.gov/compound/3795,2.5,JAK/STAT,,WHI-P154,train,c1ccc(Nc2ncnc3ccccc23)cc1,CBIAKDAYHRWZCU-UHFFFAOYSA-N
+2.3,F12,Tyrphostin 9,10537-47-0,https://pubchem.ncbi.nlm.nih.gov/compound/5614,2.5,Protein Tyrosine Kinase,,Tyrphostin 9,train,c1ccccc1,MZOPWQKISXCCTP-UHFFFAOYSA-N
+2.3,F13,GNF-2,778270-11-4,https://pubchem.ncbi.nlm.nih.gov/compound/5311510,2.5,Angiogenesis,,GNF-2,train,c1ccc(Nc2cc(-c3ccccc3)ncn2)cc1,WEVYNIUIFUYDGI-UHFFFAOYSA-N
+2.3,F14,Icotinib,610798-31-7,https://pubchem.ncbi.nlm.nih.gov/compound/22024915,2.5,Protein Tyrosine Kinase,,Icotinib,train,c1ccc(Nc2ncnc3cc4c(cc23)OCCOCCOCCO4)cc1,QQLKULDARVNMAL-UHFFFAOYSA-N
+2.3,F15,TAK-715,303162-79-0,https://pubchem.ncbi.nlm.nih.gov/compound/9952773,2.5,MAPK,,TAK-715,test,O=C(Nc1cc(-c2scnc2-c2ccccc2)ccn1)c1ccccc1,HEKAIDKUDLCBRU-UHFFFAOYSA-N
+2.3,F16,JNK-IN-8,1410880-22-6,https://pubchem.ncbi.nlm.nih.gov/compound/57340686,2.5,MAPK,,JNK-IN-8,val,O=C(Nc1ccc(Nc2nccc(-c3cccnc3)n2)cc1)c1ccccc1,GJFCSAPFHAXMSF-UXBLZVDNSA-N
+2.3,F17,Fingolimod HCl,162359-56-0,https://pubchem.ncbi.nlm.nih.gov/compound/107969,2.5,GPCR & G Protein,,Fingolimod HCl,train,c1ccccc1,KKGQTZUTZRNORY-UHFFFAOYSA-N
+2.3,F8,Alpelisib,1217486-61-7,https://pubchem.ncbi.nlm.nih.gov/compound/56649450,2.5,PI3K/Akt/mTOR,,Alpelisib,test,O=C(Nc1ncc(-c2ccncc2)s1)N1CCCC1,STUWGJZDJHPWGZ-LBPRGKRZSA-N
+2.3,F9,TAE226,761437-28-9,https://pubchem.ncbi.nlm.nih.gov/compound/9934347,2.5,Angiogenesis,,TAE226,train,c1ccc(Nc2ccnc(Nc3ccc(N4CCOCC4)cc3)n2)cc1,UYJNQQDJUOUFQJ-UHFFFAOYSA-N
+2.3,G10,Golvatinib,928037-13-2,https://pubchem.ncbi.nlm.nih.gov/compound/16118392,2.5,Protein Tyrosine Kinase,,Golvatinib,test,O=C(Nc1cc(Oc2ccc(NC(=O)C3(C(=O)Nc4ccccc4)CC3)cc2)ccn1)N1CCC(N2CCNCC2)CC1,UQRCJCNVNUFYDX-UHFFFAOYSA-N
+2.3,G11,IMD 0354,978-62-1,https://pubchem.ncbi.nlm.nih.gov/compound/5081913,2.5,NF-κB,,IMD 0354,test,O=C(Nc1ccccc1)c1ccccc1,CHILCFMQWMQVAL-UHFFFAOYSA-N
+2.3,G12,ZM 323881 HCl,193000-39-4,https://pubchem.ncbi.nlm.nih.gov/compound/22624897,2.5,Protein Tyrosine Kinase,,ZM 323881 HCl,train,c1ccc(COc2ccc3c(Nc4ccccc4)ncnc3c2)cc1,NVBNDZZLJRYRPD-UHFFFAOYSA-N
+2.3,G13,ZM 306416,690206-97-4,https://pubchem.ncbi.nlm.nih.gov/compound/5329006,2.5,Protein Tyrosine Kinase,,ZM 306416,train,c1ccc(Nc2ncnc3ccccc23)cc1,YHUIUSRCUKUUQA-UHFFFAOYSA-N
+2.3,G14,CHIR-99021 HCl,252917-06-9 (free base),https://pubchem.ncbi.nlm.nih.gov/compound/71295844,2.5,PI3K/Akt/mTOR,,CHIR-99021 HCl,train,c1ccc(-c2nc(NCCNc3ccccn3)ncc2-c2ncc[nH]2)cc1,AQGNHMOJWBZFQQ-UHFFFAOYSA-N
+2.3,G15,TDZD-8,327036-89-5,https://pubchem.ncbi.nlm.nih.gov/compound/4124851,2.5,PI3K/Akt/mTOR,,TDZD-8,train,O=c1[nH]sc(=O)n1Cc1ccccc1,JDSJDASOXWCHPN-UHFFFAOYSA-N
+2.3,G16,SC-514,354812-17-2,https://pubchem.ncbi.nlm.nih.gov/compound/2807869,2.5,NF-κB,,SC-514,train,c1csc(-c2ccsc2)c1,BMUACLADCKCNKZ-UHFFFAOYSA-N
+2.3,G17,Tofacitinib Citrate,540737-29-9,https://pubchem.ncbi.nlm.nih.gov/compound/10174505,2.5,JAK/STAT,,Tofacitinib Citrate,train,c1nc(NC2CCCNC2)c2cc[nH]c2n1,UJLAWZDWDVHWOW-YPMHNXCESA-N
+2.3,G8,Tyrphostin AG 879,148741-30-4,https://pubchem.ncbi.nlm.nih.gov/compound/135419190,2.5,Protein Tyrosine Kinase,,Tyrphostin AG 879,train,c1ccccc1,XRZYELWZLNAXGE-KPKJPENVSA-N
+2.3,G9,Torin 2,1223001-51-1,https://pubchem.ncbi.nlm.nih.gov/compound/51358113,2.5,PI3K/Akt/mTOR,,Torin 2,val,O=c1ccc2cnc3ccc(-c4cccnc4)cc3c2n1-c1ccccc1,GUXXEUUYCAYESJ-UHFFFAOYSA-N
+3.1,C10,DMSO,,,2.5,,vehicle control,,vehicle,,
+3.1,C11,EHop-016,1380432-32-5,https://pubchem.ncbi.nlm.nih.gov/compound/51031035,2.5,Cell Cycle,,EHop-016,train,c1ccc2c(c1)[nH]c1ccc(Nc3ccnc(NCCCN4CCOCC4)n3)cc12,AFTZZRFCMOAFCR-UHFFFAOYSA-N
+3.1,C12,HTH-01-015,1613724-42-7,https://pubchem.ncbi.nlm.nih.gov/compound/78357766,2.5,PI3K/Akt/mTOR,,HTH-01-015,val,O=C1Nc2cnc(Nc3cnn(C4CCNCC4)c3)nc2Nc2cc3ccccc3cc21,CHSDJDLAKKAWCI-UHFFFAOYSA-N
+3.1,C13,WZ4003,1214265-58-3,https://pubchem.ncbi.nlm.nih.gov/compound/72200024,2.5,PI3K/Akt/mTOR,,WZ4003,train,c1ccc(Oc2ccnc(Nc3ccc(N4CCNCC4)cc3)n2)cc1,SDGJBAUIGHSMRI-UHFFFAOYSA-N
+3.1,C14,Osimertinib,1421373-65-0,https://pubchem.ncbi.nlm.nih.gov/compound/71496458,2.5,Protein Tyrosine Kinase,,Osimertinib,train,c1ccc(Nc2nccc(-c3c[nH]c4ccccc34)n2)cc1,DUYJMQONPNNFPI-UHFFFAOYSA-N
+3.1,C15,TAK-632,1228591-30-7,https://pubchem.ncbi.nlm.nih.gov/compound/46209401,2.5,MAPK,,TAK-632,train,O=C(Cc1ccccc1)Nc1cccc(Oc2ccc3nc(NC(=O)C4CC4)sc3c2)c1,OJFKUJDRGJSAQB-UHFFFAOYSA-N
+3.1,C16,PFK15,4382-63-2,https://pubchem.ncbi.nlm.nih.gov/compound/25142799,2.5,Others,,PFK15,train,O=C(C=Cc1ccc2ccccc2n1)c1ccncc1,UJJUKZPBUMCSJZ-BQYQJAHWSA-N
+3.1,C17,Rociletinib,1374640-70-6,https://pubchem.ncbi.nlm.nih.gov/compound/57335384,2.5,Protein Tyrosine Kinase,,Rociletinib,train,c1ccc(Nc2ccnc(Nc3ccc(N4CCNCC4)cc3)n2)cc1,HUFOZJXAKZVRNJ-UHFFFAOYSA-N
+3.1,C8,PD168393,194423-15-9,https://pubchem.ncbi.nlm.nih.gov/compound/4708,2.5,Protein Tyrosine Kinase,,PD168393,train,c1ccc(Nc2ncnc3ccccc23)cc1,HTUBKQUPEREOGA-UHFFFAOYSA-N
+3.1,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+3.1,D10,Ceritinib,1032900-25-6,https://pubchem.ncbi.nlm.nih.gov/compound/57379345,2.5,Protein Tyrosine Kinase,,Ceritinib,test,c1ccc(Nc2ccnc(Nc3ccc(C4CCNCC4)cc3)n2)cc1,VERWOWGGCGHDQE-UHFFFAOYSA-N
+3.1,D11,AZD3463,1356962-20-3,https://pubchem.ncbi.nlm.nih.gov/compound/56599293,2.5,Protein Tyrosine Kinase,,AZD3463,test,c1ccc2c(-c3ccnc(Nc4ccc(N5CCCCC5)cc4)n3)c[nH]c2c1,GCYIGMXOIWJGBU-UHFFFAOYSA-N
+3.1,D12,NU6027,220036-08-8,https://pubchem.ncbi.nlm.nih.gov/compound/398148,2.5,Cell Cycle,,NU6027,test,c1cc(OCC2CCCCC2)ncn1,DGWXOLHKVGDQLN-UHFFFAOYSA-N
+3.1,D13,SSR128129E,848318-25-2,https://pubchem.ncbi.nlm.nih.gov/compound/68853159,2.5,Angiogenesis,,SSR128129E,val,O=C(c1ccccc1)c1ccc2ccccn12,SNMCWIDCSPHZRD-UHFFFAOYSA-M
+3.1,D14,CC-292,1202757-89-8,https://pubchem.ncbi.nlm.nih.gov/compound/59174488,2.5,Angiogenesis,,CC-292,train,c1ccc(Nc2ccnc(Nc3ccccc3)n2)cc1,KXBDTLQSDKGAEB-UHFFFAOYSA-N
+3.1,D15,Bisindolylmaleimide I,133052-90-1,https://pubchem.ncbi.nlm.nih.gov/compound/2396,2.5,TGF-beta/Smad,,Bisindolylmaleimide I,train,O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1c[nH]c2ccccc12,QMGUOJYZJKLOLH-UHFFFAOYSA-N
+3.1,D16,GSK650394,890842-28-1,https://pubchem.ncbi.nlm.nih.gov/compound/25022668,2.5,Others,,GSK650394,train,c1ccc(-c2cnc3[nH]cc(-c4cccc(C5CCCC5)c4)c3c2)cc1,WVSBGSNVCDAMCF-UHFFFAOYSA-N
+3.1,D17,FRAX597,1286739-19-2,https://pubchem.ncbi.nlm.nih.gov/compound/70934541,2.5,Cytoskeletal Signaling,,FRAX597,train,O=c1[nH]c2nc(Nc3ccc(N4CCNCC4)cc3)ncc2cc1-c1ccc(-c2cncs2)cc1,DHUJCQOUWQMVCG-UHFFFAOYSA-N
+3.1,D8,CX-6258 HCl,1353859-00-3,https://pubchem.ncbi.nlm.nih.gov/compound/72201040,2.5,JAK/STAT,,CX-6258 HCl,val,O=C1Nc2ccccc2C1=Cc1ccc(-c2cccc(C(=O)N3CCCNCC3)c2)o1,KGBPLKOPSFDBOX-CJLVFECKSA-N
+3.1,D9,RN486,1242156-23-5,https://pubchem.ncbi.nlm.nih.gov/compound/46908026,2.5,Angiogenesis,,RN486,train,O=c1[nH]cc(-c2cccc(-n3ccc4cc(C5CC5)ccc4c3=O)c2)cc1Nc1ccc(N2CCNCC2)cn1,ZTUJNJAKTLHBEX-UHFFFAOYSA-N
+3.1,E10,GSK2334470,1227911-45-6,https://pubchem.ncbi.nlm.nih.gov/compound/46215815,2.5,PI3K/Akt/mTOR,,GSK2334470,test,O=C(NC1CCCCC1)C1CCCN(c2cc(-c3ccc4cn[nH]c4c3)ncn2)C1,QLPHOXTXAKOFMU-WBVHZDCISA-N
+3.1,E11,AZD1208,1204144-28-4,https://pubchem.ncbi.nlm.nih.gov/compound/58423153,2.5,JAK/STAT,,AZD1208,test,O=C1NC(=O)C(=Cc2cccc(-c3ccccc3)c2N2CCCCC2)S1,MCUJKPPARUPFJM-UWCCDQBKSA-N
+3.1,E12,MLN2480,1096708-71-2,https://pubchem.ncbi.nlm.nih.gov/compound/25161177,2.5,MAPK,,MLN2480,train,O=C(NCc1ncc(C(=O)Nc2ccccn2)s1)c1ccncn1,VWMJHAFYPMOMGF-ZCFIWIBFSA-N
+3.1,E13,Abemaciclib mesylate,1231930-82-7,https://pubchem.ncbi.nlm.nih.gov/compound/71576678,2.5,Cell Cycle,,Abemaciclib mesylate,train,c1cc(-c2ccc3nc[nH]c3c2)nc(Nc2ccc(CN3CCNCC3)cn2)n1,UZWDCWONPYILKI-UHFFFAOYSA-N
+3.1,E14,SKI II,312636-16-1,https://pubchem.ncbi.nlm.nih.gov/compound/753704,2.5,GPCR & G Protein,,SKI II,train,c1ccc(Nc2nc(-c3ccccc3)cs2)cc1,ZFGXZJKLOFCECI-UHFFFAOYSA-N
+3.1,E15,CNX-2006,1375465-09-0,https://pubchem.ncbi.nlm.nih.gov/compound/56968072,2.5,Protein Tyrosine Kinase,,CNX-2006,test,c1ccc(Nc2ccnc(Nc3ccc(NC4CNC4)cc3)n2)cc1,BFSRTTWIPACGMI-UHFFFAOYSA-N
+3.1,E16,Skepinone-L,1221485-83-1,https://pubchem.ncbi.nlm.nih.gov/compound/45279963,2.5,MAPK,,Skepinone-L,train,O=C1c2ccccc2CCc2cc(Nc3ccccc3)ccc21,HXMGCTFLLWPVFM-GOSISDBHSA-N
+3.1,E17,PD173955,260415-63-2,https://pubchem.ncbi.nlm.nih.gov/compound/447077,2.5,Angiogenesis,,PD173955,test,O=c1[nH]c2nc(Nc3ccccc3)ncc2cc1-c1ccccc1,VAARYSWULJUGST-UHFFFAOYSA-N
+3.1,E8,AZ20,1233339-22-4,https://pubchem.ncbi.nlm.nih.gov/compound/46244454,2.5,PI3K/Akt/mTOR,,AZ20,train,c1cc(-c2nc(C3CC3)cc(N3CCOCC3)n2)c2cc[nH]c2c1,SCGCBAAYLFTIJU-CQSZACIVSA-N
+3.1,E9,Tepotinib,1100598-32-0,https://pubchem.ncbi.nlm.nih.gov/compound/25171648,2.5,Protein Tyrosine Kinase,,Tepotinib,train,O=c1ccc(-c2ccccc2)nn1Cc1cccc(-c2ncc(OCC3CCNCC3)cn2)c1,AHYMHWXQRWRBKT-UHFFFAOYSA-N
+3.1,F10,Zotarolimus,221877-54-9,https://pubchem.ncbi.nlm.nih.gov/compound/9876378,2.5,PI3K/Akt/mTOR,,Zotarolimus,train,O=C1CCC=CCC(=O)CC(CCC2CCC(n3cnnn3)CC2)OC(=O)C2CCCCN2C(=O)C(=O)C2CCCC(CCC=CC=CC=CCCC1)O2,CGTADGCBEXYWNE-JUKNQOCSSA-N
+3.1,F11,VE-822,1232416-25-9,https://pubchem.ncbi.nlm.nih.gov/compound/59472121,2.5,PI3K/Akt/mTOR,,VE-822,train,c1ccc(-c2cc(-c3cncc(-c4ccccc4)n3)on2)cc1,JZCWLJDSIRUGIN-UHFFFAOYSA-N
+3.1,F12,TIC10 Analogue,41276-02-2,https://pubchem.ncbi.nlm.nih.gov/compound/336423,2.5,PI3K/Akt/mTOR,,TIC10 Analogue,train,O=C1C2=C(CCN(Cc3ccccc3)C2)N(Cc2ccccc2)C2=NCCN12,RSAQARAFWMUYLL-UHFFFAOYSA-N
+3.1,F13,10058-F4,403811-55-2,https://pubchem.ncbi.nlm.nih.gov/compound/1271002,2.5,Cell Cycle,,10058-F4,train,O=C1NC(=S)SC1=Cc1ccccc1,SVXDHPADAXBMFB-JXMROGBWSA-N
+3.1,F14,PF-543,1415562-82-1,https://pubchem.ncbi.nlm.nih.gov/compound/66577038,2.5,GPCR & G Protein,,PF-543,test,O=S(=O)(Cc1cccc(OCc2ccc(CN3CCCC3)cc2)c1)c1ccccc1,NPUXORBZRBIOMQ-RUZDIDTESA-N
+3.1,F15,BIO,667463-62-9,https://pubchem.ncbi.nlm.nih.gov/compound/448949,2.5,PI3K/Akt/mTOR,,BIO,test,c1ccc2[nH]c(-c3c[nH]c4ccccc34)cc2c1,SAQUSDSPQYQNBG-UHFFFAOYSA-N
+3.1,F16,Losmapimod,585543-15-3,https://pubchem.ncbi.nlm.nih.gov/compound/11552706,2.5,MAPK,,Losmapimod,test,O=C(NC1CC1)c1cccc(-c2ccccn2)c1,KKYABQBFGDZVNQ-UHFFFAOYSA-N
+3.1,F17,CNX-774,1202759-32-7,https://pubchem.ncbi.nlm.nih.gov/compound/59174579,2.5,Angiogenesis,,CNX-774,train,c1ccc(Nc2ccnc(Nc3ccc(Oc4ccncc4)cc3)n2)cc1,VVLHQJDAUIPZFH-UHFFFAOYSA-N
+3.1,F8,CGI1746,910232-84-7,https://pubchem.ncbi.nlm.nih.gov/compound/24857323,2.5,Angiogenesis,,CGI1746,train,O=C(Nc1cccc(-c2c[nH]c(=O)c(Nc3ccc(C(=O)N4CCOCC4)cc3)n2)c1)c1ccccc1,JIFCFQDXHMUPGP-UHFFFAOYSA-N
+3.1,F9,MK-8745,885325-71-3,https://pubchem.ncbi.nlm.nih.gov/compound/11676373,2.5,Cell Cycle,,MK-8745,train,O=C(c1ccccc1)N1CCN(Cc2cccc(Nc3nccs3)n2)CC1,YCRFPWKUUNKNDN-UHFFFAOYSA-N
+3.1,G10,IPA-3,42521-82-4,https://pubchem.ncbi.nlm.nih.gov/compound/521106,2.5,Cytoskeletal Signaling,,IPA-3,train,c1ccc2c(SSc3cccc4ccccc34)cccc2c1,RFAXLXKIAKIUDT-UHFFFAOYSA-N
+3.1,G11,PF-3758309,898044-15-0,https://pubchem.ncbi.nlm.nih.gov/compound/25227462,2.5,Cytoskeletal Signaling,,PF-3758309,train,O=C(NCc1ccccc1)N1Cc2[nH]nc(Nc3ncnc4ccsc34)c2C1,AYCPARAPKDAOEN-LJQANCHMSA-N
+3.1,G12,CGK 733,905973-89-9,https://pubchem.ncbi.nlm.nih.gov/compound/6605258,2.5,DNA Damage,,CGK 733,test,O=C(NCNC(=S)Nc1ccccc1)C(c1ccccc1)c1ccccc1,HLCDNLNLQNYZTK-UHFFFAOYSA-N
+3.1,G13,AZD1080,612487-72-6,https://pubchem.ncbi.nlm.nih.gov/compound/135564570,2.5,PI3K/Akt/mTOR,,AZD1080,train,c1ccc2c(-c3ccc(CN4CCOCC4)cn3)c[nH]c2c1,BLTVBQXJFVRPFK-UHFFFAOYSA-N
+3.1,G14,GZD824 Dimesylate,1421783-64-3,https://pubchem.ncbi.nlm.nih.gov/compound/71519689,2.5,Angiogenesis,,GZD824 Dimesylate,train,O=C(Nc1ccc(CN2CCNCC2)cc1)c1cccc(C#Cc2cnc3[nH]ncc3c2)c1,TZKBVRDEOITLRB-UHFFFAOYSA-N
+3.1,G15,RKI-1447,1342278-01-6,https://pubchem.ncbi.nlm.nih.gov/compound/60138149,2.5,Cell Cycle,,RKI-1447,train,O=C(NCc1ccccc1)Nc1nc(-c2ccncc2)cs1,GDVRVPIXWXOKQO-UHFFFAOYSA-N
+3.1,G16,Ro3280,1062243-51-9,https://pubchem.ncbi.nlm.nih.gov/compound/25015677,2.5,Cell Cycle,,Ro3280,test,O=C1CCN(C2CCCC2)c2nc(Nc3ccc(C(=O)NC4CCNCC4)cc3)ncc2N1,DJNZZLZKAXGMMC-UHFFFAOYSA-N
+3.1,G17,AZD2858,486424-20-8,https://pubchem.ncbi.nlm.nih.gov/compound/10138980,2.5,PI3K/Akt/mTOR,,AZD2858,train,O=C(Nc1cccnc1)c1cncc(-c2ccc(S(=O)(=O)N3CCNCC3)cc2)n1,FHCSBLWRGCOVPT-UHFFFAOYSA-N
+3.1,G8,PP1,172889-26-8,https://pubchem.ncbi.nlm.nih.gov/compound/1400,2.5,Angiogenesis,,PP1,train,c1ccc(-c2n[nH]c3ncncc23)cc1,ZVPDNRVYHLRXLX-UHFFFAOYSA-N
+3.1,G9,LY2090314,603288-22-8,https://pubchem.ncbi.nlm.nih.gov/compound/10029385,2.5,PI3K/Akt/mTOR,,LY2090314,train,O=C1NC(=O)C(c2cnc3ccccn23)=C1c1cn2c3c(cccc13)CN(C(=O)N1CCCCC1)CC2,HRJWTAWVFDCTGO-UHFFFAOYSA-N
+3.2,C10,DMSO,,,2.5,,vehicle control,,vehicle,,
+3.2,C11,LJH685,1627710-50-2,https://pubchem.ncbi.nlm.nih.gov/compound/73010393,2.5,PI3K/Akt/mTOR,,LJH685,train,c1ccc(-c2cnccc2-c2ccc(N3CCNCC3)cc2)cc1,IKUFKDGKRLMXEX-UHFFFAOYSA-N
+3.2,C12,Ulixertinib,869886-67-9,https://pubchem.ncbi.nlm.nih.gov/compound/11719003,2.5,MAPK,,Ulixertinib,train,O=C(NCc1ccccc1)c1cc(-c2ccncc2)c[nH]1,KSERXGMCDHOLSS-LJQANCHMSA-N
+3.2,C13,SGI-7079,1239875-86-5,https://pubchem.ncbi.nlm.nih.gov/compound/46870258,2.5,Protein Tyrosine Kinase,,SGI-7079,train,c1ccc(-c2nc(Nc3ccc(N4CCNCC4)cc3)nc3[nH]ccc23)cc1,BCFKACXAIBEPKR-UHFFFAOYSA-N
+3.2,C14,AMG319,1608125-21-8,https://pubchem.ncbi.nlm.nih.gov/compound/68947304,2.5,PI3K/Akt/mTOR,,AMG319,train,c1ccc(-c2nc3ccccc3cc2CNc2ncnc3nc[nH]c23)nc1,KWRYMZHCQIOOEB-LBPRGKRZSA-N
+3.2,C15,Purvalanol A,212844-53-6,https://pubchem.ncbi.nlm.nih.gov/compound/456214,2.5,Cell Cycle,,Purvalanol A,train,c1ccc(Nc2ncnc3[nH]cnc23)cc1,PMXCMJLOPOFPBT-HNNXBMFYSA-N
+3.2,C16,Akti-1/2,612847-09-3,https://pubchem.ncbi.nlm.nih.gov/compound/135398501,2.5,PI3K/Akt/mTOR,,Akti-1/2,train,O=c1[nH]c2ccccc2n1C1CCN(Cc2ccc(-c3[nH]c4cc5ncnc5cc4nc3-c3ccccc3)cc2)CC1,IWCQHVUQEFDRIW-UHFFFAOYSA-N
+3.2,C17,SU6656,330161-87-0,https://pubchem.ncbi.nlm.nih.gov/compound/5312137,2.5,Angiogenesis,,SU6656,train,O=C1Nc2ccccc2C1=Cc1cc2c([nH]1)CCCC2,LOGJQOUIVKBFGH-YBEGLDIGSA-N
+3.2,C8,TG003,300801-52-9,https://pubchem.ncbi.nlm.nih.gov/compound/1893668,2.5,Cell Cycle,,TG003,train,C=C1Nc2ccccc2S1,BGVLELSCIHASRV-QPEQYQDCSA-N
+3.2,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+3.2,D10,KN-93 Phosphate,1188890-41-6,https://pubchem.ncbi.nlm.nih.gov/compound/16760530,2.5,Others,,KN-93 Phosphate,train,O=S(=O)(Nc1ccccc1CNCC=Cc1ccccc1)c1ccccc1,LLLQTDSSHZREGW-AATRIKPKSA-N
+3.2,D11,GNF-5,778277-15-9,https://pubchem.ncbi.nlm.nih.gov/compound/44129660,2.5,Angiogenesis,,GNF-5,train,c1ccc(Nc2cc(-c3ccccc3)ncn2)cc1,IIQUYGWWHIHOCF-UHFFFAOYSA-N
+3.2,D12,GNE-7915,1351761-44-8,https://pubchem.ncbi.nlm.nih.gov/compound/58539171,2.5,Autophagy,,GNE-7915,train,O=C(c1ccc(Nc2ncccn2)cc1)N1CCOCC1,XCFLWTZSJYBCPF-UHFFFAOYSA-N
+3.2,D13,Anacardic Acid,16611-84-0,https://pubchem.ncbi.nlm.nih.gov/compound/167551,2.5,Epigenetics,,Anacardic Acid,train,c1ccccc1,ADFWQBGTDJIESE-UHFFFAOYSA-N
+3.2,D14,Filgotinib,1206161-97-8,https://pubchem.ncbi.nlm.nih.gov/compound/49831257,2.5,JAK/STAT,,Filgotinib,train,O=C(Nc1nc2cccc(-c3ccc(CN4CCS(=O)(=O)CC4)cc3)n2n1)C1CC1,RIJLVEAXPNLDTC-UHFFFAOYSA-N
+3.2,D15,VX-11e,896720-20-0,https://pubchem.ncbi.nlm.nih.gov/compound/11634725,2.5,MAPK,,VX-11e,val,O=C(NCc1ccccc1)c1cc(-c2ccnc(Nc3ccccc3)n2)c[nH]1,WUTVMXLIGHTZJC-OAQYLSRUSA-N
+3.2,D16,FIIN-2,1633044-56-0,https://pubchem.ncbi.nlm.nih.gov/compound/91825767,2.5,Protein Tyrosine Kinase,,FIIN-2,test,O=C1N(c2ccccc2)Cc2cnc(Nc3ccc(N4CCNCC4)cc3)nc2N1Cc1ccccc1,DVBPRWJMHURKHP-UHFFFAOYSA-N
+3.2,D17,Pluripotin,839707-37-8,https://pubchem.ncbi.nlm.nih.gov/compound/12003241,2.5,MAPK,,Pluripotin,val,O=C(Nc1cccc(N2Cc3cnc(Nc4ccn[nH]4)nc3NC2=O)c1)c1ccccc1,NBZFRTJWEIHFPF-UHFFFAOYSA-N
+3.2,D8,ERK5-IN-1,1435488-37-1,https://pubchem.ncbi.nlm.nih.gov/compound/71604307,2.5,MAPK,,ERK5-IN-1,train,O=C1Nc2cnc(Nc3ccc(C(=O)N4CCC(N5CCNCC5)CC4)cc3)nc2N(C2CCCC2)c2ccccc21,XVBGRTMNFNMINE-UHFFFAOYSA-N
+3.2,D9,KN-62,127191-97-3,https://pubchem.ncbi.nlm.nih.gov/compound/5312126,2.5,Others,,KN-62,train,O=C(C(Cc1ccc(OS(=O)(=O)c2cccc3cnccc23)cc1)NS(=O)(=O)c1cccc2cnccc12)N1CCN(c2ccccc2)CC1,RJVLFQBBRSMWHX-DHUJRADRSA-N
+3.2,E10,AR-A014418,487021-52-3,https://pubchem.ncbi.nlm.nih.gov/compound/448014,2.5,PI3K/Akt/mTOR,,AR-A014418,train,O=C(NCc1ccccc1)Nc1nccs1,YAEMHJKFIIIULI-UHFFFAOYSA-N
+3.2,E11,XMD8-92,1234480-50-2,https://pubchem.ncbi.nlm.nih.gov/compound/46843772,2.5,MAPK,,XMD8-92,test,O=C1Nc2cnc(Nc3ccc(N4CCCCC4)cc3)nc2Nc2ccccc21,QAPAJIZPZGWAND-UHFFFAOYSA-N
+3.2,E12,Decernotinib,944842-54-0,https://pubchem.ncbi.nlm.nih.gov/compound/59422203,2.5,JAK/STAT,,Decernotinib,train,c1cnc(-c2c[nH]c3ncccc23)nc1,ASUGUQWIHMTFJL-QGZVFWFLSA-N
+3.2,E13,IM-12,1129669-05-1,https://pubchem.ncbi.nlm.nih.gov/compound/25209788,2.5,PI3K/Akt/mTOR,,IM-12,train,O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1NCCc1ccccc1,ZKJAZFUFPPSFCO-UHFFFAOYSA-N
+3.2,E14,LDN-214117,1627503-67-6,https://pubchem.ncbi.nlm.nih.gov/compound/91754554,2.5,TGF-beta/Smad,,LDN-214117,train,c1ccc(-c2cncc(-c3ccc(N4CCNCC4)cc3)c2)cc1,BHUXVRVMMYAXKN-UHFFFAOYSA-N
+3.2,E15,AZD6738,1352226-88-0,https://pubchem.ncbi.nlm.nih.gov/compound/54761306,2.5,PI3K/Akt/mTOR,,AZD6738,test,c1cc(-c2nc(C3CC3)cc(N3CCOCC3)n2)c2cc[nH]c2n1,OHUHVTCQTUDPIJ-JYCIKRDWSA-N
+3.2,E16,Bikinin,188011-69-0,https://pubchem.ncbi.nlm.nih.gov/compound/647833,2.5,PI3K/Akt/mTOR,,Bikinin,train,c1ccncc1,XFYYQDHEDOXWGA-UHFFFAOYSA-N
+3.2,E17,Ro-3306,872573-93-8,https://pubchem.ncbi.nlm.nih.gov/compound/135400873,2.5,Cell Cycle,,Ro-3306,train,O=C1NC(=NCc2cccs2)SC1=Cc1ccc2ncccc2c1,XOLMRFUGOINFDQ-YBEGLDIGSA-N
+3.2,E8,URMC-099,1229582-33-5,https://pubchem.ncbi.nlm.nih.gov/compound/54764565,2.5,Others,,URMC-099,test,c1cc2cc(-c3c[nH]c4ncc(-c5ccc(CN6CCNCC6)cc5)cc34)ccc2[nH]1,QKKIWEILHCXECO-UHFFFAOYSA-N
+3.2,E9,Sorafenib,284461-73-0,https://pubchem.ncbi.nlm.nih.gov/compound/216239,2.5,MAPK,,Sorafenib,train,O=C(Nc1ccccc1)Nc1ccc(Oc2ccncc2)cc1,MLDQJTXFUGDVEO-UHFFFAOYSA-N
+3.2,F10,LDC000067,1073485-20-7,https://pubchem.ncbi.nlm.nih.gov/compound/25104564,2.5,Cell Cycle,,LDC000067,train,c1ccc(Nc2cc(-c3ccccc3)ncn2)cc1,GGQCIOOSELPMBB-UHFFFAOYSA-N
+3.2,F11,JNK Inhibitor IX,312917-14-9,https://pubchem.ncbi.nlm.nih.gov/compound/766949,2.5,MAPK,,JNK Inhibitor IX,train,O=C(Nc1cc2c(s1)CCCC2)c1cccc2ccccc12,WQGDQGAFSDMBLA-UHFFFAOYSA-N
+3.2,F12,Vacquinol-1,5428-80-8 (free base),https://pubchem.ncbi.nlm.nih.gov/compound/129896712,2.5,MAPK,,Vacquinol-1,test,c1ccc(-c2cc(CC3CCCCN3)c3ccccc3n2)cc1,VKLJPGAHSLIQKH-UHFFFAOYSA-N
+3.2,F13,WH-4-023,837422-57-8,https://pubchem.ncbi.nlm.nih.gov/compound/11844351,2.5,Angiogenesis,,WH-4-023,val,O=C(Oc1ccccc1)N(c1ccccc1)c1ccnc(Nc2ccc(N3CCNCC3)cc2)n1,NBTNHSGBRGTFJS-UHFFFAOYSA-N
+3.2,F14,SU9516,377090-84-1,https://pubchem.ncbi.nlm.nih.gov/compound/5289419,2.5,Cell Cycle,,SU9516,train,O=C1Nc2ccccc2C1=Cc1cnc[nH]1,QNUKRWAIZMBVCU-WCIBSUBMSA-N
+3.2,F15,GSK2578215A,1285515-21-0,https://pubchem.ncbi.nlm.nih.gov/compound/68107965,2.5,Autophagy,,GSK2578215A,train,O=C(Nc1cccnc1)c1cc(-c2ccncc2)ccc1OCc1ccccc1,WCIGMFCFPXZRMQ-UHFFFAOYSA-N
+3.2,F16,BLZ945,953769-46-5,https://pubchem.ncbi.nlm.nih.gov/compound/46184986,2.5,Protein Tyrosine Kinase,,BLZ945,val,c1cc(Oc2ccc3nc(NC4CCCCC4)sc3c2)ccn1,ADZBMFGQQWPHMJ-RHSMWYFYSA-N
+3.2,F17,ANA-12,219766-25-3,https://pubchem.ncbi.nlm.nih.gov/compound/2799722,2.5,Protein Tyrosine Kinase,,ANA-12,test,O=C(Nc1ccccc1C(=O)NC1CCCCNC1=O)c1cc2ccccc2s1,TUSCYCAIGRVBMD-UHFFFAOYSA-N
+3.2,F8,Bay 11-7085,196309-76-9,https://pubchem.ncbi.nlm.nih.gov/compound/5353432,2.5,NF-κB,,Bay 11-7085,train,c1ccccc1,VHKZGNPOHPFPER-ONNFQVAWSA-N
+3.2,F9,GNE-9605,1536200-31-3,https://pubchem.ncbi.nlm.nih.gov/compound/76328936,2.5,Autophagy,,GNE-9605,train,c1cnc(Nc2cnn(C3CCN(C4COC4)CC3)c2)nc1,PUXPEQJKNAWNQA-AAEUAGOBSA-N
+3.2,G10,Uprosertib,1047634-65-0,https://pubchem.ncbi.nlm.nih.gov/compound/51042438,2.5,PI3K/Akt/mTOR,,Uprosertib,train,O=C(NCCc1ccccc1)c1cc(-c2ccn[nH]2)co1,AXTAPYRUEKNRBA-JTQLQIEISA-N
+3.2,G11,DDR1-IN-1,1449685-96-4,https://pubchem.ncbi.nlm.nih.gov/compound/72836888,2.5,Others,,DDR1-IN-1,train,O=C1Cc2cc(Oc3cccc(NC(=O)c4ccc(CN5CCNCC5)cc4)c3)ccc2N1,AOZPVMOOEJAZGK-UHFFFAOYSA-N
+3.2,G12,G-749,1457983-28-6,https://pubchem.ncbi.nlm.nih.gov/compound/78357765,2.5,Angiogenesis,,G-749,train,O=c1[nH]ccc2nc(NC3CCNCC3)nc(Nc3ccc(Oc4ccccc4)cc3)c12,SXWMIXPJPNCXQQ-UHFFFAOYSA-N
+3.2,G13,AT13148,1056901-62-2,https://pubchem.ncbi.nlm.nih.gov/compound/24905401,2.5,PI3K/Akt/mTOR,,AT13148,train,c1ccc(Cc2ccc(-c3cn[nH]c3)cc2)cc1,IIRWNGPLJQXWFJ-KRWDZBQOSA-N
+3.2,G14,D4476,301836-43-1,https://pubchem.ncbi.nlm.nih.gov/compound/6419753,2.5,Metabolism,,D4476,test,c1ccc(-c2nc(-c3ccc4c(c3)OCCO4)c(-c3ccccn3)[nH]2)cc1,DPDZHVCKYBCJHW-UHFFFAOYSA-N
+3.2,G15,PF-431396,717906-29-1,https://pubchem.ncbi.nlm.nih.gov/compound/11598628,2.5,Angiogenesis,,PF-431396,train,O=C1Cc2cc(Nc3nccc(NCc4ccccc4)n3)ccc2N1,POJZIZBONPAWIV-UHFFFAOYSA-N
+3.2,G16,LFM-A13,244240-24-2,https://pubchem.ncbi.nlm.nih.gov/compound/54676905,2.5,Angiogenesis,,LFM-A13,train,c1ccccc1,UVSVTDVJQAJIFG-VURMDHGXSA-N
+3.2,G17,SB239063,193551-21-2,https://pubchem.ncbi.nlm.nih.gov/compound/5166,2.5,MAPK,,SB239063,train,c1ccc(-c2ncn(C3CCCCC3)c2-c2ccncn2)cc1,ZQUSFAUAYSEREK-UHFFFAOYSA-N
+3.2,G8,HS-173,1276110-06-5,https://pubchem.ncbi.nlm.nih.gov/compound/52936849,2.5,PI3K/Akt/mTOR,,HS-173,val,O=S(=O)(Nc1cncc(-c2ccc3nccn3c2)c1)c1ccccc1,SEKOTFCHZNXZMM-UHFFFAOYSA-N
+3.2,G9,GNE-0877,1374828-69-9,https://pubchem.ncbi.nlm.nih.gov/compound/69093374,2.5,Autophagy,,GNE-0877,test,c1cnc(Nc2cn[nH]c2)nc1,ZPPUMAMZIMPJGP-UHFFFAOYSA-N
+3.3,C10,DMSO,,,2.5,,vehicle control,,vehicle,,
+3.3,C11,,,,2.5,,untreated control,,excluded,,
+3.3,C12,,,,2.5,,untreated control,,excluded,,
+3.3,C13,,,,2.5,,untreated control,,excluded,,
+3.3,C14,APTSTAT3-9R,,https://pubchem.ncbi.nlm.nih.gov/compound/131709226,2.5,JAK/STAT,,APTSTAT3-9R,train,O=C(CCc1c[nH]cn1)NCC(=O)NC(Cc1ccccc1)C(=O)NCC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)N1CCCC1C(=O)NCC(=O)NCC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NCC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NCC(=O)NCC(=O)NCC(=O)NCC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NCC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NCC(=O)NCC(=O)NCC(=O)NC(Cc1ccccc1)C(=O)NCC(=O)NCCc1ccccc1,DSGGVPGAEGYDOM-UHFFFAOYSA-N
+3.3,C15,Dorsomorphin 2HCl,1219168-18-9,https://pubchem.ncbi.nlm.nih.gov/compound/49761481,2.5,PI3K/Akt/mTOR,,Dorsomorphin 2HCl,test,c1cc(-c2cnn3cc(-c4ccc(OCCN5CCCCC5)cc4)cnc23)ccn1,XHBVYDAKJHETMP-UHFFFAOYSA-N
+3.3,C16,Chloroquine Phosphate,50-63-5,https://pubchem.ncbi.nlm.nih.gov/compound/64927,2.5,PI3K/Akt/mTOR,,Chloroquine Phosphate,train,c1ccc2ncccc2c1,WHTVZRBIWZFKQO-UHFFFAOYSA-N
+3.3,C17,Miltefosine,58066-85-6,https://pubchem.ncbi.nlm.nih.gov/compound/3599,2.5,PI3K/Akt/mTOR,,Miltefosine,train,,PQLXHQMOHUQAKB-UHFFFAOYSA-N
+3.3,C8,LJI308,1627709-94-7,https://pubchem.ncbi.nlm.nih.gov/compound/118704762,2.5,PI3K/Akt/mTOR,,LJI308,test,c1ccc(-c2cnccc2-c2ccc(N3CCOCC3)cc2)cc1,YUYJEQHNWKQNBT-UHFFFAOYSA-N
+3.3,C9,DMSO,,,2.5,,vehicle control,,vehicle,,
+3.3,D10,VPS34-IN1,1383716-33-3,https://pubchem.ncbi.nlm.nih.gov/compound/57404276,2.5,PI3K/Akt/mTOR,,VPS34-IN1,train,c1cc(Nc2nccc(-c3cncnc3CC3CC3)n2)ccn1,AWNXKZVIZARMME-UHFFFAOYSA-N
+3.3,D11,AG-18,118409-57-7,https://pubchem.ncbi.nlm.nih.gov/compound/2052,2.5,Protein Tyrosine Kinase,,AG-18,train,c1ccccc1,VTJXFTPMFYAJJU-UHFFFAOYSA-N
+3.3,D12,CEP-32496,1188910-76-0,https://pubchem.ncbi.nlm.nih.gov/compound/56846693,2.5,MAPK,,CEP-32496,train,O=C(Nc1cccc(Oc2ncnc3ccccc23)c1)Nc1ccon1,DKNUPRMJNUQNHR-UHFFFAOYSA-N
+3.3,D13,GDC-0349,1207360-89-1,https://pubchem.ncbi.nlm.nih.gov/compound/59239165,2.5,PI3K/Akt/mTOR,,GDC-0349,test,c1ccc(-c2nc3c(c(N4CCOCC4)n2)CCN(C2COC2)C3)cc1,RGJOJUGRHPQXGF-INIZCTEOSA-N
+3.3,D14,Cobimetinib,934660-93-2,https://pubchem.ncbi.nlm.nih.gov/compound/16222096,2.5,MAPK,,Cobimetinib,val,O=C(c1ccccc1Nc1ccccc1)N1CC(C2CCCCN2)C1,BSMCAPRUBJMWDF-KRWDZBQOSA-N
+3.3,D15,AMG 337,1173699-31-4,https://pubchem.ncbi.nlm.nih.gov/compound/44181686,2.5,Protein Tyrosine Kinase,,AMG 337,test,O=c1c2cccnc2ccn1Cc1nnc2ccc(-c3cn[nH]c3)cn12,DWHXUGDWKAIASB-CQSZACIVSA-N
+3.3,D16,Oclacitinib,1640292-55-2,https://pubchem.ncbi.nlm.nih.gov/compound/44631937,2.5,JAK/STAT,,Oclacitinib,test,c1nc(NC2CCCCC2)c2cc[nH]c2n1,HJWLJNBZVZDLAQ-UHFFFAOYSA-N
+3.3,D17,LY2228820,862507-23-1,https://pubchem.ncbi.nlm.nih.gov/compound/11570805,2.5,MAPK,,LY2228820,train,c1ccc(-c2nc[nH]c2-c2ccc3nc[nH]c3n2)cc1,XPPBBJCBDOEXDN-UHFFFAOYSA-N
+3.3,D8,ONO-4059 analogue,1351635-67-0,https://pubchem.ncbi.nlm.nih.gov/compound/89455219,2.5,Angiogenesis,,ONO-4059 analogue,test,O=c1n(-c2ccc(Oc3ccccc3)cc2)c2cncnc2n1C1CCCNC1,KSUDUUBCXJUFRL-SFHVURJKSA-N
+3.3,D9,AZD3759,1626387-80-1,https://pubchem.ncbi.nlm.nih.gov/compound/78209992,2.5,Protein Tyrosine Kinase,,AZD3759,train,O=C(Oc1ccc2ncnc(Nc3ccccc3)c2c1)N1CCNCC1,MXDSJQHFFDGFDK-CYBMUJFWSA-N
+3.3,E10,Entrectinib,1108743-60-7,https://pubchem.ncbi.nlm.nih.gov/compound/25141092,2.5,Protein Tyrosine Kinase,,Entrectinib,val,O=C(Nc1n[nH]c2ccc(Cc3ccccc3)cc12)c1ccc(N2CCNCC2)cc1NC1CCOCC1,HAYYBYPASCDWEQ-UHFFFAOYSA-N
+3.3,E11,VE-821,1232410-49-9,https://pubchem.ncbi.nlm.nih.gov/compound/51000408,2.5,DNA Damage,,VE-821,val,O=C(Nc1ccccc1)c1cncc(-c2ccccc2)n1,DUIHHZKTCSNTGM-UHFFFAOYSA-N
+3.3,E12,AZD5363,1143532-39-1,https://pubchem.ncbi.nlm.nih.gov/compound/25227436,2.5,PI3K/Akt/mTOR,,AZD5363,train,O=C(NCc1ccccc1)C1CCN(c2ncnc3[nH]ccc23)CC1,JDUBGYFRJFOXQC-KRWDZBQOSA-N
+3.3,E13,Butein,487-52-5,https://pubchem.ncbi.nlm.nih.gov/compound/5281222,2.5,Protein Tyrosine Kinase,,Butein,train,O=C(C=Cc1ccccc1)c1ccccc1,AYMYWHCQALZEGT-ORCRQEGFSA-N
+3.3,E14,BMS-345541,445430-58-0,https://pubchem.ncbi.nlm.nih.gov/compound/9813758,2.5,NF-κB,,BMS-345541,train,c1ccc2c(c1)ncc1nccn12,PSPFQEBFYXJZEV-UHFFFAOYSA-N
+3.3,E15,BMS-582949,623152-17-0,https://pubchem.ncbi.nlm.nih.gov/compound/10409068,2.5,MAPK,,BMS-582949,train,O=C(NC1CC1)c1cccc(Nc2ncnn3cccc23)c1,GDTQLZHHDRRBEB-UHFFFAOYSA-N
+3.3,E16,BI-78D3,883065-90-5,https://pubchem.ncbi.nlm.nih.gov/compound/2747117,2.5,MAPK,,BI-78D3,train,O=c1[nH]nc(Sc2nccs2)n1-c1ccc2c(c1)OCCO2,QFRLDZGQEZCCJZ-UHFFFAOYSA-N
+3.3,E17,Palbociclib HCl,"827022-32-2, 571190-30-2 (free base)",https://pubchem.ncbi.nlm.nih.gov/compound/11431660,2.5,Others,,Palbociclib HCl,train,O=c1ccc2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n1C1CCCC1,AHJRHEGDXFFMBM-UHFFFAOYSA-N
+3.3,E8,CC-223,1228013-30-6,https://pubchem.ncbi.nlm.nih.gov/compound/58298316,2.5,PI3K/Akt/mTOR,,CC-223,train,O=C1CNc2ncc(-c3cccnc3)nc2N1C1CCCCC1,UFKLYTOEMRFKAD-UHFFFAOYSA-N
+3.3,E9,PLX7904,1393465-84-3,https://pubchem.ncbi.nlm.nih.gov/compound/90116945,2.5,MAPK,,PLX7904,train,O=C(c1ccccc1)c1c[nH]c2ncc(-c3cnc(C4CC4)nc3)cc12,DKNZQPXIIHLUHU-UHFFFAOYSA-N
+3.3,F10,GSK2636771,1372540-25-4,https://pubchem.ncbi.nlm.nih.gov/compound/56949517,2.5,PI3K/Akt/mTOR,,GSK2636771,train,c1ccc(Cn2cnc3ccc(N4CCOCC4)cc32)cc1,XTKLTGBKIDQGQL-UHFFFAOYSA-N
+3.3,F11,SMI-4a,438190-29-5,https://pubchem.ncbi.nlm.nih.gov/compound/1361334,2.5,JAK/STAT,,SMI-4a,test,O=C1NC(=O)C(=Cc2ccccc2)S1,NGJLOFCOEOHFKQ-YVMONPNESA-N
+3.3,F12,TCS 359,301305-73-7,https://pubchem.ncbi.nlm.nih.gov/compound/1048845,2.5,Angiogenesis,,TCS 359,test,O=C(Nc1cc2c(s1)CCCC2)c1ccccc1,FSPQCTGGIANIJZ-UHFFFAOYSA-N
+3.3,F13,PRT062607 HCl,"1370261-97-4,1370261-96-3(free base)",https://pubchem.ncbi.nlm.nih.gov/compound/56948527,2.5,Angiogenesis,,PRT062607 HCl,train,c1cc(Nc2ccnc(NC3CCCCC3)n2)cc(-n2nccn2)c1,TXGKRVFSSHPBAJ-JKSUJKDBSA-N
+3.3,F14,ETP-46464,1345675-02-6,https://pubchem.ncbi.nlm.nih.gov/compound/72199292,2.5,PI3K/Akt/mTOR,,ETP-46464,train,O=C1OCc2cnc3ccc(-c4cnc5ccccc5c4)cc3c2N1c1ccccc1,DPLMXAYKJZOTKO-UHFFFAOYSA-N
+3.3,F15,P276-00,920113-03-7,https://pubchem.ncbi.nlm.nih.gov/compound/23643975,2.5,Cell Cycle,,P276-00,val,O=c1cc(-c2ccccc2)oc2c(C3CCNC3)cccc12,QLUYMIVVAYRECT-OCCSQVGLSA-N
+3.3,F16,Olmutinib,1353550-13-6,https://pubchem.ncbi.nlm.nih.gov/compound/54758501,2.5,Protein Tyrosine Kinase,,Olmutinib,train,c1ccc(Oc2nc(Nc3ccc(N4CCNCC4)cc3)nc3ccsc23)cc1,FDMQDKQUTRLUBU-UHFFFAOYSA-N
+3.3,F17,Perifosine,157716-52-4,https://pubchem.ncbi.nlm.nih.gov/compound/148177,2.5,PI3K/Akt/mTOR,,Perifosine,train,C1CC[NH2+]CC1,SZFPYBIJACMNJV-UHFFFAOYSA-N
+3.3,F8,GSK621,1346607-05-3,https://pubchem.ncbi.nlm.nih.gov/compound/54577153,2.5,PI3K/Akt/mTOR,,GSK621,train,O=c1[nH]c2ccn(-c3ccc(-c4ccccc4)cc3)c2c(=O)n1-c1ccccc1,KURYSXLJGKKDHT-UHFFFAOYSA-N
+3.3,F9,ETC-1002,738606-46-7,https://pubchem.ncbi.nlm.nih.gov/compound/10472693,2.5,PI3K/Akt/mTOR,,ETC-1002,train,,HYHMLYSLQUKXKP-UHFFFAOYSA-N
+3.3,G10,PQ 401,196868-63-0,https://pubchem.ncbi.nlm.nih.gov/compound/9549305,2.5,Protein Tyrosine Kinase,,PQ 401,test,O=C(Nc1ccccc1)Nc1ccnc2ccccc12,YBLWOZUPHDKFOT-UHFFFAOYSA-N
+3.3,G11,ZM 39923 HCl,1021868-92-7,https://pubchem.ncbi.nlm.nih.gov/compound/176406,2.5,JAK/STAT,,ZM 39923 HCl,test,O=C(CCNCc1ccccc1)c1ccc2ccccc2c1,JSASWRWALCMOQP-UHFFFAOYSA-N
+3.3,G12,Tyrphostin AG 1296,146535-11-7,https://pubchem.ncbi.nlm.nih.gov/compound/2049,2.5,Protein Tyrosine Kinase,,Tyrphostin AG 1296,val,c1ccc(-c2cnc3ccccc3n2)cc1,QNOXYUNHIGOWNY-UHFFFAOYSA-N
+3.3,G13,NSC 23766,1177865-17-6,https://pubchem.ncbi.nlm.nih.gov/compound/16759159,2.5,Cell Cycle,,NSC 23766,train,c1cnc2ccc(Nc3ccncn3)cc2c1,DEFBCZWQLILOJF-UHFFFAOYSA-N
+3.3,G14,ASP3026,1097917-15-1,https://pubchem.ncbi.nlm.nih.gov/compound/25134326,2.5,Protein Tyrosine Kinase,,ASP3026,train,c1ccc(Nc2ncnc(Nc3ccc(N4CCC(N5CCNCC5)CC4)cc3)n2)cc1,MGGBYMDAPCCKCT-UHFFFAOYSA-N
+3.3,G15,Pacritinib,937272-79-2,https://pubchem.ncbi.nlm.nih.gov/compound/46216796,2.5,JAK/STAT,,Pacritinib,train,C1=CCOCc2cc(ccc2OCCN2CCCC2)Nc2nccc(n2)-c2cccc(c2)COC1,HWXVIOGONBBTBY-ONEGZZNKSA-N
+3.3,G16,"7,8-Dihydroxyflavone",38183-03-8,https://pubchem.ncbi.nlm.nih.gov/compound/1880,2.5,Protein Tyrosine Kinase,,"7,8-Dihydroxyflavone",train,O=c1cc(-c2ccccc2)oc2ccccc12,COCYGNDCWFKTMF-UHFFFAOYSA-N
+3.3,G17,LY3023414,1386874-06-1,https://pubchem.ncbi.nlm.nih.gov/compound/57519748,2.5,PI3K/Akt/mTOR,,LY3023414,train,O=c1[nH]c2cnc3ccc(-c4cccnc4)cc3c2[nH]1,ACCFLVVUVBJNGT-AWEZNQCLSA-N
+3.3,G8,DASA-58,1203494-49-8,https://pubchem.ncbi.nlm.nih.gov/compound/44543605,2.5,Others,,DASA-58,train,O=S(=O)(c1ccccc1)N1CCCN(S(=O)(=O)c2ccc3c(c2)OCCO3)CC1,GMHIOMMKSMSRLY-UHFFFAOYSA-N
+3.3,G9,GSK2292767,1254036-66-2,https://pubchem.ncbi.nlm.nih.gov/compound/49783923,2.5,PI3K/Akt/mTOR,,GSK2292767,test,c1cncc(-c2cc(-c3ncc(CN4CCOCC4)o3)c3cn[nH]c3c2)c1,NLUPPCTVKHDVIQ-GASCZTMLSA-N
