@@ -1,0 +1,523 @@
+{
+ "rules": {
+  "f_decode": "A1 O1: on training-split wells (the decoder training fields), ridge on the standardised raw tile-mean latent, alpha by inner CV over 10^-1..10^5, R^2 of pooled held-out predictions from 5-fold GroupKFold over plates (as in the D0 pilot); idr0119 log count >= 0.8 and G1 fraction >= 0.5; idr0064 Erk C/N >= 0.5. The provisional vehicle value is reported beside. A failure drops that set's decoded readouts (and for idr0119 the ODE comparisons) only.",
+  "f_dose": "Per drug x line, over its training-split doses (lowest and training interior doses; wells train and train_sel): displacement = Euclidean norm of the condition's mean normalised latent (fields, tiles and replicate wells averaged) at the 48 h clip minus the line's vehicle mean at that clip; Spearman rho of displacement vs dose. Pass if rho >= 0.6 for >= 50% of drug x line pairs. Vehicle is not a point (its displacement from itself is not a dose response); the variant with vehicle as dose 0 is reported beside.",
+  "f_power": "From the frozen split: H1 test held-out-dose conditions >= 20 (interior test plus test extrapolation), H2a test combination conditions >= 6, H2b test compounds >= 60. A shortfall drops that hypothesis before training."
+ },
+ "design_commit": "eefeeb0",
+ "f_dose": {
+  "pairs": [
+   {
+    "line": "21MT1",
+    "drug": "BEZ235",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     5.0,
+     250.0
+    ],
+    "displacement": [
+     6.550775527954102,
+     10.298701286315918,
+     26.92720603942871
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "21MT1",
+    "drug": "Doxorubicin",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     10.0,
+     25.0
+    ],
+    "displacement": [
+     5.858868598937988,
+     10.34139633178711,
+     24.17738914489746
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "21MT1",
+    "drug": "Gemcitabine",
+    "n_doses": 3,
+    "doses_nM": [
+     0.25,
+     1.0,
+     2.5
+    ],
+    "displacement": [
+     6.7672295570373535,
+     12.174517631530762,
+     23.438749313354492
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "21MT1",
+    "drug": "Paclitaxel",
+    "n_doses": 3,
+    "doses_nM": [
+     0.25,
+     0.75,
+     2.5
+    ],
+    "displacement": [
+     11.004744529724121,
+     11.26511287689209,
+     31.644914627075195
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "21MT1",
+    "drug": "Palbociclib",
+    "n_doses": 3,
+    "doses_nM": [
+     50.0,
+     250.0,
+     1000.0
+    ],
+    "displacement": [
+     10.77369213104248,
+     13.120257377624512,
+     14.730984687805176
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "21MT1",
+    "drug": "Trametinib",
+    "n_doses": 7,
+    "doses_nM": [
+     0.5,
+     5.0,
+     25.0,
+     125.0,
+     250.0,
+     1000.0,
+     2500.0
+    ],
+    "displacement": [
+     6.977964878082275,
+     9.591771125793457,
+     15.043320655822754,
+     30.662147521972656,
+     22.378162384033203,
+     43.58829116821289,
+     44.18006896972656
+    ],
+    "rho": 0.9642857142857145,
+    "rho_with_vehicle": 0.9761904761904763
+   },
+   {
+    "line": "AU565",
+    "drug": "Doxorubicin",
+    "n_doses": 3,
+    "doses_nM": [
+     1.0,
+     20.0,
+     125.0
+    ],
+    "displacement": [
+     8.754847526550293,
+     9.054786682128906,
+     21.70803451538086
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "AU565",
+    "drug": "Gemcitabine",
+    "n_doses": 4,
+    "doses_nM": [
+     0.25,
+     2.5,
+     10.0,
+     30.0
+    ],
+    "displacement": [
+     7.57222318649292,
+     10.683871269226074,
+     8.857931137084961,
+     10.900277137756348
+    ],
+    "rho": 0.7999999999999999,
+    "rho_with_vehicle": 0.8999999999999998
+   },
+   {
+    "line": "AU565",
+    "drug": "Lapatinib",
+    "n_doses": 3,
+    "doses_nM": [
+     5.0,
+     25.0,
+     100.0
+    ],
+    "displacement": [
+     12.08171558380127,
+     8.155998229980469,
+     18.234983444213867
+    ],
+    "rho": 0.5,
+    "rho_with_vehicle": 0.7999999999999999
+   },
+   {
+    "line": "AU565",
+    "drug": "Paclitaxel",
+    "n_doses": 3,
+    "doses_nM": [
+     0.1,
+     2.0,
+     7.5
+    ],
+    "displacement": [
+     7.701087951660156,
+     9.090876579284668,
+     22.1990966796875
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "AU565",
+    "drug": "Palbociclib",
+    "n_doses": 3,
+    "doses_nM": [
+     5.0,
+     25.0,
+     100.0
+    ],
+    "displacement": [
+     8.691169738769531,
+     8.435271263122559,
+     10.766984939575195
+    ],
+    "rho": 0.5,
+    "rho_with_vehicle": 0.7999999999999999
+   },
+   {
+    "line": "HCC1143",
+    "drug": "BEZ235",
+    "n_doses": 3,
+    "doses_nM": [
+     1.0,
+     5.0,
+     20.0
+    ],
+    "displacement": [
+     5.1301798820495605,
+     10.033876419067383,
+     19.56468391418457
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "HCC1143",
+    "drug": "Doxorubicin",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     25.0,
+     125.0
+    ],
+    "displacement": [
+     5.346162796020508,
+     16.22343635559082,
+     23.40546989440918
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "HCC1143",
+    "drug": "Gemcitabine",
+    "n_doses": 3,
+    "doses_nM": [
+     0.25,
+     1.5,
+     2.5
+    ],
+    "displacement": [
+     5.366339206695557,
+     10.38404369354248,
+     16.041074752807617
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "HCC1143",
+    "drug": "Paclitaxel",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     1.5,
+     2.5
+    ],
+    "displacement": [
+     6.365741729736328,
+     13.41877269744873,
+     17.31339454650879
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "HCC1143",
+    "drug": "Palbociclib",
+    "n_doses": 3,
+    "doses_nM": [
+     50.0,
+     500.0,
+     2500.0
+    ],
+    "displacement": [
+     10.415230751037598,
+     14.36240005493164,
+     15.33920669555664
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "HCC1143",
+    "drug": "Trametinib",
+    "n_doses": 3,
+    "doses_nM": [
+     1.0,
+     50.0,
+     250.0
+    ],
+    "displacement": [
+     6.279197692871094,
+     18.09000587463379,
+     21.18364143371582
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "MDAMB157",
+    "drug": "BEZ235",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     10.0,
+     30.0
+    ],
+    "displacement": [
+     6.304281711578369,
+     14.307933807373047,
+     28.64385986328125
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "MDAMB157",
+    "drug": "Doxorubicin",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     125.0,
+     375.0
+    ],
+    "displacement": [
+     10.191690444946289,
+     44.69211196899414,
+     51.229881286621094
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "MDAMB157",
+    "drug": "Gemcitabine",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     50.0,
+     2500.0
+    ],
+    "displacement": [
+     6.174182415008545,
+     42.89272689819336,
+     45.77397155761719
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "MDAMB157",
+    "drug": "Paclitaxel",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     1.75,
+     3.25
+    ],
+    "displacement": [
+     16.063507080078125,
+     40.24354553222656,
+     53.39287185668945
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "MDAMB157",
+    "drug": "Palbociclib",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     50.0,
+     500.0
+    ],
+    "displacement": [
+     6.0973896980285645,
+     7.400576114654541,
+     15.27110481262207
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   },
+   {
+    "line": "MDAMB157",
+    "drug": "Trametinib",
+    "n_doses": 3,
+    "doses_nM": [
+     0.5,
+     50.0,
+     500.0
+    ],
+    "displacement": [
+     7.112008094787598,
+     19.55906867980957,
+     36.381309509277344
+    ],
+    "rho": 1.0,
+    "rho_with_vehicle": 1.0
+   }
+  ],
+  "fraction_rho_ge_0.6": 0.9130434782608695,
+  "pass": true,
+  "fraction_with_vehicle_point": 1.0
+ },
+ "f_decode": {
+  "idr0119": {
+   "targets": {
+    "log_count": {
+     "raw": {
+      "r2": 0.7976517677307129,
+      "n": 154628,
+      "n_plates": 34,
+      "target_sd": 0.9194679856300354
+     },
+     "normalised": {
+      "r2": -0.16582322120666504,
+      "n": 154628,
+      "n_plates": 34,
+      "target_sd": 0.9194679856300354
+     }
+    },
+    "g1_fraction": {
+     "raw": {
+      "r2": 0.7357573509216309,
+      "n": 154165,
+      "n_plates": 34,
+      "target_sd": 0.17369525134563446
+     },
+     "normalised": {
+      "r2": -0.0019854307174682617,
+      "n": 154165,
+      "n_plates": 34,
+      "target_sd": 0.17369525134563446
+     }
+    },
+    "sg2m_fraction": {
+     "raw": {
+      "r2": 0.7357573509216309,
+      "n": 154165,
+      "n_plates": 34,
+      "target_sd": 0.17369525134563446
+     },
+     "normalised": {
+      "r2": -0.0019854307174682617,
+      "n": 154165,
+      "n_plates": 34,
+      "target_sd": 0.17369525134563446
+     }
+    }
+   },
+   "pass": false,
+   "provisional_vehicle": {
+    "count_r2": 0.9241797084835954,
+    "g1_r2": 0.7965246326802153,
+    "pass": true
+   }
+  },
+  "idr0064": {
+   "targets": {
+    "erk_cn": {
+     "raw": {
+      "r2": 0.8297078609466553,
+      "n": 33548,
+      "n_plates": 9,
+      "target_sd": 0.08168098330497742
+     },
+     "normalised": {
+      "r2": 0.4273410439491272,
+      "n": 33548,
+      "n_plates": 9,
+      "target_sd": 0.08168098330497742
+     }
+    },
+    "pulse_rate": {
+     "raw": {
+      "r2": 0.6337075233459473,
+      "n": 33540,
+      "n_plates": 9,
+      "target_sd": 0.3365553021430969
+     },
+     "normalised": {
+      "r2": 0.2815467119216919,
+      "n": 33540,
+      "n_plates": 9,
+      "target_sd": 0.3365553021430969
+     }
+    }
+   },
+   "pass": true,
+   "provisional_vehicle": {
+    "erk_cn_r2": 0.4788960095228869,
+    "pass": false
+   }
+  }
+ },
+ "f_power": {
+  "H1": {
+   "test_interior": 46,
+   "test_extrap": 17,
+   "total": 63,
+   "pass": true
+  },
+  "H2a": {
+   "test_conditions": 10,
+   "pass": true
+  },
+  "H2b": {
+   "test_compounds": 88,
+   "pass": true
+  }
+ }
+}

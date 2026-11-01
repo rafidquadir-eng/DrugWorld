@@ -1,0 +1,35 @@
+{
+ "what": "D3 timing on the frozen data (1174ae0): 300 steps, seed 0, one run per GPU; timing and memory only (losses of these runs are not used)",
+ "runs": {
+  "h1__dw_full__w512_d0.1_wd0.05__s0": {
+   "sec_per_step": 0.1481,
+   "peak_gpu_memory_gb": 11.92,
+   "steps": 300
+  },
+  "h1__dw_full__w768_d0.1_wd0.05__s0": {
+   "sec_per_step": 0.2906,
+   "peak_gpu_memory_gb": 19.9,
+   "steps": 300
+  },
+  "h2a__dw_full__w512_d0.1_wd0.05__s0": {
+   "sec_per_step": 0.1637,
+   "peak_gpu_memory_gb": 11.92,
+   "steps": 300
+  },
+  "h2a__dw_full__w768_d0.1_wd0.05__s0": {
+   "sec_per_step": 0.2881,
+   "peak_gpu_memory_gb": 19.9,
+   "steps": 300
+  },
+  "h2b__dw_full-ecfp4__w512_d0.1_wd0.05__s0": {
+   "sec_per_step": 0.1448,
+   "peak_gpu_memory_gb": 10.73,
+   "steps": 300
+  },
+  "h2b__dw_full-ecfp4__w768_d0.1_wd0.05__s0": {
+   "sec_per_step": 0.2781,
+   "peak_gpu_memory_gb": 18.42,
+   "steps": 300
+  }
+ }
+}

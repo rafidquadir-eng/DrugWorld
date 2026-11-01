@@ -88,16 +88,19 @@ def main() -> int:
     todo.sort(key=lambda j: (not j[2].startswith("w768"), j[0], j[1], j[2], j[3]))
     print(f"stage {args.stage}: {len(jobs)} jobs, {len(todo)} to run on GPUs {a}-{b} x "
           f"{args.slots}")
-    q: queue.Queue = queue.Queue()
+    # width 768 needs ~20 GB, so two cannot share a 40 GB GPU: per GPU, slot 0 takes width-768
+    # jobs first (then width 512), the other slots width 512 only
+    big: queue.Queue = queue.Queue()
+    small: queue.Queue = queue.Queue()
     for j in todo:
-        q.put(j)
+        (big if j[2].startswith("w768") else small).put(j)
     (REPO / "logs" / "d3").mkdir(parents=True, exist_ok=True)
     failed = []
 
-    def worker(gpu):
+    def worker(gpu, slot):
         while True:
             try:
-                j = q.get_nowait()
+                j = (big if slot == 0 and not big.empty() else small).get_nowait()
             except queue.Empty:
                 return
             ms, fam, cid, seed, norm = j
@@ -112,12 +115,12 @@ def main() -> int:
                 rc = subprocess.run(cmd, cwd=REPO, env=env, stdout=fh, stderr=subprocess.STDOUT
                                     ).returncode
             print(f"gpu {gpu}: {name(j)} rc {rc} {(time.time() - t0) / 60:.1f} min "
-                  f"({q.qsize()} queued)")
+                  f"({big.qsize() + small.qsize()} queued)")
             if rc:
                 failed.append(name(j))
 
-    th = [threading.Thread(target=worker, args=(g,)) for g in range(a, b + 1)
-          for _ in range(args.slots)]
+    th = [threading.Thread(target=worker, args=(g, k)) for g in range(a, b + 1)
+          for k in range(args.slots)]
     for t in th:
         t.start()
         time.sleep(2)
