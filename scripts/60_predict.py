@@ -9,8 +9,9 @@ the validation line, test folds = the test lines); dw_none runs also forecast ev
 (for the residual baseline); H1 dw_full runs also forecast each (plate, drug x line) of the
 part at 41 log-spaced candidate doses over that drug x line's measured range (dose inversion,
 G-Plan a). Primary-normalisation dw_full and dw_none runs also forecast from the field's own
-first clip (secondary start, A1 C1: `pred_own`). Outputs data/preds/<part>/<run>.npz (not
-committed; backed up).
+first clip (secondary start, A1 C1: `pred_own`; h2b dw_full:<src> included). Outputs
+data/preds/<part>/<run>.npz (not committed;
+backed up).
 
   PYTHONPATH=src python scripts/60_predict.py --part val --gpus 0-7
 """
@@ -108,7 +109,7 @@ def main() -> int:
             res["fit_idx"], res["fit_pred"] = fit, E.forecast(model, d.z, act, fit, clips)
         if r["set"] == "h1" and fam == "dw_full" and r["norm"] == "primary":
             res.update(candidates(d, act, model, idx, clips))
-        if fam in ("dw_full", "dw_none") and r["norm"] == "primary":
+        if fam.split(":")[0] in ("dw_full", "dw_none") and r["norm"] == "primary":
             ko = (which, "own")
             if ko not in cache:
                 cache[ko] = TR.load(which, "primary", "own")

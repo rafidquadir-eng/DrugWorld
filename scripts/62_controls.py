@@ -208,7 +208,8 @@ def plate_probe(prot):
             continue
         X = d.z[g.index.to_numpy(), c48].astype(np.float32).mean(1)
         y = g.plate.to_numpy()
-        pipe = make_pipeline(StandardScaler(), PCA(min(64, len(y) - 4), random_state=0),
+        pca = PCA(min(64, (3 * len(y)) // 4 - 1), random_state=0)   # < training-fold size
+        pipe = make_pipeline(StandardScaler(), pca,
                              LogisticRegression(max_iter=2000))
         acc = cross_val_score(pipe, X, y, cv=StratifiedKFold(4, shuffle=True, random_state=0))
         accs.append((float(acc.mean()), 1 / g.plate.nunique()))
