@@ -393,6 +393,18 @@ RULES = {
                         "including the three mixed AU565 plates holding both single-drug and "
                         "combination wells (no 48 h signature in their vehicle wells, "
                         "results/d2/au565_redose.json).",
+    "h2a_baseline_singles": "Author decision on status report 2: H2a baselines (additive "
+                            "composition, HSA, Bliss) and the ODE fit inputs use, for each "
+                            "component (drug, dose), the fit-role AU565 single-drug wells on "
+                            "plates without the 48 h re-dose (redose_48h 0) when any exist, "
+                            "otherwise those on re-dosed plates; each single's effect is "
+                            "taken against the AU565 fit vehicle wells of the same re-dose "
+                            "class (all AU565 fit vehicle wells if that class has none; the "
+                            "ODE vehicle condition follows the same preference). The source "
+                            "used per component is recorded (results/d4 gates "
+                            "baseline_single_sources; results/d3/ode_fit.json sources). Only "
+                            "the secondary 72 h H2a horizon can be affected: primary H2a "
+                            "horizons end at or before 48 h.",
     "normalisation": "A1 C3. idr0119: per line and clip, mean and SD over the line's vehicle "
                      "fields (tiles pooled), SD floored at the line's 5th percentile over "
                      "clips x dimensions; sensitivity: per-plate vehicle centring. idr0064: "

@@ -151,22 +151,47 @@ def h1_baselines(d, role, idx, clips):
     return {"nearest_dose": nd, "interp": ip}
 
 
-def h2a_baselines(d, role, idx, clips, primary_pos, veh_traj):
-    """HSA and additive composition for combination fields idx (AU565)."""
-    tab = dose_tables(d, role, clips)
+def h2a_singles(d, role, clips):
+    """AU565 single-drug and vehicle references for the H2a baselines (author decision on
+    status report 2): per (drug, dose), fit-role single-drug fields on plates without the 48 h
+    re-dose (redose_48h 0) when any exist, otherwise those on re-dosed plates; each single's
+    effect is taken against the AU565 fit vehicle fields of the same re-dose class (all AU565 fit
+    vehicle fields if that class has none). Returns ({(drug, dose): mean trajectory},
+    {(drug, dose): vehicle mean trajectory}, {"drug|dose": source})."""
     f = d.fields
-    vfit = np.flatnonzero((role == "fit") & (f.h1_role == "vehicle").to_numpy() &
-                          (f.line == "AU565").to_numpy())
-    vmean = _mean(d.z, vfit, clips)
+    fit = (role == "fit") & (f.line == "AU565").to_numpy()
+    rd = f.redose_48h.astype(int).to_numpy()
+    veh = fit & (f.h1_role == "vehicle").to_numpy()
+    vall = _mean(d.z, np.flatnonzero(veh), clips)
+    vcls = {c: (_mean(d.z, np.flatnonzero(veh & (rd == c)), clips) if (veh & (rd == c)).any()
+                else vall) for c in (0, 1)}
+    sing = fit & (f.drug1 != "").to_numpy() & (f.drug2 == "").to_numpy()
+    tab, vref, src = {}, {}, {}
+    for (drug, dose), g in f[sing].groupby(["drug1", "dose1"]):
+        i = g.index.to_numpy()
+        c = 0 if (rd[i] == 0).any() else 1
+        k = (drug, float(dose))
+        tab[k] = _mean(d.z, i[rd[i] == c], clips)
+        vref[k] = vcls[c]
+        src[f"{drug}|{float(dose)}"] = "not_redosed" if c == 0 else "redosed"
+    return tab, vref, src
+
+
+def h2a_baselines(d, role, idx, clips, primary_pos, veh_traj):
+    """HSA and additive composition for combination fields idx (AU565); singles from
+    h2a_singles (non-re-dosed plates preferred)."""
+    tab, vref, _ = h2a_singles(d, role, clips)
+    f = d.fields
     hsa = np.zeros((len(idx), len(clips)) + d.z.shape[2:], np.float32)
     add = np.zeros_like(hsa)
     for i, r in enumerate(f.iloc[idx].itertuples()):
-        sa = tab[("AU565", r.drug1)][float(r.dose1)]
-        sb = tab[("AU565", r.drug2)][float(r.dose2)]
-        ea = np.linalg.norm((sa - vmean)[primary_pos].reshape(len(primary_pos), -1), axis=1)
-        eb = np.linalg.norm((sb - vmean)[primary_pos].reshape(len(primary_pos), -1), axis=1)
+        ka, kb = (r.drug1, float(r.dose1)), (r.drug2, float(r.dose2))
+        sa, sb = tab[ka], tab[kb]
+        da, db = sa - vref[ka], sb - vref[kb]
+        ea = np.linalg.norm(da[primary_pos].reshape(len(primary_pos), -1), axis=1)
+        eb = np.linalg.norm(db[primary_pos].reshape(len(primary_pos), -1), axis=1)
         hsa[i] = sa if ea.mean() >= eb.mean() else sb
-        add[i] = veh_traj[i] + (sa - vmean) + (sb - vmean)
+        add[i] = veh_traj[i] + da + db
     return {"hsa": hsa, "additive": add}
 
 

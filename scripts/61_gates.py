@@ -207,6 +207,11 @@ def evaluate_part(ctx, weak_from=None):
             B.update(E.h1_baselines(d, role, idx, clips))
         elif ms == "h2a":
             B.update(E.h2a_baselines(d, role, idx, clips, pp, B["vehicle_traj"]))
+            src = E.h2a_singles(d, role, clips)[2]
+            ff = d.fields.iloc[idx]
+            need = {f"{a}|{float(x)}" for a, x in zip(ff.drug1, ff.dose1)} | \
+                {f"{a}|{float(x)}" for a, x in zip(ff.drug2, ff.dose2)}
+            res["baseline_single_sources"] = {k: src[k] for k in sorted(need)}
         else:
             kb, nn = E.h2b_baselines(d, role, idx, clips)
             B.update(kb)
@@ -378,16 +383,14 @@ def hill_pred(ctx, d, role, idx, clips):
 
 
 def bliss_pred(d, role, idx, clips, B):
-    tab = E.dose_tables(d, role, clips)
+    tab, vref, _ = E.h2a_singles(d, role, clips)
     f = d.fields
-    vfit = np.flatnonzero((role == "fit") & (f.h1_role == "vehicle").to_numpy() &
-                          (f.line == "AU565").to_numpy())
-    cv = np.expm1(dec(d.z[vfit][:, clips].astype(np.float32).mean(0, keepdims=True)))[0]
     vt = np.expm1(dec(B["vehicle_traj"]))
     out = np.zeros((len(idx), len(clips)))
     for i, r in enumerate(f.iloc[idx].itertuples()):
-        fa = np.expm1(dec(tab[("AU565", r.drug1)][float(r.dose1)][None]))[0] / cv
-        fb = np.expm1(dec(tab[("AU565", r.drug2)][float(r.dose2)][None]))[0] / cv
+        ka, kb = (r.drug1, float(r.dose1)), (r.drug2, float(r.dose2))
+        fa = np.expm1(dec(tab[ka][None]))[0] / np.expm1(dec(vref[ka][None]))[0]
+        fb = np.expm1(dec(tab[kb][None]))[0] / np.expm1(dec(vref[kb][None]))[0]
         out[i] = np.log1p(np.maximum(vt[i] * fa * fb, 0))
     return out
 
