@@ -34,7 +34,7 @@ def main() -> int:
     rng = {dr: (min(c for x, c in conds if x == dr), max(c for x, c in conds if x == dr))
            for dr in drugs}
     t0 = time.time()
-    P, res = ode.fit(conds, drugs, rng, idr0119.N_GRID, workers=100, maxiter=3000)
+    P, res = ode.fit(conds, drugs, rng, idr0119.N_GRID, workers=100, maxiter=1000)
     out = {"conditions": [list(k) for k in sorted(conds)], "drugs": drugs, "dose_range": rng,
            "params": res.x.tolist(), "loss": float(res.fun), "nfev": int(res.nfev),
            "success": bool(res.success), "message": str(res.message),
