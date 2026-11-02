@@ -1,0 +1,117 @@
+{
+ "name": "h2b__dw_full-molformer__w768_d0.1_wd0.05__s1__global_vehicle",
+ "set": "h2b",
+ "family": "dw_full:molformer",
+ "config": "w768_d0.1_wd0.05",
+ "seed": 1,
+ "norm": "global",
+ "start": "vehicle",
+ "best_val_primary": 0.9331688284873962,
+ "best_step": 250,
+ "stopped_at": 3250,
+ "sel_primary": null,
+ "n_params": 52500738,
+ "n_fit_fields": 314,
+ "n_val_fields": 41,
+ "minutes": 35.76252818107605,
+ "sec_per_step": 0.6602312909639799,
+ "curve": [
+  {
+   "step": 250,
+   "val_primary": 0.9331688284873962,
+   "loss_tf": 0.2680746614933014,
+   "loss_ro": 0.27947455644607544,
+   "minutes": 2.7201038082440694
+  },
+  {
+   "step": 500,
+   "val_primary": 0.971375048160553,
+   "loss_tf": 0.2428736835718155,
+   "loss_ro": 0.21960406005382538,
+   "minutes": 5.49650502204895
+  },
+  {
+   "step": 750,
+   "val_primary": 0.9341618418693542,
+   "loss_tf": 0.20732490718364716,
+   "loss_ro": 0.18693336844444275,
+   "minutes": 8.230213431517283
+  },
+  {
+   "step": 1000,
+   "val_primary": 0.9826127290725708,
+   "loss_tf": 0.18015708029270172,
+   "loss_ro": 0.1577032506465912,
+   "minutes": 11.003453063964844
+  },
+  {
+   "step": 1250,
+   "val_primary": 0.9925996661186218,
+   "loss_tf": 0.16168268024921417,
+   "loss_ro": 0.14677366614341736,
+   "minutes": 13.753361296653747
+  },
+  {
+   "step": 1500,
+   "val_primary": 0.9519506096839905,
+   "loss_tf": 0.14902600646018982,
+   "loss_ro": 0.13658569753170013,
+   "minutes": 16.559233641624452
+  },
+  {
+   "step": 1750,
+   "val_primary": 0.9657548069953918,
+   "loss_tf": 0.13996803760528564,
+   "loss_ro": 0.12563543021678925,
+   "minutes": 19.31977769533793
+  },
+  {
+   "step": 2000,
+   "val_primary": 0.9690249562263489,
+   "loss_tf": 0.13029545545578003,
+   "loss_ro": 0.11605475842952728,
+   "minutes": 22.127541128794352
+  },
+  {
+   "step": 2250,
+   "val_primary": 0.980056881904602,
+   "loss_tf": 0.12528927624225616,
+   "loss_ro": 0.16103783249855042,
+   "minutes": 24.892348170280457
+  },
+  {
+   "step": 2500,
+   "val_primary": 0.9782500863075256,
+   "loss_tf": 0.1182042583823204,
+   "loss_ro": 0.1475866585969925,
+   "minutes": 27.044543484846752
+  },
+  {
+   "step": 2750,
+   "val_primary": 0.9869917631149292,
+   "loss_tf": 0.113936647772789,
+   "loss_ro": 0.10359170287847519,
+   "minutes": 29.90747439066569
+  },
+  {
+   "step": 3000,
+   "val_primary": 0.9671644568443298,
+   "loss_tf": 0.10996323078870773,
+   "loss_ro": 0.09611618518829346,
+   "minutes": 32.79199279546738
+  },
+  {
+   "step": 3250,
+   "val_primary": 0.9891586303710938,
+   "loss_tf": 0.1081843376159668,
+   "loss_ro": 0.09945601224899292,
+   "minutes": 35.68492811918259
+  }
+ ],
+ "permutations": {},
+ "fit_fields_sha256": "ae1b65e60ace82caeed44408c9a0b34acea9e02074f36edcc22f74fcd0184286",
+ "checkpoint": "h2b__dw_full-molformer__w768_d0.1_wd0.05__s1__global_vehicle.pt",
+ "checkpoint_sha256": "fe998ab7ff7e976d97f07004730543ffc396f49cbf2b1bdd036eb766f8c002dd",
+ "peak_gpu_memory_gb": 18.394011648,
+ "design_commit": "eefeeb0"
+}
