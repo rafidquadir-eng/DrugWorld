@@ -243,7 +243,11 @@ def h1c_baselines(d, role_line, idx, clips, line):
                            (f.line == L).to_numpy())
         if len(m):
             veh[L] = _mean(d.z, m, clips)
-    base = common_baselines(d, role_line, idx, clips)["vehicle_traj"]
+    # anchor: the held-out line's own plate vehicle (plan: "added to the held-out line's
+    # vehicle"); its vehicle wells are role "heldout_line" in this model set, not "fit"
+    rv = np.where((f.h1_role == "vehicle").to_numpy() & (f.line == line).to_numpy(), "fit",
+                  role_line)
+    base = common_baselines(d, rv, idx, clips)["vehicle_traj"]
     lm = np.full((len(idx), len(clips)) + d.z.shape[2:], np.nan, np.float32)
     lo = lm.copy()
     excluded = []

@@ -326,12 +326,12 @@ def set_gates(ms, M, R, weak, drug, decoded_ok):
             if full is None:
                 continue
             b, chain = G.substitute("knn", weak)
-            c = {"dw_structshuf": G.compare(full, M[f"dw_structshuf:{s}@matched:{s}"]),
-                 b: G.compare(full, M[b]),
-                 "dw_none": G.compare(full, M[f"dw_none@matched:{s}"])}
-            per[s] = {"comparisons": c, "lookup_used": b,
-                      "p_max": max(x["p_one_sided"] for x in c.values()),
-                      "all_beat": all(x["beats"] for x in c.values())}
+            comps = {"dw_structshuf": M.get(f"dw_structshuf:{s}@matched:{s}"), b: M.get(b),
+                     "dw_none": M.get(f"dw_none@matched:{s}")}
+            c = {k: G.compare(full, v) for k, v in comps.items() if v is not None}
+            per[s] = {"comparisons": c, "lookup_used": b,   # incomplete (global pass): cannot pass
+                      "p_max": max(x["p_one_sided"] for x in c.values()) if len(c) == 3 else 1.0,
+                      "all_beat": len(c) == 3 and all(x["beats"] for x in c.values())}
         h = G.holm({s: v["p_max"] for s, v in per.items()})
         g["G-Compound"] = {"per_source": per, "holm": h,
                            "pass": any(v["reject"] for v in h.values())}
