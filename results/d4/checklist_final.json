@@ -1,0 +1,180 @@
+{
+ "1_commit_order": {
+  "pass": true,
+  "freeze": "1174ae03d23c72b92c1263f94ab93661fc94b15a",
+  "selection": "9bf991eb30942a4259c1f2ded4aaefdf6d8af0f1",
+  "evaluation_outputs": [
+   "5bc8329a62f8a54a60257e84fa78801e001ef53b"
+  ],
+  "gates_val": "5bc8329a62f8a54a60257e84fa78801e001ef53b",
+  "checked_after_gates_commit": true
+ },
+ "2_seeds_and_references": {
+  "pass": true,
+  "missing": [],
+  "groups_checked": 26
+ },
+ "3_no_id_embedding": {
+  "pass": true,
+  "violations": [],
+  "checkpoints": 360
+ },
+ "4_permutation_hashes": {
+  "pass": true,
+  "problems": [],
+  "hashes": {
+   "dw_structshuf:molformer|s1": {
+    "structure_permutation_sha256": "08ae25fc8fde818cc2ad9af497dd2d92c7b8a9f8c40143f5d174577349606052"
+   },
+   "dw_structshuf:molformer|s2": {
+    "structure_permutation_sha256": "90da4e594214a79da61aa8362f9016f0f490596b5eb109b21023ba2302d83c74"
+   },
+   "dw_doseshuf|s2": {
+    "dose_permutation_sha256": "a9dee6c2843d14407a056d1a3871710d8f22a4f00d496929e3add7bce6dd4197"
+   },
+   "dw_structshuf:ecfp4|s2": {
+    "structure_permutation_sha256": "90da4e594214a79da61aa8362f9016f0f490596b5eb109b21023ba2302d83c74"
+   },
+   "dw_doseshuf|s0": {
+    "dose_permutation_sha256": "4fd08e8e62efdad93f947eeaa0d995dbd4adf257a23833382deb5f533c47feb9"
+   },
+   "dw_structshuf:target|s1": {
+    "structure_permutation_sha256": "08ae25fc8fde818cc2ad9af497dd2d92c7b8a9f8c40143f5d174577349606052"
+   },
+   "dw_structshuf:ecfp4|s0": {
+    "structure_permutation_sha256": "15b4e4246a47f5b60dbd4bf99f5effb0484d737415dab74d8c620036fdb477f3"
+   },
+   "dw_structshuf:ecfp4|s1": {
+    "structure_permutation_sha256": "08ae25fc8fde818cc2ad9af497dd2d92c7b8a9f8c40143f5d174577349606052"
+   },
+   "dw_structshuf:target|s0": {
+    "structure_permutation_sha256": "15b4e4246a47f5b60dbd4bf99f5effb0484d737415dab74d8c620036fdb477f3"
+   },
+   "dw_structshuf:molformer|s0": {
+    "structure_permutation_sha256": "15b4e4246a47f5b60dbd4bf99f5effb0484d737415dab74d8c620036fdb477f3"
+   },
+   "dw_doseshuf|s1": {
+    "dose_permutation_sha256": "957e2a399135a8dbbfade9a934052a07bca71733011c0af1bee0a73b0d0ce544"
+   },
+   "dw_structshuf:target|s2": {
+    "structure_permutation_sha256": "90da4e594214a79da61aa8362f9016f0f490596b5eb109b21023ba2302d83c74"
+   }
+  }
+ },
+ "5_unit_counts": {
+  "pass": true,
+  "counts": {
+   "h1": {
+    "frozen": 29,
+    "evaluated": 29,
+    "exclusions": 0
+   },
+   "h2a": {
+    "frozen": 7,
+    "evaluated": 7,
+    "exclusions": 0
+   },
+   "h2b": {
+    "frozen": 41,
+    "evaluated": 41,
+    "exclusions": 0
+   },
+   "h1c:MDAMB157": {
+    "evaluated": 18,
+    "excluded_conditions": [
+     "Doxorubicin 250.0",
+     "Doxorubicin 375.0",
+     "Doxorubicin 500.0",
+     "Gemcitabine 250.0",
+     "Gemcitabine 2500.0",
+     "Gemcitabine 50.0",
+     "Gemcitabine 500.0",
+     "Gemcitabine 5000.0",
+     "Palbociclib 0.5",
+     "Palbociclib 5000.0"
+    ]
+   }
+  }
+ },
+ "6_baseline_strength": {
+  "pass": true,
+  "table": {
+   "h1": {
+    "strength": {
+     "nearest_dose": {
+      "p_vs_copy_last": 9.99990000099999e-06,
+      "beats": true
+     },
+     "interp": {
+      "p_vs_copy_last": 9.99990000099999e-06,
+      "beats": true
+     },
+     "residual": {
+      "p_vs_copy_last": 9.99990000099999e-06,
+      "beats": true
+     }
+    },
+    "weak": {
+     "nearest_dose": false,
+     "interp": false,
+     "residual": false
+    }
+   },
+   "h2a": {
+    "strength": {
+     "hsa": {
+      "p_vs_copy_last": 0.008039919600803991,
+      "beats": true
+     },
+     "additive": {
+      "p_vs_copy_last": 0.008039919600803991,
+      "beats": true
+     }
+    },
+    "weak": {
+     "hsa": false,
+     "additive": false
+    }
+   },
+   "h2b": {
+    "strength": {
+     "knn": {
+      "p_vs_copy_last": 9.99990000099999e-06,
+      "beats": true
+     },
+     "residual": {
+      "p_vs_copy_last": 9.99990000099999e-06,
+      "beats": true
+     }
+    },
+    "weak": {
+     "knn": false,
+     "residual": false
+    }
+   }
+  },
+  "substitutions": {
+   "G-Dose lookup": "nearest_dose",
+   "G-Dose+ lookup": "interp",
+   "G-Combo lookups": {
+    "hsa": "hsa",
+    "additive": "additive"
+   },
+   "G-Compound lookup": {
+    "ecfp4": "knn",
+    "molformer": "knn",
+    "target": "knn"
+   }
+  }
+ },
+ "7_no_test_reference": {
+  "pass": true,
+  "hits": []
+ },
+ "8_normalised_and_global": {
+  "pass": true
+ },
+ "9_feasibility_recorded": {
+  "pass": true
+ }
+}
