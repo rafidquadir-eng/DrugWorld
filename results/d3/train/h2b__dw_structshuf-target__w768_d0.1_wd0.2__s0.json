@@ -1,0 +1,119 @@
+{
+ "name": "h2b__dw_structshuf-target__w768_d0.1_wd0.2__s0",
+ "set": "h2b",
+ "family": "dw_structshuf:target",
+ "config": "w768_d0.1_wd0.2",
+ "seed": 0,
+ "norm": "primary",
+ "start": "vehicle",
+ "best_val_primary": 1.0880213975906372,
+ "best_step": 250,
+ "stopped_at": 3250,
+ "sel_primary": null,
+ "n_params": 52416808,
+ "n_fit_fields": 314,
+ "n_val_fields": 41,
+ "minutes": 14.446370697021484,
+ "sec_per_step": 0.2667022289129404,
+ "curve": [
+  {
+   "step": 250,
+   "val_primary": 1.0880213975906372,
+   "loss_tf": 0.292891263961792,
+   "loss_ro": 0.30012398958206177,
+   "minutes": 1.1185184915860493
+  },
+  {
+   "step": 500,
+   "val_primary": 1.1020921468734741,
+   "loss_tf": 0.26786914467811584,
+   "loss_ro": 0.23690667748451233,
+   "minutes": 2.2357595920562745
+  },
+  {
+   "step": 750,
+   "val_primary": 1.1578792333602905,
+   "loss_tf": 0.22868382930755615,
+   "loss_ro": 0.19219021499156952,
+   "minutes": 3.3363117893536884
+  },
+  {
+   "step": 1000,
+   "val_primary": 1.1513358354568481,
+   "loss_tf": 0.1983461081981659,
+   "loss_ro": 0.1686212718486786,
+   "minutes": 4.442121032873789
+  },
+  {
+   "step": 1250,
+   "val_primary": 1.1697251796722412,
+   "loss_tf": 0.18255016207695007,
+   "loss_ro": 0.14484868943691254,
+   "minutes": 5.538123281796773
+  },
+  {
+   "step": 1500,
+   "val_primary": 1.091939091682434,
+   "loss_tf": 0.16980142891407013,
+   "loss_ro": 0.13592275977134705,
+   "minutes": 6.645136431852976
+  },
+  {
+   "step": 1750,
+   "val_primary": 1.1274185180664062,
+   "loss_tf": 0.15928345918655396,
+   "loss_ro": 0.12601958215236664,
+   "minutes": 7.742175849278768
+  },
+  {
+   "step": 2000,
+   "val_primary": 1.1827292442321777,
+   "loss_tf": 0.1540447175502777,
+   "loss_ro": 0.12703093886375427,
+   "minutes": 8.853484098116557
+  },
+  {
+   "step": 2250,
+   "val_primary": 1.1176023483276367,
+   "loss_tf": 0.14685185253620148,
+   "loss_ro": 0.11627422273159027,
+   "minutes": 9.950984692573547
+  },
+  {
+   "step": 2500,
+   "val_primary": 1.1501967906951904,
+   "loss_tf": 0.1422894150018692,
+   "loss_ro": 0.5741751194000244,
+   "minutes": 11.06087947289149
+  },
+  {
+   "step": 2750,
+   "val_primary": 1.1075528860092163,
+   "loss_tf": 0.13975869119167328,
+   "loss_ro": 0.11328043788671494,
+   "minutes": 12.157560630639393
+  },
+  {
+   "step": 3000,
+   "val_primary": 1.1341787576675415,
+   "loss_tf": 0.13430827856063843,
+   "loss_ro": 0.10951107740402222,
+   "minutes": 13.270557745297749
+  },
+  {
+   "step": 3250,
+   "val_primary": 1.1206334829330444,
+   "loss_tf": 0.1304476410150528,
+   "loss_ro": 0.10110743343830109,
+   "minutes": 14.371818939844767
+  }
+ ],
+ "permutations": {
+  "structure_permutation_sha256": "15b4e4246a47f5b60dbd4bf99f5effb0484d737415dab74d8c620036fdb477f3"
+ },
+ "fit_fields_sha256": "ae1b65e60ace82caeed44408c9a0b34acea9e02074f36edcc22f74fcd0184286",
+ "checkpoint": "h2b__dw_structshuf-target__w768_d0.1_wd0.2__s0.pt",
+ "checkpoint_sha256": "38e9700cd289ea5a0f3a9c5f1ced2160694642864b74578c605fb23f21c1b3ce",
+ "peak_gpu_memory_gb": 18.420135936,
+ "design_commit": "eefeeb0"
+}
