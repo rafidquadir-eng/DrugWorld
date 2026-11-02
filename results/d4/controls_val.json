@@ -1,0 +1,137 @@
+{
+ "part": "val",
+ "static": {
+  "h1|dw_full": {
+   "measured": {
+    "model": 1.095127820968628,
+    "copy_last": 1.9304145574569702,
+    "slot_mean": 1.6726078987121582,
+    "model_over_copy": 0.5673018869124637
+   },
+   "static": {
+    "model": 10.092123985290527,
+    "copy_last": 10.925470352172852,
+    "slot_mean": 10.46750259399414,
+    "model_over_copy": 0.9237244402281877
+   }
+  },
+  "h2a|dw_full": {
+   "measured": {
+    "model": 1.0129945278167725,
+    "copy_last": 1.4497486352920532,
+    "slot_mean": 1.1413862705230713,
+    "model_over_copy": 0.6987380454493091
+   },
+   "static": {
+    "model": 8.01456356048584,
+    "copy_last": 8.344883918762207,
+    "slot_mean": 7.831431865692139,
+    "model_over_copy": 0.9604164226258808
+   }
+  },
+  "h2b|dw_full:ecfp4": {
+   "measured": {
+    "model": 1.0357335805892944,
+    "copy_last": 1.4949703216552734,
+    "slot_mean": 0.8988730311393738,
+    "model_over_copy": 0.6928121351884102
+   },
+   "static": {
+    "model": 7.102784156799316,
+    "copy_last": 7.558158874511719,
+    "slot_mean": 6.849694728851318,
+    "model_over_copy": 0.9397505761293194
+   }
+  },
+  "h2b|dw_full:molformer": {
+   "measured": {
+    "model": 0.9812000393867493,
+    "copy_last": 1.4949703216552734,
+    "slot_mean": 0.8988730311393738,
+    "model_over_copy": 0.656334125951301
+   },
+   "static": {
+    "model": 7.0605268478393555,
+    "copy_last": 7.558158874511719,
+    "slot_mean": 6.849694728851318,
+    "model_over_copy": 0.9341596234037205
+   }
+  },
+  "h2b|dw_full:target": {
+   "measured": {
+    "model": 0.9651351571083069,
+    "copy_last": 1.4949703216552734,
+    "slot_mean": 0.8988730311393738,
+    "model_over_copy": 0.6455881719709873
+   },
+   "static": {
+    "model": 6.95920991897583,
+    "copy_last": 7.558158874511719,
+    "slot_mean": 6.849694728851318,
+    "model_over_copy": 0.920754648654487
+   }
+  }
+ },
+ "context_swap": {
+  "h1|dw_full": {
+   "own_start": 1.039354920387268,
+   "swapped_start": 2.045996904373169
+  },
+  "h2a|dw_full": {
+   "own_start": 0.6902825236320496,
+   "swapped_start": 1.6453338861465454
+  },
+  "h2b|dw_full:ecfp4": {
+   "own_start": 0.6965821385383606,
+   "swapped_start": 1.374951958656311
+  },
+  "h2b|dw_full:molformer": {
+   "own_start": 0.6576524376869202,
+   "swapped_start": 1.425948977470398
+  },
+  "h2b|dw_full:target": {
+   "own_start": 0.6257315278053284,
+   "swapped_start": 1.548460602760315
+  }
+ },
+ "action_shuffle": {
+  "h1|dw_full": {
+   "model": 1.095127820968628,
+   "shuffled_actions": 1.1692670583724976,
+   "kind": "dose within drug x line"
+  },
+  "h2a|dw_full": {
+   "model": 1.0129945278167725,
+   "shuffled_actions": 1.0456571578979492,
+   "kind": "dose within drug x line"
+  },
+  "h2b|dw_full:ecfp4": {
+   "model": 1.0357335805892944,
+   "shuffled_actions": 1.1128298044204712,
+   "kind": "encodings across compounds"
+  },
+  "h2b|dw_full:molformer": {
+   "model": 0.9812000393867493,
+   "shuffled_actions": 1.0535520315170288,
+   "kind": "encodings across compounds"
+  },
+  "h2b|dw_full:target": {
+   "model": 0.9651351571083069,
+   "shuffled_actions": 1.066347599029541,
+   "kind": "encodings across compounds"
+  }
+ },
+ "leakage": {
+  "idr0119_frame0_sha1_across_roles": 0,
+  "idr0119_fingerprint_pairs_r_gt_0.98_across_roles": 0,
+  "idr0064_frame0_sha1_across_roles": 0,
+  "idr0064_fingerprint_pairs_r_gt_0.98_across_roles": 2,
+  "idr0064_parent_inchikey_in_two_splits": [],
+  "idr0064_heldout_scaffolds_in_train": []
+ },
+ "plate_batch_probe": {
+  "n_conditions": 32,
+  "mean_accuracy": 0.9673177083333333,
+  "mean_chance": 0.284375
+ }
+}

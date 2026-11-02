@@ -1,0 +1,5356 @@
+{
+ "design_commit": "eefeeb0",
+ "primary": {
+  "part": "val",
+  "norm": "primary",
+  "sets": {
+   "h1": {
+    "n_fields": 399,
+    "n_units": 29,
+    "methods": {
+     "dw_full@own": {
+      "mean": 1.1739357709884644,
+      "n_units": 29
+     },
+     "dw_none@own": {
+      "mean": 1.5334959030151367,
+      "n_units": 29
+     },
+     "dw_doseshuf@own": {
+      "mean": 1.3752501010894775,
+      "n_units": 29
+     },
+     "dw_doseonly@own": {
+      "mean": 1.485457181930542,
+      "n_units": 29
+     },
+     "dw_none@matched": {
+      "mean": 1.554700493812561,
+      "n_units": 29
+     },
+     "dw_doseshuf@matched": {
+      "mean": 1.3787211179733276,
+      "n_units": 29
+     },
+     "dw_doseonly@matched": {
+      "mean": 1.4921236038208008,
+      "n_units": 29
+     },
+     "copy_last": {
+      "mean": 1.9233384132385254,
+      "n_units": 29
+     },
+     "slot_mean": {
+      "mean": 1.6753207445144653,
+      "n_units": 29
+     },
+     "vehicle_traj": {
+      "mean": 1.7312034368515015,
+      "n_units": 29
+     },
+     "nearest_dose": {
+      "mean": 1.1368886232376099,
+      "n_units": 29
+     },
+     "interp": {
+      "mean": 1.1395469903945923,
+      "n_units": 29
+     },
+     "residual": {
+      "mean": 1.1356620788574219,
+      "n_units": 29
+     }
+    },
+    "residual_lambda": 1.0,
+    "residual_lambda_table": {
+     "0.0": 1.554700493812561,
+     "0.25": 1.3535182476043701,
+     "0.5": 1.2166178226470947,
+     "0.75": 1.1439993381500244,
+     "1.0": 1.1356620788574219
+    },
+    "baseline_strength": {
+     "nearest_dose": {
+      "n_groups": 29,
+      "mean": -0.7864498352182323,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 0.896551724137931,
+      "beats": true,
+      "mean_full": 1.1368886232376099,
+      "mean_other": 1.9233384132385254,
+      "rel_change": -0.4088982939720154
+     },
+     "interp": {
+      "n_groups": 29,
+      "mean": -0.7837913447412951,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 0.896551724137931,
+      "beats": true,
+      "mean_full": 1.1395469903945923,
+      "mean_other": 1.9233384132385254,
+      "rel_change": -0.40751612186431885
+     },
+     "residual": {
+      "n_groups": 29,
+      "mean": -0.7876762583337981,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 0.9655172413793104,
+      "beats": true,
+      "mean_full": 1.1356620788574219,
+      "mean_other": 1.9233384132385254,
+      "rel_change": -0.4095360040664673
+     }
+    },
+    "weak": {
+     "nearest_dose": false,
+     "interp": false,
+     "residual": false
+    },
+    "readout_methods": {},
+    "gates": {
+     "G-Dose": {
+      "comparisons": {
+       "dw_none": {
+        "n_groups": 29,
+        "mean": -0.3807646652747845,
+        "p_one_sided": 0.0012699873001269988,
+        "frac_groups_better": 0.5862068965517241,
+        "beats": true,
+        "mean_full": 1.1739357709884644,
+        "mean_other": 1.554700493812561,
+        "rel_change": -0.24491196870803833,
+        "per_drug": {
+         "BEZ235": {
+          "mean_diff": -0.10727959871292114,
+          "n": 4
+         },
+         "Doxorubicin": {
+          "mean_diff": -0.44172980785369875,
+          "n": 5
+         },
+         "Gemcitabine": {
+          "mean_diff": -0.25580142736434935,
+          "n": 5
+         },
+         "Lapatinib": {
+          "mean_diff": 0.08169704675674438,
+          "n": 1
+         },
+         "Paclitaxel": {
+          "mean_diff": -0.783027458190918,
+          "n": 5
+         },
+         "Palbociclib": {
+          "mean_diff": -0.1381464958190918,
+          "n": 5
+         },
+         "Trametinib": {
+          "mean_diff": -0.6503069996833801,
+          "n": 4
+         }
+        }
+       },
+       "nearest_dose": {
+        "n_groups": 29,
+        "mean": 0.037047145695521914,
+        "p_one_sided": 0.7674523254767452,
+        "frac_groups_better": 0.6551724137931034,
+        "beats": false,
+        "mean_full": 1.1739357709884644,
+        "mean_other": 1.1368886232376099,
+        "rel_change": 0.03258645534515381,
+        "per_drug": {
+         "BEZ235": {
+          "mean_diff": -0.026088789105415344,
+          "n": 4
+         },
+         "Doxorubicin": {
+          "mean_diff": 0.06022040843963623,
+          "n": 5
+         },
+         "Gemcitabine": {
+          "mean_diff": 0.04078474044799805,
+          "n": 5
+         },
+         "Lapatinib": {
+          "mean_diff": -0.019500374794006348,
+          "n": 1
+         },
+         "Paclitaxel": {
+          "mean_diff": 0.18600049018859863,
+          "n": 5
+         },
+         "Palbociclib": {
+          "mean_diff": -0.13950469493865966,
+          "n": 5
+         },
+         "Trametinib": {
+          "mean_diff": 0.11517950892448425,
+          "n": 4
+         }
+        }
+       },
+       "dw_doseshuf": {
+        "n_groups": 29,
+        "mean": -0.20478555251812114,
+        "p_one_sided": 8.99991000089999e-05,
+        "frac_groups_better": 0.7241379310344828,
+        "beats": true,
+        "mean_full": 1.1739357709884644,
+        "mean_other": 1.3787211179733276,
+        "rel_change": -0.14853280782699585,
+        "per_drug": {
+         "BEZ235": {
+          "mean_diff": -0.00503869354724884,
+          "n": 4
+         },
+         "Doxorubicin": {
+          "mean_diff": -0.4996348261833191,
+          "n": 5
+         },
+         "Gemcitabine": {
+          "mean_diff": -0.10082149505615234,
+          "n": 5
+         },
+         "Lapatinib": {
+          "mean_diff": -0.04718017578125,
+          "n": 1
+         },
+         "Paclitaxel": {
+          "mean_diff": -0.22772105932235717,
+          "n": 5
+         },
+         "Palbociclib": {
+          "mean_diff": -0.11494235992431641,
+          "n": 5
+         },
+         "Trametinib": {
+          "mean_diff": -0.28896184265613556,
+          "n": 4
+         }
+        }
+       }
+      },
+      "lookup_used": "nearest_dose",
+      "chain": [
+       "nearest_dose",
+       "interp",
+       "hill"
+      ],
+      "pass": false
+     },
+     "G-Dose+": {
+      "comparison": {
+       "n_groups": 29,
+       "mean": 0.034388657273917364,
+       "p_one_sided": 0.7767922320776792,
+       "frac_groups_better": 0.5862068965517241,
+       "beats": false,
+       "mean_full": 1.1739357709884644,
+       "mean_other": 1.1395469903945923,
+       "rel_change": 0.030177593231201172,
+       "per_drug": {
+        "BEZ235": {
+         "mean_diff": -0.043614357709884644,
+         "n": 4
+        },
+        "Doxorubicin": {
+         "mean_diff": 0.019100308418273926,
+         "n": 5
+        },
+        "Gemcitabine": {
+         "mean_diff": 0.0516374945640564,
+         "n": 5
+        },
+        "Lapatinib": {
+         "mean_diff": 0.013069510459899902,
+         "n": 1
+        },
+        "Paclitaxel": {
+         "mean_diff": 0.22171236276626588,
+         "n": 5
+        },
+        "Palbociclib": {
+         "mean_diff": -0.10443860292434692,
+         "n": 5
+        },
+        "Trametinib": {
+         "mean_diff": 0.05465029180049896,
+         "n": 4
+        }
+       }
+      },
+      "lookup_used": "interp",
+      "chain": [
+       "interp",
+       "hill"
+      ],
+      "pass": false
+     },
+     "own_config_dw_doseshuf": {
+      "n_groups": 29,
+      "mean": -0.20131428693902903,
+      "p_one_sided": 3.999960000399996e-05,
+      "frac_groups_better": 0.7241379310344828,
+      "beats": true,
+      "mean_full": 1.1739357709884644,
+      "mean_other": 1.3752501010894775,
+      "rel_change": -0.14638382196426392
+     },
+     "own_config_dw_none": {
+      "n_groups": 29,
+      "mean": -0.3595602882319483,
+      "p_one_sided": 0.0014499855001449985,
+      "frac_groups_better": 0.6551724137931034,
+      "beats": true,
+      "mean_full": 1.1739357709884644,
+      "mean_other": 1.5334959030151367,
+      "rel_change": -0.2344709038734436
+     },
+     "diagnostic_dw_doseonly": {
+      "n_groups": 29,
+      "mean": -0.31152162058600064,
+      "p_one_sided": 0.0003599964000359996,
+      "frac_groups_better": 0.7586206896551724,
+      "beats": true,
+      "mean_full": 1.1739357709884644,
+      "mean_other": 1.485457181930542,
+      "rel_change": -0.20971417427062988
+     }
+    },
+    "unit_errors": {
+     "dw_full@own": {
+      "21MT1|BEZ235|2.5": 0.9461378455162048,
+      "21MT1|Doxorubicin|5.0": 0.9263759255409241,
+      "21MT1|Gemcitabine|0.5": 0.8065037727355957,
+      "21MT1|Paclitaxel|1.0": 1.047371745109558,
+      "21MT1|Palbociclib|100.0": 0.6784412264823914,
+      "21MT1|Trametinib|2.5": 0.6664788126945496,
+      "AU565|Doxorubicin|50.0": 0.9348056316375732,
+      "AU565|Gemcitabine|5.0": 1.349312663078308,
+      "AU565|Lapatinib|10.0": 1.0628571510314941,
+      "AU565|Paclitaxel|1.0": 0.7865049839019775,
+      "AU565|Palbociclib|10.0": 0.8342277407646179,
+      "HCC1143|BEZ235|2.5": 1.023186206817627,
+      "HCC1143|Doxorubicin|1.0": 1.0109095573425293,
+      "HCC1143|Gemcitabine|2.0": 1.1958715915679932,
+      "HCC1143|Paclitaxel|1.0": 1.1840996742248535,
+      "HCC1143|Palbociclib|250.0": 1.0154062509536743,
+      "HCC1143|Trametinib|100.0": 1.3013945817947388,
+      "MDAMB157|BEZ235|5.0": 1.6746240854263306,
+      "MDAMB157|BEZ235|50.0": 1.4403959512710571,
+      "MDAMB157|Doxorubicin|5.0": 1.417756199836731,
+      "MDAMB157|Doxorubicin|500.0": 1.732477068901062,
+      "MDAMB157|Gemcitabine|250.0": 0.9110398292541504,
+      "MDAMB157|Gemcitabine|5000.0": 0.9956550598144531,
+      "MDAMB157|Paclitaxel|2.5": 1.5580620765686035,
+      "MDAMB157|Paclitaxel|5.0": 2.27459979057312,
+      "MDAMB157|Palbociclib|2500.0": 1.136999249458313,
+      "MDAMB157|Palbociclib|5000.0": 1.3535035848617554,
+      "MDAMB157|Trametinib|2500.0": 1.431862473487854,
+      "MDAMB157|Trametinib|5000.0": 1.3472728729248047
+     },
+     "dw_none@own": {
+      "21MT1|BEZ235|2.5": 0.8638927340507507,
+      "21MT1|Doxorubicin|5.0": 0.9471096992492676,
+      "21MT1|Gemcitabine|0.5": 0.7791233658790588,
+      "21MT1|Paclitaxel|1.0": 1.0048643350601196,
+      "21MT1|Palbociclib|100.0": 0.7192527651786804,
+      "21MT1|Trametinib|2.5": 0.7007163166999817,
+      "AU565|Doxorubicin|50.0": 0.9824878573417664,
+      "AU565|Gemcitabine|5.0": 1.2749137878417969,
+      "AU565|Lapatinib|10.0": 1.006229043006897,
+      "AU565|Paclitaxel|1.0": 0.7689784169197083,
+      "AU565|Palbociclib|10.0": 0.8403266072273254,
+      "HCC1143|BEZ235|2.5": 1.0235062837600708,
+      "HCC1143|Doxorubicin|1.0": 1.0144833326339722,
+      "HCC1143|Gemcitabine|2.0": 1.163880467414856,
+      "HCC1143|Paclitaxel|1.0": 1.169185996055603,
+      "HCC1143|Palbociclib|250.0": 0.9625377655029297,
+      "HCC1143|Trametinib|100.0": 1.110539436340332,
+      "MDAMB157|BEZ235|5.0": 1.7483423948287964,
+      "MDAMB157|BEZ235|50.0": 1.8674572706222534,
+      "MDAMB157|Doxorubicin|5.0": 1.4618135690689087,
+      "MDAMB157|Doxorubicin|500.0": 3.7668216228485107,
+      "MDAMB157|Gemcitabine|250.0": 1.7492876052856445,
+      "MDAMB157|Gemcitabine|5000.0": 1.786895751953125,
+      "MDAMB157|Paclitaxel|2.5": 2.670154333114624,
+      "MDAMB157|Paclitaxel|5.0": 4.663807392120361,
+      "MDAMB157|Palbociclib|2500.0": 1.3426532745361328,
+      "MDAMB157|Palbociclib|5000.0": 1.7724981307983398,
+      "MDAMB157|Trametinib|2500.0": 2.5835983753204346,
+      "MDAMB157|Trametinib|5000.0": 2.7260239124298096
+     },
+     "dw_doseshuf@own": {
+      "21MT1|BEZ235|2.5": 0.9004099369049072,
+      "21MT1|Doxorubicin|5.0": 1.118491530418396,
+      "21MT1|Gemcitabine|0.5": 0.9689938426017761,
+      "21MT1|Paclitaxel|1.0": 0.9829981923103333,
+      "21MT1|Palbociclib|100.0": 0.6433413624763489,
+      "21MT1|Trametinib|2.5": 0.8313214182853699,
+      "AU565|Doxorubicin|50.0": 0.9278609156608582,
+      "AU565|Gemcitabine|5.0": 1.3622580766677856,
+      "AU565|Lapatinib|10.0": 1.1836963891983032,
+      "AU565|Paclitaxel|1.0": 0.908689558506012,
+      "AU565|Palbociclib|10.0": 0.8402795195579529,
+      "HCC1143|BEZ235|2.5": 1.0358966588974,
+      "HCC1143|Doxorubicin|1.0": 1.122935175895691,
+      "HCC1143|Gemcitabine|2.0": 1.1684683561325073,
+      "HCC1143|Paclitaxel|1.0": 1.2079403400421143,
+      "HCC1143|Palbociclib|250.0": 0.9892821907997131,
+      "HCC1143|Trametinib|100.0": 1.2145334482192993,
+      "MDAMB157|BEZ235|5.0": 1.6224075555801392,
+      "MDAMB157|BEZ235|50.0": 1.7542200088500977,
+      "MDAMB157|Doxorubicin|5.0": 2.7558624744415283,
+      "MDAMB157|Doxorubicin|500.0": 2.430950880050659,
+      "MDAMB157|Gemcitabine|250.0": 1.1795710325241089,
+      "MDAMB157|Gemcitabine|5000.0": 1.2580705881118774,
+      "MDAMB157|Paclitaxel|2.5": 1.7549920082092285,
+      "MDAMB157|Paclitaxel|5.0": 3.0193824768066406,
+      "MDAMB157|Palbociclib|2500.0": 1.3989454507827759,
+      "MDAMB157|Palbociclib|5000.0": 1.5770097970962524,
+      "MDAMB157|Trametinib|2500.0": 2.1114139556884766,
+      "MDAMB157|Trametinib|5000.0": 1.6120247840881348
+     },
+     "dw_doseonly@own": {
+      "21MT1|BEZ235|2.5": 0.929919958114624,
+      "21MT1|Doxorubicin|5.0": 0.9913561940193176,
+      "21MT1|Gemcitabine|0.5": 0.8311565518379211,
+      "21MT1|Paclitaxel|1.0": 1.0056064128875732,
+      "21MT1|Palbociclib|100.0": 0.7367737293243408,
+      "21MT1|Trametinib|2.5": 0.7086129188537598,
+      "AU565|Doxorubicin|50.0": 0.9734103083610535,
+      "AU565|Gemcitabine|5.0": 1.2805696725845337,
+      "AU565|Lapatinib|10.0": 1.043929934501648,
+      "AU565|Paclitaxel|1.0": 0.8451542854309082,
+      "AU565|Palbociclib|10.0": 0.8642423152923584,
+      "HCC1143|BEZ235|2.5": 1.046603798866272,
+      "HCC1143|Doxorubicin|1.0": 1.055266261100769,
+      "HCC1143|Gemcitabine|2.0": 1.1997623443603516,
+      "HCC1143|Paclitaxel|1.0": 1.1515159606933594,
+      "HCC1143|Palbociclib|250.0": 1.045603632926941,
+      "HCC1143|Trametinib|100.0": 1.1509913206100464,
+      "MDAMB157|BEZ235|5.0": 1.624135971069336,
+      "MDAMB157|BEZ235|50.0": 1.7257131338119507,
+      "MDAMB157|Doxorubicin|5.0": 1.4854258298873901,
+      "MDAMB157|Doxorubicin|500.0": 4.238084316253662,
+      "MDAMB157|Gemcitabine|250.0": 1.730018973350525,
+      "MDAMB157|Gemcitabine|5000.0": 2.1476542949676514,
+      "MDAMB157|Paclitaxel|2.5": 2.1398730278015137,
+      "MDAMB157|Paclitaxel|5.0": 3.1476049423217773,
+      "MDAMB157|Palbociclib|2500.0": 1.4572175741195679,
+      "MDAMB157|Palbociclib|5000.0": 1.8500720262527466,
+      "MDAMB157|Trametinib|2500.0": 1.9137293100357056,
+      "MDAMB157|Trametinib|5000.0": 2.75825572013855
+     },
+     "dw_none@matched": {
+      "21MT1|BEZ235|2.5": 0.8836120963096619,
+      "21MT1|Doxorubicin|5.0": 0.9572410583496094,
+      "21MT1|Gemcitabine|0.5": 0.7854098677635193,
+      "21MT1|Paclitaxel|1.0": 1.0231043100357056,
+      "21MT1|Palbociclib|100.0": 0.723730742931366,
+      "21MT1|Trametinib|2.5": 0.6519408822059631,
+      "AU565|Doxorubicin|50.0": 0.9629823565483093,
+      "AU565|Gemcitabine|5.0": 1.2648839950561523,
+      "AU565|Lapatinib|10.0": 0.9811601042747498,
+      "AU565|Paclitaxel|1.0": 0.7772188186645508,
+      "AU565|Palbociclib|10.0": 0.8087739944458008,
+      "HCC1143|BEZ235|2.5": 1.0339621305465698,
+      "HCC1143|Doxorubicin|1.0": 1.044221043586731,
+      "HCC1143|Gemcitabine|2.0": 1.1846084594726562,
+      "HCC1143|Paclitaxel|1.0": 1.1626439094543457,
+      "HCC1143|Palbociclib|250.0": 0.9686403870582581,
+      "HCC1143|Trametinib|100.0": 1.1369000673294067,
+      "MDAMB157|BEZ235|5.0": 1.7209473848342896,
+      "MDAMB157|BEZ235|50.0": 1.8749408721923828,
+      "MDAMB157|Doxorubicin|5.0": 1.5280194282531738,
+      "MDAMB157|Doxorubicin|500.0": 3.7385094165802,
+      "MDAMB157|Gemcitabine|250.0": 1.634505271911621,
+      "MDAMB157|Gemcitabine|5000.0": 1.6679824590682983,
+      "MDAMB157|Paclitaxel|2.5": 2.8810322284698486,
+      "MDAMB157|Paclitaxel|5.0": 4.921776294708252,
+      "MDAMB157|Palbociclib|2500.0": 1.36062490940094,
+      "MDAMB157|Palbociclib|5000.0": 1.8475404977798462,
+      "MDAMB157|Trametinib|2500.0": 2.7214910984039307,
+      "MDAMB157|Trametinib|5000.0": 2.837904691696167
+     },
+     "dw_doseshuf@matched": {
+      "21MT1|BEZ235|2.5": 0.922626256942749,
+      "21MT1|Doxorubicin|5.0": 1.2728551626205444,
+      "21MT1|Gemcitabine|0.5": 0.9185459613800049,
+      "21MT1|Paclitaxel|1.0": 1.0084292888641357,
+      "21MT1|Palbociclib|100.0": 0.6653066277503967,
+      "21MT1|Trametinib|2.5": 0.8845696449279785,
+      "AU565|Doxorubicin|50.0": 0.9201884269714355,
+      "AU565|Gemcitabine|5.0": 1.3466601371765137,
+      "AU565|Lapatinib|10.0": 1.1100373268127441,
+      "AU565|Paclitaxel|1.0": 0.8644492030143738,
+      "AU565|Palbociclib|10.0": 0.8393020033836365,
+      "HCC1143|BEZ235|2.5": 1.0334292650222778,
+      "HCC1143|Doxorubicin|1.0": 1.1557244062423706,
+      "HCC1143|Gemcitabine|2.0": 1.1990660429000854,
+      "HCC1143|Paclitaxel|1.0": 1.2537593841552734,
+      "HCC1143|Palbociclib|250.0": 1.0067923069000244,
+      "HCC1143|Trametinib|100.0": 1.1316953897476196,
+      "MDAMB157|BEZ235|5.0": 1.538400650024414,
+      "MDAMB157|BEZ235|50.0": 1.610042691230774,
+      "MDAMB157|Doxorubicin|5.0": 2.631894826889038,
+      "MDAMB157|Doxorubicin|500.0": 2.5398356914520264,
+      "MDAMB157|Gemcitabine|250.0": 1.127318024635315,
+      "MDAMB157|Gemcitabine|5000.0": 1.1709002256393433,
+      "MDAMB157|Paclitaxel|2.5": 1.7841914892196655,
+      "MDAMB157|Paclitaxel|5.0": 3.07841420173645,
+      "MDAMB157|Palbociclib|2500.0": 1.4164890050888062,
+      "MDAMB157|Palbociclib|5000.0": 1.6653999090194702,
+      "MDAMB157|Trametinib|2500.0": 2.1943368911743164,
+      "MDAMB157|Trametinib|5000.0": 1.6922541856765747
+     },
+     "dw_doseonly@matched": {
+      "21MT1|BEZ235|2.5": 0.9346501231193542,
+      "21MT1|Doxorubicin|5.0": 1.0140482187271118,
+      "21MT1|Gemcitabine|0.5": 0.8346795439720154,
+      "21MT1|Paclitaxel|1.0": 1.074715256690979,
+      "21MT1|Palbociclib|100.0": 0.7780144214630127,
+      "21MT1|Trametinib|2.5": 0.7110410332679749,
+      "AU565|Doxorubicin|50.0": 0.9627916216850281,
+      "AU565|Gemcitabine|5.0": 1.287568211555481,
+      "AU565|Lapatinib|10.0": 1.03130042552948,
+      "AU565|Paclitaxel|1.0": 0.7909916043281555,
+      "AU565|Palbociclib|10.0": 0.8477789759635925,
+      "HCC1143|BEZ235|2.5": 1.0686835050582886,
+      "HCC1143|Doxorubicin|1.0": 1.0636721849441528,
+      "HCC1143|Gemcitabine|2.0": 1.1582878828048706,
+      "HCC1143|Paclitaxel|1.0": 1.215429663658142,
+      "HCC1143|Palbociclib|250.0": 1.0543427467346191,
+      "HCC1143|Trametinib|100.0": 1.1126710176467896,
+      "MDAMB157|BEZ235|5.0": 1.716376781463623,
+      "MDAMB157|BEZ235|50.0": 1.7923558950424194,
+      "MDAMB157|Doxorubicin|5.0": 1.5885461568832397,
+      "MDAMB157|Doxorubicin|500.0": 4.015577793121338,
+      "MDAMB157|Gemcitabine|250.0": 1.5246987342834473,
+      "MDAMB157|Gemcitabine|5000.0": 1.8611711263656616,
+      "MDAMB157|Paclitaxel|2.5": 2.24999737739563,
+      "MDAMB157|Paclitaxel|5.0": 3.271437883377075,
+      "MDAMB157|Palbociclib|2500.0": 1.513572096824646,
+      "MDAMB157|Palbociclib|5000.0": 1.8250099420547485,
+      "MDAMB157|Trametinib|2500.0": 2.2111215591430664,
+      "MDAMB157|Trametinib|5000.0": 2.761054754257202
+     },
+     "copy_last": {
+      "21MT1|BEZ235|2.5": 1.037521481513977,
+      "21MT1|Doxorubicin|5.0": 1.1010795831680298,
+      "21MT1|Gemcitabine|0.5": 0.9852331280708313,
+      "21MT1|Paclitaxel|1.0": 1.2923524379730225,
+      "21MT1|Palbociclib|100.0": 1.0363165140151978,
+      "21MT1|Trametinib|2.5": 0.853374183177948,
+      "AU565|Doxorubicin|50.0": 1.216233730316162,
+      "AU565|Gemcitabine|5.0": 1.5102912187576294,
+      "AU565|Lapatinib|10.0": 1.1560015678405762,
+      "AU565|Paclitaxel|1.0": 0.8236128687858582,
+      "AU565|Palbociclib|10.0": 0.9201860427856445,
+      "HCC1143|BEZ235|2.5": 1.2247949838638306,
+      "HCC1143|Doxorubicin|1.0": 1.1534804105758667,
+      "HCC1143|Gemcitabine|2.0": 1.5618475675582886,
+      "HCC1143|Paclitaxel|1.0": 1.3540807962417603,
+      "HCC1143|Palbociclib|250.0": 1.343981385231018,
+      "HCC1143|Trametinib|100.0": 1.5771583318710327,
+      "MDAMB157|BEZ235|5.0": 1.8920434713363647,
+      "MDAMB157|BEZ235|50.0": 2.155449151992798,
+      "MDAMB157|Doxorubicin|5.0": 1.4732743501663208,
+      "MDAMB157|Doxorubicin|500.0": 4.7309393882751465,
+      "MDAMB157|Gemcitabine|250.0": 2.7427241802215576,
+      "MDAMB157|Gemcitabine|5000.0": 2.8668618202209473,
+      "MDAMB157|Paclitaxel|2.5": 3.2570810317993164,
+      "MDAMB157|Paclitaxel|5.0": 5.42181921005249,
+      "MDAMB157|Palbociclib|2500.0": 1.789870262145996,
+      "MDAMB157|Palbociclib|5000.0": 2.431546211242676,
+      "MDAMB157|Trametinib|2500.0": 3.379509210586548,
+      "MDAMB157|Trametinib|5000.0": 3.488147258758545
+     },
+     "slot_mean": {
+      "21MT1|BEZ235|2.5": 1.0024577379226685,
+      "21MT1|Doxorubicin|5.0": 1.1170066595077515,
+      "21MT1|Gemcitabine|0.5": 0.924213707447052,
+      "21MT1|Paclitaxel|1.0": 1.2286049127578735,
+      "21MT1|Palbociclib|100.0": 0.8890787363052368,
+      "21MT1|Trametinib|2.5": 0.8133514523506165,
+      "AU565|Doxorubicin|50.0": 1.1314624547958374,
+      "AU565|Gemcitabine|5.0": 1.3913480043411255,
+      "AU565|Lapatinib|10.0": 1.1177970170974731,
+      "AU565|Paclitaxel|1.0": 0.9548692107200623,
+      "AU565|Palbociclib|10.0": 0.9941535592079163,
+      "HCC1143|BEZ235|2.5": 1.1149336099624634,
+      "HCC1143|Doxorubicin|1.0": 1.0663801431655884,
+      "HCC1143|Gemcitabine|2.0": 1.3417086601257324,
+      "HCC1143|Paclitaxel|1.0": 1.1520987749099731,
+      "HCC1143|Palbociclib|250.0": 0.9904513955116272,
+      "HCC1143|Trametinib|100.0": 1.157912254333496,
+      "MDAMB157|BEZ235|5.0": 1.801463007926941,
+      "MDAMB157|BEZ235|50.0": 1.8977265357971191,
+      "MDAMB157|Doxorubicin|5.0": 1.4720336198806763,
+      "MDAMB157|Doxorubicin|500.0": 4.10002326965332,
+      "MDAMB157|Gemcitabine|250.0": 2.2429213523864746,
+      "MDAMB157|Gemcitabine|5000.0": 2.2945144176483154,
+      "MDAMB157|Paclitaxel|2.5": 2.865605592727661,
+      "MDAMB157|Paclitaxel|5.0": 4.844649791717529,
+      "MDAMB157|Palbociclib|2500.0": 1.3282049894332886,
+      "MDAMB157|Palbociclib|5000.0": 1.834391474723816,
+      "MDAMB157|Trametinib|2500.0": 2.7083582878112793,
+      "MDAMB157|Trametinib|5000.0": 2.806579828262329
+     },
+     "vehicle_traj": {
+      "21MT1|BEZ235|2.5": 0.8190529942512512,
+      "21MT1|Doxorubicin|5.0": 0.871102511882782,
+      "21MT1|Gemcitabine|0.5": 0.6679947972297668,
+      "21MT1|Paclitaxel|1.0": 1.0173288583755493,
+      "21MT1|Palbociclib|100.0": 0.7431209683418274,
+      "21MT1|Trametinib|2.5": 0.5701024532318115,
+      "AU565|Doxorubicin|50.0": 1.077001690864563,
+      "AU565|Gemcitabine|5.0": 1.2141207456588745,
+      "AU565|Lapatinib|10.0": 0.9966499209403992,
+      "AU565|Paclitaxel|1.0": 0.7162659764289856,
+      "AU565|Palbociclib|10.0": 0.8356433510780334,
+      "HCC1143|BEZ235|2.5": 0.9145400524139404,
+      "HCC1143|Doxorubicin|1.0": 0.8985787034034729,
+      "HCC1143|Gemcitabine|2.0": 1.262702465057373,
+      "HCC1143|Paclitaxel|1.0": 1.1183457374572754,
+      "HCC1143|Palbociclib|250.0": 0.9275218844413757,
+      "HCC1143|Trametinib|100.0": 1.201236605644226,
+      "MDAMB157|BEZ235|5.0": 1.6874216794967651,
+      "MDAMB157|BEZ235|50.0": 2.177884578704834,
+      "MDAMB157|Doxorubicin|5.0": 1.2972115278244019,
+      "MDAMB157|Doxorubicin|500.0": 4.827077388763428,
+      "MDAMB157|Gemcitabine|250.0": 2.751786231994629,
+      "MDAMB157|Gemcitabine|5000.0": 2.852318286895752,
+      "MDAMB157|Paclitaxel|2.5": 3.139087677001953,
+      "MDAMB157|Paclitaxel|5.0": 5.3885884284973145,
+      "MDAMB157|Palbociclib|2500.0": 1.6231054067611694,
+      "MDAMB157|Palbociclib|5000.0": 2.1805295944213867,
+      "MDAMB157|Trametinib|2500.0": 3.0939524173736572,
+      "MDAMB157|Trametinib|5000.0": 3.3346261978149414
+     },
+     "nearest_dose": {
+      "21MT1|BEZ235|2.5": 1.024114727973938,
+      "21MT1|Doxorubicin|5.0": 1.1357015371322632,
+      "21MT1|Gemcitabine|0.5": 0.8762462735176086,
+      "21MT1|Paclitaxel|1.0": 1.113080382347107,
+      "21MT1|Palbociclib|100.0": 0.8297600746154785,
+      "21MT1|Trametinib|2.5": 0.8518148064613342,
+      "AU565|Doxorubicin|50.0": 0.9160599112510681,
+      "AU565|Gemcitabine|5.0": 1.3974080085754395,
+      "AU565|Lapatinib|10.0": 1.0823575258255005,
+      "AU565|Paclitaxel|1.0": 0.9527504444122314,
+      "AU565|Palbociclib|10.0": 0.9853339195251465,
+      "HCC1143|BEZ235|2.5": 1.2029917240142822,
+      "HCC1143|Doxorubicin|1.0": 1.1077278852462769,
+      "HCC1143|Gemcitabine|2.0": 1.2685869932174683,
+      "HCC1143|Paclitaxel|1.0": 1.220699429512024,
+      "HCC1143|Palbociclib|250.0": 1.0186021327972412,
+      "HCC1143|Trametinib|100.0": 1.0603312253952026,
+      "MDAMB157|BEZ235|5.0": 1.74100923538208,
+      "MDAMB157|BEZ235|50.0": 1.2205835580825806,
+      "MDAMB157|Doxorubicin|5.0": 1.4728878736495972,
+      "MDAMB157|Doxorubicin|500.0": 1.088845133781433,
+      "MDAMB157|Gemcitabine|250.0": 0.7265558838844299,
+      "MDAMB157|Gemcitabine|5000.0": 0.785662055015564,
+      "MDAMB157|Paclitaxel|2.5": 1.2253308296203613,
+      "MDAMB157|Paclitaxel|5.0": 1.408774733543396,
+      "MDAMB157|Palbociclib|2500.0": 1.208770513534546,
+      "MDAMB157|Palbociclib|5000.0": 1.6736348867416382,
+      "MDAMB157|Trametinib|2500.0": 1.245589256286621,
+      "MDAMB157|Trametinib|5000.0": 1.128555417060852
+     },
+     "interp": {
+      "21MT1|BEZ235|2.5": 0.9833791851997375,
+      "21MT1|Doxorubicin|5.0": 1.0970141887664795,
+      "21MT1|Gemcitabine|0.5": 0.8762462735176086,
+      "21MT1|Paclitaxel|1.0": 1.0867383480072021,
+      "21MT1|Palbociclib|100.0": 0.8000289797782898,
+      "21MT1|Trametinib|2.5": 0.7702164649963379,
+      "AU565|Doxorubicin|50.0": 0.9160599112510681,
+      "AU565|Gemcitabine|5.0": 1.3974080085754395,
+      "AU565|Lapatinib|10.0": 1.0497876405715942,
+      "AU565|Paclitaxel|1.0": 0.9058093428611755,
+      "AU565|Palbociclib|10.0": 0.9372168183326721,
+      "HCC1143|BEZ235|2.5": 1.144553780555725,
+      "HCC1143|Doxorubicin|1.0": 1.0823501348495483,
+      "HCC1143|Gemcitabine|2.0": 1.2363964319229126,
+      "HCC1143|Paclitaxel|1.0": 1.1589131355285645,
+      "HCC1143|Palbociclib|250.0": 0.9630314707756042,
+      "HCC1143|Trametinib|100.0": 1.0080581903457642,
+      "MDAMB157|BEZ235|5.0": 1.7090946435928345,
+      "MDAMB157|BEZ235|50.0": 1.421773910522461,
+      "MDAMB157|Doxorubicin|5.0": 1.6492153406143188,
+      "MDAMB157|Doxorubicin|500.0": 1.1821832656860352,
+      "MDAMB157|Gemcitabine|250.0": 0.684331476688385,
+      "MDAMB157|Gemcitabine|5000.0": 0.8058132529258728,
+      "MDAMB157|Paclitaxel|2.5": 1.083484172821045,
+      "MDAMB157|Paclitaxel|5.0": 1.5071314573287964,
+      "MDAMB157|Palbociclib|2500.0": 1.274256944656372,
+      "MDAMB157|Palbociclib|5000.0": 1.5662368535995483,
+      "MDAMB157|Trametinib|2500.0": 1.3720083236694336,
+      "MDAMB157|Trametinib|5000.0": 1.3781245946884155
+     },
+     "residual": {
+      "21MT1|BEZ235|2.5": 0.9163053631782532,
+      "21MT1|Doxorubicin|5.0": 0.9976690411567688,
+      "21MT1|Gemcitabine|0.5": 0.7612085342407227,
+      "21MT1|Paclitaxel|1.0": 0.9723411202430725,
+      "21MT1|Palbociclib|100.0": 0.6284915804862976,
+      "21MT1|Trametinib|2.5": 0.6536617875099182,
+      "AU565|Doxorubicin|50.0": 0.8208128809928894,
+      "AU565|Gemcitabine|5.0": 1.28672456741333,
+      "AU565|Lapatinib|10.0": 0.988788366317749,
+      "AU565|Paclitaxel|1.0": 0.7667994499206543,
+      "AU565|Palbociclib|10.0": 0.8169830441474915,
+      "HCC1143|BEZ235|2.5": 1.0827916860580444,
+      "HCC1143|Doxorubicin|1.0": 1.0424047708511353,
+      "HCC1143|Gemcitabine|2.0": 1.1621712446212769,
+      "HCC1143|Paclitaxel|1.0": 1.2165273427963257,
+      "HCC1143|Palbociclib|250.0": 0.9935548901557922,
+      "HCC1143|Trametinib|100.0": 1.0706067085266113,
+      "MDAMB157|BEZ235|5.0": 1.8620227575302124,
+      "MDAMB157|BEZ235|50.0": 1.4195126295089722,
+      "MDAMB157|Doxorubicin|5.0": 1.5812994241714478,
+      "MDAMB157|Doxorubicin|500.0": 1.3189138174057007,
+      "MDAMB157|Gemcitabine|250.0": 0.8757583498954773,
+      "MDAMB157|Gemcitabine|5000.0": 0.9002966284751892,
+      "MDAMB157|Paclitaxel|2.5": 1.2549973726272583,
+      "MDAMB157|Paclitaxel|5.0": 1.6171818971633911,
+      "MDAMB157|Palbociclib|2500.0": 1.3730829954147339,
+      "MDAMB157|Palbociclib|5000.0": 1.8823060989379883,
+      "MDAMB157|Trametinib|2500.0": 1.3604193925857544,
+      "MDAMB157|Trametinib|5000.0": 1.3105665445327759
+     }
+    },
+    "g_plan_a": {
+     "n_wells": 100,
+     "median_abs_log10_error": {
+      "model": 0.19897000433601886,
+      "nearest": 0.3979400086720376,
+      "interp": 0.2999999999999999
+     },
+     "vs_nearest": {
+      "n_groups": 100,
+      "mean": -0.17639032734714857,
+      "p_one_sided": 0.00024999750002499977,
+      "frac_groups_better": 0.74,
+      "median_below": true
+     },
+     "vs_interp": {
+      "n_groups": 100,
+      "mean": -0.02519518254802309,
+      "p_one_sided": 0.3013769862301377,
+      "frac_groups_better": 0.55,
+      "median_below": true
+     },
+     "pass": false
+    },
+    "own_start": {
+     "dw_full": 1.0471343994140625,
+     "dw_none": 1.0793616771697998,
+     "copy_last_own": 1.9578245878219604
+    }
+   },
+   "h2a": {
+    "n_fields": 84,
+    "n_units": 7,
+    "methods": {
+     "dw_full@own": {
+      "mean": 1.0371100902557373,
+      "n_units": 7
+     },
+     "dw_none@own": {
+      "mean": 1.1477811336517334,
+      "n_units": 7
+     },
+     "dw_none@matched": {
+      "mean": 1.154969573020935,
+      "n_units": 7
+     },
+     "copy_last": {
+      "mean": 1.4497487545013428,
+      "n_units": 7
+     },
+     "slot_mean": {
+      "mean": 1.1413862705230713,
+      "n_units": 7
+     },
+     "vehicle_traj": {
+      "mean": 1.2979310750961304,
+      "n_units": 7
+     },
+     "hsa": {
+      "mean": 1.150451421737671,
+      "n_units": 7
+     },
+     "additive": {
+      "mean": 1.2386671304702759,
+      "n_units": 7
+     }
+    },
+    "baseline_single_sources": {
+     "Gemcitabine|10.0": "not_redosed",
+     "Gemcitabine|17.0": "not_redosed",
+     "Gemcitabine|30.0": "not_redosed",
+     "Gemcitabine|5.0": "not_redosed",
+     "Lapatinib|100.0": "not_redosed",
+     "Lapatinib|25.0": "not_redosed",
+     "Lapatinib|250.0": "not_redosed",
+     "Lapatinib|50.0": "not_redosed"
+    },
+    "baseline_strength": {
+     "hsa": {
+      "n_groups": 7,
+      "mean": -0.29929729870387484,
+      "p_one_sided": 0.008039919600803991,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 1.150451421737671,
+      "mean_other": 1.4497487545013428,
+      "rel_change": -0.20644772052764893
+     },
+     "additive": {
+      "n_groups": 7,
+      "mean": -0.21108155591147287,
+      "p_one_sided": 0.008039919600803991,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 1.2386671304702759,
+      "mean_other": 1.4497487545013428,
+      "rel_change": -0.14559876918792725
+     }
+    },
+    "weak": {
+     "hsa": false,
+     "additive": false
+    },
+    "readout_methods": {},
+    "gates": {
+     "G-Combo": {
+      "comparisons": {
+       "hsa": {
+        "n_groups": 7,
+        "mean": -0.11334123781749181,
+        "p_one_sided": 0.008039919600803991,
+        "frac_groups_better": 1.0,
+        "beats": true,
+        "mean_full": 1.0371100902557373,
+        "mean_other": 1.150451421737671,
+        "rel_change": -0.09851902723312378
+       },
+       "additive": {
+        "n_groups": 7,
+        "mean": -0.2015569806098938,
+        "p_one_sided": 0.008039919600803991,
+        "frac_groups_better": 1.0,
+        "beats": true,
+        "mean_full": 1.0371100902557373,
+        "mean_other": 1.2386671304702759,
+        "rel_change": -0.1627209186553955
+       }
+      },
+      "lookups_used": {
+       "hsa": "hsa",
+       "additive": "additive"
+      },
+      "pass": true
+     },
+     "G-Combo+": {
+      "comparisons": {},
+      "decoded_readouts_used": false,
+      "pass": false
+     },
+     "without_Lapatinib+Palbociclib": {
+      "hsa": {
+       "n_groups": 7,
+       "mean": -0.11334123781749181,
+       "p_one_sided": 0.008039919600803991,
+       "frac_groups_better": 1.0,
+       "beats": true,
+       "mean_full": 1.0371100902557373,
+       "mean_other": 1.150451421737671,
+       "rel_change": -0.09851902723312378
+      },
+      "additive": {
+       "n_groups": 7,
+       "mean": -0.2015569806098938,
+       "p_one_sided": 0.008039919600803991,
+       "frac_groups_better": 1.0,
+       "beats": true,
+       "mean_full": 1.0371100902557373,
+       "mean_other": 1.2386671304702759,
+       "rel_change": -0.1627209186553955
+      }
+     },
+     "own_config_dw_none": {
+      "n_groups": 7,
+      "mean": -0.11067094973155431,
+      "p_one_sided": 0.015849841501584985,
+      "frac_groups_better": 0.8571428571428571,
+      "beats": true,
+      "mean_full": 1.0371100902557373,
+      "mean_other": 1.1477811336517334,
+      "rel_change": -0.09642171859741211
+     }
+    },
+    "unit_errors": {
+     "dw_full@own": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.8329343795776367,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.6573258638381958,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.9868142008781433,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.69785076379776,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.1629513502120972,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.2378884553909302,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.6840057373046875
+     },
+     "dw_none@own": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.9914403557777405,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.901926040649414,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.112587571144104,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.8245823979377747,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.1354713439941406,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.3328458070755005,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.7356138825416565
+     },
+     "dw_none@matched": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 1.0015455484390259,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.9109891653060913,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.1240116357803345,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.8382713198661804,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.1329264640808105,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.339338779449463,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.7377044558525085
+     },
+     "copy_last": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 1.2401167154312134,
+      "Gemcitabine|30.0|Lapatinib|100.0": 2.1402947902679443,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.4034318923950195,
+      "Lapatinib|100.0|Gemcitabine|10.0": 1.0777511596679688,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.531687617301941,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.7622445821762085,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.9927137494087219
+     },
+     "slot_mean": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.9251348376274109,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.81916344165802,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.0684930086135864,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.8240020871162415,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.2232893705368042,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.3336282968521118,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.7959926128387451
+     },
+     "vehicle_traj": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 1.1725505590438843,
+      "Gemcitabine|30.0|Lapatinib|100.0": 2.0839321613311768,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.2579880952835083,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.9886226654052734,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.2636510133743286,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.4665155410766602,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.8522582054138184
+     },
+     "hsa": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.8952235579490662,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.8375660181045532,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.11076819896698,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.7465593814849854,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.3444069623947144,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.328818917274475,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.7898163795471191
+     },
+     "additive": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 1.0185283422470093,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.8614445924758911,
+      "Gemcitabine|5.0|Lapatinib|100.0": 1.1983200311660767,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.8916547298431396,
+      "Lapatinib|25.0|Gemcitabine|10.0": 1.3918079137802124,
+      "Lapatinib|250.0|Gemcitabine|10.0": 1.4008517265319824,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.9080622792243958
+     }
+    },
+    "own_start": {
+     "dw_full": 0.69028240442276,
+     "dw_none": 0.7205168008804321,
+     "copy_last_own": 1.0571088790893555
+    }
+   },
+   "h2b": {
+    "n_fields": 41,
+    "n_units": 41,
+    "methods": {
+     "dw_full:ecfp4@own": {
+      "mean": 1.1069215536117554,
+      "n_units": 41
+     },
+     "dw_full:molformer@own": {
+      "mean": 1.0635383129119873,
+      "n_units": 41
+     },
+     "dw_full:target@own": {
+      "mean": 1.0485724210739136,
+      "n_units": 41
+     },
+     "dw_structshuf:ecfp4@own": {
+      "mean": 1.0705605745315552,
+      "n_units": 41
+     },
+     "dw_structshuf:molformer@own": {
+      "mean": 1.0550718307495117,
+      "n_units": 41
+     },
+     "dw_structshuf:target@own": {
+      "mean": 1.0572401285171509,
+      "n_units": 41
+     },
+     "dw_none@own": {
+      "mean": 0.9369639158248901,
+      "n_units": 41
+     },
+     "dw_none@matched:ecfp4": {
+      "mean": 0.9501479268074036,
+      "n_units": 41
+     },
+     "dw_structshuf:ecfp4@matched:ecfp4": {
+      "mean": 1.0927287340164185,
+      "n_units": 41
+     },
+     "dw_none@matched:molformer": {
+      "mean": 0.9396005868911743,
+      "n_units": 41
+     },
+     "dw_structshuf:molformer@matched:molformer": {
+      "mean": 1.057770848274231,
+      "n_units": 41
+     },
+     "dw_none@matched:target": {
+      "mean": 0.9369639158248901,
+      "n_units": 41
+     },
+     "dw_structshuf:target@matched:target": {
+      "mean": 1.1271226406097412,
+      "n_units": 41
+     },
+     "copy_last": {
+      "mean": 1.4949702024459839,
+      "n_units": 41
+     },
+     "slot_mean": {
+      "mean": 0.8988730907440186,
+      "n_units": 41
+     },
+     "vehicle_traj": {
+      "mean": 1.5951564311981201,
+      "n_units": 41
+     },
+     "knn": {
+      "mean": 1.072799563407898,
+      "n_units": 41
+     },
+     "residual": {
+      "mean": 0.9369639158248901,
+      "n_units": 41
+     }
+    },
+    "knn_neighbours": {
+     "GSK1904529A": [
+      [
+       "ASP3026",
+       0.31092436974789917
+      ],
+      [
+       "Osimertinib",
+       0.29133858267716534
+      ],
+      [
+       "R547",
+       0.288135593220339
+      ],
+      [
+       "BI 2536",
+       0.2857142857142857
+      ],
+      [
+       "ERK5-IN-1",
+       0.2824427480916031
+      ]
+     ],
+     "Linsitinib": [
+      [
+       "MK-2206 2HCl",
+       0.26744186046511625
+      ],
+      [
+       "INK 128",
+       0.25316455696202533
+      ],
+      [
+       "GSK650394",
+       0.22093023255813954
+      ],
+      [
+       "AMG319",
+       0.20430107526881722
+      ],
+      [
+       "TG100-115",
+       0.20270270270270271
+      ]
+     ],
+     "Crizotinib": [
+      [
+       "NVP-BSK805 2HCl",
+       0.33695652173913043
+      ],
+      [
+       "LDN-214117",
+       0.25
+      ],
+      [
+       "R547",
+       0.21649484536082475
+      ],
+      [
+       "VX-745",
+       0.2159090909090909
+      ],
+      [
+       "Vemurafenib",
+       0.20618556701030927
+      ]
+     ],
+     "Dasatinib": [
+      [
+       "Tozasertib",
+       0.30526315789473685
+      ],
+      [
+       "Imatinib Mesylate",
+       0.29
+      ],
+      [
+       "WZ3146",
+       0.28865979381443296
+      ],
+      [
+       "MK-8745",
+       0.2872340425531915
+      ],
+      [
+       "WZ4003",
+       0.2692307692307692
+      ]
+     ],
+     "Masitinib": [
+      [
+       "Imatinib Mesylate",
+       0.7466666666666667
+      ],
+      [
+       "Ponatinib",
+       0.38
+      ],
+      [
+       "Nilotinib",
+       0.37755102040816324
+      ],
+      [
+       "GZD824 Dimesylate",
+       0.36363636363636365
+      ],
+      [
+       "AZD2858",
+       0.3225806451612903
+      ]
+     ],
+     "Gefitinib": [
+      [
+       "ZM 447439",
+       0.6533333333333333
+      ],
+      [
+       "Dacomitinib",
+       0.5301204819277109
+      ],
+      [
+       "AG-1478",
+       0.5
+      ],
+      [
+       "ZM 306416",
+       0.4925373134328358
+      ],
+      [
+       "Bosutinib",
+       0.45121951219512196
+      ]
+     ],
+     "ENMD-2076": [
+      [
+       "Tozasertib",
+       0.47297297297297297
+      ],
+      [
+       "AZ 960",
+       0.2972972972972973
+      ],
+      [
+       "Gandotinib",
+       0.29069767441860467
+      ],
+      [
+       "TG101209",
+       0.27380952380952384
+      ],
+      [
+       "SGI-7079",
+       0.2696629213483146
+      ]
+     ],
+     "H 89 2HCl": [
+      [
+       "KN-62",
+       0.2777777777777778
+      ],
+      [
+       "PD168393",
+       0.21518987341772153
+      ],
+      [
+       "Bikinin",
+       0.21212121212121213
+      ],
+      [
+       "PIK-93",
+       0.20987654320987653
+      ],
+      [
+       "BX-912",
+       0.20652173913043478
+      ]
+     ],
+     "Hesperadin": [
+      [
+       "Nintedanib",
+       0.4111111111111111
+      ],
+      [
+       "BIX 02188",
+       0.36904761904761907
+      ],
+      [
+       "BIX 02189",
+       0.36904761904761907
+      ],
+      [
+       "AEE788",
+       0.2777777777777778
+      ],
+      [
+       "AZD1080",
+       0.2696629213483146
+      ]
+     ],
+     "Aurora A Inhibitor I": [
+      [
+       "CC-292",
+       0.375
+      ],
+      [
+       "Imatinib Mesylate",
+       0.3645833333333333
+      ],
+      [
+       "CNX-774",
+       0.32989690721649484
+      ],
+      [
+       "MLN8054",
+       0.32608695652173914
+      ],
+      [
+       "TAE226",
+       0.30612244897959184
+      ]
+     ],
+     "GSK429286A": [
+      [
+       "GZD824 Dimesylate",
+       0.27
+      ],
+      [
+       "Regorafenib",
+       0.23655913978494625
+      ],
+      [
+       "PF-4708671",
+       0.23076923076923078
+      ],
+      [
+       "TAK-632",
+       0.22857142857142856
+      ],
+      [
+       "AT7519",
+       0.2261904761904762
+      ]
+     ],
+     "Pelitinib": [
+      [
+       "Dacomitinib",
+       0.4782608695652174
+      ],
+      [
+       "Bosutinib",
+       0.3473684210526316
+      ],
+      [
+       "ZM 306416",
+       0.26744186046511625
+      ],
+      [
+       "Sapitinib",
+       0.25925925925925924
+      ],
+      [
+       "KRN 633",
+       0.25510204081632654
+      ]
+     ],
+     "WYE-125132": [
+      [
+       "WYE-354",
+       0.4939759036144578
+      ],
+      [
+       "WAY-600",
+       0.32323232323232326
+      ],
+      [
+       "Vistusertib",
+       0.23711340206185566
+      ],
+      [
+       "Palbociclib HCl",
+       0.22330097087378642
+      ],
+      [
+       "YM201636",
+       0.2169811320754717
+      ]
+     ],
+     "PIK-293": [
+      [
+       "PP1",
+       0.2608695652173913
+      ],
+      [
+       "INK 128",
+       0.2597402597402597
+      ],
+      [
+       "PP2",
+       0.2361111111111111
+      ],
+      [
+       "Ibrutinib",
+       0.22826086956521738
+      ],
+      [
+       "Torkinib",
+       0.21951219512195122
+      ]
+     ],
+     "Apatinib": [
+      [
+       "Motesanib Diphosphate",
+       0.5588235294117647
+      ],
+      [
+       "JNK Inhibitor IX",
+       0.2564102564102564
+      ],
+      [
+       "Imatinib Mesylate",
+       0.2553191489361702
+      ],
+      [
+       "GSK2578215A",
+       0.25
+      ],
+      [
+       "OSI-930",
+       0.2413793103448276
+      ]
+     ],
+     "Honokiol": [
+      [
+       "Genistein",
+       0.21153846153846154
+      ],
+      [
+       "AG-18",
+       0.1956521739130435
+      ],
+      [
+       "Tyrphostin B42",
+       0.18333333333333332
+      ],
+      [
+       "Quercetin",
+       0.18181818181818182
+      ],
+      [
+       "IPA-3",
+       0.17777777777777778
+      ]
+     ],
+     "Fedratinib": [
+      [
+       "TG101209",
+       0.6901408450704225
+      ],
+      [
+       "CC-292",
+       0.39285714285714285
+      ],
+      [
+       "BX-912",
+       0.3225806451612903
+      ],
+      [
+       "WZ3146",
+       0.30851063829787234
+      ],
+      [
+       "PF-431396",
+       0.30303030303030304
+      ]
+     ],
+     "GSK1838705A": [
+      [
+       "TAE226",
+       0.3431372549019608
+      ],
+      [
+       "Sapitinib",
+       0.30275229357798167
+      ],
+      [
+       "Osimertinib",
+       0.2831858407079646
+      ],
+      [
+       "GNE-7915",
+       0.2830188679245283
+      ],
+      [
+       "Alisertib",
+       0.2818181818181818
+      ]
+     ],
+     "PH-797804": [
+      [
+       "Voxtalisib Analogue",
+       0.25274725274725274
+      ],
+      [
+       "DDR1-IN-1",
+       0.24
+      ],
+      [
+       "Ki8751",
+       0.23529411764705882
+      ],
+      [
+       "BI 2536",
+       0.22772277227722773
+      ],
+      [
+       "BMS-777607",
+       0.22448979591836735
+      ]
+     ],
+     "BGT226": [
+      [
+       "LY3023414",
+       0.36666666666666664
+      ],
+      [
+       "LDN-214117",
+       0.32142857142857145
+      ],
+      [
+       "ETP-46464",
+       0.27
+      ],
+      [
+       "PF-04691502",
+       0.25742574257425743
+      ],
+      [
+       "Palbociclib HCl",
+       0.2549019607843137
+      ]
+     ],
+     "AMG-458": [
+      [
+       "Tivozanib",
+       0.3595505617977528
+      ],
+      [
+       "Cabozantinib",
+       0.3258426966292135
+      ],
+      [
+       "Cabozantinib malate",
+       0.3258426966292135
+      ],
+      [
+       "Ki8751",
+       0.3181818181818182
+      ],
+      [
+       "Lenvatinib",
+       0.3125
+      ]
+     ],
+     "XL019": [
+      [
+       "Momelotinib",
+       0.5633802816901409
+      ],
+      [
+       "CYC116",
+       0.4647887323943662
+      ],
+      [
+       "IKK Inhibitor VII",
+       0.34523809523809523
+      ],
+      [
+       "TAE226",
+       0.3111111111111111
+      ],
+      [
+       "WYE-354",
+       0.30337078651685395
+      ]
+     ],
+     "CZC24832": [
+      [
+       "TG101209",
+       0.25
+      ],
+      [
+       "Dabrafenib",
+       0.2261904761904762
+      ],
+      [
+       "JNJ-7706621",
+       0.21333333333333335
+      ],
+      [
+       "VE-822",
+       0.20238095238095238
+      ],
+      [
+       "AZD2858",
+       0.19540229885057472
+      ]
+     ],
+     "SAR131675": [
+      [
+       "GSK690693",
+       0.24242424242424243
+      ],
+      [
+       "LY3023414",
+       0.20652173913043478
+      ],
+      [
+       "BMS-777607",
+       0.20408163265306123
+      ],
+      [
+       "PF-04691502",
+       0.19791666666666666
+      ],
+      [
+       "Vistusertib",
+       0.1956521739130435
+      ]
+     ],
+     "BI-D1870": [
+      [
+       "BI 2536",
+       0.30434782608695654
+      ],
+      [
+       "Fostamatinib",
+       0.2736842105263158
+      ],
+      [
+       "ERK5-IN-1",
+       0.26
+      ],
+      [
+       "R406 [841290-80-0]",
+       0.25287356321839083
+      ],
+      [
+       "R406 [841290-81-1]",
+       0.25287356321839083
+      ]
+     ],
+     "GW441756": [
+      [
+       "Enzastaurin",
+       0.3472222222222222
+      ],
+      [
+       "SB216763",
+       0.3442622950819672
+      ],
+      [
+       "Semaxanib",
+       0.3050847457627119
+      ],
+      [
+       "Orantinib",
+       0.2608695652173913
+      ],
+      [
+       "SU9516",
+       0.25757575757575757
+      ]
+     ],
+     "JNK-IN-8": [
+      [
+       "Imatinib Mesylate",
+       0.5057471264367817
+      ],
+      [
+       "Nilotinib",
+       0.45161290322580644
+      ],
+      [
+       "CC-292",
+       0.32967032967032966
+      ],
+      [
+       "Osimertinib",
+       0.32038834951456313
+      ],
+      [
+       "CNX-774",
+       0.3163265306122449
+      ]
+     ],
+     "Torin 2": [
+      [
+       "LY3023414",
+       0.29411764705882354
+      ],
+      [
+       "ETP-46464",
+       0.2808988764044944
+      ],
+      [
+       "PF-4708671",
+       0.22988505747126436
+      ],
+      [
+       "Buparlisib",
+       0.2125
+      ],
+      [
+       "MK-2461",
+       0.20618556701030927
+      ]
+     ],
+     "HTH-01-015": [
+      [
+       "NVP-BSK805 2HCl",
+       0.3010752688172043
+      ],
+      [
+       "ERK5-IN-1",
+       0.2692307692307692
+      ],
+      [
+       "G-749",
+       0.25806451612903225
+      ],
+      [
+       "Palbociclib HCl",
+       0.23711340206185566
+      ],
+      [
+       "BI 2536",
+       0.22330097087378642
+      ]
+     ],
+     "SSR128129E": [
+      [
+       "PD98059",
+       0.25
+      ],
+      [
+       "PF-04691502",
+       0.2
+      ],
+      [
+       "ZM 447439",
+       0.1935483870967742
+      ],
+      [
+       "R547",
+       0.19318181818181818
+      ],
+      [
+       "Voxtalisib Analogue",
+       0.19318181818181818
+      ]
+     ],
+     "CX-6258 HCl": [
+      [
+       "PHA-665752",
+       0.3173076923076923
+      ],
+      [
+       "SU6656",
+       0.27586206896551724
+      ],
+      [
+       "SU9516",
+       0.2716049382716049
+      ],
+      [
+       "CAY10505",
+       0.2692307692307692
+      ],
+      [
+       "AS-252424",
+       0.26506024096385544
+      ]
+     ],
+     "VX-11e": [
+      [
+       "Ulixertinib",
+       0.5308641975308642
+      ],
+      [
+       "Alisertib",
+       0.31683168316831684
+      ],
+      [
+       "MLN8054",
+       0.30851063829787234
+      ],
+      [
+       "WZ4003",
+       0.27358490566037735
+      ],
+      [
+       "BMS-536924",
+       0.2616822429906542
+      ]
+     ],
+     "Pluripotin": [
+      [
+       "AZ 628",
+       0.3894736842105263
+      ],
+      [
+       "Nilotinib",
+       0.3557692307692308
+      ],
+      [
+       "Imatinib Mesylate",
+       0.3300970873786408
+      ],
+      [
+       "Ponatinib",
+       0.3211009174311927
+      ],
+      [
+       "GZD824 Dimesylate",
+       0.3177570093457944
+      ]
+     ],
+     "WH-4-023": [
+      [
+       "WZ3146",
+       0.3870967741935484
+      ],
+      [
+       "WZ4003",
+       0.37373737373737376
+      ],
+      [
+       "WZ4002",
+       0.37
+      ],
+      [
+       "TG101209",
+       0.3695652173913043
+      ],
+      [
+       "Olmutinib",
+       0.3541666666666667
+      ]
+     ],
+     "BLZ945": [
+      [
+       "Sorafenib",
+       0.43243243243243246
+      ],
+      [
+       "Sorafenib Tosylate",
+       0.43243243243243246
+      ],
+      [
+       "Regorafenib",
+       0.38271604938271603
+      ],
+      [
+       "Rebastinib",
+       0.358695652173913
+      ],
+      [
+       "CNX-774",
+       0.3409090909090909
+      ]
+     ],
+     "HS-173": [
+      [
+       "GSK2578215A",
+       0.2558139534883721
+      ],
+      [
+       "Voxtalisib Analogue",
+       0.25274725274725274
+      ],
+      [
+       "AZD2858",
+       0.24175824175824176
+      ],
+      [
+       "GSK650394",
+       0.22093023255813954
+      ],
+      [
+       "TAK-901",
+       0.22
+      ]
+     ],
+     "Cobimetinib": [
+      [
+       "PD184352",
+       0.4266666666666667
+      ],
+      [
+       "PD0325901",
+       0.41333333333333333
+      ],
+      [
+       "PD318088",
+       0.32926829268292684
+      ],
+      [
+       "Refametinib",
+       0.3103448275862069
+      ],
+      [
+       "TAK-733",
+       0.28735632183908044
+      ]
+     ],
+     "Entrectinib": [
+      [
+       "PHA-680632",
+       0.3333333333333333
+      ],
+      [
+       "Danusertib",
+       0.30927835051546393
+      ],
+      [
+       "TAE226",
+       0.2871287128712871
+      ],
+      [
+       "AZD4547",
+       0.26804123711340205
+      ],
+      [
+       "WZ4003",
+       0.25925925925925924
+      ]
+     ],
+     "VE-821": [
+      [
+       "AZD2858",
+       0.578125
+      ],
+      [
+       "VE-822",
+       0.32432432432432434
+      ],
+      [
+       "Voxtalisib Analogue",
+       0.2911392405063291
+      ],
+      [
+       "AZD5438",
+       0.2857142857142857
+      ],
+      [
+       "CEP-33779",
+       0.28205128205128205
+      ]
+     ],
+     "P276-00": [
+      [
+       "Flavopiridol",
+       0.7213114754098361
+      ],
+      [
+       "Flavopiridol HCl",
+       0.7213114754098361
+      ],
+      [
+       "7,8-Dihydroxyflavone",
+       0.26865671641791045
+      ],
+      [
+       "LY294002",
+       0.2602739726027397
+      ],
+      [
+       "KU-55933",
+       0.24675324675324675
+      ]
+     ],
+     "Tyrphostin AG 1296": [
+      [
+       "AG-1478",
+       0.3018867924528302
+      ],
+      [
+       "ZM 306416",
+       0.2727272727272727
+      ],
+      [
+       "WHI-P154",
+       0.26785714285714285
+      ],
+      [
+       "ZM 447439",
+       0.23684210526315788
+      ],
+      [
+       "Ki8751",
+       0.234375
+      ]
+     ]
+    },
+    "residual_lambda": 0.0,
+    "residual_lambda_table": {
+     "0.0": 0.9369639158248901,
+     "0.25": 0.9866037368774414,
+     "0.5": 1.1409271955490112,
+     "0.75": 1.3999347686767578,
+     "1.0": 1.7636260986328125
+    },
+    "baseline_strength": {
+     "knn": {
+      "n_groups": 41,
+      "mean": -0.42217065066826054,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 0.926829268292683,
+      "beats": true,
+      "mean_full": 1.072799563407898,
+      "mean_other": 1.4949702024459839,
+      "rel_change": -0.2823939919471741
+     },
+     "residual": {
+      "n_groups": 41,
+      "mean": -0.5580062909824092,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 0.9369639158248901,
+      "mean_other": 1.4949702024459839,
+      "rel_change": -0.37325578927993774
+     }
+    },
+    "weak": {
+     "knn": false,
+     "residual": false
+    },
+    "readout_methods": {},
+    "gates": {
+     "G-Compound": {
+      "per_source": {
+       "ecfp4": {
+        "comparisons": {
+         "dw_structshuf": {
+          "n_groups": 41,
+          "mean": 0.014192839948142447,
+          "p_one_sided": 0.6587934120658794,
+          "frac_groups_better": 0.4634146341463415,
+          "beats": false,
+          "mean_full": 1.1069215536117554,
+          "mean_other": 1.0927287340164185,
+          "rel_change": 0.012988448143005371
+         },
+         "knn": {
+          "n_groups": 41,
+          "mean": 0.03412197421236736,
+          "p_one_sided": 0.8409815901840981,
+          "frac_groups_better": 0.5121951219512195,
+          "beats": false,
+          "mean_full": 1.1069215536117554,
+          "mean_other": 1.072799563407898,
+          "rel_change": 0.03180646896362305
+         },
+         "dw_none": {
+          "n_groups": 41,
+          "mean": 0.15677366387553332,
+          "p_one_sided": 1.0,
+          "frac_groups_better": 0.0975609756097561,
+          "beats": false,
+          "mean_full": 1.1069215536117554,
+          "mean_other": 0.9501479268074036,
+          "rel_change": 0.1649991273880005
+         }
+        },
+        "lookup_used": "knn",
+        "p_max": 1.0,
+        "all_beat": false
+       },
+       "molformer": {
+        "comparisons": {
+         "dw_structshuf": {
+          "n_groups": 41,
+          "mean": 0.005767463183984524,
+          "p_one_sided": 0.6188838111618884,
+          "frac_groups_better": 0.5121951219512195,
+          "beats": false,
+          "mean_full": 1.0635383129119873,
+          "mean_other": 1.057770848274231,
+          "rel_change": 0.005452513694763184
+         },
+         "knn": {
+          "n_groups": 41,
+          "mean": -0.00926121415161505,
+          "p_one_sided": 0.34494655053449463,
+          "frac_groups_better": 0.5853658536585366,
+          "beats": false,
+          "mean_full": 1.0635383129119873,
+          "mean_other": 1.072799563407898,
+          "rel_change": -0.008632779121398926
+         },
+         "dw_none": {
+          "n_groups": 41,
+          "mean": 0.12393774273918896,
+          "p_one_sided": 1.0,
+          "frac_groups_better": 0.0,
+          "beats": false,
+          "mean_full": 1.0635383129119873,
+          "mean_other": 0.9396005868911743,
+          "rel_change": 0.1319047212600708
+         }
+        },
+        "lookup_used": "knn",
+        "p_max": 1.0,
+        "all_beat": false
+       },
+       "target": {
+        "comparisons": {
+         "dw_structshuf": {
+          "n_groups": 41,
+          "mean": -0.0785502297122304,
+          "p_one_sided": 0.001869981300186998,
+          "frac_groups_better": 0.7317073170731707,
+          "beats": true,
+          "mean_full": 1.0485724210739136,
+          "mean_other": 1.1271226406097412,
+          "rel_change": -0.06969094276428223
+         },
+         "knn": {
+          "n_groups": 41,
+          "mean": -0.02422710162837331,
+          "p_one_sided": 0.11657883421165788,
+          "frac_groups_better": 0.5853658536585366,
+          "beats": false,
+          "mean_full": 1.0485724210739136,
+          "mean_other": 1.072799563407898,
+          "rel_change": -0.02258312702178955
+         },
+         "dw_none": {
+          "n_groups": 41,
+          "mean": 0.11160853577823174,
+          "p_one_sided": 1.0,
+          "frac_groups_better": 0.0975609756097561,
+          "beats": false,
+          "mean_full": 1.0485724210739136,
+          "mean_other": 0.9369639158248901,
+          "rel_change": 0.1191171407699585
+         }
+        },
+        "lookup_used": "knn",
+        "p_max": 1.0,
+        "all_beat": false
+       }
+      },
+      "holm": {
+       "ecfp4": {
+        "p": 1.0,
+        "threshold": 0.016666666666666666,
+        "reject": false
+       },
+       "molformer": {
+        "p": 1.0,
+        "threshold": 0.025,
+        "reject": false
+       },
+       "target": {
+        "p": 1.0,
+        "threshold": 0.05,
+        "reject": false
+       }
+      },
+      "pass": false
+     }
+    },
+    "unit_errors": {
+     "dw_full:ecfp4@own": {
+      "AMG-458": 0.7803800702095032,
+      "Apatinib": 1.021941900253296,
+      "Aurora A Inhibitor I": 0.7399895787239075,
+      "BGT226": 0.6869773864746094,
+      "BI-D1870": 0.6035232543945312,
+      "BLZ945": 1.2354087829589844,
+      "CX-6258 HCl": 0.6367035508155823,
+      "CZC24832": 0.9349945187568665,
+      "Cobimetinib": 2.975476026535034,
+      "Crizotinib": 2.484495162963867,
+      "Dasatinib": 1.9502092599868774,
+      "ENMD-2076": 0.7657831311225891,
+      "Entrectinib": 1.2907191514968872,
+      "Fedratinib": 0.7543990015983582,
+      "GSK1838705A": 0.795788049697876,
+      "GSK1904529A": 1.0614093542099,
+      "GSK429286A": 0.7217068076133728,
+      "GW441756": 0.7178466320037842,
+      "Gefitinib": 1.001231074333191,
+      "H 89 2HCl": 0.7716152667999268,
+      "HS-173": 1.257832407951355,
+      "HTH-01-015": 0.6293968558311462,
+      "Hesperadin": 1.1539140939712524,
+      "Honokiol": 1.0008018016815186,
+      "JNK-IN-8": 0.5855288505554199,
+      "Linsitinib": 1.081344485282898,
+      "Masitinib": 0.9990852475166321,
+      "P276-00": 2.0083489418029785,
+      "PH-797804": 0.7343392372131348,
+      "PIK-293": 0.5970633625984192,
+      "Pelitinib": 1.2307096719741821,
+      "Pluripotin": 1.5428615808486938,
+      "SAR131675": 0.6396048069000244,
+      "SSR128129E": 0.5485737919807434,
+      "Torin 2": 0.5925773978233337,
+      "Tyrphostin AG 1296": 2.330470323562622,
+      "VE-821": 2.2146310806274414,
+      "VX-11e": 1.885956883430481,
+      "WH-4-023": 0.7463839650154114,
+      "WYE-125132": 0.9844748973846436,
+      "XL019": 0.6892848014831543
+     },
+     "dw_full:molformer@own": {
+      "AMG-458": 0.7343928813934326,
+      "Apatinib": 0.8958520889282227,
+      "Aurora A Inhibitor I": 0.7332265377044678,
+      "BGT226": 0.7482390999794006,
+      "BI-D1870": 0.5750854015350342,
+      "BLZ945": 1.1483393907546997,
+      "CX-6258 HCl": 0.5819301009178162,
+      "CZC24832": 0.8794407248497009,
+      "Cobimetinib": 2.6943788528442383,
+      "Crizotinib": 2.4995670318603516,
+      "Dasatinib": 1.881382942199707,
+      "ENMD-2076": 0.7735784649848938,
+      "Entrectinib": 1.4105275869369507,
+      "Fedratinib": 0.8351970314979553,
+      "GSK1838705A": 0.7088497281074524,
+      "GSK1904529A": 0.7943442463874817,
+      "GSK429286A": 0.7555029988288879,
+      "GW441756": 0.7984237670898438,
+      "Gefitinib": 1.0329174995422363,
+      "H 89 2HCl": 0.937799870967865,
+      "HS-173": 1.4033828973770142,
+      "HTH-01-015": 0.5947098135948181,
+      "Hesperadin": 1.1824156045913696,
+      "Honokiol": 1.0403674840927124,
+      "JNK-IN-8": 0.5304065346717834,
+      "Linsitinib": 1.0709441900253296,
+      "Masitinib": 0.9488842487335205,
+      "P276-00": 2.0957717895507812,
+      "PH-797804": 0.6891772150993347,
+      "PIK-293": 0.6648390293121338,
+      "Pelitinib": 1.227744221687317,
+      "Pluripotin": 1.4040032625198364,
+      "SAR131675": 0.6209352016448975,
+      "SSR128129E": 0.6040720343589783,
+      "Torin 2": 0.5868752598762512,
+      "Tyrphostin AG 1296": 1.9979041814804077,
+      "VE-821": 1.8378981351852417,
+      "VX-11e": 1.3488597869873047,
+      "WH-4-023": 0.7778449654579163,
+      "WYE-125132": 0.9553368091583252,
+      "XL019": 0.6037228107452393
+     },
+     "dw_full:target@own": {
+      "AMG-458": 0.5496494174003601,
+      "Apatinib": 0.8836853504180908,
+      "Aurora A Inhibitor I": 0.7463123798370361,
+      "BGT226": 0.7397286295890808,
+      "BI-D1870": 0.6441171765327454,
+      "BLZ945": 1.0507177114486694,
+      "CX-6258 HCl": 0.6073791980743408,
+      "CZC24832": 0.8949389457702637,
+      "Cobimetinib": 2.637674570083618,
+      "Crizotinib": 2.792344808578491,
+      "Dasatinib": 1.6177252531051636,
+      "ENMD-2076": 0.7231409549713135,
+      "Entrectinib": 1.4310402870178223,
+      "Fedratinib": 0.6678500771522522,
+      "GSK1838705A": 0.7659556865692139,
+      "GSK1904529A": 0.8479776978492737,
+      "GSK429286A": 0.7596541047096252,
+      "GW441756": 0.8165094256401062,
+      "Gefitinib": 1.1853495836257935,
+      "H 89 2HCl": 0.9806013107299805,
+      "HS-173": 1.580901026725769,
+      "HTH-01-015": 0.6696178317070007,
+      "Hesperadin": 1.023490071296692,
+      "Honokiol": 0.9772970080375671,
+      "JNK-IN-8": 0.6629693508148193,
+      "Linsitinib": 1.1755526065826416,
+      "Masitinib": 1.075203776359558,
+      "P276-00": 1.83298921585083,
+      "PH-797804": 0.6923665404319763,
+      "PIK-293": 0.7527418732643127,
+      "Pelitinib": 0.9909611344337463,
+      "Pluripotin": 1.4534244537353516,
+      "SAR131675": 0.5749709010124207,
+      "SSR128129E": 0.5275835394859314,
+      "Torin 2": 0.6334203481674194,
+      "Tyrphostin AG 1296": 1.6053518056869507,
+      "VE-821": 2.0187301635742188,
+      "VX-11e": 1.0001261234283447,
+      "WH-4-023": 0.8254378437995911,
+      "WYE-125132": 0.9211528897285461,
+      "XL019": 0.6548292636871338
+     },
+     "dw_structshuf:ecfp4@own": {
+      "AMG-458": 0.7202410697937012,
+      "Apatinib": 0.9016480445861816,
+      "Aurora A Inhibitor I": 0.8169746398925781,
+      "BGT226": 0.7447301745414734,
+      "BI-D1870": 0.5867937803268433,
+      "BLZ945": 1.1336498260498047,
+      "CX-6258 HCl": 0.6106918454170227,
+      "CZC24832": 0.8897367119789124,
+      "Cobimetinib": 2.4698755741119385,
+      "Crizotinib": 2.3186194896698,
+      "Dasatinib": 1.8170677423477173,
+      "ENMD-2076": 0.8390610814094543,
+      "Entrectinib": 1.4294012784957886,
+      "Fedratinib": 0.8063740134239197,
+      "GSK1838705A": 0.7744765877723694,
+      "GSK1904529A": 0.7736982703208923,
+      "GSK429286A": 0.7607128620147705,
+      "GW441756": 0.9290055632591248,
+      "Gefitinib": 1.1008044481277466,
+      "H 89 2HCl": 0.9739294052124023,
+      "HS-173": 1.3448518514633179,
+      "HTH-01-015": 0.6248571276664734,
+      "Hesperadin": 1.3605026006698608,
+      "Honokiol": 1.0445536375045776,
+      "JNK-IN-8": 0.5524711012840271,
+      "Linsitinib": 1.1805206537246704,
+      "Masitinib": 0.9784939289093018,
+      "P276-00": 2.1799421310424805,
+      "PH-797804": 0.8901106715202332,
+      "PIK-293": 0.7410696148872375,
+      "Pelitinib": 1.3354129791259766,
+      "Pluripotin": 1.521910309791565,
+      "SAR131675": 0.5979923009872437,
+      "SSR128129E": 0.5506160259246826,
+      "Torin 2": 0.6064667105674744,
+      "Tyrphostin AG 1296": 1.660462737083435,
+      "VE-821": 1.9470449686050415,
+      "VX-11e": 0.9817747473716736,
+      "WH-4-023": 0.7240526080131531,
+      "WYE-125132": 1.0047568082809448,
+      "XL019": 0.6676249504089355
+     },
+     "dw_structshuf:molformer@own": {
+      "AMG-458": 0.7038854956626892,
+      "Apatinib": 0.9019116759300232,
+      "Aurora A Inhibitor I": 0.7636299729347229,
+      "BGT226": 0.7292837500572205,
+      "BI-D1870": 0.6032838225364685,
+      "BLZ945": 1.1761302947998047,
+      "CX-6258 HCl": 0.5873135924339294,
+      "CZC24832": 0.8660964965820312,
+      "Cobimetinib": 2.484441041946411,
+      "Crizotinib": 2.2357900142669678,
+      "Dasatinib": 1.8089333772659302,
+      "ENMD-2076": 0.9505507946014404,
+      "Entrectinib": 1.3052963018417358,
+      "Fedratinib": 0.6604304313659668,
+      "GSK1838705A": 0.7525938153266907,
+      "GSK1904529A": 0.8625723719596863,
+      "GSK429286A": 0.8027076125144958,
+      "GW441756": 0.8766236305236816,
+      "Gefitinib": 1.2194536924362183,
+      "H 89 2HCl": 0.9810292720794678,
+      "HS-173": 1.2856172323226929,
+      "HTH-01-015": 0.6343558430671692,
+      "Hesperadin": 1.1935222148895264,
+      "Honokiol": 0.9784731864929199,
+      "JNK-IN-8": 0.5727720856666565,
+      "Linsitinib": 1.111611247062683,
+      "Masitinib": 0.9669907093048096,
+      "P276-00": 1.9167261123657227,
+      "PH-797804": 0.8347730040550232,
+      "PIK-293": 0.7311004996299744,
+      "Pelitinib": 1.1840569972991943,
+      "Pluripotin": 1.3983054161071777,
+      "SAR131675": 0.5921122431755066,
+      "SSR128129E": 0.6052340865135193,
+      "Torin 2": 0.5576359629631042,
+      "Tyrphostin AG 1296": 1.8543062210083008,
+      "VE-821": 2.1408770084381104,
+      "VX-11e": 0.989835262298584,
+      "WH-4-023": 0.8373355269432068,
+      "WYE-125132": 0.9119691252708435,
+      "XL019": 0.6883807182312012
+     },
+     "dw_structshuf:target@own": {
+      "AMG-458": 0.655013382434845,
+      "Apatinib": 1.0152037143707275,
+      "Aurora A Inhibitor I": 0.9710590839385986,
+      "BGT226": 0.7440674304962158,
+      "BI-D1870": 0.7103648781776428,
+      "BLZ945": 1.0172384977340698,
+      "CX-6258 HCl": 0.6277227997779846,
+      "CZC24832": 0.9185020327568054,
+      "Cobimetinib": 2.5592710971832275,
+      "Crizotinib": 2.3809726238250732,
+      "Dasatinib": 1.8628686666488647,
+      "ENMD-2076": 0.8566409945487976,
+      "Entrectinib": 1.7524601221084595,
+      "Fedratinib": 0.7203872799873352,
+      "GSK1838705A": 0.7322292327880859,
+      "GSK1904529A": 0.8058953285217285,
+      "GSK429286A": 0.7786238789558411,
+      "GW441756": 0.813896119594574,
+      "Gefitinib": 1.1275578737258911,
+      "H 89 2HCl": 0.9929068088531494,
+      "HS-173": 1.2713631391525269,
+      "HTH-01-015": 0.6400354504585266,
+      "Hesperadin": 1.0763219594955444,
+      "Honokiol": 0.8887370228767395,
+      "JNK-IN-8": 0.5472165942192078,
+      "Linsitinib": 1.0686455965042114,
+      "Masitinib": 0.924441397190094,
+      "P276-00": 1.977578043937683,
+      "PH-797804": 0.7223361134529114,
+      "PIK-293": 0.6961432099342346,
+      "Pelitinib": 1.0386775732040405,
+      "Pluripotin": 1.4110687971115112,
+      "SAR131675": 0.5958514213562012,
+      "SSR128129E": 0.600022554397583,
+      "Torin 2": 0.6228289604187012,
+      "Tyrphostin AG 1296": 1.6655062437057495,
+      "VE-821": 2.143765687942505,
+      "VX-11e": 1.0028175115585327,
+      "WH-4-023": 0.7654966711997986,
+      "WYE-125132": 0.9609506130218506,
+      "XL019": 0.684154212474823
+     },
+     "dw_none@own": {
+      "AMG-458": 0.5920510292053223,
+      "Apatinib": 0.8501155376434326,
+      "Aurora A Inhibitor I": 0.6835067868232727,
+      "BGT226": 0.6140117645263672,
+      "BI-D1870": 0.5558030605316162,
+      "BLZ945": 0.9613093733787537,
+      "CX-6258 HCl": 0.5140464305877686,
+      "CZC24832": 0.8153229355812073,
+      "Cobimetinib": 2.4115583896636963,
+      "Crizotinib": 2.3698477745056152,
+      "Dasatinib": 1.7691222429275513,
+      "ENMD-2076": 0.6668252348899841,
+      "Entrectinib": 1.2597222328186035,
+      "Fedratinib": 0.6234843134880066,
+      "GSK1838705A": 0.6295626163482666,
+      "GSK1904529A": 0.7383971214294434,
+      "GSK429286A": 0.660313606262207,
+      "GW441756": 0.683861255645752,
+      "Gefitinib": 1.029009461402893,
+      "H 89 2HCl": 0.8021690249443054,
+      "HS-173": 1.1933783292770386,
+      "HTH-01-015": 0.5472970008850098,
+      "Hesperadin": 1.0022884607315063,
+      "Honokiol": 0.8222753405570984,
+      "JNK-IN-8": 0.4501526355743408,
+      "Linsitinib": 1.009497046470642,
+      "Masitinib": 0.8439875245094299,
+      "P276-00": 1.687747597694397,
+      "PH-797804": 0.6604768633842468,
+      "PIK-293": 0.6321701407432556,
+      "Pelitinib": 1.0302237272262573,
+      "Pluripotin": 1.345362663269043,
+      "SAR131675": 0.5049317479133606,
+      "SSR128129E": 0.4860853850841522,
+      "Torin 2": 0.48583051562309265,
+      "Tyrphostin AG 1296": 1.6210064888000488,
+      "VE-821": 1.8156946897506714,
+      "VX-11e": 0.9196880459785461,
+      "WH-4-023": 0.6932685375213623,
+      "WYE-125132": 0.8587287068367004,
+      "XL019": 0.5753887295722961
+     },
+     "dw_none@matched:ecfp4": {
+      "AMG-458": 0.5877022743225098,
+      "Apatinib": 0.8705314993858337,
+      "Aurora A Inhibitor I": 0.6879175305366516,
+      "BGT226": 0.633949339389801,
+      "BI-D1870": 0.5710086226463318,
+      "BLZ945": 0.9718925356864929,
+      "CX-6258 HCl": 0.5270724296569824,
+      "CZC24832": 0.8300891518592834,
+      "Cobimetinib": 2.4547016620635986,
+      "Crizotinib": 2.379962921142578,
+      "Dasatinib": 1.7783139944076538,
+      "ENMD-2076": 0.6897563934326172,
+      "Entrectinib": 1.2935742139816284,
+      "Fedratinib": 0.6485171318054199,
+      "GSK1838705A": 0.6343130469322205,
+      "GSK1904529A": 0.7266988754272461,
+      "GSK429286A": 0.6724910736083984,
+      "GW441756": 0.6786171793937683,
+      "Gefitinib": 1.0353654623031616,
+      "H 89 2HCl": 0.8088452816009521,
+      "HS-173": 1.2031747102737427,
+      "HTH-01-015": 0.5572109222412109,
+      "Hesperadin": 1.0296292304992676,
+      "Honokiol": 0.8291018009185791,
+      "JNK-IN-8": 0.4672950208187103,
+      "Linsitinib": 1.0168827772140503,
+      "Masitinib": 0.8609908223152161,
+      "P276-00": 1.726730227470398,
+      "PH-797804": 0.6611827611923218,
+      "PIK-293": 0.6263744831085205,
+      "Pelitinib": 1.0469255447387695,
+      "Pluripotin": 1.3451294898986816,
+      "SAR131675": 0.5223901271820068,
+      "SSR128129E": 0.48797497153282166,
+      "Torin 2": 0.49471285939216614,
+      "Tyrphostin AG 1296": 1.6379156112670898,
+      "VE-821": 1.8404871225357056,
+      "VX-11e": 0.9586171507835388,
+      "WH-4-023": 0.6884499192237854,
+      "WYE-125132": 0.8758609890937805,
+      "XL019": 0.597705066204071
+     },
+     "dw_structshuf:ecfp4@matched:ecfp4": {
+      "AMG-458": 0.7204175591468811,
+      "Apatinib": 0.8643644452095032,
+      "Aurora A Inhibitor I": 0.8529097437858582,
+      "BGT226": 0.6863768696784973,
+      "BI-D1870": 0.5668108463287354,
+      "BLZ945": 1.1981161832809448,
+      "CX-6258 HCl": 0.639367401599884,
+      "CZC24832": 0.9502029418945312,
+      "Cobimetinib": 2.6436870098114014,
+      "Crizotinib": 2.457448959350586,
+      "Dasatinib": 1.8582183122634888,
+      "ENMD-2076": 0.7977482676506042,
+      "Entrectinib": 1.4470564126968384,
+      "Fedratinib": 0.7415623664855957,
+      "GSK1838705A": 0.7649689316749573,
+      "GSK1904529A": 0.7833094596862793,
+      "GSK429286A": 0.8110573291778564,
+      "GW441756": 0.9778311252593994,
+      "Gefitinib": 1.170693039894104,
+      "H 89 2HCl": 0.9551262855529785,
+      "HS-173": 1.4717845916748047,
+      "HTH-01-015": 0.6260356903076172,
+      "Hesperadin": 1.2780991792678833,
+      "Honokiol": 1.0744119882583618,
+      "JNK-IN-8": 0.5707365870475769,
+      "Linsitinib": 1.2726792097091675,
+      "Masitinib": 0.9762911796569824,
+      "P276-00": 1.981015682220459,
+      "PH-797804": 0.9434012770652771,
+      "PIK-293": 0.7589353919029236,
+      "Pelitinib": 1.2688595056533813,
+      "Pluripotin": 1.446215271949768,
+      "SAR131675": 0.6543674468994141,
+      "SSR128129E": 0.5661782026290894,
+      "Torin 2": 0.5759621262550354,
+      "Tyrphostin AG 1296": 1.808459758758545,
+      "VE-821": 2.1705520153045654,
+      "VX-11e": 1.0052109956741333,
+      "WH-4-023": 0.7344302535057068,
+      "WYE-125132": 1.0725446939468384,
+      "XL019": 0.6584314703941345
+     },
+     "dw_none@matched:molformer": {
+      "AMG-458": 0.5712589621543884,
+      "Apatinib": 0.8523419499397278,
+      "Aurora A Inhibitor I": 0.6963939666748047,
+      "BGT226": 0.6153581738471985,
+      "BI-D1870": 0.5422082543373108,
+      "BLZ945": 0.9840755462646484,
+      "CX-6258 HCl": 0.518808126449585,
+      "CZC24832": 0.8546373248100281,
+      "Cobimetinib": 2.47123122215271,
+      "Crizotinib": 2.413331985473633,
+      "Dasatinib": 1.7650936841964722,
+      "ENMD-2076": 0.6735941767692566,
+      "Entrectinib": 1.3003020286560059,
+      "Fedratinib": 0.6128709316253662,
+      "GSK1838705A": 0.6304932236671448,
+      "GSK1904529A": 0.7257022261619568,
+      "GSK429286A": 0.6590997576713562,
+      "GW441756": 0.7015581727027893,
+      "Gefitinib": 1.0259329080581665,
+      "H 89 2HCl": 0.8043432831764221,
+      "HS-173": 1.1660250425338745,
+      "HTH-01-015": 0.543907880783081,
+      "Hesperadin": 0.9814794659614563,
+      "Honokiol": 0.8228912353515625,
+      "JNK-IN-8": 0.46400272846221924,
+      "Linsitinib": 0.9890123009681702,
+      "Masitinib": 0.8520029187202454,
+      "P276-00": 1.670427680015564,
+      "PH-797804": 0.6765490174293518,
+      "PIK-293": 0.6315566897392273,
+      "Pelitinib": 0.9800413250923157,
+      "Pluripotin": 1.3341456651687622,
+      "SAR131675": 0.5056337118148804,
+      "SSR128129E": 0.48693597316741943,
+      "Torin 2": 0.47859975695610046,
+      "Tyrphostin AG 1296": 1.6237260103225708,
+      "VE-821": 1.8339595794677734,
+      "VX-11e": 0.9326453804969788,
+      "WH-4-023": 0.7079858779907227,
+      "WYE-125132": 0.8471097350120544,
+      "XL019": 0.5763503909111023
+     },
+     "dw_structshuf:molformer@matched:molformer": {
+      "AMG-458": 0.6660330295562744,
+      "Apatinib": 0.8700202107429504,
+      "Aurora A Inhibitor I": 0.7411558628082275,
+      "BGT226": 0.7062782645225525,
+      "BI-D1870": 0.591110110282898,
+      "BLZ945": 1.081381916999817,
+      "CX-6258 HCl": 0.593020498752594,
+      "CZC24832": 0.8540683388710022,
+      "Cobimetinib": 2.4882469177246094,
+      "Crizotinib": 2.365722894668579,
+      "Dasatinib": 1.8624643087387085,
+      "ENMD-2076": 0.9827678203582764,
+      "Entrectinib": 1.3272905349731445,
+      "Fedratinib": 0.6846859455108643,
+      "GSK1838705A": 0.7164745926856995,
+      "GSK1904529A": 0.814067542552948,
+      "GSK429286A": 0.7645466327667236,
+      "GW441756": 0.7905562520027161,
+      "Gefitinib": 1.1841188669204712,
+      "H 89 2HCl": 1.0259689092636108,
+      "HS-173": 1.3454450368881226,
+      "HTH-01-015": 0.6389228701591492,
+      "Hesperadin": 1.1869568824768066,
+      "Honokiol": 1.0036824941635132,
+      "JNK-IN-8": 0.5411479473114014,
+      "Linsitinib": 1.1352019309997559,
+      "Masitinib": 0.9552974700927734,
+      "P276-00": 1.975145936012268,
+      "PH-797804": 0.8112102150917053,
+      "PIK-293": 0.7219157814979553,
+      "Pelitinib": 1.2765687704086304,
+      "Pluripotin": 1.4810346364974976,
+      "SAR131675": 0.5981988906860352,
+      "SSR128129E": 0.5695518851280212,
+      "Torin 2": 0.5724532008171082,
+      "Tyrphostin AG 1296": 1.7856167554855347,
+      "VE-821": 2.2209832668304443,
+      "VX-11e": 0.9989948868751526,
+      "WH-4-023": 0.7948678135871887,
+      "WYE-125132": 0.9244090914726257,
+      "XL019": 0.721020519733429
+     },
+     "dw_none@matched:target": {
+      "AMG-458": 0.5920510292053223,
+      "Apatinib": 0.8501155376434326,
+      "Aurora A Inhibitor I": 0.6835067868232727,
+      "BGT226": 0.6140117645263672,
+      "BI-D1870": 0.5558030605316162,
+      "BLZ945": 0.9613093733787537,
+      "CX-6258 HCl": 0.5140464305877686,
+      "CZC24832": 0.8153229355812073,
+      "Cobimetinib": 2.4115583896636963,
+      "Crizotinib": 2.3698477745056152,
+      "Dasatinib": 1.7691222429275513,
+      "ENMD-2076": 0.6668252348899841,
+      "Entrectinib": 1.2597222328186035,
+      "Fedratinib": 0.6234843134880066,
+      "GSK1838705A": 0.6295626163482666,
+      "GSK1904529A": 0.7383971214294434,
+      "GSK429286A": 0.660313606262207,
+      "GW441756": 0.683861255645752,
+      "Gefitinib": 1.029009461402893,
+      "H 89 2HCl": 0.8021690249443054,
+      "HS-173": 1.1933783292770386,
+      "HTH-01-015": 0.5472970008850098,
+      "Hesperadin": 1.0022884607315063,
+      "Honokiol": 0.8222753405570984,
+      "JNK-IN-8": 0.4501526355743408,
+      "Linsitinib": 1.009497046470642,
+      "Masitinib": 0.8439875245094299,
+      "P276-00": 1.687747597694397,
+      "PH-797804": 0.6604768633842468,
+      "PIK-293": 0.6321701407432556,
+      "Pelitinib": 1.0302237272262573,
+      "Pluripotin": 1.345362663269043,
+      "SAR131675": 0.5049317479133606,
+      "SSR128129E": 0.4860853850841522,
+      "Torin 2": 0.48583051562309265,
+      "Tyrphostin AG 1296": 1.6210064888000488,
+      "VE-821": 1.8156946897506714,
+      "VX-11e": 0.9196880459785461,
+      "WH-4-023": 0.6932685375213623,
+      "WYE-125132": 0.8587287068367004,
+      "XL019": 0.5753887295722961
+     },
+     "dw_structshuf:target@matched:target": {
+      "AMG-458": 0.6452701687812805,
+      "Apatinib": 1.1879476308822632,
+      "Aurora A Inhibitor I": 1.0123796463012695,
+      "BGT226": 0.7741425037384033,
+      "BI-D1870": 0.7314713597297668,
+      "BLZ945": 1.017577052116394,
+      "CX-6258 HCl": 0.7211185097694397,
+      "CZC24832": 1.0222277641296387,
+      "Cobimetinib": 2.694135904312134,
+      "Crizotinib": 2.394489049911499,
+      "Dasatinib": 1.8850983381271362,
+      "ENMD-2076": 0.9028701782226562,
+      "Entrectinib": 1.844772458076477,
+      "Fedratinib": 0.787179172039032,
+      "GSK1838705A": 0.7766141891479492,
+      "GSK1904529A": 0.8149905204772949,
+      "GSK429286A": 0.8947699666023254,
+      "GW441756": 0.8895098567008972,
+      "Gefitinib": 1.1289528608322144,
+      "H 89 2HCl": 0.9901354908943176,
+      "HS-173": 1.3828400373458862,
+      "HTH-01-015": 0.7287576198577881,
+      "Hesperadin": 1.1164382696151733,
+      "Honokiol": 0.9986699223518372,
+      "JNK-IN-8": 0.599298894405365,
+      "Linsitinib": 1.0462716817855835,
+      "Masitinib": 0.9538930058479309,
+      "P276-00": 1.9935070276260376,
+      "PH-797804": 0.7662102580070496,
+      "PIK-293": 0.7634477615356445,
+      "Pelitinib": 1.0925394296646118,
+      "Pluripotin": 1.4323455095291138,
+      "SAR131675": 0.6624775528907776,
+      "SSR128129E": 0.7111472487449646,
+      "Torin 2": 0.6811582446098328,
+      "Tyrphostin AG 1296": 2.356731414794922,
+      "VE-821": 2.1968939304351807,
+      "VX-11e": 0.9919677376747131,
+      "WH-4-023": 0.7741062045097351,
+      "WYE-125132": 1.1156338453292847,
+      "XL019": 0.7320415377616882
+     },
+     "copy_last": {
+      "AMG-458": 0.9035599231719971,
+      "Apatinib": 1.2724610567092896,
+      "Aurora A Inhibitor I": 1.231608510017395,
+      "BGT226": 1.14960777759552,
+      "BI-D1870": 0.8627719879150391,
+      "BLZ945": 1.8831762075424194,
+      "CX-6258 HCl": 0.5420856475830078,
+      "CZC24832": 1.202469825744629,
+      "Cobimetinib": 3.182887315750122,
+      "Crizotinib": 2.7895286083221436,
+      "Dasatinib": 2.4327361583709717,
+      "ENMD-2076": 1.1188321113586426,
+      "Entrectinib": 2.8642990589141846,
+      "Fedratinib": 0.9362475275993347,
+      "GSK1838705A": 1.0163607597351074,
+      "GSK1904529A": 1.1942647695541382,
+      "GSK429286A": 0.9725883603096008,
+      "GW441756": 1.0494003295898438,
+      "Gefitinib": 1.5090092420578003,
+      "H 89 2HCl": 1.4292411804199219,
+      "HS-173": 2.159372091293335,
+      "HTH-01-015": 0.7989612221717834,
+      "Hesperadin": 1.3667484521865845,
+      "Honokiol": 1.0214338302612305,
+      "JNK-IN-8": 0.8321031928062439,
+      "Linsitinib": 1.6449871063232422,
+      "Masitinib": 1.4929503202438354,
+      "P276-00": 2.17520809173584,
+      "PH-797804": 1.0568583011627197,
+      "PIK-293": 0.9637458324432373,
+      "Pelitinib": 1.4022235870361328,
+      "Pluripotin": 1.886610984802246,
+      "SAR131675": 0.7151026725769043,
+      "SSR128129E": 0.6808897852897644,
+      "Torin 2": 0.9374906420707703,
+      "Tyrphostin AG 1296": 2.68270206451416,
+      "VE-821": 3.271296501159668,
+      "VX-11e": 2.5193827152252197,
+      "WH-4-023": 1.9370137453079224,
+      "WYE-125132": 1.3369778394699097,
+      "XL019": 0.8685829043388367
+     },
+     "slot_mean": {
+      "AMG-458": 0.5617538094520569,
+      "Apatinib": 0.8528141975402832,
+      "Aurora A Inhibitor I": 0.6691150069236755,
+      "BGT226": 0.590532124042511,
+      "BI-D1870": 0.5311148166656494,
+      "BLZ945": 1.0011281967163086,
+      "CX-6258 HCl": 0.497266560792923,
+      "CZC24832": 0.7984726428985596,
+      "Cobimetinib": 2.2971293926239014,
+      "Crizotinib": 2.237206220626831,
+      "Dasatinib": 1.632716178894043,
+      "ENMD-2076": 0.677128791809082,
+      "Entrectinib": 1.3175052404403687,
+      "Fedratinib": 0.629261314868927,
+      "GSK1838705A": 0.6103926301002502,
+      "GSK1904529A": 0.7781708836555481,
+      "GSK429286A": 0.6346831917762756,
+      "GW441756": 0.7075255513191223,
+      "Gefitinib": 0.9660535454750061,
+      "H 89 2HCl": 0.7933400273323059,
+      "HS-173": 1.1156303882598877,
+      "HTH-01-015": 0.5138359665870667,
+      "Hesperadin": 0.9260110855102539,
+      "Honokiol": 0.7529375553131104,
+      "JNK-IN-8": 0.4068014323711395,
+      "Linsitinib": 0.9437556862831116,
+      "Masitinib": 0.8110694885253906,
+      "P276-00": 1.6596488952636719,
+      "PH-797804": 0.6205620765686035,
+      "PIK-293": 0.636934220790863,
+      "Pelitinib": 0.9881508946418762,
+      "Pluripotin": 1.281143069267273,
+      "SAR131675": 0.48372209072113037,
+      "SSR128129E": 0.46420344710350037,
+      "Torin 2": 0.5011722445487976,
+      "Tyrphostin AG 1296": 1.4854439496994019,
+      "VE-821": 1.6222343444824219,
+      "VX-11e": 0.8350865840911865,
+      "WH-4-023": 0.6589661836624146,
+      "WYE-125132": 0.8258275985717773,
+      "XL019": 0.5373494029045105
+     },
+     "vehicle_traj": {
+      "AMG-458": 0.9300937056541443,
+      "Apatinib": 1.301437497138977,
+      "Aurora A Inhibitor I": 1.2207814455032349,
+      "BGT226": 1.1826764345169067,
+      "BI-D1870": 0.8592410087585449,
+      "BLZ945": 1.7516727447509766,
+      "CX-6258 HCl": 0.5898789763450623,
+      "CZC24832": 1.2331961393356323,
+      "Cobimetinib": 3.181082010269165,
+      "Crizotinib": 2.9003078937530518,
+      "Dasatinib": 2.5880045890808105,
+      "ENMD-2076": 1.1738944053649902,
+      "Entrectinib": 3.116870880126953,
+      "Fedratinib": 1.102988600730896,
+      "GSK1838705A": 1.0484986305236816,
+      "GSK1904529A": 1.2718971967697144,
+      "GSK429286A": 1.0569666624069214,
+      "GW441756": 1.063387393951416,
+      "Gefitinib": 1.679065227508545,
+      "H 89 2HCl": 1.75674569606781,
+      "HS-173": 2.4733469486236572,
+      "HTH-01-015": 0.7787072062492371,
+      "Hesperadin": 1.742630958557129,
+      "Honokiol": 1.1542946100234985,
+      "JNK-IN-8": 0.799893856048584,
+      "Linsitinib": 1.5659037828445435,
+      "Masitinib": 1.4406280517578125,
+      "P276-00": 2.5918099880218506,
+      "PH-797804": 1.0897160768508911,
+      "PIK-293": 0.9961277842521667,
+      "Pelitinib": 1.6935449838638306,
+      "Pluripotin": 2.1645145416259766,
+      "SAR131675": 0.7288942337036133,
+      "SSR128129E": 0.7343648076057434,
+      "Torin 2": 0.9709116816520691,
+      "Tyrphostin AG 1296": 2.887766122817993,
+      "VE-821": 3.4815118312835693,
+      "VX-11e": 2.6373627185821533,
+      "WH-4-023": 2.1338143348693848,
+      "WYE-125132": 1.4510384798049927,
+      "XL019": 0.8759486675262451
+     },
+     "knn": {
+      "AMG-458": 0.7179381251335144,
+      "Apatinib": 1.0428056716918945,
+      "Aurora A Inhibitor I": 0.8119676113128662,
+      "BGT226": 0.92645263671875,
+      "BI-D1870": 0.6236196160316467,
+      "BLZ945": 1.1392836570739746,
+      "CX-6258 HCl": 0.6307365894317627,
+      "CZC24832": 0.960259735584259,
+      "Cobimetinib": 2.623629570007324,
+      "Crizotinib": 2.593230724334717,
+      "Dasatinib": 1.7556768655776978,
+      "ENMD-2076": 0.8691851496696472,
+      "Entrectinib": 1.4639087915420532,
+      "Fedratinib": 0.5650107264518738,
+      "GSK1838705A": 0.8534672260284424,
+      "GSK1904529A": 1.0113774538040161,
+      "GSK429286A": 0.6624341607093811,
+      "GW441756": 0.8757432103157043,
+      "Gefitinib": 1.0986472368240356,
+      "H 89 2HCl": 0.8947761654853821,
+      "HS-173": 1.2563542127609253,
+      "HTH-01-015": 0.6806087493896484,
+      "Hesperadin": 1.0676671266555786,
+      "Honokiol": 0.9550457000732422,
+      "JNK-IN-8": 0.6511290669441223,
+      "Linsitinib": 1.0505214929580688,
+      "Masitinib": 0.9025814533233643,
+      "P276-00": 1.7558412551879883,
+      "PH-797804": 0.7913509011268616,
+      "PIK-293": 0.7351348996162415,
+      "Pelitinib": 1.0818854570388794,
+      "Pluripotin": 1.413798213005066,
+      "SAR131675": 0.7786876559257507,
+      "SSR128129E": 0.5848018527030945,
+      "Torin 2": 0.9750882983207703,
+      "Tyrphostin AG 1296": 1.6469898223876953,
+      "VE-821": 1.863576889038086,
+      "VX-11e": 1.157130241394043,
+      "WH-4-023": 0.8648775219917297,
+      "WYE-125132": 1.0351630449295044,
+      "XL019": 0.6163967251777649
+     },
+     "residual": {
+      "AMG-458": 0.5920510292053223,
+      "Apatinib": 0.8501155376434326,
+      "Aurora A Inhibitor I": 0.6835067868232727,
+      "BGT226": 0.6140117645263672,
+      "BI-D1870": 0.5558030605316162,
+      "BLZ945": 0.9613093733787537,
+      "CX-6258 HCl": 0.5140464305877686,
+      "CZC24832": 0.8153229355812073,
+      "Cobimetinib": 2.4115583896636963,
+      "Crizotinib": 2.3698477745056152,
+      "Dasatinib": 1.7691222429275513,
+      "ENMD-2076": 0.6668252348899841,
+      "Entrectinib": 1.2597222328186035,
+      "Fedratinib": 0.6234843134880066,
+      "GSK1838705A": 0.6295626163482666,
+      "GSK1904529A": 0.7383971214294434,
+      "GSK429286A": 0.660313606262207,
+      "GW441756": 0.683861255645752,
+      "Gefitinib": 1.029009461402893,
+      "H 89 2HCl": 0.8021690249443054,
+      "HS-173": 1.1933783292770386,
+      "HTH-01-015": 0.5472970008850098,
+      "Hesperadin": 1.0022884607315063,
+      "Honokiol": 0.8222753405570984,
+      "JNK-IN-8": 0.4501526355743408,
+      "Linsitinib": 1.009497046470642,
+      "Masitinib": 0.8439875245094299,
+      "P276-00": 1.687747597694397,
+      "PH-797804": 0.6604768633842468,
+      "PIK-293": 0.6321701407432556,
+      "Pelitinib": 1.0302237272262573,
+      "Pluripotin": 1.345362663269043,
+      "SAR131675": 0.5049317479133606,
+      "SSR128129E": 0.4860853850841522,
+      "Torin 2": 0.48583051562309265,
+      "Tyrphostin AG 1296": 1.6210064888000488,
+      "VE-821": 1.8156946897506714,
+      "VX-11e": 0.9196880459785461,
+      "WH-4-023": 0.6932685375213623,
+      "WYE-125132": 0.8587287068367004,
+      "XL019": 0.5753887295722961
+     }
+    },
+    "own_start": {
+     "dw_full:ecfp4": 0.6965821385383606,
+     "dw_full:molformer": 0.6576524376869202,
+     "dw_full:target": 0.6257315278053284,
+     "dw_none": 0.6044887900352478,
+     "copy_last_own": 0.5197274684906006
+    }
+   },
+   "h1c": {
+    "MDAMB157": {
+     "n_fields": 389,
+     "n_excluded_fields": 147,
+     "excluded_conditions": [
+      "Doxorubicin 250.0",
+      "Doxorubicin 375.0",
+      "Doxorubicin 500.0",
+      "Gemcitabine 250.0",
+      "Gemcitabine 2500.0",
+      "Gemcitabine 50.0",
+      "Gemcitabine 500.0",
+      "Gemcitabine 5000.0",
+      "Palbociclib 0.5",
+      "Palbociclib 5000.0"
+     ],
+     "methods": {
+      "dw_line": 2.1565322875976562,
+      "lines_mean": 2.0446081161499023,
+      "line_offset": 1.9855573177337646,
+      "copy_last": 2.309843063354492
+     },
+     "n_units": 18,
+     "vs_line_offset": {
+      "n_groups": 18,
+      "mean": 0.17097520497110155,
+      "p_one_sided": 0.999880001199988,
+      "frac_groups_better": 0.16666666666666666,
+      "beats": false,
+      "mean_full": 2.1565322875976562,
+      "mean_other": 1.9855573177337646,
+      "rel_change": 0.08610928058624268,
+      "per_drug": {
+       "Doxorubicin": {
+        "mean_diff": 0.17142567038536072,
+        "n": 4
+       },
+       "Gemcitabine": {
+        "mean_diff": 0.09486675262451172,
+        "n": 2
+       },
+       "Paclitaxel": {
+        "mean_diff": 0.2020213348524911,
+        "n": 7
+       },
+       "Palbociclib": {
+        "mean_diff": 0.15759363174438476,
+        "n": 5
+       }
+      }
+     },
+     "vs_lines_mean": {
+      "n_groups": 18,
+      "mean": 0.1119244462913937,
+      "p_one_sided": 0.999910000899991,
+      "frac_groups_better": 0.05555555555555555,
+      "beats": false,
+      "mean_full": 2.1565322875976562,
+      "mean_other": 2.0446081161499023,
+      "rel_change": 0.05474114418029785,
+      "per_drug": {
+       "Doxorubicin": {
+        "mean_diff": 0.07061600685119629,
+        "n": 4
+       },
+       "Gemcitabine": {
+        "mean_diff": 0.12280112504959106,
+        "n": 2
+       },
+       "Paclitaxel": {
+        "mean_diff": 0.12151381799152919,
+        "n": 7
+       },
+       "Palbociclib": {
+        "mean_diff": 0.127195405960083,
+        "n": 5
+       }
+      }
+     }
+    }
+   }
+  },
+  "weak": {
+   "h1": {
+    "nearest_dose": false,
+    "interp": false,
+    "residual": false
+   },
+   "h2a": {
+    "hsa": false,
+    "additive": false
+   },
+   "h2b": {
+    "knn": false,
+    "residual": false
+   }
+  },
+  "summary": {
+   "G-Dose": false,
+   "G-Dose+": false,
+   "G-Combo": true,
+   "G-Combo+": false,
+   "G-Compound": false,
+   "G-Plan(a)": false,
+   "H1c": {
+    "MDAMB157": false
+   },
+   "decoded_readouts_used": false
+  }
+ },
+ "global": {
+  "part": "val",
+  "norm": "global",
+  "sets": {
+   "h1": {
+    "n_fields": 399,
+    "n_units": 29,
+    "methods": {
+     "dw_full@own": {
+      "mean": 0.5409877300262451,
+      "n_units": 29
+     },
+     "dw_none@own": {
+      "mean": 0.6832436323165894,
+      "n_units": 29
+     },
+     "dw_doseshuf@own": {
+      "mean": 0.6216958165168762,
+      "n_units": 29
+     },
+     "copy_last": {
+      "mean": 1.121368646621704,
+      "n_units": 29
+     },
+     "slot_mean": {
+      "mean": 0.9515528678894043,
+      "n_units": 29
+     },
+     "vehicle_traj": {
+      "mean": 0.7528972029685974,
+      "n_units": 29
+     },
+     "nearest_dose": {
+      "mean": 0.5714083909988403,
+      "n_units": 29
+     },
+     "interp": {
+      "mean": 0.5723581910133362,
+      "n_units": 29
+     }
+    },
+    "baseline_strength": {
+     "nearest_dose": {
+      "n_groups": 29,
+      "mean": -0.549960274120857,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 0.5714083909988403,
+      "mean_other": 1.121368646621704,
+      "rel_change": -0.4904366135597229
+     },
+     "interp": {
+      "n_groups": 29,
+      "mean": -0.5490104556083679,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 0.5723581910133362,
+      "mean_other": 1.121368646621704,
+      "rel_change": -0.4895896315574646
+     }
+    },
+    "weak": {
+     "nearest_dose": false,
+     "interp": false
+    },
+    "readout_methods": {},
+    "gates": {
+     "G-Dose": {
+      "comparisons": {
+       "nearest_dose": {
+        "n_groups": 29,
+        "mean": -0.030420621921276224,
+        "p_one_sided": 0.012379876201237988,
+        "frac_groups_better": 0.6551724137931034,
+        "beats": true,
+        "mean_full": 0.5409877300262451,
+        "mean_other": 0.5714083909988403,
+        "rel_change": -0.05323803424835205,
+        "per_drug": {
+         "BEZ235": {
+          "mean_diff": -0.028998225927352905,
+          "n": 4
+         },
+         "Doxorubicin": {
+          "mean_diff": -0.023304659128189086,
+          "n": 5
+         },
+         "Gemcitabine": {
+          "mean_diff": -0.023195743560791016,
+          "n": 5
+         },
+         "Lapatinib": {
+          "mean_diff": -0.02362149953842163,
+          "n": 1
+         },
+         "Paclitaxel": {
+          "mean_diff": -0.018111264705657958,
+          "n": 5
+         },
+         "Palbociclib": {
+          "mean_diff": -0.07778587341308593,
+          "n": 5
+         },
+         "Trametinib": {
+          "mean_diff": -0.007648982107639313,
+          "n": 4
+         }
+        }
+       }
+      },
+      "lookup_used": "nearest_dose",
+      "chain": [
+       "nearest_dose",
+       "interp",
+       "hill"
+      ],
+      "pass": false
+     },
+     "G-Dose+": {
+      "comparison": {
+       "n_groups": 29,
+       "mean": -0.031370433240101255,
+       "p_one_sided": 0.0015099849001509985,
+       "frac_groups_better": 0.6551724137931034,
+       "beats": true,
+       "mean_full": 0.5409877300262451,
+       "mean_other": 0.5723581910133362,
+       "rel_change": -0.05480915307998657,
+       "per_drug": {
+        "BEZ235": {
+         "mean_diff": -0.03524202108383179,
+         "n": 4
+        },
+        "Doxorubicin": {
+         "mean_diff": -0.03711227178573608,
+         "n": 5
+        },
+        "Gemcitabine": {
+         "mean_diff": -0.01841946244239807,
+         "n": 5
+        },
+        "Lapatinib": {
+         "mean_diff": -0.006989657878875732,
+         "n": 1
+        },
+        "Paclitaxel": {
+         "mean_diff": -0.006121253967285157,
+         "n": 5
+        },
+        "Palbociclib": {
+         "mean_diff": -0.06746110916137696,
+         "n": 5
+        },
+        "Trametinib": {
+         "mean_diff": -0.02905358374118805,
+         "n": 4
+        }
+       }
+      },
+      "lookup_used": "interp",
+      "chain": [
+       "interp",
+       "hill"
+      ],
+      "pass": false
+     },
+     "own_config_dw_doseshuf": {
+      "n_groups": 29,
+      "mean": -0.08070807313096934,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 0.7241379310344828,
+      "beats": true,
+      "mean_full": 0.5409877300262451,
+      "mean_other": 0.6216958165168762,
+      "rel_change": -0.12981927394866943
+     },
+     "own_config_dw_none": {
+      "n_groups": 29,
+      "mean": -0.14225595983965644,
+      "p_one_sided": 0.0024799752002479976,
+      "frac_groups_better": 0.6206896551724138,
+      "beats": true,
+      "mean_full": 0.5409877300262451,
+      "mean_other": 0.6832436323165894,
+      "rel_change": -0.20820671319961548
+     },
+     "diagnostic_dw_doseonly": null
+    },
+    "unit_errors": {
+     "dw_full@own": {
+      "21MT1|BEZ235|2.5": 0.7419940829277039,
+      "21MT1|Doxorubicin|5.0": 0.6889956593513489,
+      "21MT1|Gemcitabine|0.5": 0.6136392951011658,
+      "21MT1|Paclitaxel|1.0": 0.7244595885276794,
+      "21MT1|Palbociclib|100.0": 0.4542430639266968,
+      "21MT1|Trametinib|2.5": 0.5264689922332764,
+      "AU565|Doxorubicin|50.0": 0.4909665882587433,
+      "AU565|Gemcitabine|5.0": 0.6530137658119202,
+      "AU565|Lapatinib|10.0": 0.5534939765930176,
+      "AU565|Paclitaxel|1.0": 0.4259183406829834,
+      "AU565|Palbociclib|10.0": 0.44311633706092834,
+      "HCC1143|BEZ235|2.5": 0.4561704397201538,
+      "HCC1143|Doxorubicin|1.0": 0.4930371344089508,
+      "HCC1143|Gemcitabine|2.0": 0.5343050360679626,
+      "HCC1143|Paclitaxel|1.0": 0.5555431842803955,
+      "HCC1143|Palbociclib|250.0": 0.4567663371562958,
+      "HCC1143|Trametinib|100.0": 0.4988885223865509,
+      "MDAMB157|BEZ235|5.0": 0.6856010556221008,
+      "MDAMB157|BEZ235|50.0": 0.6085264682769775,
+      "MDAMB157|Doxorubicin|5.0": 0.6860625743865967,
+      "MDAMB157|Doxorubicin|500.0": 0.5054786205291748,
+      "MDAMB157|Gemcitabine|250.0": 0.33665362000465393,
+      "MDAMB157|Gemcitabine|5000.0": 0.36322900652885437,
+      "MDAMB157|Paclitaxel|2.5": 0.4709087312221527,
+      "MDAMB157|Paclitaxel|5.0": 0.6634673476219177,
+      "MDAMB157|Palbociclib|2500.0": 0.4847365915775299,
+      "MDAMB157|Palbociclib|5000.0": 0.5507625937461853,
+      "MDAMB157|Trametinib|2500.0": 0.546091616153717,
+      "MDAMB157|Trametinib|5000.0": 0.4761056900024414
+     },
+     "dw_none@own": {
+      "21MT1|BEZ235|2.5": 0.6104488372802734,
+      "21MT1|Doxorubicin|5.0": 0.6662450432777405,
+      "21MT1|Gemcitabine|0.5": 0.565389096736908,
+      "21MT1|Paclitaxel|1.0": 0.7179881930351257,
+      "21MT1|Palbociclib|100.0": 0.5013554692268372,
+      "21MT1|Trametinib|2.5": 0.4392322301864624,
+      "AU565|Doxorubicin|50.0": 0.5579898953437805,
+      "AU565|Gemcitabine|5.0": 0.6628672480583191,
+      "AU565|Lapatinib|10.0": 0.522166907787323,
+      "AU565|Paclitaxel|1.0": 0.39581751823425293,
+      "AU565|Palbociclib|10.0": 0.4425451457500458,
+      "HCC1143|BEZ235|2.5": 0.4622495174407959,
+      "HCC1143|Doxorubicin|1.0": 0.46252527832984924,
+      "HCC1143|Gemcitabine|2.0": 0.5518144965171814,
+      "HCC1143|Paclitaxel|1.0": 0.5446546673774719,
+      "HCC1143|Palbociclib|250.0": 0.45009562373161316,
+      "HCC1143|Trametinib|100.0": 0.516532301902771,
+      "MDAMB157|BEZ235|5.0": 0.7647665143013,
+      "MDAMB157|BEZ235|50.0": 0.7647154927253723,
+      "MDAMB157|Doxorubicin|5.0": 0.6940086483955383,
+      "MDAMB157|Doxorubicin|500.0": 1.3873530626296997,
+      "MDAMB157|Gemcitabine|250.0": 0.7127602100372314,
+      "MDAMB157|Gemcitabine|5000.0": 0.7136537432670593,
+      "MDAMB157|Paclitaxel|2.5": 0.9588932394981384,
+      "MDAMB157|Paclitaxel|5.0": 1.5416814088821411,
+      "MDAMB157|Palbociclib|2500.0": 0.5341477990150452,
+      "MDAMB157|Palbociclib|5000.0": 0.6780592799186707,
+      "MDAMB157|Trametinib|2500.0": 0.983396053314209,
+      "MDAMB157|Trametinib|5000.0": 1.0107141733169556
+     },
+     "dw_doseshuf@own": {
+      "21MT1|BEZ235|2.5": 0.7786855101585388,
+      "21MT1|Doxorubicin|5.0": 0.8636541962623596,
+      "21MT1|Gemcitabine|0.5": 0.6631650924682617,
+      "21MT1|Paclitaxel|1.0": 0.6854267716407776,
+      "21MT1|Palbociclib|100.0": 0.4408985674381256,
+      "21MT1|Trametinib|2.5": 0.5719971060752869,
+      "AU565|Doxorubicin|50.0": 0.5193696618080139,
+      "AU565|Gemcitabine|5.0": 0.7217487692832947,
+      "AU565|Lapatinib|10.0": 0.5800831913948059,
+      "AU565|Paclitaxel|1.0": 0.5105847716331482,
+      "AU565|Palbociclib|10.0": 0.4516153633594513,
+      "HCC1143|BEZ235|2.5": 0.46563032269477844,
+      "HCC1143|Doxorubicin|1.0": 0.4920971691608429,
+      "HCC1143|Gemcitabine|2.0": 0.5250244140625,
+      "HCC1143|Paclitaxel|1.0": 0.5524725914001465,
+      "HCC1143|Palbociclib|250.0": 0.45012497901916504,
+      "HCC1143|Trametinib|100.0": 0.49431803822517395,
+      "MDAMB157|BEZ235|5.0": 0.6575978398323059,
+      "MDAMB157|BEZ235|50.0": 0.6573301553726196,
+      "MDAMB157|Doxorubicin|5.0": 1.058493733406067,
+      "MDAMB157|Doxorubicin|500.0": 0.7996659278869629,
+      "MDAMB157|Gemcitabine|250.0": 0.4766106605529785,
+      "MDAMB157|Gemcitabine|5000.0": 0.4439100921154022,
+      "MDAMB157|Paclitaxel|2.5": 0.5256089568138123,
+      "MDAMB157|Paclitaxel|5.0": 0.8756884932518005,
+      "MDAMB157|Palbociclib|2500.0": 0.60762619972229,
+      "MDAMB157|Palbociclib|5000.0": 0.709674060344696,
+      "MDAMB157|Trametinib|2500.0": 0.8863741755485535,
+      "MDAMB157|Trametinib|5000.0": 0.5637015700340271
+     },
+     "copy_last": {
+      "21MT1|BEZ235|2.5": 1.779772162437439,
+      "21MT1|Doxorubicin|5.0": 1.7645682096481323,
+      "21MT1|Gemcitabine|0.5": 1.8982709646224976,
+      "21MT1|Paclitaxel|1.0": 1.3231273889541626,
+      "21MT1|Palbociclib|100.0": 1.6850124597549438,
+      "21MT1|Trametinib|2.5": 1.8019129037857056,
+      "AU565|Doxorubicin|50.0": 0.6678236126899719,
+      "AU565|Gemcitabine|5.0": 0.9579289555549622,
+      "AU565|Lapatinib|10.0": 0.8042952418327332,
+      "AU565|Paclitaxel|1.0": 0.7058344483375549,
+      "AU565|Palbociclib|10.0": 0.7339074611663818,
+      "HCC1143|BEZ235|2.5": 0.8608952164649963,
+      "HCC1143|Doxorubicin|1.0": 0.8609182238578796,
+      "HCC1143|Gemcitabine|2.0": 0.8391008973121643,
+      "HCC1143|Paclitaxel|1.0": 0.8276343941688538,
+      "HCC1143|Palbociclib|250.0": 0.8843229413032532,
+      "HCC1143|Trametinib|100.0": 0.8457774519920349,
+      "MDAMB157|BEZ235|5.0": 0.9244709014892578,
+      "MDAMB157|BEZ235|50.0": 0.8964546322822571,
+      "MDAMB157|Doxorubicin|5.0": 0.8496555685997009,
+      "MDAMB157|Doxorubicin|500.0": 1.494706153869629,
+      "MDAMB157|Gemcitabine|250.0": 1.0585194826126099,
+      "MDAMB157|Gemcitabine|5000.0": 1.0433012247085571,
+      "MDAMB157|Paclitaxel|2.5": 1.1152584552764893,
+      "MDAMB157|Paclitaxel|5.0": 1.5535368919372559,
+      "MDAMB157|Palbociclib|2500.0": 0.9193280935287476,
+      "MDAMB157|Palbociclib|5000.0": 0.9601167440414429,
+      "MDAMB157|Trametinib|2500.0": 1.2220277786254883,
+      "MDAMB157|Trametinib|5000.0": 1.2412112951278687
+     },
+     "slot_mean": {
+      "21MT1|BEZ235|2.5": 1.2063721418380737,
+      "21MT1|Doxorubicin|5.0": 1.1845613718032837,
+      "21MT1|Gemcitabine|0.5": 1.187449336051941,
+      "21MT1|Paclitaxel|1.0": 1.0854190587997437,
+      "21MT1|Palbociclib|100.0": 1.0735657215118408,
+      "21MT1|Trametinib|2.5": 1.0286765098571777,
+      "AU565|Doxorubicin|50.0": 0.8431645035743713,
+      "AU565|Gemcitabine|5.0": 0.9699642658233643,
+      "AU565|Lapatinib|10.0": 0.8710301518440247,
+      "AU565|Paclitaxel|1.0": 0.7210233211517334,
+      "AU565|Palbociclib|10.0": 0.7695984244346619,
+      "HCC1143|BEZ235|2.5": 0.6943707466125488,
+      "HCC1143|Doxorubicin|1.0": 0.6801188588142395,
+      "HCC1143|Gemcitabine|2.0": 0.7706408500671387,
+      "HCC1143|Paclitaxel|1.0": 0.7342769503593445,
+      "HCC1143|Palbociclib|250.0": 0.6792006492614746,
+      "HCC1143|Trametinib|100.0": 0.6639116406440735,
+      "MDAMB157|BEZ235|5.0": 1.3332265615463257,
+      "MDAMB157|BEZ235|50.0": 1.2673921585083008,
+      "MDAMB157|Doxorubicin|5.0": 1.2968106269836426,
+      "MDAMB157|Doxorubicin|500.0": 0.9861387610435486,
+      "MDAMB157|Gemcitabine|250.0": 1.0661301612854004,
+      "MDAMB157|Gemcitabine|5000.0": 0.977155327796936,
+      "MDAMB157|Paclitaxel|2.5": 0.8221579194068909,
+      "MDAMB157|Paclitaxel|5.0": 0.8950119614601135,
+      "MDAMB157|Palbociclib|2500.0": 0.9028452634811401,
+      "MDAMB157|Palbociclib|5000.0": 0.8923132419586182,
+      "MDAMB157|Trametinib|2500.0": 1.0129882097244263,
+      "MDAMB157|Trametinib|5000.0": 0.9795175194740295
+     },
+     "vehicle_traj": {
+      "21MT1|BEZ235|2.5": 0.5864278674125671,
+      "21MT1|Doxorubicin|5.0": 0.623815655708313,
+      "21MT1|Gemcitabine|0.5": 0.4798748195171356,
+      "21MT1|Paclitaxel|1.0": 0.7244915962219238,
+      "21MT1|Palbociclib|100.0": 0.5263388752937317,
+      "21MT1|Trametinib|2.5": 0.40255144238471985,
+      "AU565|Doxorubicin|50.0": 0.5595423579216003,
+      "AU565|Gemcitabine|5.0": 0.6257741451263428,
+      "AU565|Lapatinib|10.0": 0.5224525928497314,
+      "AU565|Paclitaxel|1.0": 0.3735809326171875,
+      "AU565|Palbociclib|10.0": 0.43562018871307373,
+      "HCC1143|BEZ235|2.5": 0.4217824935913086,
+      "HCC1143|Doxorubicin|1.0": 0.4141860902309418,
+      "HCC1143|Gemcitabine|2.0": 0.5877879858016968,
+      "HCC1143|Paclitaxel|1.0": 0.5115832686424255,
+      "HCC1143|Palbociclib|250.0": 0.4266596734523773,
+      "HCC1143|Trametinib|100.0": 0.5548296570777893,
+      "MDAMB157|BEZ235|5.0": 0.7061818242073059,
+      "MDAMB157|BEZ235|50.0": 0.8788216710090637,
+      "MDAMB157|Doxorubicin|5.0": 0.591317355632782,
+      "MDAMB157|Doxorubicin|500.0": 1.6941574811935425,
+      "MDAMB157|Gemcitabine|250.0": 1.1260566711425781,
+      "MDAMB157|Gemcitabine|5000.0": 1.1414690017700195,
+      "MDAMB157|Paclitaxel|2.5": 1.1423758268356323,
+      "MDAMB157|Paclitaxel|5.0": 1.8189617395401,
+      "MDAMB157|Palbociclib|2500.0": 0.6737057566642761,
+      "MDAMB157|Palbociclib|5000.0": 0.8469494581222534,
+      "MDAMB157|Trametinib|2500.0": 1.1820772886276245,
+      "MDAMB157|Trametinib|5000.0": 1.2546453475952148
+     },
+     "nearest_dose": {
+      "21MT1|BEZ235|2.5": 0.7487604022026062,
+      "21MT1|Doxorubicin|5.0": 0.844031810760498,
+      "21MT1|Gemcitabine|0.5": 0.649858295917511,
+      "21MT1|Paclitaxel|1.0": 0.8053423762321472,
+      "21MT1|Palbociclib|100.0": 0.6052383184432983,
+      "21MT1|Trametinib|2.5": 0.6123542189598083,
+      "AU565|Doxorubicin|50.0": 0.48843666911125183,
+      "AU565|Gemcitabine|5.0": 0.731898307800293,
+      "AU565|Lapatinib|10.0": 0.5771154761314392,
+      "AU565|Paclitaxel|1.0": 0.5153933167457581,
+      "AU565|Palbociclib|10.0": 0.5296986699104309,
+      "HCC1143|BEZ235|2.5": 0.5775836110115051,
+      "HCC1143|Doxorubicin|1.0": 0.532063364982605,
+      "HCC1143|Gemcitabine|2.0": 0.6081021428108215,
+      "HCC1143|Paclitaxel|1.0": 0.5659739971160889,
+      "HCC1143|Palbociclib|250.0": 0.47563520073890686,
+      "HCC1143|Trametinib|100.0": 0.4925171136856079,
+      "MDAMB157|BEZ235|5.0": 0.7648841738700867,
+      "MDAMB157|BEZ235|50.0": 0.5170567631721497,
+      "MDAMB157|Doxorubicin|5.0": 0.6798495650291443,
+      "MDAMB157|Doxorubicin|500.0": 0.43668246269226074,
+      "MDAMB157|Gemcitabine|250.0": 0.3044249415397644,
+      "MDAMB157|Gemcitabine|5000.0": 0.32253575325012207,
+      "MDAMB157|Paclitaxel|2.5": 0.498056024312973,
+      "MDAMB157|Paclitaxel|5.0": 0.5460878014564514,
+      "MDAMB157|Palbociclib|2500.0": 0.5089335441589355,
+      "MDAMB157|Palbociclib|5000.0": 0.6590485572814941,
+      "MDAMB157|Trametinib|2500.0": 0.5199125409126282,
+      "MDAMB157|Trametinib|5000.0": 0.45336687564849854
+     },
+     "interp": {
+      "21MT1|BEZ235|2.5": 0.7199047207832336,
+      "21MT1|Doxorubicin|5.0": 0.815792977809906,
+      "21MT1|Gemcitabine|0.5": 0.649858295917511,
+      "21MT1|Paclitaxel|1.0": 0.7816988825798035,
+      "21MT1|Palbociclib|100.0": 0.5835493803024292,
+      "21MT1|Trametinib|2.5": 0.5550599098205566,
+      "AU565|Doxorubicin|50.0": 0.48843666911125183,
+      "AU565|Gemcitabine|5.0": 0.731898307800293,
+      "AU565|Lapatinib|10.0": 0.5604836344718933,
+      "AU565|Paclitaxel|1.0": 0.48987916111946106,
+      "AU565|Palbociclib|10.0": 0.5057547688484192,
+      "HCC1143|BEZ235|2.5": 0.5515231490135193,
+      "HCC1143|Doxorubicin|1.0": 0.5194307565689087,
+      "HCC1143|Gemcitabine|2.0": 0.5953724384307861,
+      "HCC1143|Paclitaxel|1.0": 0.5376716256141663,
+      "HCC1143|Palbociclib|250.0": 0.4495029151439667,
+      "HCC1143|Trametinib|100.0": 0.466715008020401,
+      "MDAMB157|BEZ235|5.0": 0.7475163340568542,
+      "MDAMB157|BEZ235|50.0": 0.614315927028656,
+      "MDAMB157|Doxorubicin|5.0": 0.749131977558136,
+      "MDAMB157|Doxorubicin|500.0": 0.47730955481529236,
+      "MDAMB157|Gemcitabine|250.0": 0.28497815132141113,
+      "MDAMB157|Gemcitabine|5000.0": 0.330830842256546,
+      "MDAMB157|Paclitaxel|2.5": 0.4460279941558838,
+      "MDAMB157|Paclitaxel|5.0": 0.61562579870224,
+      "MDAMB157|Palbociclib|2500.0": 0.5463322401046753,
+      "MDAMB157|Palbociclib|5000.0": 0.6417911648750305,
+      "MDAMB157|Trametinib|2500.0": 0.5765195488929749,
+      "MDAMB157|Trametinib|5000.0": 0.5654746890068054
+     }
+    }
+   },
+   "h2a": {
+    "n_fields": 84,
+    "n_units": 7,
+    "methods": {
+     "dw_full@own": {
+      "mean": 0.5265893936157227,
+      "n_units": 7
+     },
+     "dw_none@own": {
+      "mean": 0.5794143080711365,
+      "n_units": 7
+     },
+     "copy_last": {
+      "mean": 0.6920855641365051,
+      "n_units": 7
+     },
+     "slot_mean": {
+      "mean": 0.5744574666023254,
+      "n_units": 7
+     },
+     "vehicle_traj": {
+      "mean": 0.6466679573059082,
+      "n_units": 7
+     },
+     "hsa": {
+      "mean": 0.5769903063774109,
+      "n_units": 7
+     },
+     "additive": {
+      "mean": 0.6192596554756165,
+      "n_units": 7
+     }
+    },
+    "baseline_single_sources": {
+     "Gemcitabine|10.0": "not_redosed",
+     "Gemcitabine|17.0": "not_redosed",
+     "Gemcitabine|30.0": "not_redosed",
+     "Gemcitabine|5.0": "not_redosed",
+     "Lapatinib|100.0": "not_redosed",
+     "Lapatinib|25.0": "not_redosed",
+     "Lapatinib|250.0": "not_redosed",
+     "Lapatinib|50.0": "not_redosed"
+    },
+    "baseline_strength": {
+     "hsa": {
+      "n_groups": 7,
+      "mean": -0.11509531736373901,
+      "p_one_sided": 0.008039919600803991,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 0.5769903063774109,
+      "mean_other": 0.6920855641365051,
+      "rel_change": -0.16630208492279053
+     },
+     "additive": {
+      "n_groups": 7,
+      "mean": -0.07282600232533046,
+      "p_one_sided": 0.008039919600803991,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 0.6192596554756165,
+      "mean_other": 0.6920855641365051,
+      "rel_change": -0.10522675514221191
+     }
+    },
+    "weak": {
+     "hsa": false,
+     "additive": false
+    },
+    "readout_methods": {},
+    "gates": {
+     "G-Combo": {
+      "comparisons": {
+       "hsa": {
+        "n_groups": 7,
+        "mean": -0.0504009085042136,
+        "p_one_sided": 0.008039919600803991,
+        "frac_groups_better": 1.0,
+        "beats": true,
+        "mean_full": 0.5265893936157227,
+        "mean_other": 0.5769903063774109,
+        "rel_change": -0.08735138177871704
+       },
+       "additive": {
+        "n_groups": 7,
+        "mean": -0.09267022354262215,
+        "p_one_sided": 0.008039919600803991,
+        "frac_groups_better": 1.0,
+        "beats": true,
+        "mean_full": 0.5265893936157227,
+        "mean_other": 0.6192596554756165,
+        "rel_change": -0.14964687824249268
+       }
+      },
+      "lookups_used": {
+       "hsa": "hsa",
+       "additive": "additive"
+      },
+      "pass": true
+     },
+     "G-Combo+": {
+      "comparisons": {},
+      "decoded_readouts_used": false,
+      "pass": false
+     },
+     "without_Lapatinib+Palbociclib": {
+      "hsa": {
+       "n_groups": 7,
+       "mean": -0.0504009085042136,
+       "p_one_sided": 0.008039919600803991,
+       "frac_groups_better": 1.0,
+       "beats": true,
+       "mean_full": 0.5265893936157227,
+       "mean_other": 0.5769903063774109,
+       "rel_change": -0.08735138177871704
+      },
+      "additive": {
+       "n_groups": 7,
+       "mean": -0.09267022354262215,
+       "p_one_sided": 0.008039919600803991,
+       "frac_groups_better": 1.0,
+       "beats": true,
+       "mean_full": 0.5265893936157227,
+       "mean_other": 0.6192596554756165,
+       "rel_change": -0.14964687824249268
+      }
+     },
+     "own_config_dw_none": {
+      "n_groups": 7,
+      "mean": -0.052824931485312324,
+      "p_one_sided": 0.023629763702362975,
+      "frac_groups_better": 0.8571428571428571,
+      "beats": true,
+      "mean_full": 0.5265893936157227,
+      "mean_other": 0.5794143080711365,
+      "rel_change": -0.09116947650909424
+     }
+    },
+    "unit_errors": {
+     "dw_full@own": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.42488622665405273,
+      "Gemcitabine|30.0|Lapatinib|100.0": 0.8352289199829102,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.5138115286827087,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.35603275895118713,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.5870755314826965,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.612469494342804,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.35662123560905457
+     },
+     "dw_none@own": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.5064473748207092,
+      "Gemcitabine|30.0|Lapatinib|100.0": 0.9582395553588867,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.569512665271759,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.42476531863212585,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.5586154460906982,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.6630904078483582,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.37522944808006287
+     },
+     "copy_last": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.598479688167572,
+      "Gemcitabine|30.0|Lapatinib|100.0": 0.9647924304008484,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.6792327761650085,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.49905285239219666,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.7742276191711426,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.8142325282096863,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.5145813822746277
+     },
+     "slot_mean": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.4665183126926422,
+      "Gemcitabine|30.0|Lapatinib|100.0": 0.9082246422767639,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.5376547574996948,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.41463378071784973,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.6179470419883728,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.6700608134269714,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.4061625897884369
+     },
+     "vehicle_traj": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.5894351005554199,
+      "Gemcitabine|30.0|Lapatinib|100.0": 1.033614158630371,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.631100058555603,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.4941738545894623,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.6246786117553711,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.7269840240478516,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.42668959498405457
+     },
+     "hsa": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.45101431012153625,
+      "Gemcitabine|30.0|Lapatinib|100.0": 0.9207833409309387,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.5542421936988831,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.3746582567691803,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.6732549667358398,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.6661463379859924,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.39883264899253845
+     },
+     "additive": {
+      "Gemcitabine|17.0|Lapatinib|100.0": 0.5130977630615234,
+      "Gemcitabine|30.0|Lapatinib|100.0": 0.9201018214225769,
+      "Gemcitabine|5.0|Lapatinib|100.0": 0.5977558493614197,
+      "Lapatinib|100.0|Gemcitabine|10.0": 0.45060598850250244,
+      "Lapatinib|25.0|Gemcitabine|10.0": 0.6956660151481628,
+      "Lapatinib|250.0|Gemcitabine|10.0": 0.700360119342804,
+      "Lapatinib|50.0|Gemcitabine|10.0": 0.45722970366477966
+     }
+    }
+   },
+   "h2b": {
+    "n_fields": 41,
+    "n_units": 41,
+    "methods": {
+     "dw_full:ecfp4@own": {
+      "mean": 0.9490802884101868,
+      "n_units": 41
+     },
+     "dw_full:molformer@own": {
+      "mean": 0.9272724986076355,
+      "n_units": 41
+     },
+     "dw_full:target@own": {
+      "mean": 0.8759762644767761,
+      "n_units": 41
+     },
+     "dw_structshuf:ecfp4@own": {
+      "mean": 0.9222202897071838,
+      "n_units": 41
+     },
+     "dw_structshuf:molformer@own": {
+      "mean": 0.917435348033905,
+      "n_units": 41
+     },
+     "dw_structshuf:target@own": {
+      "mean": 0.919994056224823,
+      "n_units": 41
+     },
+     "dw_none@own": {
+      "mean": 0.7886359691619873,
+      "n_units": 41
+     },
+     "dw_none@matched:target": {
+      "mean": 0.7886359691619873,
+      "n_units": 41
+     },
+     "copy_last": {
+      "mean": 1.2977908849716187,
+      "n_units": 41
+     },
+     "slot_mean": {
+      "mean": 0.9001628756523132,
+      "n_units": 41
+     },
+     "vehicle_traj": {
+      "mean": 1.2976232767105103,
+      "n_units": 41
+     },
+     "knn": {
+      "mean": 1.1215670108795166,
+      "n_units": 41
+     },
+     "residual": {
+      "mean": 0.7886359691619873,
+      "n_units": 41
+     }
+    },
+    "knn_neighbours": {
+     "GSK1904529A": [
+      [
+       "ASP3026",
+       0.31092436974789917
+      ],
+      [
+       "Osimertinib",
+       0.29133858267716534
+      ],
+      [
+       "R547",
+       0.288135593220339
+      ],
+      [
+       "BI 2536",
+       0.2857142857142857
+      ],
+      [
+       "ERK5-IN-1",
+       0.2824427480916031
+      ]
+     ],
+     "Linsitinib": [
+      [
+       "MK-2206 2HCl",
+       0.26744186046511625
+      ],
+      [
+       "INK 128",
+       0.25316455696202533
+      ],
+      [
+       "GSK650394",
+       0.22093023255813954
+      ],
+      [
+       "AMG319",
+       0.20430107526881722
+      ],
+      [
+       "TG100-115",
+       0.20270270270270271
+      ]
+     ],
+     "Crizotinib": [
+      [
+       "NVP-BSK805 2HCl",
+       0.33695652173913043
+      ],
+      [
+       "LDN-214117",
+       0.25
+      ],
+      [
+       "R547",
+       0.21649484536082475
+      ],
+      [
+       "VX-745",
+       0.2159090909090909
+      ],
+      [
+       "Vemurafenib",
+       0.20618556701030927
+      ]
+     ],
+     "Dasatinib": [
+      [
+       "Tozasertib",
+       0.30526315789473685
+      ],
+      [
+       "Imatinib Mesylate",
+       0.29
+      ],
+      [
+       "WZ3146",
+       0.28865979381443296
+      ],
+      [
+       "MK-8745",
+       0.2872340425531915
+      ],
+      [
+       "WZ4003",
+       0.2692307692307692
+      ]
+     ],
+     "Masitinib": [
+      [
+       "Imatinib Mesylate",
+       0.7466666666666667
+      ],
+      [
+       "Ponatinib",
+       0.38
+      ],
+      [
+       "Nilotinib",
+       0.37755102040816324
+      ],
+      [
+       "GZD824 Dimesylate",
+       0.36363636363636365
+      ],
+      [
+       "AZD2858",
+       0.3225806451612903
+      ]
+     ],
+     "Gefitinib": [
+      [
+       "ZM 447439",
+       0.6533333333333333
+      ],
+      [
+       "Dacomitinib",
+       0.5301204819277109
+      ],
+      [
+       "AG-1478",
+       0.5
+      ],
+      [
+       "ZM 306416",
+       0.4925373134328358
+      ],
+      [
+       "Bosutinib",
+       0.45121951219512196
+      ]
+     ],
+     "ENMD-2076": [
+      [
+       "Tozasertib",
+       0.47297297297297297
+      ],
+      [
+       "AZ 960",
+       0.2972972972972973
+      ],
+      [
+       "Gandotinib",
+       0.29069767441860467
+      ],
+      [
+       "TG101209",
+       0.27380952380952384
+      ],
+      [
+       "SGI-7079",
+       0.2696629213483146
+      ]
+     ],
+     "H 89 2HCl": [
+      [
+       "KN-62",
+       0.2777777777777778
+      ],
+      [
+       "PD168393",
+       0.21518987341772153
+      ],
+      [
+       "Bikinin",
+       0.21212121212121213
+      ],
+      [
+       "PIK-93",
+       0.20987654320987653
+      ],
+      [
+       "BX-912",
+       0.20652173913043478
+      ]
+     ],
+     "Hesperadin": [
+      [
+       "Nintedanib",
+       0.4111111111111111
+      ],
+      [
+       "BIX 02188",
+       0.36904761904761907
+      ],
+      [
+       "BIX 02189",
+       0.36904761904761907
+      ],
+      [
+       "AEE788",
+       0.2777777777777778
+      ],
+      [
+       "AZD1080",
+       0.2696629213483146
+      ]
+     ],
+     "Aurora A Inhibitor I": [
+      [
+       "CC-292",
+       0.375
+      ],
+      [
+       "Imatinib Mesylate",
+       0.3645833333333333
+      ],
+      [
+       "CNX-774",
+       0.32989690721649484
+      ],
+      [
+       "MLN8054",
+       0.32608695652173914
+      ],
+      [
+       "TAE226",
+       0.30612244897959184
+      ]
+     ],
+     "GSK429286A": [
+      [
+       "GZD824 Dimesylate",
+       0.27
+      ],
+      [
+       "Regorafenib",
+       0.23655913978494625
+      ],
+      [
+       "PF-4708671",
+       0.23076923076923078
+      ],
+      [
+       "TAK-632",
+       0.22857142857142856
+      ],
+      [
+       "AT7519",
+       0.2261904761904762
+      ]
+     ],
+     "Pelitinib": [
+      [
+       "Dacomitinib",
+       0.4782608695652174
+      ],
+      [
+       "Bosutinib",
+       0.3473684210526316
+      ],
+      [
+       "ZM 306416",
+       0.26744186046511625
+      ],
+      [
+       "Sapitinib",
+       0.25925925925925924
+      ],
+      [
+       "KRN 633",
+       0.25510204081632654
+      ]
+     ],
+     "WYE-125132": [
+      [
+       "WYE-354",
+       0.4939759036144578
+      ],
+      [
+       "WAY-600",
+       0.32323232323232326
+      ],
+      [
+       "Vistusertib",
+       0.23711340206185566
+      ],
+      [
+       "Palbociclib HCl",
+       0.22330097087378642
+      ],
+      [
+       "YM201636",
+       0.2169811320754717
+      ]
+     ],
+     "PIK-293": [
+      [
+       "PP1",
+       0.2608695652173913
+      ],
+      [
+       "INK 128",
+       0.2597402597402597
+      ],
+      [
+       "PP2",
+       0.2361111111111111
+      ],
+      [
+       "Ibrutinib",
+       0.22826086956521738
+      ],
+      [
+       "Torkinib",
+       0.21951219512195122
+      ]
+     ],
+     "Apatinib": [
+      [
+       "Motesanib Diphosphate",
+       0.5588235294117647
+      ],
+      [
+       "JNK Inhibitor IX",
+       0.2564102564102564
+      ],
+      [
+       "Imatinib Mesylate",
+       0.2553191489361702
+      ],
+      [
+       "GSK2578215A",
+       0.25
+      ],
+      [
+       "OSI-930",
+       0.2413793103448276
+      ]
+     ],
+     "Honokiol": [
+      [
+       "Genistein",
+       0.21153846153846154
+      ],
+      [
+       "AG-18",
+       0.1956521739130435
+      ],
+      [
+       "Tyrphostin B42",
+       0.18333333333333332
+      ],
+      [
+       "Quercetin",
+       0.18181818181818182
+      ],
+      [
+       "IPA-3",
+       0.17777777777777778
+      ]
+     ],
+     "Fedratinib": [
+      [
+       "TG101209",
+       0.6901408450704225
+      ],
+      [
+       "CC-292",
+       0.39285714285714285
+      ],
+      [
+       "BX-912",
+       0.3225806451612903
+      ],
+      [
+       "WZ3146",
+       0.30851063829787234
+      ],
+      [
+       "PF-431396",
+       0.30303030303030304
+      ]
+     ],
+     "GSK1838705A": [
+      [
+       "TAE226",
+       0.3431372549019608
+      ],
+      [
+       "Sapitinib",
+       0.30275229357798167
+      ],
+      [
+       "Osimertinib",
+       0.2831858407079646
+      ],
+      [
+       "GNE-7915",
+       0.2830188679245283
+      ],
+      [
+       "Alisertib",
+       0.2818181818181818
+      ]
+     ],
+     "PH-797804": [
+      [
+       "Voxtalisib Analogue",
+       0.25274725274725274
+      ],
+      [
+       "DDR1-IN-1",
+       0.24
+      ],
+      [
+       "Ki8751",
+       0.23529411764705882
+      ],
+      [
+       "BI 2536",
+       0.22772277227722773
+      ],
+      [
+       "BMS-777607",
+       0.22448979591836735
+      ]
+     ],
+     "BGT226": [
+      [
+       "LY3023414",
+       0.36666666666666664
+      ],
+      [
+       "LDN-214117",
+       0.32142857142857145
+      ],
+      [
+       "ETP-46464",
+       0.27
+      ],
+      [
+       "PF-04691502",
+       0.25742574257425743
+      ],
+      [
+       "Palbociclib HCl",
+       0.2549019607843137
+      ]
+     ],
+     "AMG-458": [
+      [
+       "Tivozanib",
+       0.3595505617977528
+      ],
+      [
+       "Cabozantinib",
+       0.3258426966292135
+      ],
+      [
+       "Cabozantinib malate",
+       0.3258426966292135
+      ],
+      [
+       "Ki8751",
+       0.3181818181818182
+      ],
+      [
+       "Lenvatinib",
+       0.3125
+      ]
+     ],
+     "XL019": [
+      [
+       "Momelotinib",
+       0.5633802816901409
+      ],
+      [
+       "CYC116",
+       0.4647887323943662
+      ],
+      [
+       "IKK Inhibitor VII",
+       0.34523809523809523
+      ],
+      [
+       "TAE226",
+       0.3111111111111111
+      ],
+      [
+       "WYE-354",
+       0.30337078651685395
+      ]
+     ],
+     "CZC24832": [
+      [
+       "TG101209",
+       0.25
+      ],
+      [
+       "Dabrafenib",
+       0.2261904761904762
+      ],
+      [
+       "JNJ-7706621",
+       0.21333333333333335
+      ],
+      [
+       "VE-822",
+       0.20238095238095238
+      ],
+      [
+       "AZD2858",
+       0.19540229885057472
+      ]
+     ],
+     "SAR131675": [
+      [
+       "GSK690693",
+       0.24242424242424243
+      ],
+      [
+       "LY3023414",
+       0.20652173913043478
+      ],
+      [
+       "BMS-777607",
+       0.20408163265306123
+      ],
+      [
+       "PF-04691502",
+       0.19791666666666666
+      ],
+      [
+       "Vistusertib",
+       0.1956521739130435
+      ]
+     ],
+     "BI-D1870": [
+      [
+       "BI 2536",
+       0.30434782608695654
+      ],
+      [
+       "Fostamatinib",
+       0.2736842105263158
+      ],
+      [
+       "ERK5-IN-1",
+       0.26
+      ],
+      [
+       "R406 [841290-80-0]",
+       0.25287356321839083
+      ],
+      [
+       "R406 [841290-81-1]",
+       0.25287356321839083
+      ]
+     ],
+     "GW441756": [
+      [
+       "Enzastaurin",
+       0.3472222222222222
+      ],
+      [
+       "SB216763",
+       0.3442622950819672
+      ],
+      [
+       "Semaxanib",
+       0.3050847457627119
+      ],
+      [
+       "Orantinib",
+       0.2608695652173913
+      ],
+      [
+       "SU9516",
+       0.25757575757575757
+      ]
+     ],
+     "JNK-IN-8": [
+      [
+       "Imatinib Mesylate",
+       0.5057471264367817
+      ],
+      [
+       "Nilotinib",
+       0.45161290322580644
+      ],
+      [
+       "CC-292",
+       0.32967032967032966
+      ],
+      [
+       "Osimertinib",
+       0.32038834951456313
+      ],
+      [
+       "CNX-774",
+       0.3163265306122449
+      ]
+     ],
+     "Torin 2": [
+      [
+       "LY3023414",
+       0.29411764705882354
+      ],
+      [
+       "ETP-46464",
+       0.2808988764044944
+      ],
+      [
+       "PF-4708671",
+       0.22988505747126436
+      ],
+      [
+       "Buparlisib",
+       0.2125
+      ],
+      [
+       "MK-2461",
+       0.20618556701030927
+      ]
+     ],
+     "HTH-01-015": [
+      [
+       "NVP-BSK805 2HCl",
+       0.3010752688172043
+      ],
+      [
+       "ERK5-IN-1",
+       0.2692307692307692
+      ],
+      [
+       "G-749",
+       0.25806451612903225
+      ],
+      [
+       "Palbociclib HCl",
+       0.23711340206185566
+      ],
+      [
+       "BI 2536",
+       0.22330097087378642
+      ]
+     ],
+     "SSR128129E": [
+      [
+       "PD98059",
+       0.25
+      ],
+      [
+       "PF-04691502",
+       0.2
+      ],
+      [
+       "ZM 447439",
+       0.1935483870967742
+      ],
+      [
+       "R547",
+       0.19318181818181818
+      ],
+      [
+       "Voxtalisib Analogue",
+       0.19318181818181818
+      ]
+     ],
+     "CX-6258 HCl": [
+      [
+       "PHA-665752",
+       0.3173076923076923
+      ],
+      [
+       "SU6656",
+       0.27586206896551724
+      ],
+      [
+       "SU9516",
+       0.2716049382716049
+      ],
+      [
+       "CAY10505",
+       0.2692307692307692
+      ],
+      [
+       "AS-252424",
+       0.26506024096385544
+      ]
+     ],
+     "VX-11e": [
+      [
+       "Ulixertinib",
+       0.5308641975308642
+      ],
+      [
+       "Alisertib",
+       0.31683168316831684
+      ],
+      [
+       "MLN8054",
+       0.30851063829787234
+      ],
+      [
+       "WZ4003",
+       0.27358490566037735
+      ],
+      [
+       "BMS-536924",
+       0.2616822429906542
+      ]
+     ],
+     "Pluripotin": [
+      [
+       "AZ 628",
+       0.3894736842105263
+      ],
+      [
+       "Nilotinib",
+       0.3557692307692308
+      ],
+      [
+       "Imatinib Mesylate",
+       0.3300970873786408
+      ],
+      [
+       "Ponatinib",
+       0.3211009174311927
+      ],
+      [
+       "GZD824 Dimesylate",
+       0.3177570093457944
+      ]
+     ],
+     "WH-4-023": [
+      [
+       "WZ3146",
+       0.3870967741935484
+      ],
+      [
+       "WZ4003",
+       0.37373737373737376
+      ],
+      [
+       "WZ4002",
+       0.37
+      ],
+      [
+       "TG101209",
+       0.3695652173913043
+      ],
+      [
+       "Olmutinib",
+       0.3541666666666667
+      ]
+     ],
+     "BLZ945": [
+      [
+       "Sorafenib",
+       0.43243243243243246
+      ],
+      [
+       "Sorafenib Tosylate",
+       0.43243243243243246
+      ],
+      [
+       "Regorafenib",
+       0.38271604938271603
+      ],
+      [
+       "Rebastinib",
+       0.358695652173913
+      ],
+      [
+       "CNX-774",
+       0.3409090909090909
+      ]
+     ],
+     "HS-173": [
+      [
+       "GSK2578215A",
+       0.2558139534883721
+      ],
+      [
+       "Voxtalisib Analogue",
+       0.25274725274725274
+      ],
+      [
+       "AZD2858",
+       0.24175824175824176
+      ],
+      [
+       "GSK650394",
+       0.22093023255813954
+      ],
+      [
+       "TAK-901",
+       0.22
+      ]
+     ],
+     "Cobimetinib": [
+      [
+       "PD184352",
+       0.4266666666666667
+      ],
+      [
+       "PD0325901",
+       0.41333333333333333
+      ],
+      [
+       "PD318088",
+       0.32926829268292684
+      ],
+      [
+       "Refametinib",
+       0.3103448275862069
+      ],
+      [
+       "TAK-733",
+       0.28735632183908044
+      ]
+     ],
+     "Entrectinib": [
+      [
+       "PHA-680632",
+       0.3333333333333333
+      ],
+      [
+       "Danusertib",
+       0.30927835051546393
+      ],
+      [
+       "TAE226",
+       0.2871287128712871
+      ],
+      [
+       "AZD4547",
+       0.26804123711340205
+      ],
+      [
+       "WZ4003",
+       0.25925925925925924
+      ]
+     ],
+     "VE-821": [
+      [
+       "AZD2858",
+       0.578125
+      ],
+      [
+       "VE-822",
+       0.32432432432432434
+      ],
+      [
+       "Voxtalisib Analogue",
+       0.2911392405063291
+      ],
+      [
+       "AZD5438",
+       0.2857142857142857
+      ],
+      [
+       "CEP-33779",
+       0.28205128205128205
+      ]
+     ],
+     "P276-00": [
+      [
+       "Flavopiridol",
+       0.7213114754098361
+      ],
+      [
+       "Flavopiridol HCl",
+       0.7213114754098361
+      ],
+      [
+       "7,8-Dihydroxyflavone",
+       0.26865671641791045
+      ],
+      [
+       "LY294002",
+       0.2602739726027397
+      ],
+      [
+       "KU-55933",
+       0.24675324675324675
+      ]
+     ],
+     "Tyrphostin AG 1296": [
+      [
+       "AG-1478",
+       0.3018867924528302
+      ],
+      [
+       "ZM 306416",
+       0.2727272727272727
+      ],
+      [
+       "WHI-P154",
+       0.26785714285714285
+      ],
+      [
+       "ZM 447439",
+       0.23684210526315788
+      ],
+      [
+       "Ki8751",
+       0.234375
+      ]
+     ]
+    },
+    "residual_lambda": 0.0,
+    "residual_lambda_table": {
+     "0.0": 0.7886359691619873,
+     "0.25": 0.8267976641654968,
+     "0.5": 0.953036904335022,
+     "0.75": 1.1673533916473389,
+     "1.0": 1.4697469472885132
+    },
+    "baseline_strength": {
+     "knn": {
+      "n_groups": 41,
+      "mean": -0.17622395841086783,
+      "p_one_sided": 0.002239977600223998,
+      "frac_groups_better": 0.7317073170731707,
+      "beats": true,
+      "mean_full": 1.1215670108795166,
+      "mean_other": 1.2977908849716187,
+      "rel_change": -0.13578754663467407
+     },
+     "residual": {
+      "n_groups": 41,
+      "mean": -0.509154934708665,
+      "p_one_sided": 9.99990000099999e-06,
+      "frac_groups_better": 1.0,
+      "beats": true,
+      "mean_full": 0.7886359691619873,
+      "mean_other": 1.2977908849716187,
+      "rel_change": -0.3923243284225464
+     }
+    },
+    "weak": {
+     "knn": false,
+     "residual": false
+    },
+    "readout_methods": {},
+    "gates": {
+     "G-Compound": {
+      "per_source": {
+       "ecfp4": {
+        "comparisons": {
+         "knn": {
+          "n_groups": 41,
+          "mean": -0.17248672246932983,
+          "p_one_sided": 0.0025199748002519974,
+          "frac_groups_better": 0.7073170731707317,
+          "beats": true,
+          "mean_full": 0.9490802884101868,
+          "mean_other": 1.1215670108795166,
+          "rel_change": -0.15379083156585693
+         }
+        },
+        "lookup_used": "knn",
+        "p_max": 1.0,
+        "all_beat": false
+       },
+       "molformer": {
+        "comparisons": {
+         "knn": {
+          "n_groups": 41,
+          "mean": -0.1942943901550479,
+          "p_one_sided": 0.00037999620003799963,
+          "frac_groups_better": 0.7073170731707317,
+          "beats": true,
+          "mean_full": 0.9272724986076355,
+          "mean_other": 1.1215670108795166,
+          "rel_change": -0.17323487997055054
+         }
+        },
+        "lookup_used": "knn",
+        "p_max": 1.0,
+        "all_beat": false
+       },
+       "target": {
+        "comparisons": {
+         "knn": {
+          "n_groups": 41,
+          "mean": -0.24559060320621584,
+          "p_one_sided": 9.99990000099999e-06,
+          "frac_groups_better": 0.8048780487804879,
+          "beats": true,
+          "mean_full": 0.8759762644767761,
+          "mean_other": 1.1215670108795166,
+          "rel_change": -0.21897107362747192
+         },
+         "dw_none": {
+          "n_groups": 41,
+          "mean": 0.08734037018403774,
+          "p_one_sided": 1.0,
+          "frac_groups_better": 0.07317073170731707,
+          "beats": false,
+          "mean_full": 0.8759762644767761,
+          "mean_other": 0.7886359691619873,
+          "rel_change": 0.1107485294342041
+         }
+        },
+        "lookup_used": "knn",
+        "p_max": 1.0,
+        "all_beat": false
+       }
+      },
+      "holm": {
+       "ecfp4": {
+        "p": 1.0,
+        "threshold": 0.016666666666666666,
+        "reject": false
+       },
+       "molformer": {
+        "p": 1.0,
+        "threshold": 0.025,
+        "reject": false
+       },
+       "target": {
+        "p": 1.0,
+        "threshold": 0.05,
+        "reject": false
+       }
+      },
+      "pass": false
+     }
+    },
+    "unit_errors": {
+     "dw_full:ecfp4@own": {
+      "AMG-458": 0.6989359855651855,
+      "Apatinib": 0.8807399868965149,
+      "Aurora A Inhibitor I": 0.6261282563209534,
+      "BGT226": 0.5551032423973083,
+      "BI-D1870": 0.5413851141929626,
+      "BLZ945": 1.1044203042984009,
+      "CX-6258 HCl": 0.5196776390075684,
+      "CZC24832": 0.7567389607429504,
+      "Cobimetinib": 2.5022647380828857,
+      "Crizotinib": 2.0783920288085938,
+      "Dasatinib": 1.5832033157348633,
+      "ENMD-2076": 0.7308431267738342,
+      "Entrectinib": 1.0907983779907227,
+      "Fedratinib": 0.6295410990715027,
+      "GSK1838705A": 0.7294518947601318,
+      "GSK1904529A": 0.8725655674934387,
+      "GSK429286A": 0.6645965576171875,
+      "GW441756": 0.5507514476776123,
+      "Gefitinib": 0.8516108393669128,
+      "H 89 2HCl": 0.620669424533844,
+      "HS-173": 1.0511276721954346,
+      "HTH-01-015": 0.5693109631538391,
+      "Hesperadin": 0.9943196177482605,
+      "Honokiol": 0.7865266799926758,
+      "JNK-IN-8": 0.5274659395217896,
+      "Linsitinib": 0.9669935703277588,
+      "Masitinib": 0.868696928024292,
+      "P276-00": 1.6951889991760254,
+      "PH-797804": 0.5946929454803467,
+      "PIK-293": 0.5176699757575989,
+      "Pelitinib": 1.0458345413208008,
+      "Pluripotin": 1.3416471481323242,
+      "SAR131675": 0.5889280438423157,
+      "SSR128129E": 0.4223741292953491,
+      "Torin 2": 0.49388590455055237,
+      "Tyrphostin AG 1296": 2.2388293743133545,
+      "VE-821": 1.7113631963729858,
+      "VX-11e": 1.7922199964523315,
+      "WH-4-023": 0.6050485968589783,
+      "WYE-125132": 0.8572273850440979,
+      "XL019": 0.6551194787025452
+     },
+     "dw_full:molformer@own": {
+      "AMG-458": 0.6072981953620911,
+      "Apatinib": 0.7758944630622864,
+      "Aurora A Inhibitor I": 0.6518521308898926,
+      "BGT226": 0.6070828437805176,
+      "BI-D1870": 0.541186511516571,
+      "BLZ945": 1.013246774673462,
+      "CX-6258 HCl": 0.5444602370262146,
+      "CZC24832": 0.7658560276031494,
+      "Cobimetinib": 2.197359085083008,
+      "Crizotinib": 2.066434621810913,
+      "Dasatinib": 1.4913686513900757,
+      "ENMD-2076": 0.7806972861289978,
+      "Entrectinib": 1.1813992261886597,
+      "Fedratinib": 0.7093226909637451,
+      "GSK1838705A": 0.6147421002388,
+      "GSK1904529A": 0.7642766833305359,
+      "GSK429286A": 0.6749681830406189,
+      "GW441756": 0.7616591453552246,
+      "Gefitinib": 0.8738072514533997,
+      "H 89 2HCl": 0.740523099899292,
+      "HS-173": 1.1827819347381592,
+      "HTH-01-015": 0.6149978041648865,
+      "Hesperadin": 0.9122011065483093,
+      "Honokiol": 1.0303312540054321,
+      "JNK-IN-8": 0.5438448786735535,
+      "Linsitinib": 0.9922210574150085,
+      "Masitinib": 0.8619517683982849,
+      "P276-00": 1.622642159461975,
+      "PH-797804": 0.6384229063987732,
+      "PIK-293": 0.5323204398155212,
+      "Pelitinib": 1.0028492212295532,
+      "Pluripotin": 1.159659504890442,
+      "SAR131675": 0.620273768901825,
+      "SSR128129E": 0.5880473256111145,
+      "Torin 2": 0.5187313556671143,
+      "Tyrphostin AG 1296": 1.885595679283142,
+      "VE-821": 1.5829781293869019,
+      "VX-11e": 1.2175875902175903,
+      "WH-4-023": 0.6708759665489197,
+      "WYE-125132": 0.8512560725212097,
+      "XL019": 0.6251694560050964
+     },
+     "dw_full:target@own": {
+      "AMG-458": 0.4827512502670288,
+      "Apatinib": 0.8195099234580994,
+      "Aurora A Inhibitor I": 0.6367049217224121,
+      "BGT226": 0.5878851413726807,
+      "BI-D1870": 0.5528263449668884,
+      "BLZ945": 0.9148030877113342,
+      "CX-6258 HCl": 0.4940285384654999,
+      "CZC24832": 0.7839507460594177,
+      "Cobimetinib": 2.189441680908203,
+      "Crizotinib": 2.190078020095825,
+      "Dasatinib": 1.4141135215759277,
+      "ENMD-2076": 0.6372118592262268,
+      "Entrectinib": 1.339424729347229,
+      "Fedratinib": 0.5145350098609924,
+      "GSK1838705A": 0.5874226093292236,
+      "GSK1904529A": 0.7119855880737305,
+      "GSK429286A": 0.6189448237419128,
+      "GW441756": 0.6882302165031433,
+      "Gefitinib": 0.9273166060447693,
+      "H 89 2HCl": 0.8027207851409912,
+      "HS-173": 1.257273554801941,
+      "HTH-01-015": 0.5277576446533203,
+      "Hesperadin": 0.8650651574134827,
+      "Honokiol": 0.7554618716239929,
+      "JNK-IN-8": 0.5056726336479187,
+      "Linsitinib": 0.9011175036430359,
+      "Masitinib": 0.8395069241523743,
+      "P276-00": 1.539847731590271,
+      "PH-797804": 0.6102304458618164,
+      "PIK-293": 0.6116214394569397,
+      "Pelitinib": 0.8350987434387207,
+      "Pluripotin": 1.1744517087936401,
+      "SAR131675": 0.48443374037742615,
+      "SSR128129E": 0.443211168050766,
+      "Torin 2": 0.5432116389274597,
+      "Tyrphostin AG 1296": 1.4099596738815308,
+      "VE-821": 1.7676950693130493,
+      "VX-11e": 0.8935834765434265,
+      "WH-4-023": 0.7484412789344788,
+      "WYE-125132": 0.7220219969749451,
+      "XL019": 0.5854809880256653
+     },
+     "dw_structshuf:ecfp4@own": {
+      "AMG-458": 0.6712403297424316,
+      "Apatinib": 0.7342907786369324,
+      "Aurora A Inhibitor I": 0.7268337607383728,
+      "BGT226": 0.5857746601104736,
+      "BI-D1870": 0.549140453338623,
+      "BLZ945": 0.9757611155509949,
+      "CX-6258 HCl": 0.5528274178504944,
+      "CZC24832": 0.8146310448646545,
+      "Cobimetinib": 2.1489603519439697,
+      "Crizotinib": 2.0085062980651855,
+      "Dasatinib": 1.5302997827529907,
+      "ENMD-2076": 0.8525325655937195,
+      "Entrectinib": 1.308925747871399,
+      "Fedratinib": 0.7145790457725525,
+      "GSK1838705A": 0.6404447555541992,
+      "GSK1904529A": 0.6362099051475525,
+      "GSK429286A": 0.6940677762031555,
+      "GW441756": 0.8004441261291504,
+      "Gefitinib": 0.9480311870574951,
+      "H 89 2HCl": 0.7871988415718079,
+      "HS-173": 1.1608198881149292,
+      "HTH-01-015": 0.5569053292274475,
+      "Hesperadin": 1.0966538190841675,
+      "Honokiol": 0.8804687857627869,
+      "JNK-IN-8": 0.4937056601047516,
+      "Linsitinib": 0.9701037406921387,
+      "Masitinib": 0.8311546444892883,
+      "P276-00": 1.7051820755004883,
+      "PH-797804": 0.8200618624687195,
+      "PIK-293": 0.6241052150726318,
+      "Pelitinib": 1.0937992334365845,
+      "Pluripotin": 1.2747846841812134,
+      "SAR131675": 0.559197723865509,
+      "SSR128129E": 0.4462258517742157,
+      "Torin 2": 0.53604656457901,
+      "Tyrphostin AG 1296": 1.5168513059616089,
+      "VE-821": 1.6412714719772339,
+      "VX-11e": 0.8080293536186218,
+      "WH-4-023": 0.6439304947853088,
+      "WYE-125132": 0.829353392124176,
+      "XL019": 0.6416826844215393
+     },
+     "dw_structshuf:molformer@own": {
+      "AMG-458": 0.555033266544342,
+      "Apatinib": 0.7461900115013123,
+      "Aurora A Inhibitor I": 0.6689937710762024,
+      "BGT226": 0.6140508055686951,
+      "BI-D1870": 0.5435616374015808,
+      "BLZ945": 0.9625344276428223,
+      "CX-6258 HCl": 0.5068650841712952,
+      "CZC24832": 0.749549925327301,
+      "Cobimetinib": 2.2383804321289062,
+      "Crizotinib": 2.0517218112945557,
+      "Dasatinib": 1.569151759147644,
+      "ENMD-2076": 0.9366785883903503,
+      "Entrectinib": 1.0771464109420776,
+      "Fedratinib": 0.6368372440338135,
+      "GSK1838705A": 0.6305553317070007,
+      "GSK1904529A": 0.7314971089363098,
+      "GSK429286A": 0.6457756161689758,
+      "GW441756": 0.7591452598571777,
+      "Gefitinib": 1.0486103296279907,
+      "H 89 2HCl": 0.8418161273002625,
+      "HS-173": 1.1553096771240234,
+      "HTH-01-015": 0.5612601637840271,
+      "Hesperadin": 0.9932840466499329,
+      "Honokiol": 0.9128382205963135,
+      "JNK-IN-8": 0.4794166088104248,
+      "Linsitinib": 0.9299411773681641,
+      "Masitinib": 0.8245815634727478,
+      "P276-00": 1.6377019882202148,
+      "PH-797804": 0.737805187702179,
+      "PIK-293": 0.6458583474159241,
+      "Pelitinib": 1.07392156124115,
+      "Pluripotin": 1.277158260345459,
+      "SAR131675": 0.5387883186340332,
+      "SSR128129E": 0.5286689400672913,
+      "Torin 2": 0.5016642212867737,
+      "Tyrphostin AG 1296": 1.6678882837295532,
+      "VE-821": 1.712240219116211,
+      "VX-11e": 0.8060682415962219,
+      "WH-4-023": 0.665015459060669,
+      "WYE-125132": 0.777016818523407,
+      "XL019": 0.6743264198303223
+     },
+     "dw_structshuf:target@own": {
+      "AMG-458": 0.5446569323539734,
+      "Apatinib": 0.9838123321533203,
+      "Aurora A Inhibitor I": 0.749372661113739,
+      "BGT226": 0.5770990252494812,
+      "BI-D1870": 0.5496794581413269,
+      "BLZ945": 0.9097776412963867,
+      "CX-6258 HCl": 0.5404296517372131,
+      "CZC24832": 0.7670087218284607,
+      "Cobimetinib": 2.1198158264160156,
+      "Crizotinib": 1.9568086862564087,
+      "Dasatinib": 1.4634431600570679,
+      "ENMD-2076": 0.7929908633232117,
+      "Entrectinib": 1.499637484550476,
+      "Fedratinib": 0.6086046695709229,
+      "GSK1838705A": 0.5934571623802185,
+      "GSK1904529A": 0.7266241908073425,
+      "GSK429286A": 0.6537098288536072,
+      "GW441756": 0.823104202747345,
+      "Gefitinib": 0.9882891178131104,
+      "H 89 2HCl": 0.7719354629516602,
+      "HS-173": 1.1639436483383179,
+      "HTH-01-015": 0.6328098177909851,
+      "Hesperadin": 0.921026885509491,
+      "Honokiol": 0.7933201789855957,
+      "JNK-IN-8": 0.4986478388309479,
+      "Linsitinib": 0.9198153614997864,
+      "Masitinib": 0.8048010468482971,
+      "P276-00": 1.7350298166275024,
+      "PH-797804": 0.6780237555503845,
+      "PIK-293": 0.6139256954193115,
+      "Pelitinib": 0.9513804316520691,
+      "Pluripotin": 1.201719880104065,
+      "SAR131675": 0.5382276773452759,
+      "SSR128129E": 0.6416929364204407,
+      "Torin 2": 0.4887089729309082,
+      "Tyrphostin AG 1296": 1.762607216835022,
+      "VE-821": 1.8079952001571655,
+      "VX-11e": 0.8116793632507324,
+      "WH-4-023": 0.6997055411338806,
+      "WYE-125132": 0.8278608322143555,
+      "XL019": 0.6065732836723328
+     },
+     "dw_none@own": {
+      "AMG-458": 0.47799813747406006,
+      "Apatinib": 0.7105945944786072,
+      "Aurora A Inhibitor I": 0.5829339623451233,
+      "BGT226": 0.5040757060050964,
+      "BI-D1870": 0.46771982312202454,
+      "BLZ945": 0.8122243285179138,
+      "CX-6258 HCl": 0.43687698245048523,
+      "CZC24832": 0.6960542798042297,
+      "Cobimetinib": 2.0064806938171387,
+      "Crizotinib": 1.939047932624817,
+      "Dasatinib": 1.4882879257202148,
+      "ENMD-2076": 0.5745458602905273,
+      "Entrectinib": 1.0917683839797974,
+      "Fedratinib": 0.5093051791191101,
+      "GSK1838705A": 0.5355735421180725,
+      "GSK1904529A": 0.5961070656776428,
+      "GSK429286A": 0.566348135471344,
+      "GW441756": 0.588995635509491,
+      "Gefitinib": 0.8242387175559998,
+      "H 89 2HCl": 0.6912557482719421,
+      "HS-173": 1.006737232208252,
+      "HTH-01-015": 0.4693215787410736,
+      "Hesperadin": 0.8616644740104675,
+      "Honokiol": 0.7268579006195068,
+      "JNK-IN-8": 0.3978722095489502,
+      "Linsitinib": 0.8329276442527771,
+      "Masitinib": 0.7002294659614563,
+      "P276-00": 1.3408184051513672,
+      "PH-797804": 0.5418524146080017,
+      "PIK-293": 0.5181424021720886,
+      "Pelitinib": 0.8624107241630554,
+      "Pluripotin": 1.1534461975097656,
+      "SAR131675": 0.43128132820129395,
+      "SSR128129E": 0.4245637357234955,
+      "Torin 2": 0.419437050819397,
+      "Tyrphostin AG 1296": 1.407995581626892,
+      "VE-821": 1.5750991106033325,
+      "VX-11e": 0.7646294236183167,
+      "WH-4-023": 0.574550211429596,
+      "WYE-125132": 0.728407084941864,
+      "XL019": 0.49539780616760254
+     },
+     "dw_none@matched:target": {
+      "AMG-458": 0.47799813747406006,
+      "Apatinib": 0.7105945944786072,
+      "Aurora A Inhibitor I": 0.5829339623451233,
+      "BGT226": 0.5040757060050964,
+      "BI-D1870": 0.46771982312202454,
+      "BLZ945": 0.8122243285179138,
+      "CX-6258 HCl": 0.43687698245048523,
+      "CZC24832": 0.6960542798042297,
+      "Cobimetinib": 2.0064806938171387,
+      "Crizotinib": 1.939047932624817,
+      "Dasatinib": 1.4882879257202148,
+      "ENMD-2076": 0.5745458602905273,
+      "Entrectinib": 1.0917683839797974,
+      "Fedratinib": 0.5093051791191101,
+      "GSK1838705A": 0.5355735421180725,
+      "GSK1904529A": 0.5961070656776428,
+      "GSK429286A": 0.566348135471344,
+      "GW441756": 0.588995635509491,
+      "Gefitinib": 0.8242387175559998,
+      "H 89 2HCl": 0.6912557482719421,
+      "HS-173": 1.006737232208252,
+      "HTH-01-015": 0.4693215787410736,
+      "Hesperadin": 0.8616644740104675,
+      "Honokiol": 0.7268579006195068,
+      "JNK-IN-8": 0.3978722095489502,
+      "Linsitinib": 0.8329276442527771,
+      "Masitinib": 0.7002294659614563,
+      "P276-00": 1.3408184051513672,
+      "PH-797804": 0.5418524146080017,
+      "PIK-293": 0.5181424021720886,
+      "Pelitinib": 0.8624107241630554,
+      "Pluripotin": 1.1534461975097656,
+      "SAR131675": 0.43128132820129395,
+      "SSR128129E": 0.4245637357234955,
+      "Torin 2": 0.419437050819397,
+      "Tyrphostin AG 1296": 1.407995581626892,
+      "VE-821": 1.5750991106033325,
+      "VX-11e": 0.7646294236183167,
+      "WH-4-023": 0.574550211429596,
+      "WYE-125132": 0.728407084941864,
+      "XL019": 0.49539780616760254
+     },
+     "copy_last": {
+      "AMG-458": 0.8447818756103516,
+      "Apatinib": 1.1476980447769165,
+      "Aurora A Inhibitor I": 1.169406771659851,
+      "BGT226": 1.0269429683685303,
+      "BI-D1870": 0.778775691986084,
+      "BLZ945": 1.486152172088623,
+      "CX-6258 HCl": 0.5074455142021179,
+      "CZC24832": 0.9989048838615417,
+      "Cobimetinib": 2.620464563369751,
+      "Crizotinib": 2.2192864418029785,
+      "Dasatinib": 2.135216474533081,
+      "ENMD-2076": 0.973370373249054,
+      "Entrectinib": 2.3473479747772217,
+      "Fedratinib": 0.9638810753822327,
+      "GSK1838705A": 0.8989658951759338,
+      "GSK1904529A": 0.9900537133216858,
+      "GSK429286A": 0.9927146434783936,
+      "GW441756": 0.8981086611747742,
+      "Gefitinib": 1.2730375528335571,
+      "H 89 2HCl": 1.427910327911377,
+      "HS-173": 1.9107779264450073,
+      "HTH-01-015": 0.7578595280647278,
+      "Hesperadin": 1.3685909509658813,
+      "Honokiol": 0.9478346705436707,
+      "JNK-IN-8": 0.7691022753715515,
+      "Linsitinib": 1.4127823114395142,
+      "Masitinib": 1.2122575044631958,
+      "P276-00": 1.7672420740127563,
+      "PH-797804": 0.8489567637443542,
+      "PIK-293": 0.8822483420372009,
+      "Pelitinib": 1.5260413885116577,
+      "Pluripotin": 1.6587806940078735,
+      "SAR131675": 0.6443292498588562,
+      "SSR128129E": 0.6638396382331848,
+      "Torin 2": 0.8470630645751953,
+      "Tyrphostin AG 1296": 2.1651840209960938,
+      "VE-821": 2.6353800296783447,
+      "VX-11e": 1.9772891998291016,
+      "WH-4-023": 1.5162672996520996,
+      "WYE-125132": 1.2366992235183716,
+      "XL019": 0.7604351043701172
+     },
+     "slot_mean": {
+      "AMG-458": 0.4977947771549225,
+      "Apatinib": 0.7291423678398132,
+      "Aurora A Inhibitor I": 0.6315072178840637,
+      "BGT226": 0.521659791469574,
+      "BI-D1870": 0.6096411347389221,
+      "BLZ945": 1.0821914672851562,
+      "CX-6258 HCl": 0.5540433526039124,
+      "CZC24832": 0.6782272458076477,
+      "Cobimetinib": 3.1737072467803955,
+      "Crizotinib": 2.052774667739868,
+      "Dasatinib": 1.5217156410217285,
+      "ENMD-2076": 0.6044208407402039,
+      "Entrectinib": 1.6313276290893555,
+      "Fedratinib": 0.7271906733512878,
+      "GSK1838705A": 0.5847203135490417,
+      "GSK1904529A": 0.4836181104183197,
+      "GSK429286A": 0.5715565085411072,
+      "GW441756": 0.9389243721961975,
+      "Gefitinib": 0.9801684021949768,
+      "H 89 2HCl": 0.711901843547821,
+      "HS-173": 1.050032615661621,
+      "HTH-01-015": 0.5814805626869202,
+      "Hesperadin": 0.7773802876472473,
+      "Honokiol": 0.6614945530891418,
+      "JNK-IN-8": 0.650332510471344,
+      "Linsitinib": 0.8084511160850525,
+      "Masitinib": 0.8160344958305359,
+      "P276-00": 1.043306827545166,
+      "PH-797804": 0.5353451371192932,
+      "PIK-293": 0.5124792456626892,
+      "Pelitinib": 0.84956955909729,
+      "Pluripotin": 1.1328468322753906,
+      "SAR131675": 0.5666125416755676,
+      "SSR128129E": 0.5576460957527161,
+      "Torin 2": 0.7195473313331604,
+      "Tyrphostin AG 1296": 1.7196482419967651,
+      "VE-821": 1.8740607500076294,
+      "VX-11e": 0.9142279624938965,
+      "WH-4-023": 0.5806519389152527,
+      "WYE-125132": 0.7127213478088379,
+      "XL019": 0.5565713047981262
+     },
+     "vehicle_traj": {
+      "AMG-458": 0.7677233815193176,
+      "Apatinib": 1.0669273138046265,
+      "Aurora A Inhibitor I": 1.0063186883926392,
+      "BGT226": 0.9630579948425293,
+      "BI-D1870": 0.7036296725273132,
+      "BLZ945": 1.4413094520568848,
+      "CX-6258 HCl": 0.48469576239585876,
+      "CZC24832": 1.01556396484375,
+      "Cobimetinib": 2.556065320968628,
+      "Crizotinib": 2.311371088027954,
+      "Dasatinib": 2.0801279544830322,
+      "ENMD-2076": 0.9654984474182129,
+      "Entrectinib": 2.5357234477996826,
+      "Fedratinib": 0.9143781065940857,
+      "GSK1838705A": 0.860344409942627,
+      "GSK1904529A": 1.0323395729064941,
+      "GSK429286A": 0.8738059997558594,
+      "GW441756": 0.8752620220184326,
+      "Gefitinib": 1.3467470407485962,
+      "H 89 2HCl": 1.4567714929580688,
+      "HS-173": 1.9960438013076782,
+      "HTH-01-015": 0.6431651711463928,
+      "Hesperadin": 1.4425197839736938,
+      "Honokiol": 0.9514389038085938,
+      "JNK-IN-8": 0.6607267260551453,
+      "Linsitinib": 1.264845609664917,
+      "Masitinib": 1.1695820093154907,
+      "P276-00": 2.0426228046417236,
+      "PH-797804": 0.8954176902770996,
+      "PIK-293": 0.8176204562187195,
+      "Pelitinib": 1.3921130895614624,
+      "Pluripotin": 1.7619985342025757,
+      "SAR131675": 0.6038517951965332,
+      "SSR128129E": 0.595135509967804,
+      "Torin 2": 0.798509418964386,
+      "Tyrphostin AG 1296": 2.3557846546173096,
+      "VE-821": 2.82974910736084,
+      "VX-11e": 2.0957255363464355,
+      "WH-4-023": 1.722277283668518,
+      "WYE-125132": 1.1846904754638672,
+      "XL019": 0.7210719585418701
+     },
+     "knn": {
+      "AMG-458": 0.7119163870811462,
+      "Apatinib": 0.8770370483398438,
+      "Aurora A Inhibitor I": 0.7088893055915833,
+      "BGT226": 1.223577618598938,
+      "BI-D1870": 0.6775651574134827,
+      "BLZ945": 1.1861330270767212,
+      "CX-6258 HCl": 0.6584148406982422,
+      "CZC24832": 0.8354263305664062,
+      "Cobimetinib": 3.407715082168579,
+      "Crizotinib": 2.4536285400390625,
+      "Dasatinib": 1.7039355039596558,
+      "ENMD-2076": 1.0901612043380737,
+      "Entrectinib": 2.27123761177063,
+      "Fedratinib": 0.5235218405723572,
+      "GSK1838705A": 0.8569371700286865,
+      "GSK1904529A": 0.6828257441520691,
+      "GSK429286A": 0.5528013110160828,
+      "GW441756": 1.278626799583435,
+      "Gefitinib": 1.3627772331237793,
+      "H 89 2HCl": 0.8368144631385803,
+      "HS-173": 1.3142271041870117,
+      "HTH-01-015": 0.6772903800010681,
+      "Hesperadin": 0.8406913876533508,
+      "Honokiol": 0.8325457572937012,
+      "JNK-IN-8": 0.9916170239448547,
+      "Linsitinib": 0.8525161147117615,
+      "Masitinib": 0.7726643085479736,
+      "P276-00": 1.2207108736038208,
+      "PH-797804": 0.6140320897102356,
+      "PIK-293": 0.5867524743080139,
+      "Pelitinib": 0.8562310338020325,
+      "Pluripotin": 1.2185719013214111,
+      "SAR131675": 0.8393784165382385,
+      "SSR128129E": 0.5962404608726501,
+      "Torin 2": 1.5961966514587402,
+      "Tyrphostin AG 1296": 2.511737823486328,
+      "VE-821": 2.4319698810577393,
+      "VX-11e": 1.0723521709442139,
+      "WH-4-023": 0.7761070132255554,
+      "WYE-125132": 0.94964599609375,
+      "XL019": 0.5328235030174255
+     },
+     "residual": {
+      "AMG-458": 0.47799813747406006,
+      "Apatinib": 0.7105945944786072,
+      "Aurora A Inhibitor I": 0.5829339623451233,
+      "BGT226": 0.5040757060050964,
+      "BI-D1870": 0.46771982312202454,
+      "BLZ945": 0.8122243285179138,
+      "CX-6258 HCl": 0.43687698245048523,
+      "CZC24832": 0.6960542798042297,
+      "Cobimetinib": 2.0064806938171387,
+      "Crizotinib": 1.939047932624817,
+      "Dasatinib": 1.4882879257202148,
+      "ENMD-2076": 0.5745458602905273,
+      "Entrectinib": 1.0917683839797974,
+      "Fedratinib": 0.5093051791191101,
+      "GSK1838705A": 0.5355735421180725,
+      "GSK1904529A": 0.5961070656776428,
+      "GSK429286A": 0.566348135471344,
+      "GW441756": 0.588995635509491,
+      "Gefitinib": 0.8242387175559998,
+      "H 89 2HCl": 0.6912557482719421,
+      "HS-173": 1.006737232208252,
+      "HTH-01-015": 0.4693215787410736,
+      "Hesperadin": 0.8616644740104675,
+      "Honokiol": 0.7268579006195068,
+      "JNK-IN-8": 0.3978722095489502,
+      "Linsitinib": 0.8329276442527771,
+      "Masitinib": 0.7002294659614563,
+      "P276-00": 1.3408184051513672,
+      "PH-797804": 0.5418524146080017,
+      "PIK-293": 0.5181424021720886,
+      "Pelitinib": 0.8624107241630554,
+      "Pluripotin": 1.1534461975097656,
+      "SAR131675": 0.43128132820129395,
+      "SSR128129E": 0.4245637357234955,
+      "Torin 2": 0.419437050819397,
+      "Tyrphostin AG 1296": 1.407995581626892,
+      "VE-821": 1.5750991106033325,
+      "VX-11e": 0.7646294236183167,
+      "WH-4-023": 0.574550211429596,
+      "WYE-125132": 0.728407084941864,
+      "XL019": 0.49539780616760254
+     }
+    }
+   },
+   "h1c": {
+    "MDAMB157": {
+     "n_fields": 389,
+     "n_excluded_fields": 147,
+     "excluded_conditions": [
+      "Doxorubicin 250.0",
+      "Doxorubicin 375.0",
+      "Doxorubicin 500.0",
+      "Gemcitabine 250.0",
+      "Gemcitabine 2500.0",
+      "Gemcitabine 50.0",
+      "Gemcitabine 500.0",
+      "Gemcitabine 5000.0",
+      "Palbociclib 0.5",
+      "Palbociclib 5000.0"
+     ],
+     "missing_runs": true
+    }
+   }
+  },
+  "weak": {
+   "h1": {
+    "nearest_dose": false,
+    "interp": false
+   },
+   "h2a": {
+    "hsa": false,
+    "additive": false
+   },
+   "h2b": {
+    "knn": false,
+    "residual": false
+   }
+  },
+  "summary": {
+   "G-Dose": false,
+   "G-Dose+": false,
+   "G-Combo": true,
+   "G-Combo+": false,
+   "G-Compound": false,
+   "H1c": {
+    "MDAMB157": null
+   },
+   "decoded_readouts_used": false
+  }
+ }
+}
